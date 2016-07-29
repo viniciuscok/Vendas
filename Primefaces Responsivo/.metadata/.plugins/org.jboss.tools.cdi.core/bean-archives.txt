@@ -1,0 +1,9 @@
+path=C:\Users\vinicius\.m2\repository\org\glassfish\javax.faces\2.2.9\javax.faces-2.2.9.jar
+size=2572328
+archive=0
+path=C:\Users\vinicius\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar
+size=95806
+archive=0
+path=C:\Users\vinicius\.m2\repository\org\primefaces\primefaces\6.0\primefaces-6.0.jar
+size=4007587
+archive=0
