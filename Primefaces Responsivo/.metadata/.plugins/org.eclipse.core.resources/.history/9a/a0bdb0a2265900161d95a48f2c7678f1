@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+.ve-loginDialog
+{
+	width: 290px;
+	height: auto;
+	margin-top: 150px;
+	background: blue;
+}

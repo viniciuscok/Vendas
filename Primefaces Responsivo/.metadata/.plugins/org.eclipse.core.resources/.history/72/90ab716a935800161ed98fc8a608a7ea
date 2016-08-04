@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+/*ve-topo*/
+.ve-topo
+{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	
+	background: #04abfb;
+}

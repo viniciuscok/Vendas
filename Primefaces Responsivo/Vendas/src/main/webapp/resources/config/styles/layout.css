@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/*ve-topo*/
+.ve-topo
+{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	min-height: 50px;
+	
+	background: #04abfb;
+}
+
+/*modificando a imagem da logo*/
+.ve-topo > a img
+{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
