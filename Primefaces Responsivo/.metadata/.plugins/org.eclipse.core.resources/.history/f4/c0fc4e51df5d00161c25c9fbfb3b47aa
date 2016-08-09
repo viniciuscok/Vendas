@@ -1,0 +1,20 @@
+@charset "utf-8";
+#ve-login
+{
+	width:290px;
+	margin:auto;
+	margin-top:150px;
+	
+	border-radius: 9px;
+	background: #00ff00;
+}
+
+body
+{
+	background: black;
+}
+
+#teste
+{
+	text-align: center;
+}

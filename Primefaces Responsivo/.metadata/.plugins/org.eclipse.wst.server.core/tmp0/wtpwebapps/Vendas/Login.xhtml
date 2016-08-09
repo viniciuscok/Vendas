@@ -14,21 +14,22 @@
 	<h:outputStylesheet library="config" name="styles/login.css"/>
 </h:head>
 <h:body>
-	<div class="ui-fluid">
-		<h1>Login</h1>
+	<div id="ve-login" class="ui-fluid">
+		<h1 id="teste">Login</h1>
 		<h:form id="frmLogin">
-			<h:panelGrid columns="2" styleClass="ve-painelLogin">
-				<p:outputLabel for="email" value="Email"/>
-				<p:inputText id="email" size="30"/>
-				
-				<p:outputLabel for="senha" value="Senha"/>
-				<p:inputText id="senha" size="30"/>
-				
-				<h:panelGroup/>
-				<p:commandButton value="Login"/>
-			</h:panelGrid>
+			<div class="ui-fluid">
+				<p:panelGrid columns="2" layout="grid" columnClasses="ui-grid-col-3, ui-grid-col-9">
+					<p:outputLabel for="email" value="Email:"/>
+					<p:inputText id="email"/>
+					
+					<p:outputLabel for="senha" value="Senha:"/>
+					<p:password id="senha"/>
+					
+					<h:panelGroup/>
+					<p:commandButton value="Login"/>
+				</p:panelGrid>
+			</div>	
 		</h:form>
-		
 	</div>	
 </h:body>
 

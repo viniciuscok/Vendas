@@ -1,0 +1,7 @@
+@charset "utf-8";
+#ve-login
+{
+	width:290px;
+	margin:auto;
+	background: #00ff00;
+}
