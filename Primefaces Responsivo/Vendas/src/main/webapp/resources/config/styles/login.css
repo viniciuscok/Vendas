@@ -6,16 +6,28 @@
 	margin-top:150px;
 	
 	border-radius: 9px;
-	background: #c0c0c0;
+	background: #5b7dd9;
 }
 
 body
 {
-	background: black;
+	background: #000000;
 }
 
 #teste
 {
+	margin-bottom: 5px;
 	text-align: center;
 	color: white;
+}
+.ui-panelgrid .ui-grid-responsive
+{
+	background: #5b7dd9;
+	border-radius: 9px;
+	
+	border: none;
+}
+.ui-panelgrid-content .ui-grid-row
+{
+	border: none;
 }
