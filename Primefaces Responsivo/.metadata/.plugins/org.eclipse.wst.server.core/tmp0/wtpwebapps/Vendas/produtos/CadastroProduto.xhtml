@@ -1,0 +1,55 @@
+<ui:composition template="/WEB-INF/templates/Layout.xhtml"
+ 	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" >
+
+	<ui:define name="titulo">Novo Produto</ui:define>
+	<ui:define name="corpo">
+		<h1>Novo Produto</h1>	
+		<h:form id="formCadastroProduto">	
+			<p:toolbar>
+				<p:toolbarGroup>
+					<p:button value="Novo" icon="fa fa-plus" outcome="/produtos/CadastroProduto"/>
+					<p:commandButton value="Salvar" icon="fa fa-save" id="botaoSalvarCadastroProduto"/>
+				</p:toolbarGroup>
+				<p:toolbarGroup align="right">
+					<p:button value="Pesquisar" icon="fa fa-search"/>
+				</p:toolbarGroup>
+			</p:toolbar>
+			<div class="ui-fluid">
+				<p:panelGrid columns="2" id="panelGrridCadastroProduto" layout="grid" 
+					columnClasses="ui-grid-col-3,ui-grid-col-9">
+					
+					<p:outputLabel value="Codigo" for="codigo"/>
+					<p:inputText id="codigo" />
+					
+					<p:outputLabel value="Nome" for="nome"/>
+					<p:inputText id="nome" />
+					
+					<p:outputLabel value="Tipo" for="tipo"/>
+					<p:selectOneMenu id="tipo"> 
+						<f:selectItem itemLabel="Selecione o tipo do Vidro"/>
+						<f:selectItem itemLabel="Incolor" itemValue="1"/>
+						<f:selectItem itemLabel="Fumê" itemValue="2"/>
+						<f:selectItem itemLabel="Verde" itemValue="3"/>
+					</p:selectOneMenu>
+					
+					<p:outputLabel value="Espessura" for="espessura"/>
+					<p:selectOneMenu id="espessura"> 
+						<f:selectItem itemLabel="Selecione a espessura do Vidro"/>
+						<f:selectItem itemLabel="8 mm" itemValue="1"/>
+						<f:selectItem itemLabel="10 mm" itemValue="2"/>
+						<f:selectItem itemLabel="12 mm" itemValue="3"/>
+					</p:selectOneMenu>
+					
+					<p:outputLabel value="Estoque" for="estoque"/>
+					<p:inputText id="estoque" />
+					
+				</p:panelGrid>
+			</div>		
+		</h:form>		
+	</ui:define>
+	
+</ui:composition>

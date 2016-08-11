@@ -19,6 +19,14 @@
 			<scope>compile</scope>
 		</dependency>
 
+		<!-- ####################DEPENDÊNCIA DO BOOTSTRAP################### -->
+		<dependency>
+			<groupId>org.primefaces.themes</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>1.0.10</version>
+			<scope>compile</scope>
+		</dependency>
+		
 		<!-- ####################DEPENDÊNCIA DO JSF 2.2########################## -->
 		<dependency>
 			<groupId>org.glassfish</groupId>

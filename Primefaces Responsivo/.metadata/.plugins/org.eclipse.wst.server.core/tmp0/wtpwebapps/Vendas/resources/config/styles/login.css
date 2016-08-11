@@ -6,16 +6,32 @@
 	margin-top:150px;
 	
 	border-radius: 9px;
-	background: #c0c0c0;
+	background: #a0b5e9;
 }
 
 body
 {
-	background: black;
+	background: #000000;
 }
 
-#teste
+#ve-h1Login
 {
+	margin-bottom: 5px;
 	text-align: center;
 	color: white;
+}
+.ui-panelgrid.ve-panelGridLogin .ui-grid-responsive
+{
+	background: #a0b5e9;
+	border-radius: 9px;
+	padding:10px;
+	border: none;
+}
+
+@media(max-width: 640px)
+{
+	.ui-panelgrid.ve-panelGridLogin .ui-grid-responsive .ui-grid-row
+	{
+		border:none;
+	}
 }

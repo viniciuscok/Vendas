@@ -6,7 +6,7 @@
 	margin-top:150px;
 	
 	border-radius: 9px;
-	background: #5b7dd9;
+	background: #a0b5e9;
 }
 
 body
@@ -14,20 +14,24 @@ body
 	background: #000000;
 }
 
-#teste
+#ve-h1Login
 {
 	margin-bottom: 5px;
 	text-align: center;
 	color: white;
 }
-.ui-panelgrid .ui-grid-responsive
+.ui-panelgrid.ve-panelGridLogin .ui-grid-responsive
 {
-	background: #5b7dd9;
+	background: #a0b5e9;
 	border-radius: 9px;
-	
+	padding:10px;
 	border: none;
 }
-.ui-panelgrid-content .ui-grid-row
+
+@media(max-width: 640px)
 {
-	border: none;
+	.ui-panelgrid.ve-panelGridLogin .ui-grid-responsive .ui-grid-row
+	{
+		border:none;
+	}
 }
