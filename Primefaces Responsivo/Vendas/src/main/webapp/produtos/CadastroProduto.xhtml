@@ -7,7 +7,8 @@
 
 	<ui:define name="titulo">Novo Produto</ui:define>
 	<ui:define name="corpo">
-		<h1>Novo Produto</h1>	
+		<h1>Novo Produto</h1>
+		<p:inputText id="valorMetro" maxlength="10" styleClass="moeda" />	
 		<h:form id="formCadastroProduto">	
 			<p:toolbar>
 				<p:toolbarGroup>
@@ -20,7 +21,7 @@
 			</p:toolbar>
 			<div class="ui-fluid">
 				<p:panelGrid columns="2" id="panelGrridCadastroProduto" layout="grid" 
-					columnClasses="ui-grid-col-3,ui-grid-col-9">
+					columnClasses="ui-grid-col-2,ui-grid-col-10" styleClass="ve-panelGridCadastroProduto">
 					
 					<p:outputLabel value="Codigo" for="codigo"/>
 					<p:inputText id="codigo" />
@@ -43,6 +44,9 @@
 						<f:selectItem itemLabel="10 mm" itemValue="2"/>
 						<f:selectItem itemLabel="12 mm" itemValue="3"/>
 					</p:selectOneMenu>
+					
+					<p:outputLabel value="Valor do Metro" for="valorMetro"/>
+					<p:inputText id="valorMetro" maxlength="10" />
 					
 					<p:outputLabel value="Estoque" for="estoque"/>
 					<p:inputText id="estoque" />

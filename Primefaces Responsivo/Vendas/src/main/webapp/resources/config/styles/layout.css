@@ -24,3 +24,12 @@
 	margin-top: 70px;
 }
 
+/*definindo onde vai ficar o ajax na tela*/
+.ve-ajaxStatus
+{
+	position: fixed;
+	top:55px;
+	right: 10px;
+	width: 35px;
+	height: 35px;
+}
