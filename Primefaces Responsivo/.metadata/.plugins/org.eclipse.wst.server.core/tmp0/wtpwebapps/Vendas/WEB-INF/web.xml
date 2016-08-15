@@ -3,7 +3,7 @@
   
   <!-- ####################CONFIGURANDO PAGINA INICIAL################### -->
   <welcome-file-list>
-  	<welcome-file>Home.xhtml</welcome-file>
+  	<welcome-file>produtos/CadastroProduto.xhtml</welcome-file>
   </welcome-file-list>
   
   <!-- ####################CONFIG DO TEMA DO BOOTSTRAP################### -->

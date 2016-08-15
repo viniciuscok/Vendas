@@ -13,10 +13,11 @@
 	<title><ui:insert name="titulo">Pedido de Venda</ui:insert></title>
 	
 	<h:outputStylesheet library="config" name="styles/layout.css"/>
+	<h:outputStylesheet library="config" name="styles/conteudo.css"/>
 	<h:outputScript target="body" library="primefaces" name="jquery/jquery.js"/>
-	<h:outputScript target="body" library="config" name="script/jquery.maskMoney.js"/>
-	<h:outputScript target="body" library="config" name="script/teste.js"/>
-	<h:outputStylesheet library="config" name="styles/cadastroProduto.css"/>
+	<h:outputScript target="body" library="config" name="javascripts/jquery.maskMoney.js"/>
+	<h:outputScript target="body" library="config" name="javascripts/mascaraMoeda.js"/>
+	
 	
 	
 	
@@ -39,18 +40,8 @@
 	
 	<section class="ve-corpo">
 		<ui:insert name="corpo"/>	
-		<p:inputText maxlength="10" styleClass="moeda" />
 	</section>
 	
-	<script>
-		function configurarMoeda() {
-			$(".moeda").maskMoney({ decimal: ",", thousands: ".", allowZero: true });
-		}
-			
-		$(document).ready(function() {
-				configurarMoeda();
-		});
-	</script>
 </h:body>
 
 </html>

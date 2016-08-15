@@ -1,0 +1,8 @@
+@charset "utf-8";
+@media(max-width: 640px)
+{
+	.ui-panelgrid.ve-panelGridCadastroCliente .ui-grid-resposive .ui-grid-row
+	{
+		border: 5px;
+	}
+}

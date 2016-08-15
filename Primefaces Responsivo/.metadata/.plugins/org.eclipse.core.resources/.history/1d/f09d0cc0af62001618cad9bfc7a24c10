@@ -1,0 +1,60 @@
+<ui:composition template="/WEB-INF/templates/Layout.xhtml"
+ 	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" >
+
+	<ui:define name="titulo">Pesquisar Pedidos</ui:define>
+	<ui:define name="corpo">
+		<h1>Pesquisar Pedidos</h1>
+			
+		<h:form id="formPesquisaPedidos">	
+			<p:toolbar>
+				<p:toolbarGroup>
+					<p:button value="Pesquisar" icon="fa fa-search" outcome="/produtos/PesquisaPedidos" 
+						styleClass="ve-botaoPesquisarPesquisaPedidos"/>
+				</p:toolbarGroup>
+				<p:toolbarGroup align="right">
+					<p:button value="Novo" icon="fa fa-plus"
+						styleClass="ve-botaoNovoPesquisaPedidos"/>
+				</p:toolbarGroup>
+			</p:toolbar>
+			<div class="ui-fluid">
+				<p:panelGrid columns="2" id="panelGrridPesquisaPedidos" layout="grid" 
+					columnClasses="ui-grid-col-2,ui-grid-col-10" styleClass="ve-panelGridPesquisaPedidos">
+						
+					<p:outputLabel value="Número" for="numero"/>
+					<h:panelGroup>
+						<p:inputText id="numero"/>
+						a
+						<p:inputText/>		
+					</h:panelGroup>
+					
+					<p:outputLabel value="Data de Criação" for="dataCriacao"/>
+					<h:panelGroup>
+						<p:calendar id="dataCriacao" pattern="dd/MM/yyyy"/>
+						a
+						<p:calendar pattern="dd/MM/yyyy"/>		
+					</h:panelGroup>
+						
+					<p:outputLabel value="Vendedor" for="vendedor"/>
+					<p:inputText id="vendedor"/>
+					
+					<p:outputLabel value="Cliente" for="cliente"/>
+					<p:inputText id="cliente"/>		
+					
+					<p:outputLabel value="Status" for="status"/>	
+					<p:selectManyCheckbox>
+						<f:selectItem itemLabel="Orçamento"/>
+						<f:selectItem itemLabel="Emitido"/>
+						<f:selectItem itemLabel="Cancelado"/>
+					</p:selectManyCheckbox>
+																					
+				</p:panelGrid>
+			</div>	
+			
+		</h:form>		
+	</ui:define>
+	
+</ui:composition>

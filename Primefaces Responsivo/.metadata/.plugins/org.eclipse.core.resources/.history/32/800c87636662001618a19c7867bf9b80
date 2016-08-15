@@ -1,0 +1,45 @@
+<ui:composition template="/WEB-INF/templates/Layout.xhtml"
+ 	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" >
+
+	<ui:define name="titulo">Novo Usuario</ui:define>
+	<ui:define name="corpo">
+		<h1>Novo Usuario</h1>
+			
+		<h:form id="formCadastroUsuario">	
+			<p:toolbar>
+				<p:toolbarGroup>
+					<p:button value="Novo" icon="fa fa-plus" outcome="/clientes/CadastroUsuario" 
+						styleClass="ve-botaoNovoCadastroUsuario"/>
+					<p:commandButton value="Salvar" icon="fa fa-save" id="botaoSalvarCadastroUsuario"
+						styleClass="ve-botaoSalvarCadastroUsuario"/>
+				</p:toolbarGroup>
+				<p:toolbarGroup align="right">
+					<p:button value="Pesquisar" icon="fa fa-search"
+						styleClass="ve-botaoPesquisarCadastroUsuario"/>
+				</p:toolbarGroup>
+			</p:toolbar>
+			<div class="ui-fluid">
+				<p:panelGrid columns="2" id="panelGrridCadastroUsuario" layout="grid" 
+					columnClasses="ui-grid-col-2,ui-grid-col-10" styleClass="ve-panelGridCadastroUsuario">
+					
+					<p:outputLabel value="Codigo" for="codigo"/>
+					<p:inputText id="codigo" disabled="true" value="1"/>
+					
+					<p:outputLabel value="Nome" for="nome"/>
+					<p:inputText id="nome" />
+					
+					<p:outputLabel value="Email" for="email"/>
+					<p:inputText id="email" />
+					
+					<p:outputLabel value="Senha" for="senha"/>
+					<p:password id="senha"/>
+				</p:panelGrid>
+			</div>		
+		</h:form>		
+	</ui:define>
+	
+</ui:composition>
