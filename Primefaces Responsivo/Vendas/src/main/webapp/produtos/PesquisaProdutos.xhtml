@@ -9,20 +9,20 @@
 	<ui:define name="corpo">
 		<h1>Pesquisar Produto</h1>
 			
-		<h:form id="formPesquisarProduto">	
+		<h:form id="formPesquisaProduto">	
 			<p:toolbar>
 				<p:toolbarGroup>
 					<p:button value="Pesquisar" icon="fa fa-search" outcome="/produtos/PesquisaProdutos" 
-						styleClass="ve-botaoPesquisarPesquisarProduto"/>
+						styleClass="ve-botaoPesquisarPesquisaProdutos"/>
 				</p:toolbarGroup>
 				<p:toolbarGroup align="right">
 					<p:button value="Novo" icon="fa fa-plus" outcome="/produtos/CadastroProduto"
-						styleClass="ve-botaoNovoPesquisarProduto"/>
+						styleClass="ve-botaoNovoPesquisaProdutos"/>
 				</p:toolbarGroup>
 			</p:toolbar>
 			<div class="ui-fluid">
-				<p:panelGrid columns="2" id="panelGrridPesquisarProduto" layout="grid" 
-					columnClasses="ui-grid-col-2,ui-grid-col-10" styleClass="ve-panelGridPesquisarProduto">
+				<p:panelGrid columns="2" id="panelGrridPesquisaProduto" layout="grid" 
+					columnClasses="ui-grid-col-2,ui-grid-col-10" styleClass="ve-panelGridPesquisaProdutos">
 						
 					<p:outputLabel value="Codigo" for="codigo"/>
 					<p:inputText id="codigo"/>		

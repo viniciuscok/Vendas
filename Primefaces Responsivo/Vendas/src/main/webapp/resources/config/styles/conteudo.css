@@ -22,6 +22,11 @@
 	{
 		border: none;
 	}
+	
+	.ui-panelgrid.ve-panelGridPesquisaProdutos .ui-grid-responsive .ui-grid-row
+	{
+		border: none;
+	}
 }
 
 /*########Modelo para mudar o estilo do outputText##########*/
@@ -53,6 +58,18 @@
 	.ui-toolbar .ui-toolbar-group-left .ve-botaoNovoCadastroUsuario, 
 	.ui-toolbar .ui-toolbar-group-left .ve-botaoSalvarCadastroUsuario, 
 	.ui-toolbar .ui-toolbar-group-right .ve-botaoPesquisarCadastroUsuario
+	{
+		font-size: 0.8em;
+	}
+	
+	.ui-toolbar .ui-toolbar-group-right .ve-botaoNovoPesquisaPedidos,  
+	.ui-toolbar .ui-toolbar-group-left .ve-botaoPesquisarPesquisaPedidos
+	{
+		font-size: 0.8em;
+	}
+	
+	.ui-toolbar .ui-toolbar-group-right .ve-botaoNovoPesquisaProdutos,  
+	.ui-toolbar .ui-toolbar-group-left .ve-botaoPesquisarPesquisaProdutos
 	{
 		font-size: 0.8em;
 	}
