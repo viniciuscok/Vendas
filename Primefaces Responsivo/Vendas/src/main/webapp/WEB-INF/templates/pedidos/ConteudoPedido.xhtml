@@ -3,16 +3,18 @@
 	xmlns:f="http://xmlns.jcp.org/jsf/core"
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
+	
 	<div class="ui-fluid">
-		<p:panelGrid columns="4" layout="grid">
+		<p:panelGrid columns="4" layout="grid" style="margin-top:20px" 
+			styleClass="ve-panelGridCadastroPedido">
 			<p:outputLabel value="Número" for="numero" />
-			<p:inputText id="numero" value="12345" />
+			<h:outputText id="numero" value="12345" />
 	
 			<p:outputLabel value="Data de Criação" for="dataCriacao" />
-			<p:calendar id="dataCriacao" pattern="dd/MM/yyyy" />
+			<h:outputText id="dataCriacao" value="10/08/2016" />
 	
 			<p:outputLabel value="Status" for="status" />
-			<p:inputText id="status" value="Orçamento" />
+			<h:outputText id="status" value="Orçamento" />
 	
 			<p:outputLabel value="Vendedor" for="vendedor" />
 			<p:selectOneMenu id="vendedor">
@@ -30,13 +32,13 @@
 			</p:selectOneMenu>
 	
 			<p:outputLabel value="Valor do frete" for="valorFrete" />
-			<p:inputText id="valorFrete" maxlength="10" />
+			<p:inputText id="valorFrete" maxlength="10" styleClass="js-moeda"/>
 	
 			<p:outputLabel value="Subtotal" style="font-weight: bold" />
 			<h:outputText value="R$ 0,00" style="font-weight: bold" id="subtotal" />
 	
 			<p:outputLabel value="Valor de desconto" for="valorDesconto" />
-			<p:inputText id="valorDesconto" maxlength="10" />
+			<p:inputText id="valorDesconto" maxlength="10" styleClass="js-moeda"/>
 	
 			<p:outputLabel value="Total do pedido"
 				style="font-weight: bold; font-size: 1.1em" />

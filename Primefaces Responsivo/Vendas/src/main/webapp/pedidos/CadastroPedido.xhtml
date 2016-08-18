@@ -11,6 +11,18 @@
 			
 		<ui:include src="/WEB-INF/templates/pedidos/BotoesPedido.xhtml"/>
 		<ui:include src="/WEB-INF/templates/pedidos/ConteudoPedido.xhtml"/>
+		
+		<p:tabView style="margin-top:20px">
+			<p:tab title="Itens">
+				<ui:include src="/WEB-INF/templates/pedidos/ItensPedido.xhtml"></ui:include>
+			</p:tab>
+			<p:tab title="Dados de Entrega">
+				<ui:include src="/WEB-INF/templates/pedidos/DadosEntregaPedido.xhtml"/>
+			</p:tab>
+			<p:tab title="Observação">
+				<ui:include src="/WEB-INF/templates/pedidos/ObservacaoPedido.xhtml"/>
+			</p:tab>
+		</p:tabView>
 	</ui:define>
 	
 </ui:composition>
