@@ -55,7 +55,9 @@
 	/*##########USUÁRIOS############*/
 .ui-toolbar-group-left .ve-botaoNovoCadastroUsuario, 
 .ui-toolbar-group-left .ve-botaoSalvarCadastroUsuario, 
-.ui-toolbar-group-right .ve-botaoPesquisarCadastroUsuario
+.ui-toolbar-group-right .ve-botaoPesquisarCadastroUsuario,
+.ui-toolbar-group-left .ve-botaoPesquisarPesquisaUsuarios,
+.ui-toolbar-group-right .ve-botaoNovoPesquisaUsuarios
 {
 	font-weight:bold;	
 		
@@ -88,7 +90,9 @@
 	/*#####################USUARIOS##########################*/
 	.ui-toolbar-group-left .ve-botaoNovoCadastroUsuario, 
 	.ui-toolbar-group-left .ve-botaoSalvarCadastroUsuario, 
-	.ui-toolbar-group-right .ve-botaoPesquisarCadastroUsuario
+	.ui-toolbar-group-right .ve-botaoPesquisarCadastroUsuario,
+	.ui-toolbar-group-left .ve-botaoPesquisarPesquisaUsuarios,
+	.ui-toolbar-group-right .ve-botaoNovoPesquisaUsuarios
 	{
 		font-weight:bold;
 		font-size: 0.8em;
@@ -152,13 +156,18 @@
 		text-align: left;
 	}
 }
-/*########################TELA DE PESQUISA PRODUSTO##################################*/
-/*#########CONFIGURANDO 0 ALINHAMENTO DAS COLUNAS DAS TABELAS PESQUISA PRODUTOS##########*/
+
+/*#########CONFIGURANDO 0 ALINHAMENTO NO CENTRO DAS COLUNAS DAS TABELAS ##########*/
+/*########################PRODUSTO##########################*/
 .ui-widget-content .ve-codigoPesquisaProdutos,
 .ui-widget-content .ve-editarPesquisaProdutos,
 .ui-widget-content .ve-espessuraPesquisaProdutos,
 .ui-widget-content .ve-tipoVidroPesquisaProdutos,
-.ui-widget-content .ve-estoquePesquisaProdutos
+.ui-widget-content .ve-estoquePesquisaProdutos,
+
+/*########################USUÁRIOS##########################*/
+.ui-widget-content .ve-botaoAcoesPesquisaUsuarios,
+.ui-widget-content .ve-emailPesquisarUsuarios
 	{
 		text-align: center;
 	}
