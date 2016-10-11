@@ -33,15 +33,21 @@
 					<p:inputText id="nome" />
 					
 					<p:outputLabel value="Tipo" for="tipo"/>
-					<p:selectOneMenu id="tipo"> 
-						<f:selectItem itemLabel="Selecione o tipo do Vidro"/>
-						<f:selectItem itemLabel="Incolor" itemValue="1"/>
-						<f:selectItem itemLabel="Fumê" itemValue="2"/>
-						<f:selectItem itemLabel="Verde" itemValue="3"/>
+					<p:selectOneRadio id="tipo" layout="responsive" columns="2"> 
+						<f:selectItem itemLabel="COMUM"/>
+						<f:selectItem itemLabel="TEMPERADO"/>
+					</p:selectOneRadio>
+					
+					<p:outputLabel value="Modelo do Vidro" for="modeloVidro"/>
+					<p:selectOneMenu id="modeloVidro" > 
+						<f:selectItem itemLabel="Selecione o Modelo do Vidro"/>
+						<f:selectItem itemLabel="incolor" itemValue="1"/>
+						<f:selectItem itemLabel="fume" itemValue="2"/>
+						<f:selectItem itemLabel="verde" itemValue="3"/>
 					</p:selectOneMenu>
 					
 					<p:outputLabel value="Espessura" for="espessura"/>
-					<p:selectOneMenu id="espessura"> 
+					<p:selectOneMenu id="espessura" > 
 						<f:selectItem itemLabel="Selecione a espessura do Vidro"/>
 						<f:selectItem itemLabel="8 mm" itemValue="1"/>
 						<f:selectItem itemLabel="10 mm" itemValue="2"/>

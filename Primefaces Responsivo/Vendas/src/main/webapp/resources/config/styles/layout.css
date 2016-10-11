@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/*ve-topo*/
+/*###################CONFIGURAÇÃO DO TOPO POSIÇÃO, COR E ETC###########################*/
 .ve-topo
 {
 	position: fixed;
@@ -13,17 +13,114 @@
 	background: #04abfb;
 }
 
-/*modificando a imagem da logo*/
+/*##########################CONFIGURANDO A IMAGEM DO LOGO##############################*/
 .ve-topo > a img
 {
 	margin-left: 10px;
 	margin-top: 10px;
 }
 
+/*###########CONFIGURANDO O BOTÃO PARA VISUALIZAR O MENU####################*/
+.ve-botaoMudarMenu {
+	float: right;
+	line-height: 50px;
+	margin-right: 15px;
+	
+	color: #fff;
+}
+
+/*###########CONFIGURAÇÃO DO MENU LATERAL DEFININDO TAMANHO, POSIÇÃO E ETC############### */
+.ve-menuLateral {
+	position: fixed;
+	top: 50px;
+	bottom: 0;
+	left: 0;
+	width: 210px;
+	margin-left: -211px;
+	z-index: 9998;
+	transition: margin-left 0.5s;
+	overflow-y: auto;
+	
+	background-color: #f6f6f6;
+	border-right: 1px solid #eaeaea;
+}
+
+.ve-menuLateral.is-selecionado 
+{
+	margin-left: 0px;
+}
+
+@media (min-width: 960px) {
+	.ve-menuLateral {
+		margin-left: 0px;
+	}
+	
+	.ve-menuLateral.is-selecionado {
+		margin-left: -211px;
+	}
+}
+
+/*###########FONTE DO MENU LATERAL INTERNO################*/
+.ve-menuLateralInterno {
+	font-size: 1.1em;
+}
+
+/*###########CONFIGURAÇÃO DOS ITENS DA MINHA LISTA################*/
+.ve-menuLateralInterno > ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/*###########CONFIGURAÇÃO DO LINK DA MINHA LISTA A TAG <a>################*/
+.ve-menuLateralInterno > ul a {
+	display: block;
+	padding: 10px 15px;
+	
+	text-decoration: none;
+	font-weight: 500;
+	color: #373737;
+} 
+
+/*###########CONFIGURAÇÃO DOS ICONES DA MINHA LISTA################*/
+.ve-menuLateralInterno > ul i {
+	margin-right: 6px;
+}
+
+/*###########QUANDO O MOUSE PASSAR POR CIMA DO ELEMENTO ELE VAI CRIAR UMA COR DIFERENTE############*/
+.ve-menuLateralInterno > ul a:hover, .ve-menuLateralInterno > ul a:focus {
+	background-color: #dfdfdf;
+}
+
+/*###########ELEMENTO CLICADO OU SELECIONADO FICA AZUL################*/
+.ve-menuLateralInterno > ul .ve-teste.is-selecionado {
+	border-left: 3px solid #1e94d2;
+	background-color: #f3f3f3;
+}
+
+/*###########ELEMENTO CLICADO OU SELECIONADO FICA AZUL################*/
+.ve-menuLateralInterno > ul .ve-teste.is-selecionado a {
+	margin-left: -3px;
+	color: #1e94d2;
+}
+
+/*###########CONFIGURANDO O CORPO DA PAGINA################*/
 .ve-corpo
 {
 	margin-top: 70px;
 	margin-bottom: 20px;
+	transition: margin-left 0.5s;
+}
+
+/*###########CORPO RESPONSIVO################*/
+@media (min-width: 960px) {
+	.ve-corpo {
+		margin-left: 210px;
+	}
+	
+	.ve-corpo.is-selecionado {
+		margin-left: 0;
+	}
 }
 
 /*definindo onde vai ficar o ajax na tela*/

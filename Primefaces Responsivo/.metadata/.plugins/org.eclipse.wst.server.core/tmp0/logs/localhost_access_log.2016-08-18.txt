@@ -1,0 +1,14 @@
+127.0.0.1 - - [18/Aug/2016:18:46:52 -0300] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [18/Aug/2016:18:46:57 -0300] "GET /Vendas/clientes/PesquisaClientes.xhtml HTTP/1.1" 200 43137
+0:0:0:0:0:0:0:1 - - [18/Aug/2016:18:46:57 -0300] "GET /Vendas/javax.faces.resource/styles/layout.css.xhtml;jsessionid=E61CF8BB69DE8D3D2422F7D74F25C797?ln=config HTTP/1.1" 200 489
+0:0:0:0:0:0:0:1 - - [18/Aug/2016:18:46:57 -0300] "GET /Vendas/javax.faces.resource/jquery/jquery.js.xhtml;jsessionid=E61CF8BB69DE8D3D2422F7D74F25C797?ln=primefaces&v=6.0 HTTP/1.1" 200 107785
+0:0:0:0:0:0:0:1 - - [18/Aug/2016:18:46:57 -0300] "GET /Vendas/javax.faces.resource/styles/conteudo.css.xhtml;jsessionid=E61CF8BB69DE8D3D2422F7D74F25C797?ln=config HTTP/1.1" 200 6772
+0:0:0:0:0:0:0:1 - - [18/Aug/2016:18:46:57 -0300] "GET /Vendas/javax.faces.resource/core.js.xhtml;jsessionid=E61CF8BB69DE8D3D2422F7D74F25C797?ln=primefaces&v=6.0 HTTP/1.1" 200 30554
+0:0:0:0:0:0:0:1 - - [18/Aug/2016:18:46:57 -0300] "GET /Vendas/javax.faces.resource/jquery/jquery-plugins.js.xhtml;jsessionid=E61CF8BB69DE8D3D2422F7D74F25C797?ln=primefaces&v=6.0 HTTP/1.1" 200 245797
+0:0:0:0:0:0:0:1 - - [18/Aug/2016:18:46:57 -0300] "GET /Vendas/javax.faces.resource/components.js.xhtml;jsessionid=E61CF8BB69DE8D3D2422F7D74F25C797?ln=primefaces&v=6.0 HTTP/1.1" 200 357791
+0:0:0:0:0:0:0:1 - - [18/Aug/2016:18:46:57 -0300] "GET /Vendas/javax.faces.resource/images/loading.gif.xhtml;jsessionid=E61CF8BB69DE8D3D2422F7D74F25C797?ln=config HTTP/1.1" 200 2711
+0:0:0:0:0:0:0:1 - - [18/Aug/2016:18:46:57 -0300] "GET /Vendas/javax.faces.resource/images/logo.png.xhtml;jsessionid=E61CF8BB69DE8D3D2422F7D74F25C797?ln=config HTTP/1.1" 200 7062
+0:0:0:0:0:0:0:1 - - [18/Aug/2016:18:46:57 -0300] "GET /Vendas/javax.faces.resource/components.css.xhtml;jsessionid=E61CF8BB69DE8D3D2422F7D74F25C797?ln=primefaces&v=6.0 HTTP/1.1" 200 75403
+0:0:0:0:0:0:0:1 - - [18/Aug/2016:18:46:57 -0300] "GET /Vendas/javax.faces.resource/javascripts/jquery.maskMoney.js.xhtml;jsessionid=E61CF8BB69DE8D3D2422F7D74F25C797?ln=config HTTP/1.1" 200 17683
+0:0:0:0:0:0:0:1 - - [18/Aug/2016:18:46:57 -0300] "GET /Vendas/javax.faces.resource/javascripts/mascaraMoeda.js.xhtml;jsessionid=E61CF8BB69DE8D3D2422F7D74F25C797?ln=config HTTP/1.1" 200 175
+0:0:0:0:0:0:0:1 - - [18/Aug/2016:18:46:58 -0300] "GET /favicon.ico HTTP/1.1" 404 1016

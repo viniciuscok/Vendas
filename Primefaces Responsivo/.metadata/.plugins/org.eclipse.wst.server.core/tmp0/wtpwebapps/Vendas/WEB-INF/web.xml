@@ -4,6 +4,9 @@
   <!-- ####################CONFIGURANDO PAGINA INICIAL################### -->
   <welcome-file-list>
   	<welcome-file>produtos/CadastroProduto.xhtml</welcome-file>
+  	<welcome-file>clientes/CadastroCLiente.xhtml</welcome-file>
+  	<welcome-file>pedidos/CadastroPedido.xhtml</welcome-file>
+  	<welcome-file>usuarios/CadastroUsuario.xhtml</welcome-file>
   </welcome-file-list>
   
   <!-- ####################CONFIG DO TEMA DO BOOTSTRAP################### -->

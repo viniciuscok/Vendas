@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="C:/Users/vinicius/.m2/repository/org/primefaces/themes/bootstrap/1.0.10/bootstrap-1.0.10.jar"/>
+  <path value="C:/Users/vinicius/.m2/repository/org/glassfish/javax.faces/2.2.9/javax.faces-2.2.9.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.2.9.jar/meta-inf/html_basic.tld" project="Vendas"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.2.9.jar/meta-inf/jsf_core.tld" project="Vendas"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.2.9.jar/meta-inf/mojarra_ext.taglib.xml" project="Vendas"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces-2.2.9.jar/meta-inf/mojarra_ext.tld" project="Vendas"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/blue-algaworks/src/main/webapp/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="blue-algaworks"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/vinicius/.m2/repository/org/primefaces/primefaces/5.3/primefaces-5.3.jar">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-5.3.jar/meta-inf/faces-config.xml" project="blue-algaworks"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-5.3.jar/meta-inf/primefaces-p.taglib.xml" project="blue-algaworks"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-primefaces-5.3.jar/meta-inf/primefaces-pm.taglib.xml" project="blue-algaworks"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/vinicius/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar"/>
+ </paths>
+ <includes/>
+ <aliases/>
+ <uris/>
+</kb-project>

@@ -16,7 +16,7 @@
 						styleClass="ve-botaoPesquisarPesquisaPedidos"/>
 				</p:toolbarGroup>
 				<p:toolbarGroup align="right">
-					<p:button value="Novo" icon="fa fa-plus"
+					<p:button value="Novo" icon="fa fa-plus" outcome="/pedidos/CadastroPedido"
 						styleClass="ve-botaoNovoPesquisaPedidos"/>
 				</p:toolbarGroup>
 			</p:toolbar>
@@ -57,7 +57,7 @@
 				var="pedido" style="margin-top: 20px" rows="5" paginator="true" paginatorPosition="bottom"
 				reflow="true">
 				
-				<p:column headerText="Número">
+				<p:column headerText="Número" styleClass="ve-numeroPesquisaPedidos">
 					<h:outputText value="12345" />
 				</p:column>
 				
@@ -65,23 +65,23 @@
 					<h:outputText value="vinicius" />
 				</p:column>
 				
-				<p:column headerText="Vendedor">
+				<p:column headerText="Vendedor" styleClass="ve-vendedorPesquisaPedidos">
 					<h:outputText value="titofsa" />
 				</p:column>
 				
-				<p:column headerText="Data de Criação">
+				<p:column headerText="Data de Criação" styleClass="ve-dataCriacaoPesquisaPedidos">
 					<h:outputText value="06/03/2016" />
 				</p:column>
 				
-				<p:column headerText="Valor Total" style="text-align: right">
+				<p:column headerText="Valor Total" styleClass="ve-valorPesquisaPedidos">
 					<h:outputText value="R$100,00" />
 				</p:column>
 				
-				<p:column headerText="Status">
+				<p:column headerText="Status" styleClass="ve-statusPesquisaPedidos">
 					<h:outputText value="Cancelado" />
 				</p:column>
 				
-				<p:column headerText="Ações">
+				<p:column headerText="Ações" styleClass="ve-editarPesquisaPedidos">
 					<p:button icon="fa fa-edit" title="Editar"/>
 				</p:column>
 				

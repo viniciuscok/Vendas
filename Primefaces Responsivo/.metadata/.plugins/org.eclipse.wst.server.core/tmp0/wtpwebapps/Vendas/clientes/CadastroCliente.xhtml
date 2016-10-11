@@ -18,7 +18,7 @@
 						styleClass="ve-botaoSalvarCadastroCliente"/>
 				</p:toolbarGroup>
 				<p:toolbarGroup align="right">
-					<p:button value="Pesquisar" icon="fa fa-search"
+					<p:button value="Pesquisar" icon="fa fa-search" outcome="/clientes/PesquisaClientes"
 						styleClass="ve-botaoPesquisarCadastroCliente"/>
 				</p:toolbarGroup>
 			</p:toolbar>
@@ -33,7 +33,7 @@
 					<p:inputText id="nome" />
 					
 					<p:outputLabel value="Tipo" for="tipo"/>
-					<p:selectOneRadio id="tipo">
+					<p:selectOneRadio id="tipo" layout="responsive" columns="2">
 						<f:selectItem itemLabel="física" itemValue="fisica"/>
 						<f:selectItem itemLabel="juridica" itemValue="juridica"/>
 					</p:selectOneRadio>
@@ -45,7 +45,33 @@
 					<p:inputText id="email" />
 					
 				</p:panelGrid>
-			</div>		
+				<p:commandButton value="Adicionar Endereço" style="margin-top:10px"/>
+				
+				<p:dataTable id="tabelaCadastroUsuario" paginator="true" reflow="true" 
+					paginatorPosition="bottom" style="margin-top: 10px">
+					
+					<p:column headerText="Logradouro">
+						<h:outputLabel value="avenida maria quiteria"/>
+					</p:column>
+					
+					<p:column headerText="Número">
+						<h:outputLabel value="12345"/>
+					</p:column>
+					
+					<p:column headerText="Complemento">
+						<h:outputLabel value="casa"/>
+					</p:column>
+					
+					<p:column headerText="Cep">
+						<h:outputLabel value="44038030"/>
+					</p:column>
+					
+					<p:column headerText="Cidade/uf">
+						<h:outputLabel value="feira de santana/ba"/>
+					</p:column>
+				</p:dataTable> 		
+			</div>
+			
 		</h:form>		
 	</ui:define>
 	

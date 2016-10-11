@@ -17,7 +17,8 @@
 	<h:outputScript target="body" library="primefaces" name="jquery/jquery.js"/>
 	<h:outputScript target="body" library="config" name="javascripts/jquery.maskMoney.js"/>
 	<h:outputScript target="body" library="config" name="javascripts/mascaraMoeda.js"/>
-	
+	<h:outputScript target="body" library="config" name="javascripts/layout.js"/>
+	<h:outputScript target="body" library="config" name="javascripts/navegacao.js"/>
 	
 	
 	
@@ -35,10 +36,31 @@
 	<header class="ve-topo">
 		<h:link>
 			<h:graphicImage library="config" name="images/logo.png"/>
+			
+			<a href="#" class="ve-botaoMudarMenu js-botaoMudarMenu"><i class="fa fa-bars"></i></a>
 		</h:link>
 	</header>
-	
-	<section class="ve-corpo">
+	<aside class="ve-menuLateral  js-menuLateral">
+
+		<nav class="ve-menuLateralInterno">
+			<ul>
+				<li class="ve-teste ">
+					<h:link><i class="fa  fa-fw  fa-home"></i>Dashboard</h:link>
+				</li>
+				<li class="ve-teste ">
+					<h:link><i class="fa  fa-fw  fa-user"></i>Clientes</h:link>
+				</li>
+				<li class="ve-teste ">
+					<h:link><i class="fa  fa-fw  fa-file-text"></i>Relatórios</h:link>
+				</li>
+				<li class="ve-teste ">
+					<h:link><i class="fa  fa-fw  fa-cog"></i>Configurações</h:link>
+				</li>
+			</ul>
+		</nav>
+
+	</aside>
+	<section class="ve-corpo js-corpo">
 		<ui:insert name="corpo"/>	
 	</section>
 	

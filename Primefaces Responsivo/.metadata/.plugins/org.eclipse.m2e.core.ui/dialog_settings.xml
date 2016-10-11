@@ -37,6 +37,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\vinicius\Desktop\layout-primefaces-patagonia-master"/>
 			<item value="C:\Users\vinicius\ARQUIIVOS\Primefaces Responsivo\tabview-responsivo"/>
 		</list>
 		<list key="projectNameTemplate">
