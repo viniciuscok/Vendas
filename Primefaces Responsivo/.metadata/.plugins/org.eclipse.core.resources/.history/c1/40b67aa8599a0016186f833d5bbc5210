@@ -1,0 +1,59 @@
+<ui:composition template="/WEB-INF/templates/Layout.xhtml"
+ 	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" >
+
+	<ui:define name="titulo">Novo Cliente</ui:define>
+	<ui:define name="corpo">
+		<h1>Novo Cliente</h1>
+			
+		<h:form id="formCadastroCliente">	
+			<p:toolbar>
+				<p:toolbarGroup>
+					<p:button value="Novo" icon="fa fa-plus" outcome="/clientes/CadastroCliente" 
+						styleClass="ve-botaoNovoCadastroCliente"/>
+					<p:commandButton value="Salvar" icon="fa fa-save" id="botaoSalvarCadastroCliente"
+						styleClass="ve-botaoSalvarCadastroCliente"/>
+				</p:toolbarGroup>
+				<p:toolbarGroup align="right">
+					<p:button value="Pesquisar" icon="fa fa-search" outcome="/clientes/PesquisaClientes"
+						styleClass="ve-botaoPesquisarCadastroCliente"/>
+				</p:toolbarGroup>
+			</p:toolbar>
+			<div class="ui-fluid">
+				<p:panelGrid columns="2" id="panelGrridCadastroCliente" layout="grid" 
+					columnClasses="ui-grid-col-2,ui-grid-col-10" styleClass="ve-panelGridCadastroCliente">
+					
+					<p:outputLabel value="Codigo" for="codigo"/>
+					<p:inputText id="codigo" disabled="true" value="1"/>
+					
+					<p:outputLabel value="Nome" for="nome"/>
+					<p:inputText id="nome" />
+					
+					<p:outputLabel value="Tipo" for="tipo"/>
+					<p:selectOneRadio id="tipo" layout="responsive" columns="2">
+						<f:selectItem itemLabel="física" itemValue="fisica"/>
+						<f:selectItem itemLabel="juridica" itemValue="juridica"/>
+					</p:selectOneRadio>
+					
+					<p:outputLabel value="CPF/CNPJ" for="documento"/>
+					<p:inputText id="documento" />
+					
+					<p:outputLabel value="Contato" for="contato"/>
+					<p:button id="contato" value="ADD CONTATO" title="Adicionar Contato"/> 
+					
+					<p:outputLabel value="Endereço" for="endereco"/>
+					<p:button id="endereco" value="ADD ENDEREÇO" title="Adicionar Endereço"/> 
+					
+					<p:outputLabel value="OBS:" for="observacao"/>
+					<p:inputTextarea id="observacao" scrollHeight="true"/>
+				</p:panelGrid>
+		
+			</div>
+			
+		</h:form>		
+	</ui:define>
+	
+</ui:composition>
