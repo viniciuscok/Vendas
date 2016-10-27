@@ -1,0 +1,17 @@
+package br.com.vendas.model;
+
+import java.io.Serializable;
+
+public class Contato implements Serializable
+{
+	private static final long serialVersionUID = 1L;
+	
+	//atributos da classe contato
+	private Long codigo;
+	private String telefone;
+	private String email;
+	private String celular;
+	private String whatsapp;
+	private String site;
+
+}

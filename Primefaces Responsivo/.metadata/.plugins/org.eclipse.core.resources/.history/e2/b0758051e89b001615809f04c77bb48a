@@ -1,0 +1,17 @@
+package br.com.vendas.model;
+
+import java.io.Serializable;
+
+public class Clientee implements Serializable
+{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	private Long codigo;
+	private String nome;
+	
+
+}
