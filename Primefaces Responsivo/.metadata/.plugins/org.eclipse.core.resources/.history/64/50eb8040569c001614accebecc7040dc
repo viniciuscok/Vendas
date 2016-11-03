@@ -1,0 +1,27 @@
+package teste;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import br.com.vendas.model.Clientee;
+
+public class Teste 
+{
+	public static void main(String[] args) 
+	{
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("exemploPU");
+		EntityManager em = emf.createEntityManager();
+		
+		
+
+		Clientee vini = new Clientee();
+		vini.setNome("tito");
+		manager.getTransaction().begin();
+		manager.persist(vini);
+		manager.getTransaction().commit();
+		
+		System.out.println("cliente salvo com sucesso");
+	}
+
+}
