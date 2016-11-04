@@ -77,6 +77,7 @@ public class JsfExceptionHandler extends ExceptionHandlerWrapper {
 		return null;
 	}
 	
+	
 	private void redirect(String page) {
 		try {
 			FacesContext facesContext = FacesContext.getCurrentInstance();

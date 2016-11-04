@@ -1,0 +1,59 @@
+package br.com.vendas.controller;
+
+import java.io.Serializable;
+
+import javax.faces.view.ViewScoped;
+import javax.inject.Inject;
+import javax.inject.Named;
+
+import br.com.vendas.model.Cliente;
+import br.com.vendas.service.CadastroClienteService;
+import br.com.vendas.util.jsf.FacesUtil;
+
+@Named
+@ViewScoped
+public class CadastroClienteBean implements Serializable
+{
+	private static final long serialVersionUID = 1L;
+	
+	@Inject
+	private CadastroClienteService cadastroClienteService;
+	
+	private Cliente cliente;
+	
+	public CadastroClienteBean()
+	{
+		this.cliente = new Cliente();
+	}
+	
+	public void salvar()
+	{
+		try 
+		{
+			
+			this.cadastroClienteService.salvar(cliente);
+			FacesUtil.addInfoMessage("cliente salvo com sucesso");
+		} catch (NegocioException e) 
+		{
+			FacesUtil.addErrorMessage(e.getMessage());
+		}
+	}
+	
+	//@PostConstruct
+	//public void init()
+	//{
+	//	this.cliente = new Cliente();
+	//}
+
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+	
+	
+	
+
+}

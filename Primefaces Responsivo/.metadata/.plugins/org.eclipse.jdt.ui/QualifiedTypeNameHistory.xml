@@ -24,15 +24,18 @@
 <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
 <fullyQualifiedTypeName name="br.com.vendas.dao.CadastroClienteDAO"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
-<fullyQualifiedTypeName name="br.com.vendas.service.CadastroClienteService"/>
 <fullyQualifiedTypeName name="javax.inject.Inject"/>
 <fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
 <fullyQualifiedTypeName name="org.omnifaces.util.Faces"/>
 <fullyQualifiedTypeName name="br.com.vendas.util.jsf.FacesUtil"/>
 <fullyQualifiedTypeName name="javax.inject.Named"/>
-<fullyQualifiedTypeName name="javax.faces.view.ViewScoped"/>
-<fullyQualifiedTypeName name="br.com.vendas.util.jpa.Transactional"/>
-<fullyQualifiedTypeName name="br.com.vendas.model.Cliente"/>
 <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.Transient"/>
+<fullyQualifiedTypeName name="javax.faces.bean.ViewScoped"/>
+<fullyQualifiedTypeName name="br.com.vendas.controller.CadastroClienteBean"/>
+<fullyQualifiedTypeName name="br.com.vendas.model.Cliente"/>
+<fullyQualifiedTypeName name="javax.faces.view.ViewScoped"/>
+<fullyQualifiedTypeName name="br.com.vendas.service.CadastroClienteService"/>
 <fullyQualifiedTypeName name="br.com.vendas.service.NegocioException"/>
+<fullyQualifiedTypeName name="br.com.vendas.util.jpa.Transactional"/>
 </qualifiedTypeNameHistroy>

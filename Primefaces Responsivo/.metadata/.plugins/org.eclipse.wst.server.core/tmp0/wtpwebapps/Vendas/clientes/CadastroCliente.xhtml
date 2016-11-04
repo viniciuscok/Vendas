@@ -18,7 +18,7 @@
 						outcome="/clientes/CadastroCliente"
 						styleClass="ve-botaoNovoCadastroCliente" />
 					<p:commandButton value="Salvar" icon="fa fa-save"
-						id="botaoSalvarCadastroCliente" action="#{cadastroClienteBean.salvar()}" update="@form"
+						id="botaoSalvarCadastroCliente" action="#{cadastroClienteBean.salvar()}"
 						styleClass="ve-botaoSalvarCadastroCliente" />
 				</p:toolbarGroup>
 				<p:toolbarGroup align="right">
@@ -32,9 +32,9 @@
 					layout="grid" columnClasses="ui-grid-col-2,ui-grid-col-10"
 					styleClass="ve-panelGridCadastroCliente">
 
-					<p:outputLabel value="Codigo" for="codigo" rendered="false"/>
+					<p:outputLabel value="Codigo" for="codigo" rendered="true"/>
 					<p:inputText id="codigo" disabled="true" value="#{cadastroClienteBean.cliente.codigo}" 
-					rendered="false"/>
+					rendered="true"/>
 
 					<p:outputLabel value="Nome" for="nome" />
 					<p:inputText id="nome" value="#{cadastroClienteBean.cliente.nome}"/>

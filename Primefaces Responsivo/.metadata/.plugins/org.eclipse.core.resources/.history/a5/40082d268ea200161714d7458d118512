@@ -1,0 +1,65 @@
+<ui:composition template="/WEB-INF/templates/Layout.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+	<ui:define name="titulo">Novo Cliente</ui:define>
+	<ui:define name="corpo">
+		<h1>Novo Cliente</h1>
+		
+		<p:messages autoUpdate="true" closable="true"/>
+		
+		<h:form id="formCadastroCliente">
+			<p:toolbar>
+				<p:toolbarGroup>
+					<p:button value="Novo" icon="fa fa-plus"
+						outcome="/clientes/CadastroCliente"
+						styleClass="ve-botaoNovoCadastroCliente" />
+					<p:commandButton value="Salvar" icon="fa fa-save"
+						id="botaoSalvarCadastroCliente" action="#{cadastroClienteBean.salvar()}" update="@form"
+						styleClass="ve-botaoSalvarCadastroCliente" />
+				</p:toolbarGroup>
+				<p:toolbarGroup align="right">
+					<p:button value="Pesquisar" icon="fa fa-search"
+						outcome="/clientes/PesquisaClientes"
+						styleClass="ve-botaoPesquisarCadastroCliente" />
+				</p:toolbarGroup>
+			</p:toolbar>
+			<div class="ui-fluid">
+				<p:panelGrid columns="2" id="panelGrridCadastroCliente"
+					layout="grid" columnClasses="ui-grid-col-2,ui-grid-col-10"
+					styleClass="ve-panelGridCadastroCliente">
+
+					<p:outputLabel value="Codigo" for="codigo" rendered="false"/>
+					<p:inputText id="codigo" disabled="true" value="#{cadastroClienteBean.cliente.codigo}" 
+					rendered="false"/>
+
+					<p:outputLabel value="Nome" for="nome" />
+					<p:inputText id="nome" value="#{cadastroClienteBean.cliente.nome}"/>
+
+					<p:outputLabel value="Tipo" for="tipo" />
+					<p:selectOneRadio id="tipo" layout="responsive" columns="2">
+						<f:selectItem itemLabel="física" itemValue="fisica" />
+						<f:selectItem itemLabel="juridica" itemValue="juridica" />
+					</p:selectOneRadio>
+
+					<p:outputLabel value="CPF/CNPJ" for="documento" />
+					<p:inputText id="documento" />
+
+					<ui:include src="/WEB-INF/templates/clientes/ContatoCliente.xhtml"></ui:include>
+					
+					<ui:include src="/WEB-INF/templates/clientes/EnderecoCliente.xhtml"></ui:include>
+					
+					<p:outputLabel value="OBS:" for="observacao" />
+					<p:inputTextarea id="observacao" autoResize="true" />
+
+				</p:panelGrid>
+
+			</div>
+
+		</h:form>
+	</ui:define>
+
+</ui:composition>

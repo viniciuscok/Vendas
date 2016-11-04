@@ -12,15 +12,15 @@ public class Teste
 {
 	public static void main(String[] args) 
 	{
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("VendasPU");
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("PedidoPU");
 		EntityManager em = emf.createEntityManager();
 		
 		
 
-		Cliente clientee = new Cliente();
-		clientee.setNome("Vinicius");
+		Cliente cliente = new Cliente();
+		cliente.setNome("Vinicius");
 		em.getTransaction().begin();
-		em.persist(clientee);
+		em.persist(cliente);
 		em.getTransaction().commit();
 		
 		

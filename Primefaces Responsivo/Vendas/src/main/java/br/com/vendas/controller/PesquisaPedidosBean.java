@@ -3,11 +3,8 @@ package br.com.vendas.controller;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.RequestScoped;
-
-@ManagedBean
-@RequestScoped
+//@ManagedBean
+//@RequestScoped
 public class PesquisaPedidosBean 
 {
 	private List<Integer> pedidosFiltrados;

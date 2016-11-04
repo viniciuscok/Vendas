@@ -6,8 +6,8 @@ import javax.inject.Inject;
 
 import br.com.vendas.dao.CadastroClienteDAO;
 import br.com.vendas.model.Cliente;
-import br.com.vendas.model.Cliente123;
 import br.com.vendas.util.jpa.Transactional;
+
 
 public class CadastroClienteService implements Serializable
 {
