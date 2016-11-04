@@ -8,7 +8,9 @@
 	<ui:define name="titulo">Novo Cliente</ui:define>
 	<ui:define name="corpo">
 		<h1>Novo Cliente</h1>
-
+		
+		<p:messages autoUpdate="true" closable="true"/>
+		
 		<h:form id="formCadastroCliente">
 			<p:toolbar>
 				<p:toolbarGroup>
@@ -16,7 +18,7 @@
 						outcome="/clientes/CadastroCliente"
 						styleClass="ve-botaoNovoCadastroCliente" />
 					<p:commandButton value="Salvar" icon="fa fa-save"
-						id="botaoSalvarCadastroCliente"
+						id="botaoSalvarCadastroCliente" action="#{cadastroClienteBean.salvar()}" update="@form"
 						styleClass="ve-botaoSalvarCadastroCliente" />
 				</p:toolbarGroup>
 				<p:toolbarGroup align="right">
@@ -31,10 +33,11 @@
 					styleClass="ve-panelGridCadastroCliente">
 
 					<p:outputLabel value="Codigo" for="codigo" rendered="false"/>
-					<p:inputText id="codigo" disabled="true" value="1" rendered="false"/>
+					<p:inputText id="codigo" disabled="true" value="#{cadastroClienteBean.cliente.codigo}" 
+					rendered="false"/>
 
 					<p:outputLabel value="Nome" for="nome" />
-					<p:inputText id="nome" />
+					<p:inputText id="nome" value="#{cadastroClienteBean.cliente.nome}"/>
 
 					<p:outputLabel value="Tipo" for="tipo" />
 					<p:selectOneRadio id="tipo" layout="responsive" columns="2">

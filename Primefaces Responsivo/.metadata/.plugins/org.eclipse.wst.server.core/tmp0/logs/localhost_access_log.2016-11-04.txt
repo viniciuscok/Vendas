@@ -1,0 +1,17 @@
+127.0.0.1 - - [04/Nov/2016:00:19:46 -0300] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [04/Nov/2016:00:19:48 -0300] "GET /Vendas/javax.faces.resource/jquery/jquery.js.xhtml?ln=primefaces&v=6.0 HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Nov/2016:00:19:48 -0300] "GET /Vendas/javax.faces.resource/jquery/jquery-plugins.js.xhtml?ln=primefaces&v=6.0 HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Nov/2016:00:19:48 -0300] "GET /Vendas/javax.faces.resource/core.js.xhtml?ln=primefaces&v=6.0 HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Nov/2016:00:19:48 -0300] "GET /Vendas/javax.faces.resource/components.js.xhtml?ln=primefaces&v=6.0 HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Nov/2016:00:19:48 -0300] "GET /Vendas/clientes/CadastroCliente.xhtml HTTP/1.1" 200 22874
+0:0:0:0:0:0:0:1 - - [04/Nov/2016:00:19:48 -0300] "GET /Vendas/javax.faces.resource/javascripts/jquery.maskMoney.js.xhtml?ln=config HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Nov/2016:00:19:52 -0300] "POST /Vendas/clientes/CadastroCliente.xhtml HTTP/1.1" 200 20187
+127.0.0.1 - - [04/Nov/2016:00:21:19 -0300] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [04/Nov/2016:00:21:20 -0300] "GET /Vendas/javax.faces.resource/jquery/jquery.js.xhtml?ln=primefaces&v=6.0 HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Nov/2016:00:21:20 -0300] "GET /Vendas/javax.faces.resource/components.js.xhtml?ln=primefaces&v=6.0 HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Nov/2016:00:21:20 -0300] "GET /Vendas/javax.faces.resource/jquery/jquery-plugins.js.xhtml?ln=primefaces&v=6.0 HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Nov/2016:00:21:20 -0300] "GET /Vendas/javax.faces.resource/core.js.xhtml?ln=primefaces&v=6.0 HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Nov/2016:00:21:20 -0300] "GET /Vendas/clientes/CadastroCliente.xhtml HTTP/1.1" 200 22874
+0:0:0:0:0:0:0:1 - - [04/Nov/2016:00:21:20 -0300] "GET /Vendas/javax.faces.resource/javascripts/jquery.maskMoney.js.xhtml?ln=config HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [04/Nov/2016:00:21:26 -0300] "POST /Vendas/clientes/CadastroCliente.xhtml HTTP/1.1" 200 133
+0:0:0:0:0:0:0:1 - - [04/Nov/2016:00:21:26 -0300] "GET /Vendas/Erro.xhtml HTTP/1.1" 404 1100

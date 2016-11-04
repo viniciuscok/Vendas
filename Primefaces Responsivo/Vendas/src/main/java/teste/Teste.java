@@ -6,7 +6,7 @@ import javax.persistence.Persistence;
 
 
 
-import br.com.vendas.model.Clientee;
+import br.com.vendas.model.Cliente;
 
 public class Teste 
 {
@@ -17,7 +17,7 @@ public class Teste
 		
 		
 
-		Clientee clientee = new Clientee();
+		Cliente clientee = new Cliente();
 		clientee.setNome("Vinicius");
 		em.getTransaction().begin();
 		em.persist(clientee);

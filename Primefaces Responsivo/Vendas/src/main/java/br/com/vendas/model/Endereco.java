@@ -13,7 +13,7 @@ public class Endereco implements Serializable
 	private String cidade;
 	private String cep;
 	private String uf;
-	private Cliente cliente;
+	private Cliente123 cliente;
 
 
 											//Método construtor 
@@ -99,12 +99,12 @@ public class Endereco implements Serializable
 	}
 
 
-	public Cliente getCliente() {
+	public Cliente123 getCliente() {
 		return cliente;
 	}
 
 
-	public void setCliente(Cliente cliente) {
+	public void setCliente(Cliente123 cliente) {
 		this.cliente = cliente;
 	}
 	

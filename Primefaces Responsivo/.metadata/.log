@@ -9239,3 +9239,124 @@ java.io.FileNotFoundException: C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENT
 	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2283)
 	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$4.run(IDEWorkbenchAdvisor.java:456)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+!SESSION 2016-11-03 18:35:44.498 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-11-03 18:36:02.852
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Vinicius'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface.text 2 0 2016-11-03 18:37:17.522
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2016-11-03 18:37:17.523
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2016-11-03 18:55:01.927
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2016-11-03 18:55:01.929
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2016-11-03 19:00:00.670
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2016-11-03 19:00:00.671
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2016-11-03 22:13:39.543 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-11-03 22:14:15.180
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Vinicius'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jface.text 2 0 2016-11-03 22:16:26.942
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2016-11-03 22:16:26.943
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2016-11-03 22:17:02.454
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2016-11-03 22:17:02.455
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jdt.launching 4 150 2016-11-03 22:22:32.867
+!MESSAGE The archive: C:/apache-tomcat-8.0.35/bin/bootstrap.jar which is referenced by the classpath, does not exist.
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2016-11-03 22:23:19.930
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2016-11-03 22:23:48.352
+!MESSAGE Could not publish server configuration for apache-tomcat-8.0.28 at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2016-11-03 22:23:48.352
+!MESSAGE Multiple Contexts have a path of "/Vendas".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2016-11-03 22:23:58.997
+!MESSAGE Could not publish server configuration for apache-tomcat-8.0.28 at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2016-11-03 22:23:58.997
+!MESSAGE Multiple Contexts have a path of "/Vendas".
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2016-11-03 22:24:32.483
+!MESSAGE Could not publish server configuration for apache-tomcat-8.0.28 at localhost.
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2016-11-03 22:24:32.483
+!MESSAGE Multiple Contexts have a path of "/Vendas".
+
+!ENTRY org.eclipse.wst.server.core 4 0 2016-11-03 22:25:02.303
+!MESSAGE Server apache-tomcat-8.0.28 at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2016-11-03 22:25:28.992
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.core 4 0 2016-11-03 23:49:07.623
+!MESSAGE Server apache-tomcat-8.0.28 at localhost (2) failed to start.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2016-11-03 23:57:39.403
+!MESSAGE Publishing failed with multiple errors
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2016-11-03 23:57:39.404
+!MESSAGE Could not delete C:/Users/Vinicius/ARQUIVOS/Primefaces Responsivo/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/Vendas/WEB-INF/lib/hibernate-core-4.3.8.Final.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2016-11-03 23:57:39.404
+!MESSAGE Could not delete C:/Users/Vinicius/ARQUIVOS/Primefaces Responsivo/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/Vendas/WEB-INF/lib/jboss-logging-annotations-1.2.0.Beta1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2016-11-03 23:57:39.404
+!MESSAGE Could not delete C:/Users/Vinicius/ARQUIVOS/Primefaces Responsivo/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/Vendas/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2016-11-03 23:57:39.405
+!MESSAGE Could not delete C:/Users/Vinicius/ARQUIVOS/Primefaces Responsivo/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/Vendas/WEB-INF/lib/xml-apis-1.0.b2.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2016-11-03 23:57:39.405
+!MESSAGE Could not delete C:/Users/Vinicius/ARQUIVOS/Primefaces Responsivo/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/Vendas/WEB-INF/lib/hibernate-commons-annotations-4.0.5.Final.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2016-11-03 23:57:39.405
+!MESSAGE Could not delete C:/Users/Vinicius/ARQUIVOS/Primefaces Responsivo/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/Vendas/WEB-INF/lib/javassist-3.18.1-GA.jar. May be locked by another process.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2016-11-03 23:57:40.889
+!MESSAGE Publishing failed with multiple errors
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2016-11-03 23:57:40.889
+!MESSAGE Could not delete C:/Users/Vinicius/ARQUIVOS/Primefaces Responsivo/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/Vendas/WEB-INF/lib/hibernate-core-4.3.8.Final.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2016-11-03 23:57:40.889
+!MESSAGE Could not delete C:/Users/Vinicius/ARQUIVOS/Primefaces Responsivo/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/Vendas/WEB-INF/lib/jboss-logging-annotations-1.2.0.Beta1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2016-11-03 23:57:40.889
+!MESSAGE Could not delete C:/Users/Vinicius/ARQUIVOS/Primefaces Responsivo/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/Vendas/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2016-11-03 23:57:40.889
+!MESSAGE Could not delete C:/Users/Vinicius/ARQUIVOS/Primefaces Responsivo/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/Vendas/WEB-INF/lib/xml-apis-1.0.b2.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2016-11-03 23:57:40.889
+!MESSAGE Could not delete C:/Users/Vinicius/ARQUIVOS/Primefaces Responsivo/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/Vendas/WEB-INF/lib/hibernate-commons-annotations-4.0.5.Final.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2016-11-03 23:57:40.889
+!MESSAGE Could not delete C:/Users/Vinicius/ARQUIVOS/Primefaces Responsivo/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/Vendas/WEB-INF/lib/javassist-3.18.1-GA.jar. May be locked by another process.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2016-11-03 23:58:36.745
+!MESSAGE Several ports (8005, 8484, 8009) required by apache-tomcat-8.0.28 at localhost (2) are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
