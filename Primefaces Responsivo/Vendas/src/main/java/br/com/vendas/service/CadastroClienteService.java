@@ -20,9 +20,9 @@ public class CadastroClienteService implements Serializable
 	@Transactional
 	public void salvar(Cliente cliente) throws NegocioException
 	{
-		if(cliente.getNome().trim().equals(""))
+		if(cliente.getNome().trim().equals("") || cliente.getContatos()== null)
 		{
-			new NegocioException("Favor informa o nome do usuário");
+			new NegocioException("Usuário não pode ser cadastrado");
 		}
 		
 		cadastroClienteDAO.salvar(cliente);

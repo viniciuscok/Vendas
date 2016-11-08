@@ -1,18 +1,28 @@
 package br.com.vendas.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.persistence.Transient;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.NotBlank;
+import org.hibernate.validator.constraints.br.CPF;
 
 @Entity
 @Table(name="cliente")
@@ -36,9 +46,9 @@ public class Cliente implements Serializable
 //Construtor inicializando minha lista de endereços, lista de contatos e atribuindo o tipo de pessoa como fisica.
 	public Cliente() 
 	{
-		//this.tipoPessoa = TipoPessoa.FISICA;
+		this.tipoPessoa = TipoPessoa.FISICA;
 		//this.enderecos = new ArrayList<>();
-		//this.contatos = new ArrayList<>();
+		this.contatos = new ArrayList<>();
 	}
 
 												//Método getters e Setters 
@@ -47,7 +57,7 @@ public class Cliente implements Serializable
 //
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="cod_cliente", unique=true)
+	@Column(name="cod_cliente", nullable=false, unique=true)
 	public Long getCodigo() {
 		return codigo;
 	}
@@ -56,8 +66,8 @@ public class Cliente implements Serializable
 		this.codigo = codigo;
 	}
 
-	@NotBlank
-	@Column(name="nm_cliente")
+	@NotBlank 
+	@Column(name="nm_cliente", nullable=false, length=100)
 	public String getNome() {
 		return nome;
 	}
@@ -66,7 +76,8 @@ public class Cliente implements Serializable
 		this.nome = nome;
 	}
 
-	@Transient
+	@CPF @Size(max=30)
+	@Column(name="nr_documento", nullable=false, unique=true, length=30)
 	public String getDocumento() {
 		return documento;
 	}
@@ -74,7 +85,10 @@ public class Cliente implements Serializable
 	public void setDocumento(String documento) {
 		this.documento = documento;
 	}
-	@Transient
+	
+	@NotNull
+	@Temporal(TemporalType.TIMESTAMP)
+	@Column(name="data_cadastro", nullable=false)
 	public Date getDataCadastro() {
 		return dataCadastro;
 	}
@@ -82,7 +96,8 @@ public class Cliente implements Serializable
 	public void setDataCadastro(Date dataCadastro) {
 		this.dataCadastro = dataCadastro;
 	}
-	@Transient
+	
+	@Column(name="nm_observacao", nullable=true, columnDefinition="text")
 	public String getObservacao() {
 		return observacao;
 	}
@@ -90,7 +105,10 @@ public class Cliente implements Serializable
 	public void setObservacao(String observacao) {
 		this.observacao = observacao;
 	}
-	@Transient
+	
+	@NotNull
+	@Enumerated(EnumType.STRING)
+	@Column(name="tipo_pessoa", nullable=false, length=30)
 	public TipoPessoa getTipoPessoa() {
 		return tipoPessoa;
 	}
@@ -98,6 +116,9 @@ public class Cliente implements Serializable
 	public void setTipoPessoa(TipoPessoa tipoPessoa) {
 		this.tipoPessoa = tipoPessoa;
 	}
+	
+	//@OneToMany(mappedBy="cliente", cascade= CascadeType.ALL)
+	//@JoinColumn(name="cod_endereco", nullable=false)
 	@Transient
 	public List<Endereco> getEnderecos() {
 		return enderecos;
@@ -106,7 +127,9 @@ public class Cliente implements Serializable
 	public void setEnderecos(List<Endereco> enderecos) {
 		this.enderecos = enderecos;
 	}
-	@Transient
+	
+	@NotNull
+	@OneToMany(mappedBy="cliente", cascade= CascadeType.ALL)
 	public List<Contato> getContatos() {
 		return contatos;
 	}
@@ -115,6 +138,9 @@ public class Cliente implements Serializable
 		this.contatos = contatos;
 	}
 
+								//Método Equals() e Hashcode() 
+//------------------------------------------------------------------------------------------------------------------------
+						
 	@Override
 	public int hashCode() {
 		final int prime = 31;

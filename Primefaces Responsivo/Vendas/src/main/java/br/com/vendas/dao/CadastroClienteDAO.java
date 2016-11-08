@@ -16,7 +16,9 @@ public class CadastroClienteDAO implements Serializable
 	
 	public void salvar(Cliente cliente)
 	{
-		manager.persist(cliente);
+		manager.merge(cliente);
 	}
+	
+	
 
 }

@@ -5,28 +5,38 @@
 	xmlns:p="http://primefaces.org/ui">
 
 	<p:outputLabel value="Contato" for="contato" />
-	<h:panelGroup>
+	<h:panelGroup id="teste">
 		<p:commandButton id="contato" value="ADD CONTATO"
-			title="Adicionar Contato" oncomplete="PF('novoContatoCliente').show()" />
+			title="Adicionar Contato" oncomplete="PF('novoContatoCliente').show()" 
+			action="#{cadastroClienteBean.novoContato}" process="@this"/>
 
 		<p:dialog id="dialogoContatoCliente" header="Contato do Cliente" widgetVar="novoContatoCliente" 
-			responsive="true" resizable="false">
-			<p:panelGrid columns="2" layout="grid">
+			responsive="true" resizable="false" modal="true">
+		
+			<p:messages id="dialogContatoMsg" autoUpdate="false" closable="true"/>
+			
+			<p:panelGrid id="painelGridDialogContato" columns="2" layout="grid">
+				
 				<p:outputLabel value="Telefone" for="Telefone"/>
-				<p:inputMask mask="(99) 9999-9999" id="Telefone" title="ex:(75) 1234-5678" />
+				<p:inputMask mask="(99) 9999-9999" id="Telefone" title="ex:(75) 1234-5678" 
+					value="#{cadastroClienteBean.contato.telefone}"/>
 				
 				<p:outputLabel value="Celular" for="celular"/>
-				<p:inputMask mask="(99) 99999-9999" id="celular" title="ex:(75) 1234-5678"/>
+				<p:inputMask mask="(99) 99999-9999" id="celular" title="ex:(75) 1234-5678"
+					value="#{cadastroClienteBean.contato.celular}"/>
 				
 				<p:outputLabel value="Email" for="email"/>
-				<p:inputText id="email" />
+				<p:inputText id="email" value="#{cadastroClienteBean.contato.email}"/>
 					
 				<p:outputLabel value="whatsapp" for="whatsapp"/>
-				<p:inputMask mask="(99) 99999-9999" id="whatsapp" title="ex:(75) 1234-5678"/>
+				<p:inputMask mask="(99) 99999-9999" id="whatsapp" title="ex:(75) 1234-5678"
+					value="#{cadastroClienteBean.contato.whatsapp}"/>
 					
 				<p:outputLabel value="site" for="site"/>
-				<p:inputText id="site" />
-				<p:commandButton value="Incluir" />
+				<p:inputText id="site" value="#{cadastroClienteBean.contato.site}"/>
+				<p:commandButton value="Incluir" action="#{cadastroClienteBean.adicionarContato}" 
+					oncomplete="if(!args.validationFailed) PF('novoContatoCliente').hide()"
+					process="painelGridDialogContato" update="dialogContatoMsg"/>
 			</p:panelGrid>
 		</p:dialog>
 	</h:panelGroup>

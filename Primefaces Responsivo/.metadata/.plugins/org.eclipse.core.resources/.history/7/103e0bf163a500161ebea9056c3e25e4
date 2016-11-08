@@ -1,0 +1,43 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+	<p:outputLabel value="Contato" for="contato" />
+	<h:panelGroup>
+		<p:commandButton id="contato" value="ADD CONTATO"
+			title="Adicionar Contato" oncomplete="PF('novoContatoCliente').show()" 
+			action="#{cadastroClienteBean.novoContato}" process="@this" update="dialogoContatoCliente"/>
+
+		<p:dialog id="dialogoContatoCliente" header="Contato do Cliente" widgetVar="novoContatoCliente" 
+			responsive="true" resizable="false" modal="true">
+
+			<p:messages id="dialogContatoMsg" autoUpdate="false" closable="true"/>
+			
+			<p:panelGrid id="painelGridDialogContato" columns="2" layout="grid">
+				
+				<p:outputLabel value="Telefone" for="Telefone"/>
+				<p:inputMask mask="(99) 9999-9999" id="Telefone" title="ex:(75) 1234-5678" 
+					value="#{cadastroClienteBean.contato.telefone}"/>
+				
+				<p:outputLabel value="Celular" for="celular"/>
+				<p:inputMask mask="(99) 99999-9999" id="celular" title="ex:(75) 1234-5678"
+					value="#{cadastroClienteBean.contato.celular}"/>
+				
+				<p:outputLabel value="Email" for="email"/>
+				<p:inputText id="email" value="#{cadastroClienteBean.contato.email}"/>
+					
+				<p:outputLabel value="whatsapp" for="whatsapp"/>
+				<p:inputMask mask="(99) 99999-9999" id="whatsapp" title="ex:(75) 1234-5678"
+					value="#{cadastroClienteBean.contato.whatsapp}"/>
+					
+				<p:outputLabel value="site" for="site"/>
+				<p:inputText id="site" value="#{cadastroClienteBean.contato.site}"/>
+				<p:commandButton value="Incluir" action="#{cadastroClienteBean.adicionarContato}" 
+					oncomplete="if(!args.validationFailed) PF('novoContatoCliente').hide()"
+					process="painelGridDialogContato" update="painelGridDialogContato"/>
+			</p:panelGrid>
+		</p:dialog>
+	</h:panelGroup>
+</ui:composition>

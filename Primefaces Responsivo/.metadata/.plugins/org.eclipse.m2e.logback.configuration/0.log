@@ -4559,604 +4559,473 @@ Caused by: org.eclipse.aether.transfer.ArtifactTransferException: Failure to tra
 2016-11-04 00:21:01,618 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
 2016-11-04 00:21:01,620 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-11-04 00:21:01,620 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-11-04 09:38:48,686 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.vendas:Vendas:1.0.0-SNAPSHOT @ C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\pom.xml.
-2016-11-04 09:39:00,341 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/hibernate/hibernate-core/5.2.3.Final/hibernate-core-5.2.3.Final.pom
-2016-11-04 09:39:01,952 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/5.2.3.Final/hibernate-core-5.2.3.Final.pom
-2016-11-04 09:39:02,127 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/5.2.3.Final/hibernate-core-5.2.3.Final.pom
-2016-11-04 09:39:22,141 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.pom
-2016-11-04 09:39:22,313 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.pom
-2016-11-04 09:39:22,497 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.pom
-2016-11-04 09:39:38,826 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.pom
-2016-11-04 09:39:39,001 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.pom
-2016-11-04 09:39:39,320 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.pom
-2016-11-04 09:39:42,107 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.pom
-2016-11-04 09:39:42,278 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.pom
-2016-11-04 09:39:42,447 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.pom
-2016-11-04 09:39:44,324 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/apache/geronimo/specs/specs/1.4/specs-1.4.pom
-2016-11-04 09:39:44,498 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/geronimo/specs/specs/1.4/specs-1.4.pom
-2016-11-04 09:39:44,847 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/geronimo/specs/specs/1.4/specs-1.4.pom
-2016-11-04 09:39:55,164 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.pom
-2016-11-04 09:39:55,334 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.pom
-2016-11-04 09:39:55,567 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/geronimo/genesis/config/project-config/1.2/project-config-1.2.pom
-2016-11-04 09:39:59,646 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/apache/geronimo/genesis/config/config/1.2/config-1.2.pom
-2016-11-04 09:39:59,818 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/geronimo/genesis/config/config/1.2/config-1.2.pom
-2016-11-04 09:40:00,129 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/geronimo/genesis/config/config/1.2/config-1.2.pom
-2016-11-04 09:40:28,541 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.pom
-2016-11-04 09:40:28,711 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.pom
-2016-11-04 09:40:28,910 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/geronimo/genesis/genesis/1.2/genesis-1.2.pom
-2016-11-04 09:40:38,942 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.pom
-2016-11-04 09:40:39,114 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.pom
-2016-11-04 09:40:39,430 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/jandex/2.0.0.Final/jandex-2.0.0.Final.pom
-2016-11-04 09:41:03,603 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/com/fasterxml/classmate/1.3.0/classmate-1.3.0.pom
-2016-11-04 09:41:03,774 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.3.0/classmate-1.3.0.pom
-2016-11-04 09:41:04,087 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/classmate/1.3.0/classmate-1.3.0.pom
-2016-11-04 09:42:39,119 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/com/fasterxml/oss-parent/24/oss-parent-24.pom
-2016-11-04 09:42:39,290 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/24/oss-parent-24.pom
-2016-11-04 09:42:39,661 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/24/oss-parent-24.pom
-2016-11-04 09:43:01,246 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.pom
-2016-11-04 09:43:01,416 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.pom
-2016-11-04 09:43:01,729 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.pom
-2016-11-04 09:43:11,749 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/javax/enterprise/cdi-api/1.1/cdi-api-1.1.pom
-2016-11-04 09:43:11,920 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/1.1/cdi-api-1.1.pom
-2016-11-04 09:43:12,236 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/1.1/cdi-api-1.1.pom
-2016-11-04 09:43:22,258 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/jboss/weld/weld-parent/21/weld-parent-21.pom
-2016-11-04 09:43:22,429 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/weld/weld-parent/21/weld-parent-21.pom
-2016-11-04 09:43:22,860 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/weld/weld-parent/21/weld-parent-21.pom
-2016-11-04 09:43:32,873 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/javax/el/el-api/2.2/el-api-2.2.pom
-2016-11-04 09:43:33,045 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/el/el-api/2.2/el-api-2.2.pom
-2016-11-04 09:43:33,257 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/el/el-api/2.2/el-api-2.2.pom
-2016-11-04 09:44:22,001 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/glassfish/web/el/2.2/el-2.2.pom
-2016-11-04 09:44:22,174 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/web/el/2.2/el-2.2.pom
-2016-11-04 09:44:22,779 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/web/el/2.2/el-2.2.pom
-2016-11-04 09:44:32,805 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.1_spec/1.0.0.Beta1/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.pom
-2016-11-04 09:44:32,975 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.1_spec/1.0.0.Beta1/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.pom
-2016-11-04 09:44:33,148 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.1_spec/1.0.0.Beta1/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.pom
-2016-11-04 09:44:43,171 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/jboss/spec/jboss-specs-parent/1.0.0.Beta1/jboss-specs-parent-1.0.0.Beta1.pom
-2016-11-04 09:44:43,348 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/spec/jboss-specs-parent/1.0.0.Beta1/jboss-specs-parent-1.0.0.Beta1.pom
-2016-11-04 09:44:43,524 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/spec/jboss-specs-parent/1.0.0.Beta1/jboss-specs-parent-1.0.0.Beta1.pom
-2016-11-04 09:45:10,241 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/jboss/jboss-parent/5-beta-5/jboss-parent-5-beta-5.pom
-2016-11-04 09:45:10,411 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/5-beta-5/jboss-parent-5-beta-5.pom
-2016-11-04 09:45:10,641 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/jboss-parent/5-beta-5/jboss-parent-5-beta-5.pom
-2016-11-04 09:45:20,671 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.pom
-2016-11-04 09:45:20,841 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.pom
-2016-11-04 09:45:21,151 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.pom
-2016-11-04 09:45:31,173 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/javax/inject/javax.inject/1/javax.inject-1.pom
-2016-11-04 09:45:31,487 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom
-2016-11-04 09:45:31,661 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom
-2016-11-04 09:45:41,681 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/hibernate/hibernate-entitymanager/5.2.3.Final/hibernate-entitymanager-5.2.3.Final.pom
-2016-11-04 09:45:41,995 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/hibernate-entitymanager/5.2.3.Final/hibernate-entitymanager-5.2.3.Final.pom
-2016-11-04 09:45:42,167 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/hibernate-entitymanager/5.2.3.Final/hibernate-entitymanager-5.2.3.Final.pom
-2016-11-04 09:45:52,259 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/hibernate/hibernate-core/5.2.3.Final/hibernate-core-5.2.3.Final.jar
-2016-11-04 09:46:02,263 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar
-2016-11-04 09:46:12,267 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.jar
-2016-11-04 09:46:22,272 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar
-2016-11-04 09:46:32,277 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/javax/enterprise/cdi-api/1.1/cdi-api-1.1.jar
-2016-11-04 09:46:42,281 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/javax/el/el-api/2.2/el-api-2.2.jar
-2016-11-04 09:46:52,286 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.1_spec/1.0.0.Beta1/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar
-2016-11-04 09:47:02,289 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar
-2016-11-04 09:47:12,294 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/javax/inject/javax.inject/1/javax.inject-1.jar
-2016-11-04 09:47:22,298 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/hibernate/hibernate-entitymanager/5.2.3.Final/hibernate-entitymanager-5.2.3.Final.jar
-2016-11-04 09:47:22,492 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/5.2.3.Final/hibernate-core-5.2.3.Final.jar
-2016-11-04 09:47:52,250 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/5.2.3.Final/hibernate-core-5.2.3.Final.jar
-2016-11-04 09:47:52,468 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar
-2016-11-04 09:47:56,659 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/javassist/javassist/3.20.0-GA/javassist-3.20.0-GA.jar
-2016-11-04 09:47:56,876 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.jar
-2016-11-04 09:47:57,047 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1/geronimo-jta_1.1_spec-1.1.1.jar
-2016-11-04 09:47:57,265 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar
-2016-11-04 09:47:57,730 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/common/hibernate-commons-annotations/5.0.1.Final/hibernate-commons-annotations-5.0.1.Final.jar
-2016-11-04 09:47:57,944 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/1.1/cdi-api-1.1.jar
-2016-11-04 09:47:58,353 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/enterprise/cdi-api/1.1/cdi-api-1.1.jar
-2016-11-04 09:47:58,569 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/el/el-api/2.2/el-api-2.2.jar
-2016-11-04 09:47:58,813 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/el/el-api/2.2/el-api-2.2.jar
-2016-11-04 09:47:58,977 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.1_spec/1.0.0.Beta1/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar
-2016-11-04 09:47:59,155 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.1_spec/1.0.0.Beta1/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar
-2016-11-04 09:47:59,320 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar
-2016-11-04 09:47:59,496 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar
-2016-11-04 09:47:59,659 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar
-2016-11-04 09:47:59,828 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar
-2016-11-04 09:47:59,992 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/hibernate-entitymanager/5.2.3.Final/hibernate-entitymanager-5.2.3.Final.jar
-2016-11-04 09:48:00,206 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/hibernate-entitymanager/5.2.3.Final/hibernate-entitymanager-5.2.3.Final.jar
-2016-11-04 09:48:01,934 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:48:01,942 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 09:48:01,964 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:48:01,965 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 09:48:01,970 [Worker-7] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Vendas
-2016-11-04 09:48:01,972 [Worker-7] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Vendas
-2016-11-04 09:48:01,981 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:48:05,870 [Worker-3] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
-2016-11-04 09:48:06,857 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.vendas:Vendas:1.0.0-SNAPSHOT @ C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\pom.xml.
-2016-11-04 09:48:08,052 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Vendas/src/main/java
-2016-11-04 09:48:08,053 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Vendas/src/main/resources
-2016-11-04 09:48:08,055 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Vendas/src/test/java
-2016-11-04 09:48:09,528 [Worker-3] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Vendas
-2016-11-04 09:48:09,536 [Worker-3] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
-2016-11-04 09:48:11,956 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:48:11,958 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 09:48:11,980 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:48:11,980 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 09:48:11,981 [Worker-17] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Vendas
-2016-11-04 09:48:11,981 [Worker-17] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Vendas
-2016-11-04 09:48:11,987 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:53:50,231 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:53:50,241 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 09:53:50,243 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:53:50,243 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 09:54:03,234 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:54:03,236 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 09:54:03,239 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:54:03,239 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 09:54:18,010 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:54:18,013 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 09:54:18,020 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:54:18,020 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 09:54:25,641 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:54:25,643 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 09:54:25,645 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:54:25,646 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 09:54:40,162 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:54:40,164 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 09:54:40,166 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:54:40,166 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 09:54:42,713 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:54:42,715 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 09:54:42,717 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:54:42,718 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 09:55:54,201 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:55:54,203 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 09:55:54,206 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:55:54,206 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 09:56:49,452 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:56:49,453 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-11-04 09:56:49,455 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:56:49,456 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 09:57:39,467 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:57:39,469 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 09:57:39,471 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 09:57:39,472 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 10:04:21,748 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 10:04:21,750 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 10:04:21,753 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 10:04:21,753 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 10:08:55,762 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 10:08:55,763 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 10:08:55,766 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 10:08:55,766 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 10:09:59,877 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 10:09:59,880 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 10:09:59,882 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 10:09:59,883 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 10:13:01,807 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 10:13:01,808 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 10:13:01,810 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 10:13:01,811 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 10:20:12,290 [Worker-40] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.vendas:Vendas:1.0.0-SNAPSHOT @ C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\pom.xml.
-2016-11-04 10:20:13,106 [Worker-40] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Vendas
-2016-11-04 10:20:13,107 [Worker-40] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Vendas
-2016-11-04 10:23:52,876 [Worker-41] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.vendas:Vendas:1.0.0-SNAPSHOT @ C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\pom.xml.
-2016-11-04 10:23:53,761 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 10:23:53,763 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-11-04 10:23:53,765 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 10:23:53,766 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 10:23:53,766 [Worker-41] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Vendas
-2016-11-04 10:23:53,766 [Worker-41] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Vendas
-2016-11-04 10:23:53,772 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 10:24:21,457 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 10:24:21,459 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 10:24:21,468 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 10:24:21,469 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 10:28:02,025 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 10:28:02,027 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 10:28:02,029 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 10:28:02,030 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 10:28:11,883 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 10:28:11,885 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 10:28:11,886 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 10:28:11,887 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 10:29:18,413 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 10:29:18,414 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-11-04 10:29:18,418 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 10:29:18,419 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 10:56:47,311 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 10:56:47,328 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 10:56:47,346 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 10:56:47,347 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 11:03:02,335 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 11:03:02,350 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 11:03:02,353 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 11:03:02,353 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 11:03:56,605 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 11:03:56,607 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 11:03:56,610 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 11:03:56,610 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 14:31:54,758 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:31:54,788 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 14:31:54,915 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:31:54,916 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 14:34:40,501 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:34:40,507 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-11-04 14:34:40,509 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:34:40,509 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 14:40:13,503 [Worker-21] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.vendas:Vendas:1.0.0-SNAPSHOT @ C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\pom.xml.
-2016-11-04 14:40:14,244 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/hibernate/hibernate-validator/5.0.1.Final/hibernate-validator-5.0.1.Final.pom
-2016-11-04 14:40:15,211 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/hibernate-validator/5.0.1.Final/hibernate-validator-5.0.1.Final.pom
-2016-11-04 14:40:15,576 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/hibernate-validator/5.0.1.Final/hibernate-validator-5.0.1.Final.pom
-2016-11-04 14:40:16,056 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/hibernate/hibernate-validator-parent/5.0.1.Final/hibernate-validator-parent-5.0.1.Final.pom
-2016-11-04 14:40:16,230 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/hibernate-validator-parent/5.0.1.Final/hibernate-validator-parent-5.0.1.Final.pom
-2016-11-04 14:40:16,508 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/hibernate-validator-parent/5.0.1.Final/hibernate-validator-parent-5.0.1.Final.pom
-2016-11-04 14:40:17,017 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/jboss/logging/jboss-logging/3.1.1.GA/jboss-logging-3.1.1.GA.pom
-2016-11-04 14:40:17,188 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.1.1.GA/jboss-logging-3.1.1.GA.pom
-2016-11-04 14:40:17,375 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.1.1.GA/jboss-logging-3.1.1.GA.pom
-2016-11-04 14:40:17,841 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/com/fasterxml/classmate/0.8.0/classmate-0.8.0.pom
-2016-11-04 14:40:18,011 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/classmate/0.8.0/classmate-0.8.0.pom
-2016-11-04 14:40:18,196 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/classmate/0.8.0/classmate-0.8.0.pom
-2016-11-04 14:40:18,670 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/hibernate/hibernate-core/4.2.3.Final/hibernate-core-4.2.3.Final.pom
-2016-11-04 14:40:18,845 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/4.2.3.Final/hibernate-core-4.2.3.Final.pom
-2016-11-04 14:40:19,042 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/4.2.3.Final/hibernate-core-4.2.3.Final.pom
-2016-11-04 14:40:19,570 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/hibernate/hibernate-entitymanager/4.2.3.Final/hibernate-entitymanager-4.2.3.Final.pom
-2016-11-04 14:40:19,741 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/hibernate-entitymanager/4.2.3.Final/hibernate-entitymanager-4.2.3.Final.pom
-2016-11-04 14:40:19,939 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/hibernate-entitymanager/4.2.3.Final/hibernate-entitymanager-4.2.3.Final.pom
-2016-11-04 14:40:20,429 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/jboss/weld/servlet/weld-servlet/1.1.10.Final/weld-servlet-1.1.10.Final.pom
-2016-11-04 14:40:20,601 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/weld/servlet/weld-servlet/1.1.10.Final/weld-servlet-1.1.10.Final.pom
-2016-11-04 14:40:20,786 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/weld/servlet/weld-servlet/1.1.10.Final/weld-servlet-1.1.10.Final.pom
-2016-11-04 14:40:21,275 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/jboss/weld/servlet/weld-servlet-parent/1.1.10.Final/weld-servlet-parent-1.1.10.Final.pom
-2016-11-04 14:40:21,445 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/weld/servlet/weld-servlet-parent/1.1.10.Final/weld-servlet-parent-1.1.10.Final.pom
-2016-11-04 14:40:21,632 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/weld/servlet/weld-servlet-parent/1.1.10.Final/weld-servlet-parent-1.1.10.Final.pom
-2016-11-04 14:40:22,096 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/jboss/weld/weld-core-parent/1.1.10.Final/weld-core-parent-1.1.10.Final.pom
-2016-11-04 14:40:22,270 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/weld/weld-core-parent/1.1.10.Final/weld-core-parent-1.1.10.Final.pom
-2016-11-04 14:40:22,559 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/weld/weld-core-parent/1.1.10.Final/weld-core-parent-1.1.10.Final.pom
-2016-11-04 14:40:23,008 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/jboss/weld/weld-parent/19/weld-parent-19.pom
-2016-11-04 14:40:23,174 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/weld/weld-parent/19/weld-parent-19.pom
-2016-11-04 14:40:23,829 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/weld/weld-parent/19/weld-parent-19.pom
-2016-11-04 14:40:24,273 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/jboss/weld/weld-api-bom/1.1.Final/weld-api-bom-1.1.Final.pom
-2016-11-04 14:40:24,444 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/weld/weld-api-bom/1.1.Final/weld-api-bom-1.1.Final.pom
-2016-11-04 14:40:24,634 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/weld/weld-api-bom/1.1.Final/weld-api-bom-1.1.Final.pom
-2016-11-04 14:40:25,087 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/jboss/weld/weld-parent/17/weld-parent-17.pom
-2016-11-04 14:40:25,260 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/weld/weld-parent/17/weld-parent-17.pom
-2016-11-04 14:40:25,545 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/weld/weld-parent/17/weld-parent-17.pom
-2016-11-04 14:40:26,036 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repository.primefaces.org/org/primefaces/primefaces/3.5/primefaces-3.5.pom
-2016-11-04 14:40:27,280 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/primefaces/primefaces/3.5/primefaces-3.5.pom
-2016-11-04 14:40:27,541 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/glassfish/javax.faces/2.1.21/javax.faces-2.1.21.pom
-2016-11-04 14:40:27,707 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/javax.faces/2.1.21/javax.faces-2.1.21.pom
-2016-11-04 14:40:27,900 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/javax.faces/2.1.21/javax.faces-2.1.21.pom
-2016-11-04 14:40:28,393 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/hibernate/hibernate-validator/5.0.1.Final/hibernate-validator-5.0.1.Final.jar
-2016-11-04 14:40:28,850 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/jboss/logging/jboss-logging/3.1.1.GA/jboss-logging-3.1.1.GA.jar
-2016-11-04 14:40:29,317 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/com/fasterxml/classmate/0.8.0/classmate-0.8.0.jar
-2016-11-04 14:40:29,783 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/hibernate/hibernate-core/4.2.3.Final/hibernate-core-4.2.3.Final.jar
-2016-11-04 14:40:30,258 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/hibernate/hibernate-entitymanager/4.2.3.Final/hibernate-entitymanager-4.2.3.Final.jar
-2016-11-04 14:40:30,714 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/jboss/weld/servlet/weld-servlet/1.1.10.Final/weld-servlet-1.1.10.Final.jar
-2016-11-04 14:40:31,172 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repository.primefaces.org/org/primefaces/primefaces/3.5/primefaces-3.5.jar
-2016-11-04 14:40:41,476 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/primefaces/primefaces/3.5/primefaces-3.5.jar
-2016-11-04 14:40:41,705 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repository.primefaces.org/org/glassfish/javax.faces/2.1.21/javax.faces-2.1.21.jar
-2016-11-04 14:40:42,025 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/hibernate-validator/5.0.1.Final/hibernate-validator-5.0.1.Final.jar
-2016-11-04 14:40:45,468 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/hibernate-validator/5.0.1.Final/hibernate-validator-5.0.1.Final.jar
-2016-11-04 14:40:45,686 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.1.1.GA/jboss-logging-3.1.1.GA.jar
-2016-11-04 14:40:46,084 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/logging/jboss-logging/3.1.1.GA/jboss-logging-3.1.1.GA.jar
-2016-11-04 14:40:46,301 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/fasterxml/classmate/0.8.0/classmate-0.8.0.jar
-2016-11-04 14:40:46,685 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/fasterxml/classmate/0.8.0/classmate-0.8.0.jar
-2016-11-04 14:40:46,942 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/4.2.3.Final/hibernate-core-4.2.3.Final.jar
-2016-11-04 14:41:09,890 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/4.2.3.Final/hibernate-core-4.2.3.Final.jar
-2016-11-04 14:41:10,109 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/hibernate/hibernate-entitymanager/4.2.3.Final/hibernate-entitymanager-4.2.3.Final.jar
-2016-11-04 14:41:12,515 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/hibernate/hibernate-entitymanager/4.2.3.Final/hibernate-entitymanager-4.2.3.Final.jar
-2016-11-04 14:41:12,763 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jboss/weld/servlet/weld-servlet/1.1.10.Final/weld-servlet-1.1.10.Final.jar
-2016-11-04 14:41:27,665 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jboss/weld/servlet/weld-servlet/1.1.10.Final/weld-servlet-1.1.10.Final.jar
-2016-11-04 14:41:27,906 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/glassfish/javax.faces/2.1.21/javax.faces-2.1.21.jar
-2016-11-04 14:41:39,132 [Worker-21] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/glassfish/javax.faces/2.1.21/javax.faces-2.1.21.jar
-2016-11-04 14:41:40,886 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:41:40,890 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-11-04 14:41:40,893 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:41:40,893 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 14:41:40,894 [Worker-21] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Vendas
-2016-11-04 14:41:40,897 [Worker-21] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Vendas
-2016-11-04 14:41:40,906 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:41:45,670 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:41:45,675 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 14:41:45,708 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:41:45,708 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 14:41:52,193 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:41:52,195 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 14:41:52,199 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:41:52,199 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 14:42:04,632 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:42:04,634 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 14:42:04,637 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:42:04,637 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 14:42:19,495 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:42:19,496 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 14:42:19,499 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:42:19,499 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 14:42:57,549 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:42:57,550 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 14:42:57,553 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:42:57,553 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 14:43:11,935 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:43:11,937 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 14:43:11,940 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:43:11,940 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 14:43:40,255 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:43:40,258 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 14:43:40,260 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:43:40,260 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 14:44:01,392 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:44:01,394 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 14:44:01,397 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:44:01,398 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 14:44:46,420 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:44:46,422 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 14:44:46,426 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:44:46,426 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 14:45:11,249 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:45:11,251 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 14:45:11,254 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:45:11,254 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 14:47:48,359 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:47:48,364 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2016-11-04 14:47:48,369 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:47:48,369 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 14:48:36,628 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:48:36,629 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2016-11-04 14:48:36,633 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:48:36,633 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 14:48:58,457 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:48:58,458 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-11-04 14:48:58,459 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:48:58,460 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 14:54:05,165 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:54:05,166 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-11-04 14:54:05,168 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:54:05,168 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 14:54:24,231 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:54:24,232 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2016-11-04 14:54:24,237 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 14:54:24,237 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 15:00:01,904 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:00:01,906 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
-2016-11-04 15:00:01,909 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:00:01,909 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 15:00:14,305 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:00:14,306 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2016-11-04 15:00:14,308 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:00:14,309 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 15:00:30,165 [Worker-19] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
-2016-11-04 15:00:30,688 [Worker-19] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.vendas:Vendas:1.0.0-SNAPSHOT @ C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\pom.xml.
-2016-11-04 15:00:31,522 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Vendas/src/main/java
-2016-11-04 15:00:31,524 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Vendas/src/main/resources
-2016-11-04 15:00:31,525 [Worker-19] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Vendas/src/test/java
-2016-11-04 15:00:32,730 [Worker-19] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Vendas
-2016-11-04 15:00:32,739 [Worker-19] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
-2016-11-04 15:00:34,290 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:00:34,291 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
-2016-11-04 15:00:34,313 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:00:34,314 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 15:00:34,314 [Worker-19] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Vendas
-2016-11-04 15:00:34,314 [Worker-19] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Vendas
-2016-11-04 15:00:34,318 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:01:09,958 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:01:09,963 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-11-04 15:01:09,965 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:01:09,966 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 15:04:08,394 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:04:08,397 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
-2016-11-04 15:04:08,400 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:04:08,400 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 15:05:16,679 [Worker-19] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.vendas:Vendas:1.0.0-SNAPSHOT @ C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\pom.xml.
-2016-11-04 15:05:17,620 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:05:17,622 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-11-04 15:05:17,624 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:05:17,624 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 15:05:17,624 [Worker-19] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Vendas
-2016-11-04 15:05:17,625 [Worker-19] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Vendas
-2016-11-04 15:05:17,631 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:05:23,146 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:05:23,148 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
-2016-11-04 15:05:23,186 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:05:23,186 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 15:05:47,607 [Worker-19] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.vendas:Vendas:1.0.0-SNAPSHOT @ C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\pom.xml.
-2016-11-04 15:05:48,659 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:05:48,663 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-11-04 15:05:48,665 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:05:48,666 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 15:05:48,666 [Worker-19] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Vendas
-2016-11-04 15:05:48,666 [Worker-19] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Vendas
-2016-11-04 15:05:48,673 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:06:55,093 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:06:55,093 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-11-04 15:06:55,096 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:06:55,096 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 15:08:15,995 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.vendas:Vendas:1.0.0-SNAPSHOT @ C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\pom.xml.
-2016-11-04 15:08:16,868 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:08:16,870 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-11-04 15:08:16,872 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:08:16,872 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 15:08:16,873 [Worker-25] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Vendas
-2016-11-04 15:08:16,873 [Worker-25] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Vendas
-2016-11-04 15:08:16,876 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:08:18,814 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:08:18,819 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
-2016-11-04 15:08:18,841 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:08:18,841 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 15:11:51,982 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.vendas:Vendas:1.0.0-SNAPSHOT @ C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\pom.xml.
-2016-11-04 15:11:53,432 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:11:53,435 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-11-04 15:11:53,437 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:11:53,437 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 15:11:53,437 [Worker-27] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Vendas
-2016-11-04 15:11:53,438 [Worker-27] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Vendas
-2016-11-04 15:11:53,444 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:11:58,067 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:11:58,070 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
-2016-11-04 15:11:58,088 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:11:58,088 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 15:14:18,043 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:14:18,043 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-11-04 15:14:18,044 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:14:18,045 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 15:15:43,959 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:15:43,962 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
-2016-11-04 15:15:43,965 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:15:43,965 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 15:16:14,246 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:16:14,248 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
-2016-11-04 15:16:14,249 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:16:14,250 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 15:18:34,116 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:18:34,118 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
-2016-11-04 15:18:34,120 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:18:34,121 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 15:20:18,436 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:20:18,437 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
-2016-11-04 15:20:18,446 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:20:18,446 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 15:21:06,765 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:21:06,765 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2016-11-04 15:21:06,768 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:21:06,768 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 15:30:47,043 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:30:47,045 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
-2016-11-04 15:30:47,049 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:30:47,049 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 15:31:06,671 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:31:06,672 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
-2016-11-04 15:31:06,674 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:31:06,674 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 15:33:21,344 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:33:21,345 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2016-11-04 15:33:21,349 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 15:33:21,349 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 16:16:59,579 [Worker-71] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.vendas:Vendas:1.0.0-SNAPSHOT @ C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\pom.xml.
-2016-11-04 16:17:01,053 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 16:17:01,057 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-11-04 16:17:01,060 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 16:17:01,060 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 16:17:01,061 [Worker-71] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Vendas
-2016-11-04 16:17:01,061 [Worker-71] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Vendas
-2016-11-04 16:17:01,067 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 16:17:10,167 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 16:17:10,179 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
-2016-11-04 16:17:10,207 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 16:17:10,207 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 16:23:00,164 [Worker-71] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
-2016-11-04 16:23:00,781 [Worker-71] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.vendas:Vendas:1.0.0-SNAPSHOT @ C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\pom.xml.
-2016-11-04 16:23:02,020 [Worker-71] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Vendas/src/main/java
-2016-11-04 16:23:02,021 [Worker-71] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Vendas/src/main/resources
-2016-11-04 16:23:02,022 [Worker-71] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Vendas/src/test/java
-2016-11-04 16:23:03,037 [Worker-71] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Vendas
-2016-11-04 16:23:03,044 [Worker-71] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
-2016-11-04 16:23:05,245 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 16:23:05,246 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
-2016-11-04 16:23:05,281 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 16:23:05,281 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 16:23:05,282 [Worker-74] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Vendas
-2016-11-04 16:23:05,282 [Worker-74] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Vendas
-2016-11-04 16:23:05,291 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 16:55:06,718 [Worker-78] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.vendas:Vendas:1.0.0-SNAPSHOT @ C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\pom.xml.
-2016-11-04 16:55:08,454 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 16:55:08,463 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-11-04 16:55:08,465 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 16:55:08,465 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 16:55:08,465 [Worker-78] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Vendas
-2016-11-04 16:55:08,465 [Worker-78] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Vendas
-2016-11-04 16:55:08,470 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 16:55:11,438 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 16:55:11,462 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
-2016-11-04 16:55:11,509 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 16:55:11,511 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 16:59:11,114 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 16:59:11,123 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
-2016-11-04 16:59:11,150 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 16:59:11,151 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 17:15:37,998 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:15:38,001 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
-2016-11-04 17:15:38,003 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:15:38,004 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 17:24:01,375 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:24:01,376 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2016-11-04 17:24:01,378 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:24:01,378 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 17:24:13,126 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:24:13,127 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-11-04 17:24:13,129 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:24:13,129 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 17:24:23,039 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:24:23,040 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-11-04 17:24:23,041 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:24:23,041 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 17:24:42,677 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:24:42,678 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2016-11-04 17:24:42,681 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:24:42,681 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 17:25:00,451 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:25:00,451 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2016-11-04 17:25:00,456 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:25:00,456 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 17:39:47,565 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:39:47,567 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
-2016-11-04 17:39:47,572 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:39:47,573 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 17:43:46,396 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:43:46,397 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2016-11-04 17:43:46,399 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:43:46,399 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 17:44:53,846 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:44:53,848 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 17:44:53,853 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:44:53,853 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 17:45:00,137 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:45:00,138 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 17:45:00,141 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:45:00,141 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 17:48:25,248 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:48:25,250 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 17:48:25,252 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:48:25,252 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 17:53:59,075 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:53:59,077 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 17:53:59,079 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:53:59,079 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 17:54:05,969 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:54:05,970 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 17:54:05,973 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:54:05,973 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 17:54:11,850 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:54:11,852 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 17:54:11,856 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:54:11,857 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 17:54:17,616 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:54:17,617 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 17:54:17,618 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:54:17,618 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 17:54:49,809 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:54:49,810 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 17:54:49,813 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:54:49,813 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 17:55:14,929 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:55:14,930 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 17:55:14,933 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:55:14,933 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 17:55:33,865 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:55:33,866 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 17:55:33,868 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:55:33,868 [Worker-100] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 17:56:39,996 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:56:40,015 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 17:56:40,018 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:56:40,018 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 17:58:55,157 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:58:55,157 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 17:58:55,172 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:58:55,172 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 17:59:04,274 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:59:04,276 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 17:59:04,279 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:59:04,279 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 17:59:13,719 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:59:13,719 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 17:59:13,719 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:59:13,719 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 17:59:40,971 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:59:40,971 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 17:59:41,012 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 17:59:41,012 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2016-11-04 18:00:09,434 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 18:00:09,434 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2016-11-04 18:00:09,434 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2016-11-04 18:00:09,434 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
+2016-11-04 20:07:28,243 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:07:28,260 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-04 20:07:28,281 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:07:28,282 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 20:07:28,670 [Worker-4] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Vendas
+2016-11-04 20:07:28,670 [Worker-4] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Vendas
+2016-11-04 20:07:28,696 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:07:33,219 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.vendas:Vendas:1.0.0-SNAPSHOT @ C:\Users\Vinicius\ARQUIVOS\Primefaces Responsivo\Vendas\pom.xml.
+2016-11-04 20:07:34,886 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:07:34,892 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-04 20:07:34,900 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:07:34,901 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 20:07:34,901 [Worker-0] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Vendas
+2016-11-04 20:07:34,902 [Worker-0] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Vendas
+2016-11-04 20:07:34,909 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:07:36,355 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:07:36,357 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-04 20:07:36,369 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:07:36,369 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 20:07:49,066 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:07:49,068 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2016-11-04 20:07:49,070 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:07:49,071 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 20:16:56,071 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:16:56,073 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-04 20:16:56,075 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:16:56,076 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 20:20:33,311 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:20:33,313 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-04 20:20:33,315 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:20:33,316 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 20:21:14,830 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:21:14,832 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-04 20:21:14,835 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:21:14,835 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 20:22:26,558 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:22:26,560 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-04 20:22:26,562 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:22:26,563 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 20:39:56,625 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:39:56,628 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-04 20:39:56,630 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:39:56,631 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 20:47:40,939 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:47:40,941 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-04 20:47:40,944 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:47:40,944 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 20:52:03,078 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:52:03,080 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-04 20:52:03,082 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 20:52:03,082 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 22:09:11,091 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:09:11,094 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-04 22:09:11,096 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:09:11,097 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 22:09:23,310 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:09:23,312 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-04 22:09:23,315 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:09:23,315 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 22:32:55,140 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:32:55,143 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-04 22:32:55,145 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:32:55,146 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 22:33:22,787 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:33:22,788 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-04 22:33:22,791 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:33:22,791 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 22:33:40,000 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:33:40,001 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-04 22:33:40,003 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:33:40,004 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 22:36:20,973 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:36:20,975 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-04 22:36:20,977 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:36:20,978 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 22:43:58,542 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:43:58,544 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-04 22:43:58,546 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:43:58,546 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 22:48:31,318 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:48:31,320 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-04 22:48:31,322 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:48:31,323 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 22:50:40,391 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:50:40,392 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 22:50:40,395 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:50:40,397 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 22:51:13,765 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:51:13,767 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 22:51:13,776 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:51:13,778 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 22:53:16,155 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:53:16,156 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 22:53:16,158 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:53:16,159 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 22:55:47,464 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:55:47,465 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-04 22:55:47,467 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 22:55:47,467 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 23:01:21,927 [Worker-97] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-11-04 23:01:22,550 [Worker-97] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.vendas:Vendas:1.0.0-SNAPSHOT @ C:\Users\Vinicius\ARQUIVOS\Primefaces Responsivo\Vendas\pom.xml.
+2016-11-04 23:01:23,610 [Worker-97] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Vendas/src/main/java
+2016-11-04 23:01:23,611 [Worker-97] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Vendas/src/main/resources
+2016-11-04 23:01:23,612 [Worker-97] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Vendas/src/test/java
+2016-11-04 23:01:23,613 [Worker-97] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Vendas/src/test/resources
+2016-11-04 23:01:24,410 [Worker-97] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Vendas
+2016-11-04 23:01:24,422 [Worker-97] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2016-11-04 23:01:26,245 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 23:01:26,246 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-04 23:01:26,262 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 23:01:26,263 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 23:01:26,263 [Worker-103] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Vendas
+2016-11-04 23:01:26,263 [Worker-103] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Vendas
+2016-11-04 23:01:26,269 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 23:04:10,092 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 23:04:10,095 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-04 23:04:10,096 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 23:04:10,097 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 23:04:15,366 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 23:04:15,367 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-04 23:04:15,369 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 23:04:15,369 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 23:08:49,095 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 23:08:49,096 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-04 23:08:49,098 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-04 23:08:49,099 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 10:07:24,156 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 10:07:24,178 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 10:07:24,211 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 10:07:24,215 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 10:14:37,703 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 10:14:37,705 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 10:14:37,707 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 10:14:37,708 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 10:19:34,278 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 10:19:34,287 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 10:19:34,294 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 10:19:34,295 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 10:34:12,036 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 10:34:12,051 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 10:34:12,054 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 10:34:12,054 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 10:43:57,145 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 10:43:57,147 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 10:43:57,149 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 10:43:57,149 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 11:04:28,989 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 11:04:28,991 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 11:04:28,993 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 11:04:28,994 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 21:09:23,280 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:09:23,297 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 21:09:23,312 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:09:23,313 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 21:21:05,286 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:21:05,296 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 21:21:05,299 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:21:05,300 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 21:22:41,443 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:22:41,444 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 21:22:41,447 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:22:41,447 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 21:27:35,845 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:27:35,847 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 21:27:35,850 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:27:35,850 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 21:28:30,449 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:28:30,450 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 21:28:30,452 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:28:30,453 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 21:31:00,551 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:31:00,554 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 21:31:00,559 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:31:00,560 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 21:31:32,722 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:31:32,724 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 21:31:32,726 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:31:32,727 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 21:40:51,212 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:40:51,214 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 21:40:51,222 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:40:51,222 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 21:41:13,171 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:41:13,172 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 21:41:13,177 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:41:13,178 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 21:41:18,765 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:41:18,765 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 21:41:18,767 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:41:18,767 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 21:43:36,762 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:43:36,763 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 21:43:36,768 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:43:36,769 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 21:50:37,700 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:50:37,702 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 21:50:37,705 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:50:37,706 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 21:50:43,652 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:50:43,652 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 21:50:43,654 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:50:43,654 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 21:56:16,930 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:56:16,931 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 21:56:16,933 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:56:16,934 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 21:59:01,247 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:59:01,248 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 21:59:01,249 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 21:59:01,250 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:01:37,423 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:01:37,425 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 22:01:37,428 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:01:37,428 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:02:07,568 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:02:07,569 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:02:07,573 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:02:07,574 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:08:05,145 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:08:05,145 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:08:05,147 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:08:05,148 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:10:36,733 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:10:36,735 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 22:10:36,737 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:10:36,737 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:10:58,279 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:10:58,280 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:10:58,284 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:10:58,284 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:14:19,530 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:14:19,531 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:14:19,537 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:14:19,539 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:14:31,271 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:14:31,272 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:14:31,274 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:14:31,275 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:18:51,725 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:18:51,727 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 22:18:51,730 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:18:51,730 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:30:52,099 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:30:52,100 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:30:52,101 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:30:52,102 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:31:54,181 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:31:54,183 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 22:31:54,186 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:31:54,186 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:34:20,908 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:34:20,910 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 22:34:20,912 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:34:20,913 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:34:35,541 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:34:35,542 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 22:34:35,544 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:34:35,544 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:34:57,064 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:34:57,066 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 22:34:57,068 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:34:57,069 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:38:54,217 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:38:54,219 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 22:38:54,222 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:38:54,222 [Worker-86] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:41:25,103 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:41:25,105 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 22:41:25,107 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:41:25,107 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:42:04,058 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:42:04,060 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 22:42:04,062 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:42:04,062 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:45:09,614 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:45:09,616 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 22:45:09,617 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:45:09,618 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:45:17,197 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:45:17,197 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:45:17,200 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:45:17,201 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:46:20,701 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:46:20,702 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:46:20,705 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:46:20,706 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:49:29,423 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:49:29,424 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 22:49:29,426 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:49:29,426 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:51:02,649 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:51:02,650 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:51:02,654 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:51:02,654 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:54:17,495 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:54:17,496 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:54:17,500 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:54:17,501 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:54:22,137 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:54:22,139 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 22:54:22,141 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:54:22,141 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:59:18,987 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:59:18,988 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 22:59:18,989 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:59:18,990 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 22:59:37,898 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:59:37,899 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 22:59:37,901 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 22:59:37,902 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 23:09:04,789 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 23:09:04,790 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 23:09:04,791 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 23:09:04,792 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 23:10:14,558 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 23:10:14,559 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 23:10:14,560 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 23:10:14,560 [Worker-116] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 23:11:14,858 [Worker-117] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 23:11:14,861 [Worker-117] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 23:11:14,863 [Worker-117] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 23:11:14,863 [Worker-117] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 23:11:22,914 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 23:11:22,917 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 23:11:22,921 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 23:11:22,921 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 23:11:53,457 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 23:11:53,458 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 23:11:53,461 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 23:11:53,461 [Worker-118] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 23:14:50,163 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 23:14:50,165 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 23:14:50,167 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 23:14:50,167 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 23:16:30,554 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 23:16:30,556 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 23:16:30,558 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 23:16:30,558 [Worker-120] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-05 23:17:41,983 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 23:17:41,984 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-05 23:17:41,986 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-05 23:17:41,986 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-07 00:41:52,848 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-07 00:41:52,865 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-07 00:41:52,880 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-07 00:41:52,881 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-07 00:45:48,210 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-07 00:45:48,215 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-07 00:45:48,218 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-07 00:45:48,218 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-07 00:51:37,609 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-07 00:51:37,615 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-07 00:51:37,617 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-07 00:51:37,618 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-07 00:56:33,889 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-07 00:56:33,889 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-07 00:56:33,891 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-07 00:56:33,891 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-07 00:56:41,621 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-07 00:56:41,622 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-07 00:56:41,625 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-07 00:56:41,626 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-07 23:42:50,260 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-07 23:42:50,277 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-07 23:42:50,288 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-07 23:42:50,289 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-07 23:52:37,048 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-07 23:52:37,052 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-07 23:52:37,054 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-07 23:52:37,054 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-07 23:58:54,473 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-07 23:58:54,473 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-07 23:58:54,475 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-07 23:58:54,475 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:00:23,509 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:00:24,110 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-08 00:00:24,112 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:00:24,113 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:01:24,676 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:01:24,677 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-08 00:01:24,679 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:01:24,680 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:01:47,927 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:01:47,944 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-08 00:01:47,952 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:01:47,952 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:02:03,328 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:02:03,330 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-08 00:02:03,332 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:02:03,333 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:04:55,923 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:04:55,927 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:04:55,933 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:04:55,933 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:06:24,217 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:06:24,219 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-08 00:06:24,222 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:06:24,222 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:08:00,741 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:08:00,749 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-08 00:08:00,756 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:08:00,757 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:11:45,210 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:11:45,211 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2016-11-08 00:11:45,213 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:11:45,214 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:17:55,101 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:17:55,105 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:17:55,109 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:17:55,110 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:24:26,937 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:24:26,938 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:24:26,939 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:24:26,939 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:29:54,021 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:29:54,025 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:29:54,031 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:29:54,031 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:32:14,756 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:32:14,756 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:32:14,758 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:32:14,758 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:32:23,480 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:32:23,484 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:32:23,489 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:32:23,489 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:33:58,819 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:33:58,819 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:33:58,821 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:33:58,821 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:40:03,516 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:40:03,521 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:40:03,527 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:40:03,527 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:41:03,729 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:41:03,730 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:41:03,731 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:41:03,731 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:43:17,877 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:43:17,881 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:43:17,885 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:43:17,885 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:44:56,711 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:44:56,712 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:44:56,713 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:44:56,713 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:45:59,124 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:45:59,128 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:45:59,132 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:45:59,132 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:48:50,556 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:48:50,556 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:48:50,557 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:48:50,557 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:49:07,113 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:49:07,116 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:49:07,120 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:49:07,121 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:52:40,161 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:52:40,161 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:52:40,163 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:52:40,163 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:55:03,769 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:55:03,784 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:55:03,792 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:55:03,792 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:55:59,694 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:55:59,695 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-08 00:55:59,695 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-08 00:55:59,696 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
