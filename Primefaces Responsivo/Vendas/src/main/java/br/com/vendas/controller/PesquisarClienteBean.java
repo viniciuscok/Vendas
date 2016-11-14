@@ -31,26 +31,57 @@ public class PesquisarClienteBean implements Serializable
 	
 	private ClienteFilter clienteFiltro;
 	
+								//MÉTODO PARA INICIAR O CLIENTE AO CARREGAR A PÁGINA 		
+//------------------------------------------------------------------------------------------------------------------------
+
 	@PostConstruct
 	public void init()
 	{
-		clienteFiltro = new ClienteFilter();
-		clientes = new ArrayList<>();
+		limpar();
 	}
 	
+								//MÉTODO PARA BUSCAR TODOS OS CLIENTES 		
+//------------------------------------------------------------------------------------------------------------------------
+
 	public void buscarTodos()
 	{
 		try
 		{
-			this.clientes = cadastroClienteDAO.buscarTodos(clienteFiltro);
+			this.clientes = cadastroClienteDAO.buscarTodos();
 			
 		}catch (NegocioException e) 
 		{
 			FacesUtil.addErrorMessage(e.getMessage());
 		}
 	}
-
 	
+							//MÉTODO PARA BUSCAR O CLIENTE PASSANDO NOME OU UM CPF COMO PARAMETRO 		
+//------------------------------------------------------------------------------------------------------------------------
+
+	public void porNomeCPF()
+	{
+		try
+		{
+			this.clientes = cadastroClienteDAO.porNomeCPF(clienteFiltro);
+			
+		}catch (NegocioException e) 
+		{
+			FacesUtil.addErrorMessage(e.getMessage());
+		}
+	}
+	
+											//MÉTODO PARA LIMPAR OS CAMPOS NA TELA 		
+//------------------------------------------------------------------------------------------------------------------------
+
+	public void limpar()
+	{
+		clienteFiltro = new ClienteFilter();
+		clientes = new ArrayList<>();
+	}
+
+											//MÉTODO GETTERS E SETTERS 		
+//------------------------------------------------------------------------------------------------------------------------
+
 	public List<Cliente> getClientes() {
 		return clientes;
 	}

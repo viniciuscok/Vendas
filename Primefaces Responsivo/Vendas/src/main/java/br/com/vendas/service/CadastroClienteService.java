@@ -17,6 +17,10 @@ public class CadastroClienteService implements Serializable
 	@Inject
 	private CadastroClienteDAO cadastroClienteDAO;
 	
+					//MÉTODO SALVAR UM CLIENTE COM UMA REGRA DE NÉGOCIO ONDE SE O CLIENTE, ENDEREÇO E CONTATO 
+					//ESTIVEREM NULOS O CLIENTE NÃO SERÁ CADASTRADO.
+//------------------------------------------------------------------------------------------------------------------------
+		
 	@Transactional
 	public void salvar(Cliente cliente) throws NegocioException
 	{

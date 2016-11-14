@@ -16,14 +16,26 @@ public class CadastroClienteDAO implements Serializable
 	@Inject
 	private EntityManager manager;
 	
-	
+							//MÉTODO PARA SALVA O CLIENTE PASSANDO O PRÓPRIO CLIENTE COMO PARÂMETRO 		
+//------------------------------------------------------------------------------------------------------------------------
+
 	public void salvar(Cliente cliente)
 	{
 		manager.merge(cliente);
 	}
 	
+							//MÉTODO PARA BUSCAR TODOS OS CLIENTES RETORNANDO UMA LISTA DE CLIENTES 		
+//------------------------------------------------------------------------------------------------------------------------
 	
-	public List<Cliente> buscarTodos(ClienteFilter clienteFilter)
+	public List<Cliente> buscarTodos()
+	{
+		return manager.createQuery("from Cliente", Cliente.class).getResultList();
+	}
+	
+					//MÉTODO PARA BUSCAR UM CLIENTE PELO NOME OU CPF PASSANDO COMO PARÂMETRO UM CLIENTEFILTER 		
+//------------------------------------------------------------------------------------------------------------------------
+		
+	public List<Cliente> porNomeCPF(ClienteFilter clienteFilter)
 	{
 		List<Cliente> testes = null;
 		if(!clienteFilter.getNome().trim().equals(""))
@@ -39,6 +51,12 @@ public class CadastroClienteDAO implements Serializable
 					.getResultList();
 		}
 		 return testes;
+	}
+
+	public Cliente porCodigo(Long codigo) 
+	{
+		
+		return manager.find(Cliente.class, codigo);
 	}
 
 }

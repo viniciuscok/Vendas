@@ -11,7 +11,6 @@ import br.com.vendas.model.Cliente;
 import br.com.vendas.model.Contato;
 import br.com.vendas.model.Endereco;
 import br.com.vendas.model.TipoPessoa;
-import br.com.vendas.model.WebServiceCep;
 import br.com.vendas.service.CadastroClienteService;
 import br.com.vendas.service.NegocioException;
 import br.com.vendas.util.jsf.FacesUtil;
@@ -31,59 +30,47 @@ public class CadastroClienteBean implements Serializable
 	
 	private Endereco endereco;
 	
-	/*public CadastroClienteBean()
-	{
-		this.cliente = new Cliente();
-		this.contato = new Contato();
-		this.endereco = new Endereco();
-	}*/
+									//MÉTODO PARA INICIALIZAR O CLIENTE AO CARREGAR A PÁGINA		
+//------------------------------------------------------------------------------------------------------------------------
 	
 	@PostConstruct
 	public void init()
 	{
-		this.cliente = new Cliente();
-		this.contato = new Contato();
-		this.endereco = new Endereco();
+		if(this.cliente == null)
+		{
+			limpar();
+		}
+		
 	}
 	
-	 
 	
-	public void encontraCEP() 
-	 {
-		
-		//Faz a busca para o cep 58043-280
-		System.out.println("cep=" +this.endereco.getCep());
-        WebServiceCep webServiceCep = WebServiceCep.searchCep(endereco.getCep());
-        //A ferramenta de busca ignora qualquer caracter que n?o seja n?mero.
+									//MÉTODO PARA SALVA O CLIENTE		
+//------------------------------------------------------------------------------------------------------------------------
 
-        //caso a busca ocorra bem, imprime os resultados.
-        if (webServiceCep.wasSuccessful()) {
-            endereco.setLogradouro(webServiceCep.getLogradouroFull());
-            endereco.setCidade(webServiceCep.getCidade());
-            //b1.setText(webServiceCep.getBairro());
-            endereco.setUf(webServiceCep.getUf());
-            //System.out.println("Cep: " + webServiceCep.getCep());
-            //System.out.println("Logradouro: " + webServiceCep.getLogradouroFull());
-            //System.out.println("Bairro: " + webServiceCep.getBairro());
-            //System.out.println("Cidade: "
-                    //+ webServiceCep.getCidade() + "/" + webServiceCep.getUf());
-
-            //caso haja problemas imprime as exce??es.
-        } 
-	  }
-	
 	public void salvar()
 	{
 		try 
 		{
 			this.cadastroClienteService.salvar(cliente);
-			FacesUtil.addInfoMessage("cliente salvo com sucesso");
+			if(this.cliente.getCodigo() == null)
+			{
+				FacesUtil.addInfoMessage("cliente salvo com sucesso");
+			}else
+			{
+				FacesUtil.addInfoMessage("cliente editado com sucesso");
+			}
+			
+			limpar();
 		} catch (NegocioException e) 
 		{
 			FacesUtil.addErrorMessage(e.getMessage());
 		}
 	}
 	
+				//MÉTODO PARA IDENTIFICAR SE O CONTATO ESTÁ NULO,SE TIVER NULO ELE CRIA UM NOVO CONTATO
+				//CASO CONTRARIO ELE ABRE O CONTATO QUE JÁ FOI DIGITADO.
+//------------------------------------------------------------------------------------------------------------------------
+
 	public void novoContato()
 	{
 		if(contato == null)
@@ -94,7 +81,11 @@ public class CadastroClienteBean implements Serializable
 			this.cliente.getContatos();
 		}
 	}
-	
+
+					//MÉTODO PARA IDENTIFICAR SE O ENDEREÇO ESTÁ NULO,SE TIVER NULO ELE CRIA UM NOVO ENDEREÇO
+					//CASO CONTRARIO ELE ABRE O ENDEREÇO QUE JÁ FOI DIGITADO.
+//------------------------------------------------------------------------------------------------------------------------
+			
 	public void novoEndereco()
 	{
 		if(endereco == null)
@@ -107,6 +98,9 @@ public class CadastroClienteBean implements Serializable
 		}
 	}
 
+							//MÉTODO PARA ADICIONAR UMA LISTA DE CONTATOS NO CLIENTE 	
+//------------------------------------------------------------------------------------------------------------------------
+		
 	public void adicionarContato()
 	{
 		this.cliente.getContatos().add(contato);
@@ -114,28 +108,58 @@ public class CadastroClienteBean implements Serializable
 		
 	}
 	
+							//MÉTODO PARA ADICIONAR UMA LISTA DE ENDEREÇOS NO CLIENTE 	
+//------------------------------------------------------------------------------------------------------------------------
+	
 	public void adicionarEndereco()
 	{
 		this.cliente.getEnderecos().add(endereco);
 		this.endereco.setCliente(cliente);
 	}
+	
+									//MÉTODO QUE RETORNO UM ARRAY DE TIPOS DE PESSOAS 	
+//------------------------------------------------------------------------------------------------------------------------
+	
 	public TipoPessoa[] getTipoPessoas()
 	{
 		return TipoPessoa.values();
 	}
 	
+	public boolean isEditando()
+	{
+		return this.cliente.getCodigo() != null;
+	}
+	
+									//Método para limpa os campos do cliente 
+//------------------------------------------------------------------------------------------------------------------------
+					
+	public void limpar()
+	{
+		this.cliente = new Cliente();
+		this.contato = new Contato();
+		this.endereco = new Endereco();
+	}
+	
+									//Método getters e Setters 
+//------------------------------------------------------------------------------------------------------------------------
+						
 	public Cliente getCliente() 
 	{
 		return cliente;
 	}
 
-	public void setCliente(Cliente cliente) {
+	public void setCliente(Cliente cliente) 
+	{
 		this.cliente = cliente;
-		
-		
+		if(cliente != null)
+		{
+			this.contato = this.cliente.getContatos().get(0);
+			this.endereco = this.cliente.getEnderecos().get(0);
+		}
 	}
 
-	public Contato getContato() {
+	public Contato getContato() 
+	{
 		return contato;
 	}
 
