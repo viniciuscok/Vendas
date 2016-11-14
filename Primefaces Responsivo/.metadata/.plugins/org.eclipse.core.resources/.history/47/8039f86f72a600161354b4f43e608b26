@@ -1,0 +1,42 @@
+package teste;
+
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+
+
+import br.com.vendas.model.Cliente;
+import br.com.vendas.model.Endereco;
+
+public class Teste 
+{
+	public static void main(String[] args) 
+	{
+		/*EntityManagerFactory emf = Persistence.createEntityManagerFactory("PedidoPU");
+		EntityManager em = emf.createEntityManager();
+		
+		
+
+		Cliente cliente = new Cliente();
+		cliente.setNome("Vinicius");
+		em.getTransaction().begin();
+		em.persist(cliente);
+		em.getTransaction().commit();
+		
+		
+		System.out.println("cliente salvo com sucesso");*/
+		
+		try {
+            // throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            System.out.println(Endereco.buscaCep("01126001").getCidade());
+        } catch (IOException ex) {
+            Logger.getLogger(Endereco.class.getName()).log(Level.SEVERE, null, ex);
+        }
+	}
+
+}

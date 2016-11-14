@@ -25,32 +25,52 @@
 					columnClasses="ui-grid-col-2,ui-grid-col-10" styleClass="ve-panelGridPesquisaClientes">
 						
 					<p:outputLabel value="CPF/CNPJ" for="cpf"/>
-					<p:inputText id="cpf"/>		
+					<p:inputMask id="cpf" mask="999.999.999-99" value="#{pesquisarClienteBean.clienteFiltro.documento}"/>		
 					
 					<p:outputLabel value="Nome" for="nome"/>
-					<p:inputText id="nome"/>																			
+					<p:inputText id="nome" value="#{pesquisarClienteBean.clienteFiltro.nome}"/>
+					
+					<p:commandButton value="Buscar" action="#{pesquisarClienteBean.buscarTodos}"
+						update="@form ve-tablePesquisaProdutos"/>																			
 				</p:panelGrid>
 			</div>	
-			<p:dataTable id="ve-tablePesquisaProdutos" value="#{pesquisaProdutoBean.produtosFiltrados}" 
-				 var="produto" style="margin-top:20px" rows="20" paginator="true" paginatorAlwaysVisible="false"
+			<p:dataTable id="ve-tablePesquisaProdutos" value="#{pesquisarClienteBean.clientes}" emptyMessage="Não foi encontrado nenhum registro" 
+				 var="cliente" style="margin-top:20px" rows="20" paginator="true" paginatorAlwaysVisible="false"
 				 paginatorPosition="bottom" reflow="true">
 				 			
 				<p:column headerText="Nome">
-					<h:outputText value="vinicius" />
+					<h:outputText value="#{cliente.nome}" />
 				</p:column>
 				
 				<p:column headerText="Tipo" >
-					<h:outputText value="juridica" />
+					<h:outputText value="#{cliente.tipoPessoa}" />
 				</p:column>
 				
 				<p:column headerText="CPF/CNPJ" >
-					<h:outputText value="098.099.098-99" />
+					<h:outputText value="#{cliente.documento}" />
 				</p:column>			
+				
+				<p:column headerText="Whatsapp">
+					<h:outputText value="#{cliente.contatos.get(0).telefone}" />
+				</p:column>
+				
+				<p:column headerText="Cidade">
+					<h:outputText value="#{cliente.enderecos.get(0).cidade}"/>	
+				</p:column>
+				
+				<p:column headerText="Bairro" >
+					<h:outputText value="#{cliente.enderecos.get(0).bairro}"/>	
+				</p:column>
+				
+				<p:column headerText="Estado">
+					<h:outputText value="#{cliente.enderecos.get(0).uf}"/>	
+				</p:column>
 				
 				<p:column headerText="Ações" styleClass="ve-editarPesquisaProdutos">
 					<p:button icon="fa fa-edit" title="Editar" />
 					<p:commandButton icon="fa fa-trash-o" title="Excluir"/>
 				</p:column>
+			
 			</p:dataTable>	
 		</h:form>		
 	</ui:define>

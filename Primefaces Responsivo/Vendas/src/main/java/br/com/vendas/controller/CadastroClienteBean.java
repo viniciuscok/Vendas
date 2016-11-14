@@ -9,7 +9,9 @@ import javax.inject.Named;
 
 import br.com.vendas.model.Cliente;
 import br.com.vendas.model.Contato;
+import br.com.vendas.model.Endereco;
 import br.com.vendas.model.TipoPessoa;
+import br.com.vendas.model.WebServiceCep;
 import br.com.vendas.service.CadastroClienteService;
 import br.com.vendas.service.NegocioException;
 import br.com.vendas.util.jsf.FacesUtil;
@@ -27,11 +29,48 @@ public class CadastroClienteBean implements Serializable
 	
 	private Contato contato;
 	
-	public CadastroClienteBean()
+	private Endereco endereco;
+	
+	/*public CadastroClienteBean()
 	{
 		this.cliente = new Cliente();
 		this.contato = new Contato();
+		this.endereco = new Endereco();
+	}*/
+	
+	@PostConstruct
+	public void init()
+	{
+		this.cliente = new Cliente();
+		this.contato = new Contato();
+		this.endereco = new Endereco();
 	}
+	
+	 
+	
+	public void encontraCEP() 
+	 {
+		
+		//Faz a busca para o cep 58043-280
+		System.out.println("cep=" +this.endereco.getCep());
+        WebServiceCep webServiceCep = WebServiceCep.searchCep(endereco.getCep());
+        //A ferramenta de busca ignora qualquer caracter que n?o seja n?mero.
+
+        //caso a busca ocorra bem, imprime os resultados.
+        if (webServiceCep.wasSuccessful()) {
+            endereco.setLogradouro(webServiceCep.getLogradouroFull());
+            endereco.setCidade(webServiceCep.getCidade());
+            //b1.setText(webServiceCep.getBairro());
+            endereco.setUf(webServiceCep.getUf());
+            //System.out.println("Cep: " + webServiceCep.getCep());
+            //System.out.println("Logradouro: " + webServiceCep.getLogradouroFull());
+            //System.out.println("Bairro: " + webServiceCep.getBairro());
+            //System.out.println("Cidade: "
+                    //+ webServiceCep.getCidade() + "/" + webServiceCep.getUf());
+
+            //caso haja problemas imprime as exce??es.
+        } 
+	  }
 	
 	public void salvar()
 	{
@@ -55,6 +94,18 @@ public class CadastroClienteBean implements Serializable
 			this.cliente.getContatos();
 		}
 	}
+	
+	public void novoEndereco()
+	{
+		if(endereco == null)
+		{
+			this.endereco = new Endereco();
+			
+		}else
+		{
+			this.endereco = getEndereco();
+		}
+	}
 
 	public void adicionarContato()
 	{
@@ -62,17 +113,26 @@ public class CadastroClienteBean implements Serializable
 		this.contato.setCliente(cliente);
 		
 	}
+	
+	public void adicionarEndereco()
+	{
+		this.cliente.getEnderecos().add(endereco);
+		this.endereco.setCliente(cliente);
+	}
 	public TipoPessoa[] getTipoPessoas()
 	{
 		return TipoPessoa.values();
 	}
 	
-	public Cliente getCliente() {
+	public Cliente getCliente() 
+	{
 		return cliente;
 	}
 
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
+		
+		
 	}
 
 	public Contato getContato() {
@@ -81,6 +141,14 @@ public class CadastroClienteBean implements Serializable
 
 	public void setContato(Contato contato) {
 		this.contato = contato;
+	}
+
+	public Endereco getEndereco() {
+		return endereco;
+	}
+
+	public void setEndereco(Endereco endereco) {
+		this.endereco = endereco;
 	}
 	
 	

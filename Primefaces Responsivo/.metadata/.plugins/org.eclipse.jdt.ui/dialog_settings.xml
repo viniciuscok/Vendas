@@ -66,6 +66,8 @@
 		<item value="false" key="InstanceOf"/>
 		<item value="false" key="FinalModifier"/>
 	</section>
+	<section name="RenameInformationPopup">
+	</section>
 	<section name="ClasspathContainerSelectionPage">
 		<item value="7" key="index"/>
 	</section>

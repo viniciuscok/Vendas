@@ -47,7 +47,7 @@ public class Cliente implements Serializable
 	public Cliente() 
 	{
 		this.tipoPessoa = TipoPessoa.FISICA;
-		//this.enderecos = new ArrayList<>();
+		this.enderecos = new ArrayList<>();
 		this.contatos = new ArrayList<>();
 	}
 
@@ -79,10 +79,13 @@ public class Cliente implements Serializable
 	@CPF @Size(max=30)
 	@Column(name="nr_documento", nullable=false, unique=true, length=30)
 	public String getDocumento() {
+									
 		return documento;
 	}
 
-	public void setDocumento(String documento) {
+	public void setDocumento(String documento) 
+	{
+		
 		this.documento = documento;
 	}
 	
@@ -117,9 +120,8 @@ public class Cliente implements Serializable
 		this.tipoPessoa = tipoPessoa;
 	}
 	
-	//@OneToMany(mappedBy="cliente", cascade= CascadeType.ALL)
-	//@JoinColumn(name="cod_endereco", nullable=false)
-	@Transient
+	@NotNull
+	@OneToMany(mappedBy="cliente", cascade= CascadeType.ALL)
 	public List<Endereco> getEnderecos() {
 		return enderecos;
 	}
@@ -166,7 +168,11 @@ public class Cliente implements Serializable
 		return true;
 	}
 	
-											
+	@Transient
+	public boolean isPessoaFisica()
+	{
+		return TipoPessoa.FISICA !=null && tipoPessoa.equals(TipoPessoa.FISICA);
+	}								
 	
 
 }

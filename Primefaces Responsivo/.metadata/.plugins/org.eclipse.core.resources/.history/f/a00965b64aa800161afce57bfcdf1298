@@ -1,0 +1,43 @@
+package br.com.vendas.dao;
+
+import java.io.Serializable;
+import java.util.List;
+
+import javax.inject.Inject;
+import javax.persistence.EntityManager;
+
+import br.com.vendas.model.Cliente;
+
+public class CadastroClienteDAO implements Serializable
+{
+	private static final long serialVersionUID = 1L;
+	
+	@Inject
+	private EntityManager manager;
+	
+	
+	public void salvar(Cliente cliente)
+	{
+		manager.merge(cliente);
+	}
+	
+	
+	public List<Cliente> buscarTodos(Cliente cliente)
+	{
+		List<Cliente> testes = null;
+		if(!cliente.getNome().isEmpty())
+		{
+			testes= manager.createQuery("from Cliente c where c.nome = ?1", Cliente.class)
+					.setParameter(1, cliente.getNome())
+					.getResultList();
+		}
+		if(!cliente.getDocumento().isEmpty())
+		{
+			testes= manager.createQuery("from Cliente c where c.documento = ?1", Cliente.class)
+					.setParameter(1, cliente.getDocumento())
+					.getResultList();
+		}
+		 return testes;
+	}
+
+}

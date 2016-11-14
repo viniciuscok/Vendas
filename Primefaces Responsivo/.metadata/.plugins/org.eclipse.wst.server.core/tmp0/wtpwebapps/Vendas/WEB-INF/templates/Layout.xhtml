@@ -45,10 +45,18 @@
 		<nav class="ve-menuLateralInterno">
 			<ul>
 				<li class="ve-teste ">
-					<h:link><i class="fa  fa-fw  fa-home"></i>Home</h:link>
+					<h:link outcome="CadastroCliente.xhtml"><i class="fa  fa-fw  fa-home"></i>Home</h:link>
 				</li>
 				<li class="ve-teste ">
-					<h:link><i class="fa  fa-fw  fa-user"></i>Cadastro</h:link>
+					<h:link><i class="fa  fa-fw  fa-user"></i>Cadastro <i class="fa fa-caret-down"></i></h:link>
+					<UL>
+						<LI>
+							<h:link id="cadastrando" outcome="PesquisaClientes.xhtml">cadastro pessoa</h:link>
+						</LI>
+						<LI>
+							<h:link id="cad" outcome="PesquisaClientes.xhtml">cadastro funcionario</h:link>
+						</LI>
+					</UL>
 				</li>
 				<li class="ve-teste ">
 					<h:link><i class="fa  fa-fw  fa-file-text"></i>Relatórios</h:link>

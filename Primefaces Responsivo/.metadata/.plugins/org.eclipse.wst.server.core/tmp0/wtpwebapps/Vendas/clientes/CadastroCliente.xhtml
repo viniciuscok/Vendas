@@ -51,10 +51,12 @@
 						value="#{cadastroClienteBean.cliente.tipoPessoa}">
 						<f:selectItems value="#{cadastroClienteBean.tipoPessoas}" var="tipo"
 							itemValue="#{tipo}" itemLabel="#{tipo.descricao}"/>
+						<p:ajax event="change" process="@this" update="documento"/>
+							
 					</p:selectOneRadio>
 
 					<p:outputLabel value="CPF/CNPJ" for="documento" />
-					<p:inputMask id="documento" mask="999.999.999-99" 
+					<p:inputMask id="documento" mask="#{cadastroClienteBean.cliente.pessoaFisica? '999.999.999-99': '99.999.999/9999-99'}" 
 						value="#{cadastroClienteBean.cliente.documento}"/>
 
 					<ui:include src="/WEB-INF/templates/clientes/ContatoCliente.xhtml"></ui:include>

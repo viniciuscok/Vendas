@@ -7,39 +7,48 @@
 	<p:outputLabel value="Endereço" for="endereco" />
 	<h:panelGroup>
 		<p:commandButton id="endereco" value="ADD ENDEREÇO"
-			title="Adicionar Endereço" oncomplete="PF('novoEnderecoCliente').show()"/>
+			title="Adicionar Endereço" oncomplete="PF('novoEnderecoCliente').show()"
+			action="#{cadastroClienteBean.novoEndereco()}" process="@this" update="dialogoEnderecoCliente"/>
 	
 		<p:dialog id="dialogoEnderecoCliente" header="Endereço do Cliente" widgetVar="novoEnderecoCliente" 
-			responsive="true" resizable="false">
+			responsive="true" resizable="false" modal="true">
 			
-			<p:panelGrid columns="2" layout="grid">
+			<p:messages id="msgDialogEndereco" autoUpdate="false" closable="true"/>
+			
+						
+			<p:panelGrid id="oiteste" columns="2" layout="grid">
+			
+					
 				<p:outputLabel value="Logradouro" for="logradouro"/>
-					<p:inputText id="logradouro" maxlength="100" />
+					<p:inputText id="logradouro" maxlength="100" 
+						value="#{cadastroClienteBean.endereco.logradouro}"/>
 						
 					<p:outputLabel value="Número" for="numero"/>
-					<p:inputText id="numero" maxlength="30" />
+					<p:inputText id="numero" maxlength="100" 
+						value="#{cadastroClienteBean.endereco.numero}"/>
 						
 					<p:outputLabel value="Complemento" for="complemento"/>
-					<p:inputText id="complemento" maxlength="80" />
+					<p:inputText id="complemento" maxlength="100" 
+						value="#{cadastroClienteBean.endereco.complemento}"/>
+						
+					<p:outputLabel value="Bairro" for="bairro"/>
+					<p:inputText id="bairro" value="#{cadastroClienteBean.endereco.bairro}"/>
 						
 					<p:outputLabel value="CEP" for="cep"/>
-					<p:inputText id="cep" maxlength="12" />
-						
+					<p:inputMask id="cep" mask="99999-999" value="#{cadastroClienteBean.endereco.cep}"/>
+				
 					<p:outputLabel value="Cidade" for="cidade"/>
-					<p:inputText id="cidade" maxlength="30" />
+					<p:inputText id="cidade" maxlength="100" 
+						value="#{cadastroClienteBean.endereco.cidade}"/>
 					
 					<p:outputLabel value="UF" for="uf" />
-					<p:selectOneMenu id="uf" >
-						<f:selectItem itemLabel="ba" itemValue="1"/>
-						<f:selectItem itemLabel="sp" itemValue="2"/>
-						<f:selectItem itemLabel="rj" itemValue="3"/>
-						<f:selectItem itemLabel="mg" itemValue="4"/>
-						<f:selectItem itemLabel="ro" itemValue="5"/>
-						
-						
-					</p:selectOneMenu>
+					<p:inputText id="uf" maxlength="100" 
+						value="#{cadastroClienteBean.endereco.uf}"/>
 					
-					<p:commandButton value="Incluir" style="text-align: center"/>
+					<p:commandButton value="Incluir" style="text-align: center"
+						action="#{cadastroClienteBean.adicionarEndereco}" process="oiteste "
+						update="oiteste msgDialogEndereco"
+						oncomplete="if(!args.validationFailed) PF('novoEnderecoCliente').hide()"/>
 			</p:panelGrid>
 		</p:dialog>
 	</h:panelGroup>

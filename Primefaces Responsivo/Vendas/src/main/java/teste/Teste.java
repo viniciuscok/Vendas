@@ -1,18 +1,10 @@
 package teste;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-
-
-
-import br.com.vendas.model.Cliente;
-
 public class Teste 
 {
 	public static void main(String[] args) 
 	{
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("PedidoPU");
+		/*EntityManagerFactory emf = Persistence.createEntityManagerFactory("PedidoPU");
 		EntityManager em = emf.createEntityManager();
 		
 		
@@ -24,7 +16,8 @@ public class Teste
 		em.getTransaction().commit();
 		
 		
-		System.out.println("cliente salvo com sucesso");
+		System.out.println("cliente salvo com sucesso");*/
+		
 	}
 
 }
