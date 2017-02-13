@@ -65,19 +65,19 @@
 				</p:column>			
 				
 				<p:column headerText="Whatsapp">
-					<h:outputText value="#{cliente.contatos.get(0).telefone}" />
+					<h:outputText value="#{cliente.contato.telefone}" />
 				</p:column>
 				
 				<p:column headerText="Cidade">
-					<h:outputText value="#{cliente.enderecos.get(0).cidade}"/>	
+					<h:outputText value="#{cliente.endereco.cidade}"/>	
 				</p:column>
 				
 				<p:column headerText="Bairro" >
-					<h:outputText value="#{cliente.enderecos.get(0).bairro}"/>	
+					<h:outputText value="#{cliente.endereco.bairro}"/>	
 				</p:column>
 				
 				<p:column headerText="Estado">
-					<h:outputText value="#{cliente.enderecos.get(0).uf}"/>	
+					<h:outputText value="#{cliente.endereco.uf}"/>	
 				</p:column>
 				
 				<p:column headerText="Ações" styleClass="ve-editarPesquisaProdutos">

@@ -108,7 +108,8 @@ public class CadastroClienteBean implements Serializable
 	
 	public void adicionarContato()
 	{
-		this.cliente.getContato();//.add(contato);
+		//this.cliente.getContatos().add(contato); certo
+		this.cliente.setContato(contato);
 		//this.cliente.setContatos(contatos);
 		
 	}
@@ -120,7 +121,8 @@ public class CadastroClienteBean implements Serializable
 	public void adicionarEndereco()
 	{
 		//this.cliente.getEnderecos().add(endereco);
-		this.cliente.getEndereco();//.add(endereco);
+		//this.cliente.getEnderecos().add(endereco); certo
+		this.cliente.setEndereco(endereco);
 		//this.cliente.setEnderecos(enderecos);
 		
 		//this.endereco.setCliente(cliente);
