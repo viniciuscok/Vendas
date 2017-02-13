@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [11/Feb/2017:00:14:15 -0300] "GET /Vendas/clientes/CadastroCliente.xhtml HTTP/1.1" 200 24353
+127.0.0.1 - - [11/Feb/2017:00:58:27 -0300] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [11/Feb/2017:00:58:28 -0300] "GET /Vendas/marcas/CadastroMarca.xhtml HTTP/1.1" 200 7152
+0:0:0:0:0:0:0:1 - - [11/Feb/2017:00:58:41 -0300] "POST /Vendas/marcas/CadastroMarca.xhtml HTTP/1.1" 200 3859
+0:0:0:0:0:0:0:1 - - [11/Feb/2017:01:01:09 -0300] "GET /Vendas/categorias/CadastroCategoria.xhtml HTTP/1.1" 200 8037
+0:0:0:0:0:0:0:1 - - [11/Feb/2017:01:01:15 -0300] "GET /Vendas/produtos/CadastroProduto.xhtml HTTP/1.1" 200 15293

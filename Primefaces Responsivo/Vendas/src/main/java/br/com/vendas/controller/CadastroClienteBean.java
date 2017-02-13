@@ -51,16 +51,20 @@ public class CadastroClienteBean implements Serializable
 	{
 		try 
 		{
+			
 			this.cadastroClienteService.salvar(cliente);
+			
 			if(this.cliente.getCodigo() == null)
 			{
 				FacesUtil.addInfoMessage("cliente salvo com sucesso");
+				limpar();
 			}else
 			{
 				FacesUtil.addInfoMessage("cliente editado com sucesso");
+				limpar();
 			}
+		
 			
-			limpar();
 		} catch (NegocioException e) 
 		{
 			FacesUtil.addErrorMessage(e.getMessage());
@@ -76,10 +80,10 @@ public class CadastroClienteBean implements Serializable
 		if(contato == null)
 		{
 			this.contato = new Contato();
-		}else
-		{
-			this.cliente.getContatos();
-		}
+		}//else
+		//{
+		//	this.cliente.getContatos();
+		//}
 	}
 
 					//MÉTODO PARA IDENTIFICAR SE O ENDEREÇO ESTÁ NULO,SE TIVER NULO ELE CRIA UM NOVO ENDEREÇO
@@ -101,20 +105,25 @@ public class CadastroClienteBean implements Serializable
 							//MÉTODO PARA ADICIONAR UMA LISTA DE CONTATOS NO CLIENTE 	
 //------------------------------------------------------------------------------------------------------------------------
 		
+	
 	public void adicionarContato()
 	{
-		this.cliente.getContatos().add(contato);
-		this.contato.setCliente(cliente);
+		this.cliente.getContato();//.add(contato);
+		//this.cliente.setContatos(contatos);
 		
 	}
 	
 							//MÉTODO PARA ADICIONAR UMA LISTA DE ENDEREÇOS NO CLIENTE 	
 //------------------------------------------------------------------------------------------------------------------------
 	
+	
 	public void adicionarEndereco()
 	{
-		this.cliente.getEnderecos().add(endereco);
-		this.endereco.setCliente(cliente);
+		//this.cliente.getEnderecos().add(endereco);
+		this.cliente.getEndereco();//.add(endereco);
+		//this.cliente.setEnderecos(enderecos);
+		
+		//this.endereco.setCliente(cliente);
 	}
 	
 									//MÉTODO QUE RETORNO UM ARRAY DE TIPOS DE PESSOAS 	
@@ -153,8 +162,10 @@ public class CadastroClienteBean implements Serializable
 		this.cliente = cliente;
 		if(cliente != null)
 		{
-			this.contato = this.cliente.getContatos().get(0);
-			this.endereco = this.cliente.getEnderecos().get(0);
+			//this.contato = this.cliente.getContatos().get(0);
+			//this.endereco = this.cliente.getEnderecos().get(0);
+			this.contato = this.cliente.getContato();
+			this.endereco = this.cliente.getEndereco();
 		}
 	}
 

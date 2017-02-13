@@ -10,7 +10,9 @@
 	.ui-panelgrid.ve-panelGridCadastroPedido .ui-grid-responsive .ui-grid-row,
 	.ui-panelgrid.ve-panelGridPesquisaPedidos .ui-grid-responsive .ui-grid-row,
 	.ui-panelgrid.ve-panelGridDadosEntregaPedido .ui-grid-responsive .ui-grid-row,
-	.ui-panelgrid.ve-panelGridPesquisaClientes .ui-grid-responsive .ui-grid-row
+	.ui-panelgrid.ve-panelGridPesquisaClientes .ui-grid-responsive .ui-grid-row,
+	.ui-panelgrid.ve-panelGridPesquisaCategoria .ui-grid-responsive .ui-grid-row,
+	.ui-panelgrid.ve-panelGridCadastroCategoria .ui-grid-responsive .ui-grid-row
 	{
 		border: none;
 	}
@@ -57,7 +59,15 @@
 .ui-toolbar-group-left .ve-botaoSalvarCadastroUsuario, 
 .ui-toolbar-group-right .ve-botaoPesquisarCadastroUsuario,
 .ui-toolbar-group-left .ve-botaoPesquisarPesquisaUsuarios,
-.ui-toolbar-group-right .ve-botaoNovoPesquisaUsuarios
+.ui-toolbar-group-right .ve-botaoNovoPesquisaUsuarios,
+
+	/*##########Categorias############*/
+.ui-toolbar-group-left .ve-botaoNovoCadastroCategoria,
+.ui-toolbar-group-left .ve-botaoSalvarCadastroCategoria,
+.ui-toolbar-group-right .ve-botaoPesquisarCadastroCategoria,
+.ui-toolbar-group-left .ve-botaoPesquisarPesquisaCategoria,
+.ui-toolbar-group-right .ve-botaoNovoPesquisaCategorias
+	
 {
 	font-weight:bold;	
 		
@@ -116,7 +126,24 @@
 		font-weight:bold;	
 		font-size: 0.5em;
 	} 
-}
+	
+		/*##########Categorias############*/
+	.ui-toolbar-group-left .ve-botaoPesquisarPesquisaCategoria,
+	.ui-toolbar-group-right .ve-botaoNovoPesquisaCategorias
+	{
+		font-weight:bold;
+		font-size: 0.8em;
+	}	
+	
+	.ui-toolbar-group-left .ve-botaoNovoCadastroCategoria,
+	.ui-toolbar-group-left .ve-botaoSalvarCadastroCategoria,
+	.ui-toolbar-group-right .ve-botaoPesquisarCadastroCategoria
+	{
+		font-weight:bold;
+		font-size: 0.8em;
+	}
+	
+	}
 
 	
 
@@ -158,7 +185,7 @@
 }
 
 /*#########CONFIGURANDO 0 ALINHAMENTO NO CENTRO DAS COLUNAS DAS TABELAS ##########*/
-/*########################PRODUSTO##########################*/
+/*########################PRODUTO##########################*/
 .ui-widget-content .ve-codigoPesquisaProdutos,
 .ui-widget-content .ve-editarPesquisaProdutos,
 .ui-widget-content .ve-espessuraPesquisaProdutos,

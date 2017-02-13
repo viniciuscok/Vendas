@@ -7,13 +7,16 @@
 
 	<ui:define name="titulo">Pesquisar Cliente</ui:define>
 	<ui:define name="corpo">
-		<h1>Pesquisar Cliente</h1>
 			
-		<h:form id="formPesquisaCliente">	
+		<h:form id="formPesquisaCliente">
+			<h1>Pesquisar Cliente</h1>
+			
+			<p:messages autoUpdate="true" closable="true"/>
+				
 			<p:toolbar>
 				<p:toolbarGroup>
 					<p:commandButton value="Pesquisar" icon="fa fa-search" outcome="/clientes/PesquisaClientes" 
-						action="#{pesquisarClienteBean.buscarTodos}" update="ve-tablePesquisaProdutos"
+						action="#{pesquisarClienteBean.buscarTodos}" update="ve-tablePesquisaCliente"
 						styleClass="ve-botaoPesquisarPesquisaClientes"/>
 				</p:toolbarGroup>
 				<p:toolbarGroup align="right">
@@ -25,17 +28,23 @@
 				<p:panelGrid columns="2" id="panelGridPesquisaProduto" layout="grid" 
 					columnClasses="ui-grid-col-2,ui-grid-col-10" styleClass="ve-panelGridPesquisaClientes">
 						
-					<p:outputLabel value="CPF/CNPJ" for="cpf"/>
-					<p:inputMask id="cpf" mask="999.999.999-99" value="#{pesquisarClienteBean.clienteFiltro.documento}"/>		
-					
 					<p:outputLabel value="Nome" for="nome"/>
 					<p:inputText id="nome" value="#{pesquisarClienteBean.clienteFiltro.nome}"/>
+						
+					<p:outputLabel value="CPF/CNPJ" for="cpf"/>
+					<p:inputMask id="cpf" mask="999.999.999-99" value="#{pesquisarClienteBean.clienteFiltro.cpf}">
+						
+					</p:inputMask>	
+					
+					<p:outputLabel value="CNPJ" for="cnpj"/>
+					<p:inputMask id="cnpj" mask="99.999.999/9999-99" value="#{pesquisarClienteBean.clienteFiltro.cnpj}"/>		
+					
 					
 					<p:commandButton value="Buscar" action="#{pesquisarClienteBean.porNomeCPF()}"
-						update="@form ve-tablePesquisaProdutos"/>																			
+						update="@form ve-tablePesquisaCliente"/>																			
 				</p:panelGrid>
 			</div>	
-			<p:dataTable id="ve-tablePesquisaProdutos" value="#{pesquisarClienteBean.clientes}" emptyMessage="Não foi encontrado nenhum registro" 
+			<p:dataTable id="ve-tablePesquisaCliente" value="#{pesquisarClienteBean.clientes}" emptyMessage="Não foi encontrado nenhum registro" 
 				 var="cliente" style="margin-top:20px" rows="20" paginator="true" paginatorAlwaysVisible="false"
 				 paginatorPosition="bottom" reflow="true">
 				 
@@ -75,10 +84,20 @@
 					<p:button icon="fa fa-edit" title="Editar" outcome="/clientes/CadastroCliente">
 						<f:param name="cliente" value="#{cliente.codigo}"/>
 					</p:button>
-					<p:commandButton icon="fa fa-trash-o" title="Excluir"/>
+					<p:commandButton icon="fa fa-trash-o" title="Excluir" oncomplete="PF('excluirCliente').show()"
+							process="@this" update=":formPesquisaCliente:ve-dialogExcluirCliente">
+						<f:setPropertyActionListener value="#{cliente}" target="#{pesquisarClienteBean.clienteSelecionado}"/>	
+					</p:commandButton>
 				</p:column>
 			
 			</p:dataTable>	
+			
+			<p:confirmDialog id="ve-dialogExcluirCliente" header="Excluir Cliente" message="Tem certeza que deseja excluir o cliente?"
+					widgetVar="excluirCliente" responsive="true">
+				<p:button value="Não" onclick="PF('excluirCliente').hide(); return false;"/>	
+				<p:commandButton value="Sim" onclick="PF('excluirCliente').hide();" 
+					action="#{pesquisarClienteBean.remover()}" process="@this" update=":formPesquisaCliente:ve-tablePesquisaCliente"/>
+			</p:confirmDialog>
 		</h:form>		
 	</ui:define>
 	

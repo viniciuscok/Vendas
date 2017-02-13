@@ -1,0 +1,43 @@
+package br.com.vendas.controller;
+
+import java.io.Serializable;
+
+import javax.annotation.PostConstruct;
+import javax.inject.Inject;
+
+import br.com.vendas.model.Marca;
+import br.com.vendas.service.CadastroMarcaService;
+import br.com.vendas.util.jsf.FacesUtil;
+
+public class CadastroMarcaBean implements Serializable
+{
+	private static final long serialVersionUID = 1L;
+
+	@Inject
+	private CadastroMarcaService cadastroMarcaService;
+	private Marca marca;
+	
+	@PostConstruct
+	public void inicializar()
+	{
+		if(marca == null)
+		{
+			limpar();
+		}
+	}
+	
+	public void limpar()
+	{
+		this.marca = new Marca();
+	}
+	
+	public void salvar()
+	{
+		try
+		{
+			cadastroMarcaService.salvar(marca);
+			FacesUtil.addInfoMessage("Marca "+this.marca.getNome()+" inserida com sucesso!");
+			limpar();
+		}
+	}
+}

@@ -7,8 +7,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -29,7 +27,7 @@ public class Contato implements Serializable
 	private String celular;
 	private String whatsapp;
 	private String site;
-	private Cliente cliente;
+	//private Cliente cliente;
 
 												//Método construtor 
 //------------------------------------------------------------------------------------------------------------------------
@@ -104,15 +102,15 @@ public class Contato implements Serializable
 		this.site = site;
 	}
 
-	@ManyToOne
-	@JoinColumn(name="cod_cliente")
-	public Cliente getCliente() {
-		return cliente;
-	}
+	//@ManyToOne
+	//@JoinColumn(name="cod_cliente")
+	//public Cliente getCliente() {
+	//	return cliente;
+	//}
 
-	public void setCliente(Cliente cliente) {
-		this.cliente = cliente;
-	}
+	//public void setCliente(Cliente cliente) {
+	//	this.cliente = cliente;
+	//}
 
 							//Métodos Equals() e Hashcode()  
 //------------------------------------------------------------------------------------------------------------------------

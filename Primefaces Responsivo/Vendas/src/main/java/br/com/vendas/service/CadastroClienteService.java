@@ -3,6 +3,7 @@ package br.com.vendas.service;
 import java.io.Serializable;
 
 import javax.inject.Inject;
+import javax.persistence.NoResultException;
 
 import br.com.vendas.dao.CadastroClienteDAO;
 import br.com.vendas.model.Cliente;
@@ -22,14 +23,27 @@ public class CadastroClienteService implements Serializable
 //------------------------------------------------------------------------------------------------------------------------
 		
 	@Transactional
-	public void salvar(Cliente cliente) throws NegocioException
+	public void salvar(Cliente cliente) throws NegocioException, NoResultException
 	{
-		if(cliente.getNome().trim().equals("") || cliente.getContatos()== null || cliente.getEnderecos()==null)
+		if(cliente.getNome().trim().equals("")) //|| cliente.getContatos()== null || cliente.getEnderecos()==null)
 		{
-			new NegocioException("Usuário não pode ser cadastrado");
+			throw new NegocioException("Usuário não pode ser cadastrado");
+		}
+		//if(!(cadastroClienteDAO.buscarCPF(cliente.getDocumento()).equals(cliente.getDocumento())))
+		//{
+			//throw new NoResultException().get;
+		//}
+		if(cliente.getCodigo() == null && cadastroClienteDAO.buscarCPF(cliente.getDocumento()).equals(cliente.getDocumento()))
+		{
+			
+			System.out.println(cadastroClienteDAO.buscarCPF(cliente.getDocumento()));
+			throw new NegocioException("CPF já cadastrado");
+			
 		}
 		
 		cadastroClienteDAO.salvar(cliente);
+		
+		
 	}
 	
 

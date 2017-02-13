@@ -1,0 +1,69 @@
+package br.com.vendas.dao;
+
+import java.io.Serializable;
+import java.util.List;
+
+import javax.inject.Inject;
+import javax.persistence.EntityManager;
+
+import br.com.vendas.model.Categoria;
+import br.com.vendas.util.jpa.Transactional;
+
+public class CadastroCategoriaDAO implements Serializable
+{
+
+	private static final long serialVersionUID = 1L;
+	
+	@Inject
+	private EntityManager manager;
+	
+							//MÉTODO PARA SALVAR A CATEGORIA PASSANDO UMA CATEGORIA COMO PARAMETRO.		
+//------------------------------------------------------------------------------------------------------------------------
+		
+	@Transactional
+	public void salvar(Categoria categoria)
+	{
+		manager.merge(categoria);
+	}
+	
+	//MÉTODO PARA BUSCAR TODAS AS CATEEGORIAS	
+//------------------------------------------------------------------------------------------------------------------------
+
+	@Transactional
+	public void remover(Categoria categoria)
+	{
+		categoria = porCodigo(categoria.getCodigo());
+		manager.remove(categoria);
+		manager.flush();
+	}
+							//MÉTODO PARA BUSCAR UMA CATEGORIA PELO CÓDIGO		
+//------------------------------------------------------------------------------------------------------------------------
+			
+	public Categoria porCodigo(Long codigo) 
+	{
+		return manager.find(Categoria.class, codigo);
+		System.out.println("");
+	}
+
+							//MÉTODO PARA BUSCAR TODAS AS CATEGORIAS	
+//------------------------------------------------------------------------------------------------------------------------
+				
+	public List<Categoria> buscarTodos()
+	{
+		return manager.createQuery("FROM Categoria", Categoria.class).getResultList();
+	}
+	
+							//MÉTODO PARA BUSCAR PELO NOME DA CATEGORIA
+//------------------------------------------------------------------------------------------------------------------------
+					
+	public List<Categoria> buscarCategoria(String nome)
+	{
+		return manager.createQuery("FROM Categoria c where c.nome like ?1", Categoria.class)
+				.setParameter(1, "%"+nome+"%").getResultList();
+	}
+	
+	public List<Categoria> buscarCategoria()
+	{
+		return manager.createQuery("FROM Categoria", Categoria.class).getResultList();
+	}
+}

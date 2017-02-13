@@ -31,6 +31,8 @@ public class PesquisarClienteBean implements Serializable
 	
 	private ClienteFilter clienteFiltro;
 	
+	private Cliente clienteSelecionado;
+	
 								//MÉTODO PARA INICIAR O CLIENTE AO CARREGAR A PÁGINA 		
 //------------------------------------------------------------------------------------------------------------------------
 
@@ -70,6 +72,19 @@ public class PesquisarClienteBean implements Serializable
 		}
 	}
 	
+	public void remover()
+	{
+		try
+		{
+			cadastroClienteDAO.remover(clienteSelecionado);
+			clientes.remove(clienteSelecionado);
+			FacesUtil.addInfoMessage("O cliente '"+clienteSelecionado.getNome()+"' foi removido com sucesso!");
+		}catch(NegocioException cause)
+		{
+			FacesUtil.addErrorMessage("Cliente não pode ser removido");
+		}
+	}
+	
 											//MÉTODO PARA LIMPAR OS CAMPOS NA TELA 		
 //------------------------------------------------------------------------------------------------------------------------
 
@@ -104,6 +119,14 @@ public class PesquisarClienteBean implements Serializable
 
 	public void setClienteFiltro(ClienteFilter clienteFiltro) {
 		this.clienteFiltro = clienteFiltro;
+	}
+
+	public Cliente getClienteSelecionado() {
+		return clienteSelecionado;
+	}
+
+	public void setClienteSelecionado(Cliente clienteSelecionado) {
+		this.clienteSelecionado = clienteSelecionado;
 	}
 	
 	

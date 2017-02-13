@@ -1,0 +1,61 @@
+<ui:composition template="/WEB-INF/templates/Layout.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:o="http://omnifaces.org/ui">
+
+	<ui:define name="titulo">Cadastro Subcategoria</ui:define>
+	<ui:define name="corpo">
+		<f:metadata>
+			<o:viewParam name="subCategoria" value="#{cadastroSubcategoriaBean.subCategoria}"></o:viewParam>
+			<f:event listener="#{cadastroCategoriaBean.inicializar}" type="preRenderView"></f:event>
+		</f:metadata>
+		
+		<h1>Cadastro Subcategoria</h1>
+
+		<h:form id="formCadastroSubcategoria">
+			<p:messages id="msgPrincipal"  autoUpdate="true" closable="true"/>
+			<p:toolbar>
+				<p:toolbarGroup>
+					<p:button value="Novo" icon="fa fa-plus"
+						outcome="/subcategorias/CadastroSubcategoria"
+						styleClass="ve-botaoNovoCadastroSubcategoria" />
+					<p:commandButton value="Salvar" icon="fa fa-save"
+						id="botaoSalvarCadastroSubcategoria" action="#{cadastroSubcategoriaBean.salvar()}"
+						styleClass="ve-botaoSalvarCadastroSubcategoria" update="@form msgPrincipal" />
+				</p:toolbarGroup>
+				<p:toolbarGroup align="right">
+					<p:button value="Pesquisar" icon="fa fa-search"
+						
+						styleClass="ve-botaoPesquisarCadastroSubcategoria" />
+				</p:toolbarGroup>
+			</p:toolbar>
+			<div class="ui-fluid">
+				<p:panelGrid columns="2" id="panelGrridCadastroSubcategoria"
+					layout="grid" columnClasses="ui-grid-col-2,ui-grid-col-10"
+					styleClass="ve-panelGridCadastroSubcategoria">
+
+					<p:outputLabel value="Nome" for="nome" />
+					<p:inputText id="nome" value="#{cadastroSubcategoriaBean.subCategoria.nome}"/>
+					
+					<p:outputLabel value="Categoria" for="categoria"/>
+					<p:selectOneMenu id="categoria" value="#{cadastroSubcategoriaBean.subCategoria.categoria}" >
+						<f:selectItem itemLabel="Selecione uma Categoria"/>
+            			<f:selectItems value="#{cadastroSubcategoriaBean.categorias}" var="categoria"
+            				itemValue="#{categoria}" itemLabel="#{categoria.nome}"/>
+            			
+        			</p:selectOneMenu>
+
+					<p:outputLabel value="Descrição" for="descricao" />
+					<p:inputText id="descricao" value="#{cadastroSubcategoriaBean.subCategoria.descricao}"/>						
+
+				</p:panelGrid>
+
+			</div>
+
+		</h:form>
+	</ui:define>
+
+</ui:composition>

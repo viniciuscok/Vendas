@@ -87,6 +87,29 @@
 	margin-right: 6px;
 }
 
+.ve-menuLateralInterno li ul
+{
+	display:none;
+}
+
+.ve-menuLateralInterno ul li a:hover
+{
+	background: #066;
+	color:#fff;
+}
+
+.ve-menuLateralInterno li:hover ul
+{
+	display:block;
+	position:relative;
+}
+
+.ve-menuLateralInterno li:hover li
+{
+	float:none;
+	font-size: 12px;
+}
+
 /*###########QUANDO O MOUSE PASSAR POR CIMA DO ELEMENTO ELE VAI CRIAR UMA COR DIFERENTE############*/
 .ve-menuLateralInterno > ul a:hover, .ve-menuLateralInterno > ul a:focus {
 	background-color: #dfdfdf;

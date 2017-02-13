@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<f:facet name="first">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</f:facet>
+	<title><ui:insert name="titulo">Pedido de Venda</ui:insert></title>
+	
+	<h:outputStylesheet library="config" name="styles/layout.css"/>
+	<h:outputStylesheet library="config" name="styles/conteudo.css"/>
+	<h:outputScript target="body" library="primefaces" name="jquery/jquery.js"/>
+	<h:outputScript target="body" library="config" name="javascripts/jquery.maskMoney.js"/>
+	<h:outputScript target="body" library="config" name="javascripts/mascaraMoeda.js"/>
+	<h:outputScript target="body" library="config" name="javascripts/layout.js"/>
+	<h:outputScript target="body" library="config" name="javascripts/navegacao.js"/>
+	
+	
+	
+</h:head>
+<h:body>
+	<p:ajaxStatus styleClass="ve-ajaxStatus" onsuccess="configurarMoeda">
+		<f:facet name="start">
+			<h:graphicImage library="config" name="images/loading.gif"/>
+		</f:facet>
+		<f:facet name="complete">
+			<h:outputText value=""/>
+		</f:facet>
+	</p:ajaxStatus>
+	
+	<header class="ve-topo">
+		<h:link>
+			<h:graphicImage library="config" name="images/logo.png"/>
+			
+			<a href="#" class="ve-botaoMudarMenu js-botaoMudarMenu"><i class="fa fa-bars"></i></a>
+		</h:link>
+	</header>
+	<aside class="ve-menuLateral  js-menuLateral">
+
+		<nav class="ve-menuLateralInterno">
+			<ul>
+				<li class="ve-teste ">
+					<h:link outcome="CadastroCliente.xhtml"><i class="fa  fa-fw  fa-home"></i>Home</h:link>
+				</li>
+				<li class="ve-teste ">
+					<h:link><i class="fa  fa-fw  fa-user"></i>Cadastro <i class="fa fa-caret-down"></i></h:link>
+					<ul>
+						<li>
+							<h:link id="cadastrando" outcome="/clientes/CadastroCliente">Cadastro Cliente</h:link>
+						</li>
+						<li>
+							<h:link id="cad" outcome="PesquisaClientes.xhtml">cadastro funcionario</h:link>
+						</li>
+					</ul>
+				</li>
+				<li class="ve-teste ">
+					<h:link><i class="fa  fa-fw  fa-file-text"></i>Relatórios</h:link>
+				</li>
+				<li class="ve-teste ">
+					<h:link><i class="fa  fa-fw  fa-cog"></i>Configurações</h:link>
+				</li>
+			</ul>
+		</nav>
+
+	</aside>
+	<section class="ve-corpo js-corpo">
+		<ui:insert name="corpo"/>	
+	</section>
+	
+</h:body>
+
+</html>
