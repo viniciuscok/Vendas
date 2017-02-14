@@ -1,0 +1,13 @@
+package br.com.vendas.model;
+
+public enum Espessura 
+{
+	ESP4("4 mm"), ESP6("6 mm"), ESP8("8 mm"), ESP10("10 mm"), ESP12("12 mm"), ESP15("15 mm");
+	private String descricao;
+	private Espessura(String descricao)
+	{
+		this.descricao = descricao;
+	}
+
+	
+}

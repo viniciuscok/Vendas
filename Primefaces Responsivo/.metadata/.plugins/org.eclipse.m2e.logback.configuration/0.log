@@ -5436,3 +5436,25 @@ Caused by: org.eclipse.aether.transfer.ArtifactTransferException: Failure to tra
 2017-02-13 17:31:26,002 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2017-02-13 17:31:26,005 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-02-13 17:31:26,005 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
+2017-02-14 08:29:56,335 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-14 08:29:56,427 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-14 08:29:56,473 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-14 08:29:56,473 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
+2017-02-14 08:33:40,954 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repository.jboss.org/nexus/content/repositories/snapshots/org/jboss/tools/archetypes/jboss-forge-html5/1.0.0-SNAPSHOT/maven-metadata.xml
+2017-02-14 08:33:41,435 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/snapshots/org/jboss/tools/archetypes/jboss-forge-html5/1.0.0-SNAPSHOT/maven-metadata.xml
+2017-02-14 08:33:41,690 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repository.jboss.org/nexus/content/repositories/snapshots/org/jboss/tools/archetypes/jboss-forge-html5/1.0.0-SNAPSHOT/jboss-forge-html5-1.0.0-20141008.164625-12.pom
+2017-02-14 08:33:42,115 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/snapshots/org/jboss/tools/archetypes/jboss-forge-html5/1.0.0-SNAPSHOT/jboss-forge-html5-1.0.0-20141008.164625-12.pom
+2017-02-14 08:33:43,261 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repository.jboss.org/nexus/content/repositories/snapshots/org/jboss/tools/archetypes/jboss-forge-html5/1.0.0-SNAPSHOT/jboss-forge-html5-1.0.0-20141008.164625-12.jar
+2017-02-14 08:33:45,372 [main] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repository.jboss.org/nexus/content/repositories/snapshots/org/jboss/tools/archetypes/jboss-forge-html5/1.0.0-SNAPSHOT/jboss-forge-html5-1.0.0-20141008.164625-12.jar
+2017-02-14 08:44:12,793 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-14 08:44:12,805 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-14 08:44:12,808 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-14 08:44:12,808 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
+2017-02-14 09:02:41,639 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-14 09:02:41,641 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-14 09:02:41,644 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-14 09:02:41,644 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
+2017-02-14 09:03:21,636 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-14 09:03:21,638 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-14 09:03:21,641 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-14 09:03:21,642 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
