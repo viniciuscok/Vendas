@@ -42,4 +42,8 @@
 <fullyQualifiedTypeName name="java.lang.Long"/>
 <fullyQualifiedTypeName name="br.com.vendas.util.cdi.CDIServiceLocator"/>
 <fullyQualifiedTypeName name="br.com.vendas.dao.CadastroClienteDAO"/>
+<fullyQualifiedTypeName name="br.com.vendas.model.Marca"/>
+<fullyQualifiedTypeName name="br.com.vendas.model.Espessura"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="br.com.vendas.model.TipoVidro"/>
 </qualifiedTypeNameHistroy>
