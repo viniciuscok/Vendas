@@ -2,24 +2,47 @@ package br.com.vendas.model;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.NotBlank;
+
 public class Produto implements Serializable 
 {
 	private static final long serialVersionUID = 1L;
 	
 	private Long codigo;
 	private String nome;
-	private TipoVidro tipoVidro;
+	private Tipo tipo;
 	private Marca marca;
 	private Categoria categoria;
 	private Espessura espessura;
 	private Double valorMetro;
 	private Integer estoque;
 	
+												//Método construtor 
+//------------------------------------------------------------------------------------------------------------------------
+			
+//Construtor deixando como padrão de seleção na view o tipo comum de vidro.
 	public Produto()
 	{
-		this.tipoVidro = TipoVidro.COMUM;
+		this.tipo = Tipo.COMUM;
 	}
 
+												//Método getters e Setters 
+//------------------------------------------------------------------------------------------------------------------------
+					
+//
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="cod_produto", nullable = false, unique=true)
 	public Long getCodigo() {
 		return codigo;
 	}
@@ -28,6 +51,8 @@ public class Produto implements Serializable
 		this.codigo = codigo;
 	}
 
+	@NotBlank
+	@Column(name="nm_produto", nullable = false, unique=false, length=100)
 	public String getNome() {
 		return nome;
 	}
@@ -36,14 +61,20 @@ public class Produto implements Serializable
 		this.nome = nome;
 	}
 
-	public TipoVidro getTipoVidro() {
-		return tipoVidro;
+	@NotNull
+	@Enumerated(EnumType.STRING)
+	@Column(name = "nm_tipo", nullable = false)
+	public Tipo getTipo() {
+		return tipo;
 	}
 
-	public void setTipoVidro(TipoVidro tipoVidro) {
-		this.tipoVidro = tipoVidro;
+	public void setTipo(Tipo tipo) {
+		this.tipo = tipo;
 	}
 
+	@NotNull
+	@ManyToOne
+	@JoinColumn(name= "nm_marca", nullable=false)
 	public Marca getMarca() {
 		return marca;
 	}
@@ -51,7 +82,21 @@ public class Produto implements Serializable
 	public void setMarca(Marca marca) {
 		this.marca = marca;
 	}
+	
+	@NotNull
+	@ManyToOne
+	@JoinColumn(name="nm_categoria", nullable= false)
+	public Categoria getCategoria() {
+		return categoria;
+	}
 
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
+	}
+
+	@NotNull
+	@Enumerated(EnumType.STRING)
+	@Column(name = "nr_espessura", nullable=false)
 	public Espessura getEspessura() {
 		return espessura;
 	}
@@ -60,6 +105,8 @@ public class Produto implements Serializable
 		this.espessura = espessura;
 	}
 
+	@NotBlank
+	@Column(name="valor_metro", nullable=false, unique=false)
 	public Double getValorMetro() {
 		return valorMetro;
 	}
@@ -68,6 +115,8 @@ public class Produto implements Serializable
 		this.valorMetro = valorMetro;
 	}
 
+	@NotBlank
+	@Column(name="estoque", nullable=false, unique=false)
 	public Integer getEstoque() {
 		return estoque;
 	}
@@ -75,6 +124,35 @@ public class Produto implements Serializable
 	public void setEstoque(Integer estoque) {
 		this.estoque = estoque;
 	}
+	
+											//Método Equals() e Hashcode() 
+//------------------------------------------------------------------------------------------------------------------------
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((codigo == null) ? 0 : codigo.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Produto other = (Produto) obj;
+		if (codigo == null) {
+			if (other.codigo != null)
+				return false;
+		} else if (!codigo.equals(other.codigo))
+			return false;
+		return true;
+	}
+
 	
 	
 	

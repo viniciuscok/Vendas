@@ -3,5 +3,6 @@ INDEX VERSION 1.3+C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Prim
 1083508804.index
 3553744582.index
 3658036926.index
+3073702912.index
 363524916.index
 1797940694.index

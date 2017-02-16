@@ -1,6 +1,7 @@
 package br.com.vendas.dao;
 
 import java.io.Serializable;
+import java.util.List;
 
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
@@ -19,6 +20,11 @@ public class CadastroMarcaDAO implements Serializable
 	public void salvar(Marca marca)
 	{
 		manager.merge(marca);
+	}
+	
+	public List<Marca> buscarMarca()
+	{
+		return manager.createQuery("FROM Marca", Marca.class).getResultList();
 	}
 
 }

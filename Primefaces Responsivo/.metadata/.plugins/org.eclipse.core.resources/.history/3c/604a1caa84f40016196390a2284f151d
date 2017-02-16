@@ -1,0 +1,78 @@
+package br.com.vendas.controller;
+
+import java.io.Serializable;
+
+import javax.annotation.PostConstruct;
+import javax.faces.view.ViewScoped;
+import javax.inject.Inject;
+import javax.inject.Named;
+
+import br.com.vendas.model.Espessura;
+import br.com.vendas.model.ModeloVidro;
+import br.com.vendas.model.Produto;
+import br.com.vendas.model.Tipo;
+import br.com.vendas.service.CadastroProdutoService;
+import br.com.vendas.service.NegocioException;
+import br.com.vendas.util.jsf.FacesUtil;
+
+@Named
+@ViewScoped
+public class CadastroProdutoBean implements Serializable
+{
+	private static final long serialVersionUID = 1L;
+	
+	@Inject
+	private CadastroProdutoService cadastroProdutoService;
+	
+	private Produto produto;
+	
+	@PostConstruct
+	public void inicializar()
+	{
+		limpar();
+	}
+	
+	public void limpar()
+	{
+		this.produto = new Produto();
+	}
+	
+	
+	public void salvar()
+	{
+		try
+		{
+			cadastroProdutoService.salvar(produto);
+			limpar();
+			FacesUtil.addInfoMessage("Produto cdastrado com sucesso!");
+		}catch(NegocioException e)
+		{
+			FacesUtil.addErrorMessage(e.getMessage());
+		}
+	}
+	
+	public Tipo[] getTipo()
+	{
+		return Tipo.values();
+	}
+	
+	public Espessura[] getEspessura()
+	{
+		return Espessura.values();
+	}
+	
+	public ModeloVidro[] getModeloVidro()
+	{
+		return ModeloVidro.values();
+	}
+
+	public Produto getProduto() {
+		return produto;
+	}
+
+	public void setProduto(Produto produto) {
+		this.produto = produto;
+	}
+	
+	
+}

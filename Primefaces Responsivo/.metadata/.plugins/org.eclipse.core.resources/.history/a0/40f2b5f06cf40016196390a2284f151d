@@ -1,0 +1,106 @@
+package br.com.vendas.model;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.NotBlank;
+
+public class Produto implements Serializable 
+{
+	private static final long serialVersionUID = 1L;
+	
+	private Long codigo;
+	private String nome;
+	private Tipo tipo;
+	private Marca marca;
+	private Categoria categoria;
+	private Espessura espessura;
+	private Double valorMetro;
+	private Integer estoque;
+	
+												//Método construtor 
+//------------------------------------------------------------------------------------------------------------------------
+			
+//Construtor deixando como padrão de seleção na view o tipo comum de vidro.
+	public Produto()
+	{
+		this.tipo = Tipo.COMUM;
+	}
+
+												//Método getters e Setters 
+//------------------------------------------------------------------------------------------------------------------------
+					
+//
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="cod_produto", nullable = false, unique=true)
+	public Long getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(Long codigo) {
+		this.codigo = codigo;
+	}
+
+	@NotBlank
+	@Column(name="nm_produto", nullable = false, unique=false, length=100)
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	@NotNull
+	@Column(name = "", nullable = false)
+	public Tipo getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(Tipo tipo) {
+		this.tipo = tipo;
+	}
+
+	public Marca getMarca() {
+		return marca;
+	}
+
+	public void setMarca(Marca marca) {
+		this.marca = marca;
+	}
+
+	public Espessura getEspessura() {
+		return espessura;
+	}
+
+	public void setEspessura(Espessura espessura) {
+		this.espessura = espessura;
+	}
+
+	public Double getValorMetro() {
+		return valorMetro;
+	}
+
+	public void setValorMetro(Double valorMetro) {
+		this.valorMetro = valorMetro;
+	}
+
+	public Integer getEstoque() {
+		return estoque;
+	}
+
+	public void setEstoque(Integer estoque) {
+		this.estoque = estoque;
+	}
+	
+	
+	
+
+}
