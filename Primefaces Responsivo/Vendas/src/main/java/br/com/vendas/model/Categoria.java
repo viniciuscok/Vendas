@@ -32,7 +32,7 @@ public class Categoria implements Serializable
 	
 												//Método getters e Setters 
 //------------------------------------------------------------------------------------------------------------------------
-	//
+//Anotações para deixar o preenchimento automatico do código.
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="cod_categoria", nullable=false, unique=true)

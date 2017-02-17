@@ -18,13 +18,24 @@ public class CadastroClienteDAO implements Serializable
 	@Inject
 	private EntityManager manager;
 	
-							//MÉTODO PARA SALVA O CLIENTE PASSANDO O PRÓPRIO CLIENTE COMO PARÂMETRO 		
+							//MÉTODO PARA SALVA E ATUALIZAR UM CLIENTE. 		
 //------------------------------------------------------------------------------------------------------------------------
 	
 	public void salvar(Cliente cliente)
 	{
 		System.out.println("entrou no salvar cadastroclientedao");
 		manager.merge(cliente);
+	}
+	
+							//MÉTODO PARA REMOVER UM CLIENTE. 		
+//------------------------------------------------------------------------------------------------------------------------
+	
+	@Transactional
+	public void remover(Cliente cliente)
+	{
+		cliente = porCodigo(cliente.getCodigo());
+		manager.remove(cliente);
+		manager.flush();
 	}
 	
 							//MÉTODO PARA BUSCAR TODOS OS CLIENTES RETORNANDO UMA LISTA DE CLIENTES 		
@@ -62,20 +73,18 @@ public class CadastroClienteDAO implements Serializable
 		 return testes;
 	}
 
+						//MÉTODO PARA BUSCAR UM CLIENTE PASSANDO COMO PARÂMETRO O CÓDIGO.  		
+//------------------------------------------------------------------------------------------------------------------------
+	
 	public Cliente porCodigo(Long codigo) 
 	{
 		
 		return manager.find(Cliente.class, codigo);
 	}
 	
-	@Transactional
-	public void remover(Cliente cliente)
-	{
-		cliente = porCodigo(cliente.getCodigo());
-		manager.remove(cliente);
-		manager.flush();
-	}
-	
+						//MÉTODO PARA VERIFICAR SE JÁ EXISTE UM CPF CADASTRADO NO BANCO DE DADOS.  		
+//------------------------------------------------------------------------------------------------------------------------
+			
 	public String buscarCPF(String documento)
 	{
 		try
@@ -84,12 +93,8 @@ public class CadastroClienteDAO implements Serializable
 					.setParameter(1, documento).getSingleResult();
 		}catch(NoResultException e)
 		{
-			return "";
-			
-		}
-		
-		
-		
+			return "";	
+		}	
 	}
 
 }

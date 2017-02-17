@@ -14,11 +14,14 @@ public class CadastroMarcaService implements Serializable
 	@Inject
 	private CadastroMarcaDAO cadastroMarcaDAO;
 	
+							//MÉTODO PARA VERIFICAR SE A MARCA ESTÁ NULA E VERIFICAR SE O CAMPO ESTÁ EM BRANCO.  		
+	//------------------------------------------------------------------------------------------------------------------------
+				
 	public void salvar(Marca marca) throws NegocioException
 	{
-		if(marca.equals("") || marca.getNome() == null)
+		if(marca.getNome().trim().equals("") || marca.getNome() == null)
 		{
-			throw new NegocioException("Favor informar uma Marca");
+			throw new NegocioException("A Marca está nula ou Você deve informa uma Marca");
 		}
 		
 		cadastroMarcaDAO.salvar(marca);

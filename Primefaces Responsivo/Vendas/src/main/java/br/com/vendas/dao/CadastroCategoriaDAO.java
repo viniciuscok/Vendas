@@ -17,7 +17,7 @@ public class CadastroCategoriaDAO implements Serializable
 	@Inject
 	private EntityManager manager;
 	
-							//MÉTODO PARA SALVAR A CATEGORIA PASSANDO UMA CATEGORIA COMO PARAMETRO.		
+							//MÉTODO PARA SALVA E ATUALIZAR UMA CATEGORIA. 		
 //------------------------------------------------------------------------------------------------------------------------
 		
 	@Transactional
@@ -26,7 +26,7 @@ public class CadastroCategoriaDAO implements Serializable
 		manager.merge(categoria);
 	}
 	
-	//MÉTODO PARA BUSCAR TODAS AS CATEEGORIAS	
+								//MÉTODO PARA REMOVER UMA CATEGORIA.	
 //------------------------------------------------------------------------------------------------------------------------
 
 	@Transactional
@@ -62,6 +62,9 @@ public class CadastroCategoriaDAO implements Serializable
 				.setParameter(1, "%"+nome+"%").getResultList();
 	}
 	
+								//MÉTODO QUE RETORNA UMA LISTA DE CATEGORIA.
+//------------------------------------------------------------------------------------------------------------------------
+							
 	public List<Categoria> buscarCategoria()
 	{
 		return manager.createQuery("FROM Categoria", Categoria.class).getResultList();

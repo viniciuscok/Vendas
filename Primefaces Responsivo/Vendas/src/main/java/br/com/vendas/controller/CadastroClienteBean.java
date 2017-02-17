@@ -30,9 +30,10 @@ public class CadastroClienteBean implements Serializable
 	
 	private Endereco endereco;
 	
-									//MÉTODO PARA INICIALIZAR O CLIENTE AO CARREGAR A PÁGINA		
+									//Método PARA INICIAR UM CLIENTE CASO SEJA NULL
+									//@PostConstruct = É CARREGADO ANTES DE ABRIR A PÁGINA
 //------------------------------------------------------------------------------------------------------------------------
-	
+
 	@PostConstruct
 	public void init()
 	{
@@ -43,8 +44,17 @@ public class CadastroClienteBean implements Serializable
 		
 	}
 	
-	
-									//MÉTODO PARA SALVA O CLIENTE		
+									//Método CHAMADO PARA LIMPAR A TELA QUANDO O USUÁRIO FOR CADASTRADO
+									//MÉTODO INICIA UM NOVO CLIENTE, CONTATO E ENDERECO QUANDO E CHAMADO.
+//------------------------------------------------------------------------------------------------------------------------
+						
+	public void limpar()
+	{
+		this.cliente = new Cliente();
+		this.contato = new Contato();
+		this.endereco = new Endereco();
+	}
+							//MÉTODO PARA SALVA E ATUALIZAR O CLIENTE, VERIFICANDO SE O CÓDIGO DO CLIENTE E NULO OU NÃO.	
 //------------------------------------------------------------------------------------------------------------------------
 
 	public void salvar()
@@ -56,11 +66,11 @@ public class CadastroClienteBean implements Serializable
 			
 			if(this.cliente.getCodigo() == null)
 			{
-				FacesUtil.addInfoMessage("cliente salvo com sucesso");
+				FacesUtil.addInfoMessage("Cliente '"+cliente.getNome()+"' salvo com sucesso");
 				limpar();
 			}else
 			{
-				FacesUtil.addInfoMessage("cliente editado com sucesso");
+				FacesUtil.addInfoMessage("Cliente '"+cliente.getNome()+"' atualizado com sucesso");
 				limpar();
 			}
 		
@@ -80,10 +90,10 @@ public class CadastroClienteBean implements Serializable
 		if(contato == null)
 		{
 			this.contato = new Contato();
-		}//else
-		//{
-		//	this.cliente.getContatos();
-		//}
+		}else
+		{
+			this.cliente.getContato();
+		}
 	}
 
 					//MÉTODO PARA IDENTIFICAR SE O ENDEREÇO ESTÁ NULO,SE TIVER NULO ELE CRIA UM NOVO ENDEREÇO
@@ -102,7 +112,7 @@ public class CadastroClienteBean implements Serializable
 		}
 	}
 
-							//MÉTODO PARA ADICIONAR UMA LISTA DE CONTATOS NO CLIENTE 	
+							//MÉTODO PARA ADICIONAR UM CONTATO DO CLIENTE 	
 //------------------------------------------------------------------------------------------------------------------------
 		
 	
@@ -114,7 +124,7 @@ public class CadastroClienteBean implements Serializable
 		
 	}
 	
-							//MÉTODO PARA ADICIONAR UMA LISTA DE ENDEREÇOS NO CLIENTE 	
+							//MÉTODO PARA ADICIONAR UM ENDEREÇO DO CLIENTE.	
 //------------------------------------------------------------------------------------------------------------------------
 	
 	
@@ -141,15 +151,7 @@ public class CadastroClienteBean implements Serializable
 		return this.cliente.getCodigo() != null;
 	}
 	
-									//Método para limpa os campos do cliente 
-//------------------------------------------------------------------------------------------------------------------------
-					
-	public void limpar()
-	{
-		this.cliente = new Cliente();
-		this.contato = new Contato();
-		this.endereco = new Endereco();
-	}
+									
 	
 									//Método getters e Setters 
 //------------------------------------------------------------------------------------------------------------------------

@@ -22,6 +22,10 @@ public class CadastroMarcaBean implements Serializable
 	private CadastroMarcaService cadastroMarcaService;
 	private Marca marca;
 	
+						//Método PARA INICIAR UMA MARCA CASO SEJA NULA
+						//@PostConstruct = É CARREGADO ANTES DE ABRIR A PÁGINA
+//------------------------------------------------------------------------------------------------------------------------
+
 	@PostConstruct
 	public void inicializar()
 	{
@@ -31,17 +35,31 @@ public class CadastroMarcaBean implements Serializable
 		}
 	}
 	
+							//Método CHAMADO PARA LIMPAR A TELA QUANDO A MARCA FOR CADASTRADA.
+							//MÉTODO INICIA UMA NOVA MARCA.
+//------------------------------------------------------------------------------------------------------------------------
+
 	public void limpar()
 	{
 		this.marca = new Marca();
 	}
+	
+					//MÉTODO PARA SALVA E ATUALIZAR A MARCA, VERIFICANDO SE O CÓDIGO DA MARCA E NULO OU NÃO.
+					//CASO SEEJA NULO A MARCA É CRIADA, SE NÃO A MARCA É ATUALIZADA
+//------------------------------------------------------------------------------------------------------------------------
 	
 	public void salvar()
 	{
 		try
 		{
 			cadastroMarcaService.salvar(marca);
-			FacesUtil.addInfoMessage("Marca "+this.marca.getNome()+" inserida com sucesso!");
+			if(this.marca == null)
+			{
+				FacesUtil.addInfoMessage("Marca '"+this.marca.getNome()+"' inserida com Sucesso!");
+			}else
+			{
+				FacesUtil.addInfoMessage("Marca '"+this.marca.getNome()+"' atualizada com Sucesso!");
+			}
 			limpar();
 		}catch(NegocioException e)
 		{

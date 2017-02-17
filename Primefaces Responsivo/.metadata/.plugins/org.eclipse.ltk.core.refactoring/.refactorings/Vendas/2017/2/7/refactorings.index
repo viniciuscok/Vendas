@@ -1,2 +1,7 @@
 1487166957884	Rename type 'CorVidro'
 1487265252332	Rename type 'TipoVidro'
+1487356377150	Rename field 'id'
+1487356431575	Rename method 'getId'
+1487356475800	Rename method 'setId'
+1487356493027	Rename local variable 'id'
+1487357029673	Delete element

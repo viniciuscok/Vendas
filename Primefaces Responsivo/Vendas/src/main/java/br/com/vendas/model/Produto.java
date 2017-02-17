@@ -1,8 +1,10 @@
 package br.com.vendas.model;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
@@ -10,10 +12,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+import javax.validation.constraints.DecimalMax;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.NotBlank;
 
+@Entity
+@Table(name = "produto")
 public class Produto implements Serializable 
 {
 	private static final long serialVersionUID = 1L;
@@ -23,8 +29,9 @@ public class Produto implements Serializable
 	private Tipo tipo;
 	private Marca marca;
 	private Categoria categoria;
+	private ModeloVidro modeloVidro;
 	private Espessura espessura;
-	private Double valorMetro;
+	private BigDecimal valorMetro;
 	private Integer estoque;
 	
 												//Método construtor 
@@ -72,6 +79,7 @@ public class Produto implements Serializable
 		this.tipo = tipo;
 	}
 
+	//Mapeamento de muitos para um.
 	@NotNull
 	@ManyToOne
 	@JoinColumn(name= "nm_marca", nullable=false)
@@ -83,6 +91,7 @@ public class Produto implements Serializable
 		this.marca = marca;
 	}
 	
+	//Mapeamento de muitos para um.
 	@NotNull
 	@ManyToOne
 	@JoinColumn(name="nm_categoria", nullable= false)
@@ -96,6 +105,17 @@ public class Produto implements Serializable
 
 	@NotNull
 	@Enumerated(EnumType.STRING)
+	@Column(name= "nm_modelo", nullable=false)
+	public ModeloVidro getModeloVidro() {
+		return modeloVidro;
+	}
+
+	public void setModeloVidro(ModeloVidro modeloVidro) {
+		this.modeloVidro = modeloVidro;
+	}
+	
+	@NotNull
+	@Enumerated(EnumType.STRING)
 	@Column(name = "nr_espessura", nullable=false)
 	public Espessura getEspessura() {
 		return espessura;
@@ -105,18 +125,18 @@ public class Produto implements Serializable
 		this.espessura = espessura;
 	}
 
-	@NotBlank
-	@Column(name="valor_metro", nullable=false, unique=false)
-	public Double getValorMetro() {
+	@NotNull
+	@Column(name="valor_metro", nullable=false, unique=false, precision=10, scale=2)
+	@DecimalMax("30.00")
+	public BigDecimal getValorMetro() {
 		return valorMetro;
 	}
 
-	public void setValorMetro(Double valorMetro) {
+	public void setValorMetro(BigDecimal valorMetro) {
 		this.valorMetro = valorMetro;
 	}
 
-	@NotBlank
-	@Column(name="estoque", nullable=false, unique=false)
+	@Column(name="estoque", nullable=true, unique=false)
 	public Integer getEstoque() {
 		return estoque;
 	}
@@ -151,10 +171,6 @@ public class Produto implements Serializable
 		} else if (!codigo.equals(other.codigo))
 			return false;
 		return true;
-	}
-
-	
-	
-	
+	}	
 
 }

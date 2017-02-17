@@ -1,0 +1,49 @@
+package br.com.vendas.converter;
+
+import javax.faces.component.UIComponent;
+import javax.faces.context.FacesContext;
+import javax.faces.convert.Converter;
+import javax.faces.convert.FacesConverter;
+
+import br.com.vendas.dao.CadastroClienteDAO;
+import br.com.vendas.dao.CadastroMarcaDAO;
+import br.com.vendas.model.Cliente;
+import br.com.vendas.model.Marca;
+import br.com.vendas.util.cdi.CDIServiceLocator;
+
+@FacesConverter(forClass = Marca.class)
+public class MarcaConverter implements Converter 
+{
+
+	//@Inject
+		private CadastroMarcaDAO cadastroMarcaDAO;
+
+		public MarcaConverter() 
+		{
+			this.cadastroMarcaDAO = (CadastroMarcaDAO) CDIServiceLocator.getBean(CadastroMarcaDAO.class);
+		}
+		@Override
+		public Object getAsObject(FacesContext context, UIComponent component, String value) 
+		{
+			Cliente retorno = null;
+			if(value != null)
+			{
+				Long codigo = new Long(value);
+				retorno = this.CadastroClienteDAO.porCodigo(codigo);
+			}
+			return retorno;
+		}
+
+		@Override
+		public String getAsString(FacesContext context, UIComponent component, Object value)
+		{
+			if (value != null) 
+			{
+				Cliente cliente = (Cliente) value;
+				return cliente.getCodigo() == null ? null:cliente.toString();
+			}
+			return "";
+			
+		}
+
+}

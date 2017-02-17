@@ -25,26 +25,19 @@ public class CadastroClienteService implements Serializable
 	@Transactional
 	public void salvar(Cliente cliente) throws NegocioException, NoResultException
 	{
-		if(cliente.getNome().trim().equals("")) //|| cliente.getContatos()== null || cliente.getEnderecos()==null)
+		if(cliente.getNome().trim().equals("") || cliente.getContato()== null || cliente.getEndereco()==null)
 		{
 			throw new NegocioException("Usuário não pode ser cadastrado");
 		}
-		//if(!(cadastroClienteDAO.buscarCPF(cliente.getDocumento()).equals(cliente.getDocumento())))
-		//{
-			//throw new NoResultException().get;
-		//}
+		
+		//VERIFICANDO SE O CODIGO DO CLIENTE É NULO E SE O CPF JÁ FOI CADASTRADO, CASO SEJA VERDADEIRO ELE NÃO DEIXA,
+		//CADASTRAR DOIS CPF IGUAIS.
 		if(cliente.getCodigo() == null && cadastroClienteDAO.buscarCPF(cliente.getDocumento()).equals(cliente.getDocumento()))
 		{
-			
-			System.out.println(cadastroClienteDAO.buscarCPF(cliente.getDocumento()));
-			throw new NegocioException("CPF já cadastrado");
-			
+			throw new NegocioException("CPF já Cadastrado");	
 		}
 		
 		cadastroClienteDAO.salvar(cliente);
-		
-		
+			
 	}
-	
-
 }

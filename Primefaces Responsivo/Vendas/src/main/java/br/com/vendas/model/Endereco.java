@@ -33,8 +33,9 @@ public class Endereco implements Serializable
 //------------------------------------------------------------------------------------------------------------------------
 
 //Construtor padrão
-	public Endereco() {
-		// TODO Auto-generated constructor stub
+	public Endereco() 
+	{
+		
 	}
 	
 											//Método getters e setters 

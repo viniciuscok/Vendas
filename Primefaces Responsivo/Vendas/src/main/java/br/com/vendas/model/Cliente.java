@@ -45,7 +45,7 @@ public class Cliente implements Serializable
 												//Método construtor 
 //------------------------------------------------------------------------------------------------------------------------
 		
-//Construtor inicializando minha lista de endereços, lista de contatos e atribuindo o tipo de pessoa como fisica.
+//Construtor atribuindo o tipo de pessoa como física
 	public Cliente() 
 	{
 		this.tipoPessoa = TipoPessoa.FISICA;
@@ -91,6 +91,7 @@ public class Cliente implements Serializable
 		this.documento = documento;
 	}
 	
+	//Anotações de data pegando a data e as horas
 	@NotNull
 	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name="data_cadastro", nullable=false)
@@ -144,6 +145,7 @@ public class Cliente implements Serializable
 	//	this.contatos = contatos;
 	//}
 	
+	//Mapeamento um para um com cascadetype.all
 	@NotNull
 	@OneToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="cod_contato")
@@ -155,6 +157,7 @@ public class Cliente implements Serializable
 		this.contato = contato;
 	}
 
+	//Mapeamento um para um com cascadetype.all
 	@NotNull
 	@OneToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="cod_endereco")

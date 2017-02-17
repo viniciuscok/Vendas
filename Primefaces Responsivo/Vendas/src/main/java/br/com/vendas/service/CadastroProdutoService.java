@@ -13,12 +13,14 @@ public class CadastroProdutoService implements Serializable
 	
 	@Inject
 	private CadastroProdutoDAO cadastroProdutoDAO;
-	
+			
+			//MÉTODO PARA VERIFICAR SE O PRODUTO ESTÁ PREENCHIDO OU SE ELE ESTÁ NULO.
+//------------------------------------------------------------------------------------------------------------------------
 	public void salvar(Produto produto) throws NegocioException
 	{
-		if(produto.getNome().isEmpty() || produto.equals(""))
+		if(produto.getNome().trim().equals("") || produto == null)
 		{
-			throw new NegocioException("Favor verificar o usuário");
+			throw new NegocioException("Produto não foi preenchido ou está Nulo");
 		}
 		
 		cadastroProdutoDAO.salvar(produto);

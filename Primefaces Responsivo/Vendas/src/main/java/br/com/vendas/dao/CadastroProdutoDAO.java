@@ -15,6 +15,9 @@ public class CadastroProdutoDAO implements Serializable
 	@Inject
 	private EntityManager manager;
 	
+										//MÉTODO PARA SALVA E ATUALIZAR UM PRODUTO.  		
+//------------------------------------------------------------------------------------------------------------------------
+				
 	@Transactional
 	public void salvar(Produto produto)
 	{

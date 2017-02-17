@@ -37,7 +37,11 @@ public class CadastroProdutoBean implements Serializable
 	private Produto produto;
 	private List<Marca> marcas;
 	private List<Categoria> categorias;
-	
+						
+						//Método PARA INICIAR UM PRODUTO CASO SEJA NULL
+						//@PostConstruct = É CARREGADO ANTES DE ABRIR A PÁGINA
+//------------------------------------------------------------------------------------------------------------------------
+
 	@PostConstruct
 	public void inicializar()
 	{
@@ -92,17 +96,17 @@ public class CadastroProdutoBean implements Serializable
 		System.out.println("foi tudo certo\n\n\n\n");
 	}
 	
-	public Tipo[] getTipo()
+	public Tipo[] getTipos()
 	{
 		return Tipo.values();
 	}
 	
-	public Espessura[] getEspessura()
+	public Espessura[] getEspessuras()
 	{
 		return Espessura.values();
 	}
 	
-	public ModeloVidro[] getModeloVidro()
+	public ModeloVidro[] getModeloVidros()
 	{
 		return ModeloVidro.values();
 	}

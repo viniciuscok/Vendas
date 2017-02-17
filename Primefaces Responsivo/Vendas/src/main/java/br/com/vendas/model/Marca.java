@@ -14,7 +14,9 @@ import org.hibernate.validator.constraints.NotBlank;
 @Table(name="marca")
 public class Marca implements Serializable
 {
-	private Long id;
+	private static final long serialVersionUID = 1L;
+	
+	private Long codigo;
 	private String nome;
 	
 														//Método construtor 
@@ -30,13 +32,13 @@ public class Marca implements Serializable
 
 	@Id
 	@GeneratedValue
-	@Column(name="cod_marca")
-	public Long getId() {
-		return id;
+	@Column(name="cod_marca", nullable=false, unique=true)
+	public Long getCodigo() {
+		return codigo;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
+	public void setCodigo(Long codigo) {
+		this.codigo = codigo;
 	}
 	
 	@NotBlank
@@ -56,7 +58,7 @@ public class Marca implements Serializable
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((id == null) ? 0 : id.hashCode());
+		result = prime * result + ((codigo == null) ? 0 : codigo.hashCode());
 		return result;
 	}
 
@@ -69,10 +71,10 @@ public class Marca implements Serializable
 		if (getClass() != obj.getClass())
 			return false;
 		Marca other = (Marca) obj;
-		if (id == null) {
-			if (other.id != null)
+		if (codigo == null) {
+			if (other.codigo != null)
 				return false;
-		} else if (!id.equals(other.id))
+		} else if (!codigo.equals(other.codigo))
 			return false;
 		return true;
 	}

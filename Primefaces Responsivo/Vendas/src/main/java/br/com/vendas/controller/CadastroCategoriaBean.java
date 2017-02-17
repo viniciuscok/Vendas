@@ -38,7 +38,7 @@ public class CadastroCategoriaBean implements Serializable
 		
 	}
 	
-							//MÉTODO PARA CRIAR UM NOVO OBJETO CATEGORIA
+							//MÉTODO PARA CRIAR UM NOVO OBJETO CATEGORIA.
 //------------------------------------------------------------------------------------------------------------------------
 	
 	public void limpar()
