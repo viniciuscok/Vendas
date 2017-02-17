@@ -39,8 +39,15 @@
 					<p:outputLabel value="Marca" for="marca"/>
 					<p:selectOneMenu id="marca" value="#{cadastroProdutoBean.produto.marca}" autoWidth="auto"> 
 						<f:selectItem itemLabel="Selecione uma Marca"/>
-						<f:selectItems value="#{cadastroProdutoBean.marcas}" var="marca" itemValue="#{marca.id}"
+						<f:selectItems value="#{cadastroProdutoBean.marcas}" var="marca" itemValue="#{marca}"
 								itemLabel="#{marca.nome}"/>
+					</p:selectOneMenu>
+					
+					<p:outputLabel value="Categoria" for="categoria"/>
+					<p:selectOneMenu id="categoria" value="#{cadastroProdutoBean.produto.categoria}" autoWidth="auto"> 
+						<f:selectItem itemLabel="Selecione uma Categoria"/>
+						<f:selectItems value="#{cadastroProdutoBean.categorias}" var="categoria" itemValue="#{categoria}"
+								itemLabel="#{categoria.nome}"/>
 					</p:selectOneMenu>
 					
 					<p:outputLabel value="Tipo" for="tipo"/>

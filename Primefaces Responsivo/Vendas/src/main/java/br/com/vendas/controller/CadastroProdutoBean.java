@@ -9,7 +9,9 @@ import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 
+import br.com.vendas.dao.CadastroCategoriaDAO;
 import br.com.vendas.dao.CadastroMarcaDAO;
+import br.com.vendas.model.Categoria;
 import br.com.vendas.model.Espessura;
 import br.com.vendas.model.Marca;
 import br.com.vendas.model.ModeloVidro;
@@ -27,29 +29,49 @@ public class CadastroProdutoBean implements Serializable
 	
 	@Inject
 	private CadastroProdutoService cadastroProdutoService;
+	@Inject
 	private CadastroMarcaDAO cadastroMarcaDAO;
+	@Inject
+	private CadastroCategoriaDAO cadastroCategoriaDAO;
 	
 	private Produto produto;
 	private List<Marca> marcas;
+	private List<Categoria> categorias;
 	
 	@PostConstruct
 	public void inicializar()
 	{
-		//if(this.produto == null)
-		//{
+		if(this.produto == null)
+		{
 			limpar();
-		//}
-			buscarTodasMarcas();
+		}
+			
 		
 	}
 	
 	public void limpar()
 	{
 		this.produto = new Produto();
+		this.categorias = new ArrayList<>();
 		this.marcas = new ArrayList<>();
+		buscarTodasMarcas();
+		buscarTodasCategorias();
 		
 	}
 	
+	public void buscarTodasCategorias()
+	{
+		
+		this.categorias = cadastroCategoriaDAO.buscarCategoria();
+		
+		//System.out.println("entrou na categoria");
+		//for (String string : categorias) 
+		//{
+		//	System.out.println("nome: "+string);
+		//	
+		//}
+		
+	}
 	
 	public void salvar()
 	{
@@ -100,6 +122,15 @@ public class CadastroProdutoBean implements Serializable
 	public void setMarcas(List<Marca> marcas) {
 		this.marcas = marcas;
 	}
+
+	public List<Categoria> getCategorias() {
+		return categorias;
+	}
+
+	public void setCategorias(List<Categoria> categorias) {
+		this.categorias = categorias;
+	}
+	
 	
 	
 }
