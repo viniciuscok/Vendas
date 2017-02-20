@@ -42,6 +42,31 @@ public class PesquisarClienteBean implements Serializable
 		limpar();
 	}
 	
+								//MÉTODO PARA LIMPAR OS CAMPOS NA TELA 		
+//------------------------------------------------------------------------------------------------------------------------
+
+	public void limpar()
+	{
+		clienteFiltro = new ClienteFilter();
+		clientes = new ArrayList<>();
+	}
+	
+								//MÉTODO PARA REMOVER O CLIENTE SELECIONADO. 		
+//------------------------------------------------------------------------------------------------------------------------
+
+	public void remover()
+	{
+		try
+		{
+			cadastroClienteDAO.remover(clienteSelecionado);
+			clientes.remove(clienteSelecionado);
+			FacesUtil.addInfoMessage("O cliente '"+clienteSelecionado.getNome()+"' foi removido com Sucesso!");
+		}catch(NegocioException cause)
+		{
+			FacesUtil.addErrorMessage("Cliente não pode ser removido");
+		}
+	}
+	
 								//MÉTODO PARA BUSCAR TODOS OS CLIENTES 		
 //------------------------------------------------------------------------------------------------------------------------
 
@@ -72,27 +97,9 @@ public class PesquisarClienteBean implements Serializable
 		}
 	}
 	
-	public void remover()
-	{
-		try
-		{
-			cadastroClienteDAO.remover(clienteSelecionado);
-			clientes.remove(clienteSelecionado);
-			FacesUtil.addInfoMessage("O cliente '"+clienteSelecionado.getNome()+"' foi removido com sucesso!");
-		}catch(NegocioException cause)
-		{
-			FacesUtil.addErrorMessage("Cliente não pode ser removido");
-		}
-	}
 	
-											//MÉTODO PARA LIMPAR OS CAMPOS NA TELA 		
-//------------------------------------------------------------------------------------------------------------------------
-
-	public void limpar()
-	{
-		clienteFiltro = new ClienteFilter();
-		clientes = new ArrayList<>();
-	}
+	
+											
 
 											//MÉTODO GETTERS E SETTERS 		
 //------------------------------------------------------------------------------------------------------------------------

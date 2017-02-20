@@ -8,7 +8,10 @@
 
 	<ui:define name="titulo">Cadastrar Marca</ui:define>
 	<ui:define name="corpo">
-		
+		<f:metadata>
+			<o:viewParam name="Marca" value="#{cadastroMarcaBean.marca}"></o:viewParam>
+			<f:event listener="#{cadastroMarcaBean.inicializar()}" type="preRenderView"></f:event>
+		</f:metadata>
 		
 		<h1>Cadastrar Marca</h1>
 
@@ -25,7 +28,7 @@
 				</p:toolbarGroup>
 				<p:toolbarGroup align="right">
 					<p:button value="Pesquisar" icon="fa fa-search" 
-					outcome="/categorias/PesquisaCategorias" styleClass="ve-botaoPesquisarCadastroMarca"/>
+					outcome="/marcas/PesquisaMarcas" styleClass="ve-botaoPesquisarCadastroMarca"/>
 				</p:toolbarGroup>
 			</p:toolbar>
 			<div class="ui-fluid">
@@ -33,9 +36,9 @@
 					layout="grid" columnClasses="ui-grid-col-2,ui-grid-col-10"
 					styleClass="ve-panelGridCadastroMarca">
 
-					<p:outputLabel value="Codigo" for="codigo" rendered="false"/>
+					<p:outputLabel value="Codigo" for="codigo" rendered="true"/>
 					<p:inputText id="codigo" disabled="true" value="#{cadastroMarcaBean.marca.codigo}" 
-					rendered="false"/>
+					rendered="true"/>
 
 					<p:outputLabel value="Marca" for="marca" />
 					<p:inputText id="marca" value="#{cadastroMarcaBean.marca.nome}"/>						

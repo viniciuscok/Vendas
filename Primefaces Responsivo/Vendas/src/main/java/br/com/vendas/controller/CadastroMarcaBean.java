@@ -53,9 +53,9 @@ public class CadastroMarcaBean implements Serializable
 		try
 		{
 			cadastroMarcaService.salvar(marca);
-			if(this.marca == null)
+			if(this.marca.getCodigo() == null)
 			{
-				FacesUtil.addInfoMessage("Marca '"+this.marca.getNome()+"' inserida com Sucesso!");
+				FacesUtil.addInfoMessage("Marca '"+this.marca.getNome()+"' salva com Sucesso!");
 			}else
 			{
 				FacesUtil.addInfoMessage("Marca '"+this.marca.getNome()+"' atualizada com Sucesso!");

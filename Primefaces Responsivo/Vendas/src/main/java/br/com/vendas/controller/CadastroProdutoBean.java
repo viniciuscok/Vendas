@@ -53,6 +53,10 @@ public class CadastroProdutoBean implements Serializable
 		
 	}
 	
+					//MÉTODO PARA INICIAR UM NOVO PRODUTO, UMA LISTA DE CATEGORIA E UMA LISTA DE MARCAS
+					//É CHAMADO OS MÉTODOS buscarTodasMarcas E buscarTodasCategorias() PARA SER CARREGADO NAS LISTAS	
+//------------------------------------------------------------------------------------------------------------------------
+		
 	public void limpar()
 	{
 		this.produto = new Produto();
@@ -63,54 +67,73 @@ public class CadastroProdutoBean implements Serializable
 		
 	}
 	
-	public void buscarTodasCategorias()
-	{
-		
-		this.categorias = cadastroCategoriaDAO.buscarCategoria();
-		
-		//System.out.println("entrou na categoria");
-		//for (String string : categorias) 
-		//{
-		//	System.out.println("nome: "+string);
-		//	
-		//}
-		
-	}
-	
+					//MÉTODO PARA SALVAR E ATUALIZAR O PRODUTO, VERIFICANDO SE O CÓDIGO DO PRODUTO ESTÁ NULO OU NÃO
+//------------------------------------------------------------------------------------------------------------------------
+			
 	public void salvar()
 	{
 		try
 		{
 			cadastroProdutoService.salvar(produto);
+			if(this.produto.getCodigo() == null)
+			{
+				FacesUtil.addInfoMessage("Produto '"+this.produto.getNome()+"' salvo com Sucesso!");
+			}else
+			{
+				FacesUtil.addInfoMessage("Produto '"+this.produto.getNome()+"' atualizado com Sucesso!");
+			}
+			
 			limpar();
-			FacesUtil.addInfoMessage("Produto cadastrado com sucesso!");
+			
 		}catch(NegocioException e)
 		{
 			FacesUtil.addErrorMessage(e.getMessage());
 		}
 	}
 	
+										//MÉTODO PARA TRAZER TODAS AS CATEGORIAS QUE ESTÃO NO BANCO.
+//------------------------------------------------------------------------------------------------------------------------
+				
+	public void buscarTodasCategorias()
+	{
+		this.categorias = cadastroCategoriaDAO.buscarCategoria();	
+	}
+	
+										//MÉTODO PARA TRAZER TODAS AS MARCAS QUE ESTÃO NO BANCO.
+//------------------------------------------------------------------------------------------------------------------------
+					
 	public void buscarTodasMarcas()
 	{
 		this.marcas = cadastroMarcaDAO.buscarMarca();
-		System.out.println("foi tudo certo\n\n\n\n");
 	}
 	
+										//MÉTODO QUE RETORNA UM ARRAY DE TIPO
+//------------------------------------------------------------------------------------------------------------------------
+						
 	public Tipo[] getTipos()
 	{
 		return Tipo.values();
 	}
 	
+										//MÉTODO QUE RETORNA UM ARRAY DE ESPESSURA
+//------------------------------------------------------------------------------------------------------------------------
+								
 	public Espessura[] getEspessuras()
 	{
 		return Espessura.values();
 	}
 	
+										//MÉTODO QUE RETORNA UM ARRAY DE MODELOVIDRO
+//------------------------------------------------------------------------------------------------------------------------
+									
 	public ModeloVidro[] getModeloVidros()
 	{
 		return ModeloVidro.values();
 	}
 
+										//MÉTODOS GETTERS E SETTERS
+//------------------------------------------------------------------------------------------------------------------------
+							
 	public Produto getProduto() {
 		return produto;
 	}

@@ -1,0 +1,61 @@
+package br.com.vendas.controller;
+
+import java.io.Serializable;
+import java.util.List;
+
+import javax.annotation.PostConstruct;
+import javax.faces.view.ViewScoped;
+import javax.inject.Inject;
+import javax.inject.Named;
+
+import br.com.vendas.dao.CadastroMarcaDAO;
+import br.com.vendas.dao.filter.MarcaFilter;
+import br.com.vendas.model.Marca;
+
+@Named
+@ViewScoped
+public class PesquisaMarcaBean implements Serializable
+{
+
+	private static final long serialVersionUID = 1L;
+	
+	@Inject
+	private CadastroMarcaDAO cadastroMarcaDAO;
+	
+	private List<Marca> marcas;
+	private Marca marcaSelecionada;
+	private MarcaFilter marcaFilter;
+	
+	@PostConstruct
+	public void inicializar()
+	{
+		
+	}
+	
+	public void limpar()
+	{
+		this.marcaFilter = new MarcaFilter();
+	}
+	
+											//MÉTODOS GETTERS E SETTERS	
+//------------------------------------------------------------------------------------------------------------------------
+					
+	public MarcaFilter getMarcaFilter() {
+		return marcaFilter;
+	}
+
+	public void setMarcaFilter(MarcaFilter marcaFilter) {
+		this.marcaFilter = marcaFilter;
+	}
+
+	public List<Marca> getMarcas() {
+		return marcas;
+	}
+
+	public void setMarcas(List<Marca> marcas) {
+		this.marcas = marcas;
+	}
+
+	
+	
+}

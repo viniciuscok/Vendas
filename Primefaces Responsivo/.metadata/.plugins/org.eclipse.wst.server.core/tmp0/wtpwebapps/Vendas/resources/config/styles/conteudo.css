@@ -12,7 +12,8 @@
 	.ui-panelgrid.ve-panelGridDadosEntregaPedido .ui-grid-responsive .ui-grid-row,
 	.ui-panelgrid.ve-panelGridPesquisaClientes .ui-grid-responsive .ui-grid-row,
 	.ui-panelgrid.ve-panelGridPesquisaCategoria .ui-grid-responsive .ui-grid-row,
-	.ui-panelgrid.ve-panelGridCadastroCategoria .ui-grid-responsive .ui-grid-row
+	.ui-panelgrid.ve-panelGridCadastroCategoria .ui-grid-responsive .ui-grid-row,
+	.ui-panelgrid.ve-panelGridCadastroMarca .ui-grid-responsive .ui-grid-row
 	{
 		border: none;
 	}
@@ -66,8 +67,14 @@
 .ui-toolbar-group-left .ve-botaoSalvarCadastroCategoria,
 .ui-toolbar-group-right .ve-botaoPesquisarCadastroCategoria,
 .ui-toolbar-group-left .ve-botaoPesquisarPesquisaCategoria,
-.ui-toolbar-group-right .ve-botaoNovoPesquisaCategorias
+.ui-toolbar-group-right .ve-botaoNovoPesquisaCategorias,
 	
+/*##########Marcas############*/
+.ui-toolbar-group-left .ve-botaoNovoCadastroMarca,
+.ui-toolbar-group-left .ve-botaoSalvarCadastroMarca,
+.ui-toolbar-group-right .ve-botaoPesquisarCadastroMarca,
+.ui-toolbar-group-left .ve-botaoPesquisarPesquisaMarca,
+.ui-toolbar-group-right .ve-botaoNovoPesquisaMarca
 {
 	font-weight:bold;	
 		
@@ -143,7 +150,23 @@
 		font-size: 0.8em;
 	}
 	
+	/*##########Categorias############*/
+	/*.ui-toolbar-group-left .ve-botaoPesquisarPesquisaCategoria,
+	.ui-toolbar-group-right .ve-botaoNovoPesquisaCategorias
+	{
+		font-weight:bold;
+		font-size: 0.8em;
+	}	*/
+	
+	.ui-toolbar-group-left .ve-botaoNovoCadastroMarca,
+	.ui-toolbar-group-left .ve-botaoSalvarCadastroMarca,
+	.ui-toolbar-group-right .ve-botaoPesquisarCadastroMarca
+	{
+		font-weight:bold;
+		font-size: 0.8em;
 	}
+	
+}
 
 	
 

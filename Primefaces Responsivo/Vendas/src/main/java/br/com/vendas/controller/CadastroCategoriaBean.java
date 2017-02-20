@@ -58,12 +58,12 @@ public class CadastroCategoriaBean implements Serializable
 			//Verifica se a categoria é diferente ou igual a null, e mostra as seguintes msg para o usuário.
 			if(this.categoria.getCodigo() == null)
 			{
-				FacesUtil.addInfoMessage("Categoria '"+this.categoria.getNome()+"' inserida com sucesso!");
+				FacesUtil.addInfoMessage("Categoria '"+this.categoria.getNome()+"' salva com sucesso!");
 			}else
 			{
 				FacesUtil.addInfoMessage("Categoria '"+this.categoria.getNome()+"' atualizada com sucesso!");
 			}
-			
+			limpar();
 		}catch(NegocioException e)
 		{
 			FacesUtil.addErrorMessage(e.getMessage());

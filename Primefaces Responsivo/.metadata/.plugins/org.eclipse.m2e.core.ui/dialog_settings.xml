@@ -25,8 +25,6 @@
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
-	<section name="org.jboss.tools.project.examples.stacksrequirements">
-	</section>
 	<section name="org.eclipse.m2e.core.pom.overview">
 		<list key="ciManagementUrl">
 		</list>
@@ -63,10 +61,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
-		</list>
-		<list key="projectNameCombo">
-		</list>
-		<list key="packageCombo">
+			<item value="C:\Users\vinicius\ARQUIIVOS\Primefaces Responsivo\tabview-responsivo"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

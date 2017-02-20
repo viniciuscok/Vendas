@@ -46,6 +46,7 @@ public class PesquisaCategoriaBean implements Serializable
 		{
 			cadastroCategoriaDAO.remover(categoriaSelecionada);
 			categorias.remove(categoriaSelecionada);
+			FacesUtil.addInfoMessage("Categoria '"+categoriaSelecionada.getNome()+"' excluída com Sucesso");
 		}catch(NegocioException e)
 		{
 			FacesUtil.addErrorMessage(e.getMessage());

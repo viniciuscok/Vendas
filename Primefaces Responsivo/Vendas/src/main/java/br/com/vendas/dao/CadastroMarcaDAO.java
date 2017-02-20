@@ -24,6 +24,17 @@ public class CadastroMarcaDAO implements Serializable
 	{
 		manager.merge(marca);
 	}
+
+									//MÉTODO PARA REMOVER UMA MARCA  		
+//------------------------------------------------------------------------------------------------------------------------
+				
+	@Transactional
+	public void remover(Marca marca)
+	{
+		marca = porCodigo(marca.getCodigo());
+		manager.remove(marca);
+		manager.flush();
+	}
 	
 									//MÉTODO QUE RETORNA UMA LISTA DE MARCAS.	
 //------------------------------------------------------------------------------------------------------------------------
@@ -42,4 +53,13 @@ public class CadastroMarcaDAO implements Serializable
 		return manager.find(Marca.class, codigo);
 	}
 
+	//MÉTODO PARA BUSCAR UMA MARCA PASSANDO COMO PARÂMETRO O CÓDIGO DA MARCA. 		
+	//------------------------------------------------------------------------------------------------------------------------
+					
+	public List<Marca> bucarPorNome(String nome) 
+	{
+			
+		return manager.createQuery("FROM Marca where nome like ?1", Marca.class)
+				.setParameter(1, "%"+nome+"%").getResultList();
+	}
 }
