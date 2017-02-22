@@ -29,7 +29,7 @@ public class CadastroMarcaBean implements Serializable
 	@PostConstruct
 	public void inicializar()
 	{
-		if(marca == null)
+		if(this.marca == null)
 		{
 			limpar();
 		}

@@ -9,7 +9,7 @@
 	<ui:define name="titulo">Cadastrar Marca</ui:define>
 	<ui:define name="corpo">
 		<f:metadata>
-			<o:viewParam name="Marca" value="#{cadastroMarcaBean.marca}"></o:viewParam>
+			<o:viewParam name="marca" value="#{cadastroMarcaBean.marca}"></o:viewParam>
 			<f:event listener="#{cadastroMarcaBean.inicializar()}" type="preRenderView"></f:event>
 		</f:metadata>
 		
@@ -36,9 +36,9 @@
 					layout="grid" columnClasses="ui-grid-col-2,ui-grid-col-10"
 					styleClass="ve-panelGridCadastroMarca">
 
-					<p:outputLabel value="Codigo" for="codigo" rendered="true"/>
+					<p:outputLabel value="Codigo" for="codigo" rendered="#{cadastroMarcaBean.marca.codigoNull?false:true}"/>
 					<p:inputText id="codigo" disabled="true" value="#{cadastroMarcaBean.marca.codigo}" 
-					rendered="true"/>
+					rendered="#{cadastroMarcaBean.marca.codigoNull?false:true}"/>
 
 					<p:outputLabel value="Marca" for="marca" />
 					<p:inputText id="marca" value="#{cadastroMarcaBean.marca.nome}"/>						

@@ -24,4 +24,16 @@ public class CadastroProdutoDAO implements Serializable
 		this.manager.merge(produto);
 	}
 
+	@Transactional
+	public void remover(Produto produto) 
+	{
+		produto = porCodigo(produto.getCodigo());
+		manager.remove(produto);
+		manager.flush();
+	}
+
+	public Produto porCodigo(Long codigo)
+	{
+		return manager.find(Produto.class, codigo);
+	}
 }

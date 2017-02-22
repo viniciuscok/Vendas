@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import org.hibernate.validator.constraints.NotBlank;
 
@@ -79,6 +80,10 @@ public class Marca implements Serializable
 		return true;
 	}
 	
-	
+	@Transient
+	public boolean isCodigoNull()
+	{
+		return this.codigo == null;
+	}
 	
 }

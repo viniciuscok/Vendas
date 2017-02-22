@@ -1,0 +1,16 @@
+0:0:0:0:0:0:0:1 - - [22/Feb/2017:00:00:08 -0300] "GET /Vendas/marcas/CadastroMarca.xhtml HTTP/1.1" 200 7246
+0:0:0:0:0:0:0:1 - - [22/Feb/2017:00:00:34 -0300] "POST /Vendas/marcas/CadastroMarca.xhtml HTTP/1.1" 200 3849
+0:0:0:0:0:0:0:1 - - [22/Feb/2017:00:00:34 -0300] "GET /Vendas/javax.faces.resource/messages/messages.png.xhtml?ln=primefaces&v=6.0 HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [22/Feb/2017:00:00:34 -0300] "GET /Vendas/javax.faces.resource/images/ui-icons_333333_256x240.png.xhtml?ln=primefaces-bootstrap HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [22/Feb/2017:00:00:39 -0300] "GET /Vendas/marcas/PesquisaMarcas.xhtml HTTP/1.1" 200 10800
+0:0:0:0:0:0:0:1 - - [22/Feb/2017:00:00:42 -0300] "POST /Vendas/marcas/PesquisaMarcas.xhtml HTTP/1.1" 200 8729
+0:0:0:0:0:0:0:1 - - [22/Feb/2017:00:00:46 -0300] "GET /Vendas/marcas/CadastroMarca.xhtml?marca=3 HTTP/1.1" 200 7461
+127.0.0.1 - - [22/Feb/2017:00:03:41 -0300] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [22/Feb/2017:00:03:42 -0300] "GET /Vendas/marcas/CadastroMarca.xhtml HTTP/1.1" 200 7247
+0:0:0:0:0:0:0:1 - - [22/Feb/2017:00:03:49 -0300] "GET /Vendas/marcas/PesquisaMarcas.xhtml HTTP/1.1" 200 10799
+0:0:0:0:0:0:0:1 - - [22/Feb/2017:00:03:55 -0300] "POST /Vendas/marcas/PesquisaMarcas.xhtml HTTP/1.1" 200 8728
+0:0:0:0:0:0:0:1 - - [22/Feb/2017:00:03:57 -0300] "GET /Vendas/marcas/CadastroMarca.xhtml?marca=3 HTTP/1.1" 200 7460
+0:0:0:0:0:0:0:1 - - [22/Feb/2017:00:05:28 -0300] "GET /Vendas/marcas/CadastroMarca.xhtml HTTP/1.1" 200 7247
+0:0:0:0:0:0:0:1 - - [22/Feb/2017:00:05:32 -0300] "GET /Vendas/marcas/PesquisaMarcas.xhtml HTTP/1.1" 200 10800
+0:0:0:0:0:0:0:1 - - [22/Feb/2017:00:05:35 -0300] "POST /Vendas/marcas/PesquisaMarcas.xhtml HTTP/1.1" 200 8729
+0:0:0:0:0:0:0:1 - - [22/Feb/2017:00:05:37 -0300] "GET /Vendas/marcas/CadastroMarca.xhtml?marca=3 HTTP/1.1" 200 7884
