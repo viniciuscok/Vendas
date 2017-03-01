@@ -11,11 +11,13 @@ import javax.inject.Named;
 
 import br.com.vendas.dao.CadastroCategoriaDAO;
 import br.com.vendas.dao.CadastroMarcaDAO;
+import br.com.vendas.dao.CadastroSubcategoriaDAO;
 import br.com.vendas.model.Categoria;
 import br.com.vendas.model.Espessura;
 import br.com.vendas.model.Marca;
 import br.com.vendas.model.ModeloVidro;
 import br.com.vendas.model.Produto;
+import br.com.vendas.model.SubCategoria;
 import br.com.vendas.model.Tipo;
 import br.com.vendas.service.CadastroProdutoService;
 import br.com.vendas.service.NegocioException;
@@ -33,10 +35,13 @@ public class CadastroProdutoBean implements Serializable
 	private CadastroMarcaDAO cadastroMarcaDAO;
 	@Inject
 	private CadastroCategoriaDAO cadastroCategoriaDAO;
+	@Inject
+	private CadastroSubcategoriaDAO cadastroSubcategoriaDAO;
 	
 	private Produto produto;
 	private List<Marca> marcas;
 	private List<Categoria> categorias;
+	private List<SubCategoria> subCategorias;
 						
 						//Método PARA INICIAR UM PRODUTO CASO SEJA NULL
 						//@PostConstruct = É CARREGADO ANTES DE ABRIR A PÁGINA
@@ -61,6 +66,7 @@ public class CadastroProdutoBean implements Serializable
 	{
 		this.produto = new Produto();
 		this.categorias = new ArrayList<>();
+		
 		this.marcas = new ArrayList<>();
 		buscarTodasMarcas();
 		buscarTodasCategorias();
@@ -91,6 +97,41 @@ public class CadastroProdutoBean implements Serializable
 		}
 	}
 	
+	public void teste()
+	{
+		if(this.produto.getCategoria() !=null && !this.produto.getCategoria().equals(""))
+		{
+			this.subCategorias = cadastroSubcategoriaDAO.buscarPorCategoria(this.produto.getCategoria().getCodigo());
+			System.out.println("----------------------------");
+			System.out.println("----------------------------");
+			System.out.println("----------------------------");
+			System.out.println("----------------------------");
+			System.out.println("----------------------------");
+			System.out.println("----------------------------");
+			
+		}
+		
+		else
+		{
+			subCategorias = new ArrayList<>();
+			System.out.println("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
+		}
+		
+	
+		
+		
+		for (SubCategoria teste : this.subCategorias) 
+		{
+			System.out.println(teste.getCodigo());
+			System.out.println(teste.getNome());
+			System.out.println(teste.getCategoria().getNome());
+			System.out.println(teste.getDescricao());
+			System.out.println("----------------------------");
+			
+			
+		}
+	}
+	
 										//MÉTODO PARA TRAZER TODAS AS CATEGORIAS QUE ESTÃO NO BANCO.
 //------------------------------------------------------------------------------------------------------------------------
 				
@@ -98,6 +139,14 @@ public class CadastroProdutoBean implements Serializable
 	{
 		this.categorias = cadastroCategoriaDAO.buscarCategoria();	
 	}
+	
+										//MÉTODO PARA TRAZER TODAS AS SUBCATEGORIAS QUE ESTÃO NO BANCO.
+//------------------------------------------------------------------------------------------------------------------------
+					
+	//public void buscarTodasSubCategorias()
+	//{
+		//this.SubCategorias = cadastroSubcategoriaDAO.buscarTodasSubCategorias();	
+	//}
 	
 										//MÉTODO PARA TRAZER TODAS AS MARCAS QUE ESTÃO NO BANCO.
 //------------------------------------------------------------------------------------------------------------------------
@@ -156,6 +205,14 @@ public class CadastroProdutoBean implements Serializable
 
 	public void setCategorias(List<Categoria> categorias) {
 		this.categorias = categorias;
+	}
+
+	public List<SubCategoria> getSubCategorias() {
+		return subCategorias;
+	}
+
+	public void setSubCategorias(List<SubCategoria> subCategorias) {
+		subCategorias = subCategorias;
 	}
 	
 	

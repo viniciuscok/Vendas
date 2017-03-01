@@ -29,6 +29,7 @@ public class Produto implements Serializable
 	private Tipo tipo;
 	private Marca marca;
 	private Categoria categoria;
+	private SubCategoria subCategoria;
 	private ModeloVidro modeloVidro;
 	private Espessura espessura;
 	private BigDecimal valorMetro;
@@ -102,6 +103,18 @@ public class Produto implements Serializable
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
 	}
+	
+	//Mapeamento de muitos para um
+	@NotNull
+	@ManyToOne
+	@JoinColumn(name="nm_subcategoria", nullable = false)
+	public SubCategoria getSubCategoria() {
+		return subCategoria;
+	}
+
+	public void setSubCategoria(SubCategoria subCategoria) {
+		this.subCategoria = subCategoria;
+	}	
 
 	@NotNull
 	@Enumerated(EnumType.STRING)
@@ -171,6 +184,8 @@ public class Produto implements Serializable
 		} else if (!codigo.equals(other.codigo))
 			return false;
 		return true;
-	}	
+	}
+	
+	
 
 }

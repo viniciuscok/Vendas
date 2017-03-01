@@ -1,0 +1,99 @@
+<ui:composition template="/WEB-INF/templates/Layout.xhtml"
+ 	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" >
+
+	<ui:define name="titulo">Novo Produto</ui:define>
+	<ui:define name="corpo">
+	
+		<f:metadata>
+			<f:event listener="#{cadastroProdutoBean.inicializar}" type="preRenderView"></f:event>
+		</f:metadata>
+		<h1>Novo Produto</h1>
+			
+		<h:form id="formCadastroProduto">	
+			<p:messages id="msgPrincipal"  autoUpdate="false" closable="true"/>
+			<p:toolbar>
+				<p:toolbarGroup>
+					<p:button value="Novo" icon="fa fa-plus" outcome="/produtos/CadastroProduto" 
+						styleClass="ve-botaoNovoCadastroProduto"/>
+					<p:commandButton value="Salvar" icon="fa fa-save" id="botaoSalvarCadastroProduto"
+						styleClass="ve-botaoSalvarCadastroProduto" action="#{cadastroProdutoBean.salvar()}" 
+						update="@form msgPrincipal"/>
+				</p:toolbarGroup>
+				<p:toolbarGroup align="right">
+					<p:button value="Pesquisar" icon="fa fa-search" outcome="/produtos/PesquisaProdutos"
+						styleClass="ve-botaoPesquisarCadastroProduto"/>
+				</p:toolbarGroup>
+			</p:toolbar>
+			<div class="ui-fluid">
+				<p:panelGrid columns="2" id="panelGrridCadastroProduto" layout="grid" 
+					columnClasses="ui-grid-col-2,ui-grid-col-10" styleClass="ve-panelGridCadastroProduto">
+					
+					<p:outputLabel value="Codigo" for="codigo" rendered="false"/>
+					<p:inputText id="codigo" disabled="true" value="#{cadastroProdutoBean.produto.codigo}"
+							rendered="false"/>
+					
+					<p:outputLabel value="Nome" for="nome"/>
+					<p:inputText id="nome" value="#{cadastroProdutoBean.produto.nome}"/>
+					
+					<p:outputLabel value="Marca" for="marca"/>
+					<p:selectOneMenu id="marca" value="#{cadastroProdutoBean.produto.marca}" autoWidth="auto"> 
+						<f:selectItem itemLabel="Selecione uma Marca"/>
+						<f:selectItems value="#{cadastroProdutoBean.marcas}" var="marca" itemValue="#{marca}"
+								itemLabel="#{marca.nome}"/>
+					</p:selectOneMenu>
+					
+					<p:outputLabel value="Tipo" for="tipo"/>
+					<p:selectOneRadio id="tipo" value="#{cadastroProdutoBean.produto.tipo}" layout="responsive" columns="2"> 
+						<f:selectItems value="#{cadastroProdutoBean.tipos}" var="tipo" itemValue="#{tipo}" 
+								itemLabel="#{tipo.descricao}"/>
+					</p:selectOneRadio>
+					
+					<p:outputLabel value="Categoria" for="categoria"/>
+					<p:selectOneMenu id="categoria" value="#{cadastroProdutoBean.produto.categoria}" autoWidth="auto"> 
+						<p:ajax listener="#{cadastroProdutoBean.teste()}" update="subCategoria"/>
+						<f:selectItem itemLabel="Selecione uma Categoria"/>
+						<f:selectItems value="#{cadastroProdutoBean.categorias}" var="categoria" itemValue="#{categoria}"
+								itemLabel="#{categoria.nome}"/>
+					</p:selectOneMenu>
+					
+					<p:outputLabel value="Subcategoria" for="subCategoria"/>
+					<p:selectOneMenu id="subCategoria" value="#{cadastroProdutoBean.produto.subCategoria}" autoWidth="auto"> 
+						<f:selectItem itemLabel="Selecione uma SubCategoria"/>
+						<f:selectItems value="#{cadastroProdutoBean.subCategorias}" var="subCategoria" 
+								itemValue="#{subCategoria}"
+								itemLabel="#{ subCategoria.nome}"/>
+					</p:selectOneMenu>
+					
+					<p:outputLabel value="Modelo do Vidro" for="modeloVidro"/>
+					<p:selectOneMenu id="modeloVidro" value="#{cadastroProdutoBean.produto.modeloVidro}" autoWidth="auto"> 
+						<f:selectItem itemLabel="Selecione o Modelo do Vidro"/>
+						<f:selectItems value="#{cadastroProdutoBean.modeloVidros}" var="modelo" itemValue="#{modelo}"
+								itemLabel="#{modelo.descricao}"/>
+					</p:selectOneMenu>
+					
+					<p:outputLabel value="Espessura" for="espessura"/>
+					<p:selectOneMenu id="espessura" value="#{cadastroProdutoBean.produto.espessura}" autoWidth="auto"> 
+						<f:selectItem itemLabel="Selecione a espessura do Vidro"/>
+						<f:selectItems value="#{cadastroProdutoBean.espessuras}" var="espessura" itemValue="#{espessura}"
+								itemLabel="#{espessura.descricao}"/>
+					</p:selectOneMenu>
+					
+					<p:outputLabel value="Valor do Metro" for="valorMetro"/>
+					<p:inputText id="valorMetro" value="#{cadastroProdutoBean.produto.valorMetro}" maxlength="10" 
+							styleClass="js-moeda">
+							<f:convertNumber maxFractionDigits="2" minFractionDigits="2" />
+					</p:inputText>		
+					
+					<p:outputLabel value="Estoque" for="estoque"/>
+					<p:inputText id="estoque" value="#{cadastroProdutoBean.produto.estoque}"/>
+					
+				</p:panelGrid>
+			</div>		
+		</h:form>		
+	</ui:define>
+	
+</ui:composition>

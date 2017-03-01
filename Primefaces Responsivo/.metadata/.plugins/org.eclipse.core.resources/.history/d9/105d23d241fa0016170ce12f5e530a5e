@@ -1,0 +1,192 @@
+package br.com.vendas.controller;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.annotation.PostConstruct;
+import javax.faces.view.ViewScoped;
+import javax.inject.Inject;
+import javax.inject.Named;
+
+import br.com.vendas.dao.CadastroCategoriaDAO;
+import br.com.vendas.dao.CadastroMarcaDAO;
+import br.com.vendas.dao.CadastroSubcategoriaDAO;
+import br.com.vendas.model.Categoria;
+import br.com.vendas.model.Espessura;
+import br.com.vendas.model.Marca;
+import br.com.vendas.model.ModeloVidro;
+import br.com.vendas.model.Produto;
+import br.com.vendas.model.SubCategoria;
+import br.com.vendas.model.Tipo;
+import br.com.vendas.service.CadastroProdutoService;
+import br.com.vendas.service.NegocioException;
+import br.com.vendas.util.jsf.FacesUtil;
+
+@Named
+@ViewScoped
+public class CadastroProdutoBean implements Serializable
+{
+	private static final long serialVersionUID = 1L;
+	
+	@Inject
+	private CadastroProdutoService cadastroProdutoService;
+	@Inject
+	private CadastroMarcaDAO cadastroMarcaDAO;
+	@Inject
+	private CadastroCategoriaDAO cadastroCategoriaDAO;
+	@Inject
+	private CadastroSubcategoriaDAO cadastroSubcategoriaDAO;
+	
+	private Produto produto;
+	private List<Marca> marcas;
+	private List<Categoria> categorias;
+	private List<SubCategoria> SubCategorias;
+						
+						//Método PARA INICIAR UM PRODUTO CASO SEJA NULL
+						//@PostConstruct = É CARREGADO ANTES DE ABRIR A PÁGINA
+//------------------------------------------------------------------------------------------------------------------------
+
+	@PostConstruct
+	public void inicializar()
+	{
+		if(this.produto == null)
+		{
+			limpar();
+		}
+			
+		
+	}
+	
+					//MÉTODO PARA INICIAR UM NOVO PRODUTO, UMA LISTA DE CATEGORIA E UMA LISTA DE MARCAS
+					//É CHAMADO OS MÉTODOS buscarTodasMarcas E buscarTodasCategorias() PARA SER CARREGADO NAS LISTAS	
+//------------------------------------------------------------------------------------------------------------------------
+		
+	public void limpar()
+	{
+		this.produto = new Produto();
+		this.categorias = new ArrayList<>();
+		this.marcas = new ArrayList<>();
+		buscarTodasMarcas();
+		buscarTodasCategorias();
+		
+	}
+	
+					//MÉTODO PARA SALVAR E ATUALIZAR O PRODUTO, VERIFICANDO SE O CÓDIGO DO PRODUTO ESTÁ NULO OU NÃO
+//------------------------------------------------------------------------------------------------------------------------
+			
+	public void salvar()
+	{
+		try
+		{
+			cadastroProdutoService.salvar(produto);
+			if(this.produto.getCodigo() == null)
+			{
+				FacesUtil.addInfoMessage("Produto '"+this.produto.getNome()+"' salvo com Sucesso!");
+			}else
+			{
+				FacesUtil.addInfoMessage("Produto '"+this.produto.getNome()+"' atualizado com Sucesso!");
+			}
+			
+			limpar();
+			
+		}catch(NegocioException e)
+		{
+			FacesUtil.addErrorMessage(e.getMessage());
+		}
+	}
+	
+	public void teste()
+	{
+		if(this.produto.getCategoria() !=null && !this.produto.getCategoria().equals(""))
+		{
+			this.SubCategorias = cadastroSubcategoriaDAO.buscarPorCategoria(this.produto.getCategoria());
+		}
+	}
+	
+										//MÉTODO PARA TRAZER TODAS AS CATEGORIAS QUE ESTÃO NO BANCO.
+//------------------------------------------------------------------------------------------------------------------------
+				
+	public void buscarTodasCategorias()
+	{
+		this.categorias = cadastroCategoriaDAO.buscarCategoria();	
+	}
+	
+										//MÉTODO PARA TRAZER TODAS AS SUBCATEGORIAS QUE ESTÃO NO BANCO.
+//------------------------------------------------------------------------------------------------------------------------
+					
+	public void buscarTodasSubCategorias()
+	{
+		this.SubCategorias = cadastroSubcategoriaDAO.buscarTodasSubCategorias();	
+	}
+	
+										//MÉTODO PARA TRAZER TODAS AS MARCAS QUE ESTÃO NO BANCO.
+//------------------------------------------------------------------------------------------------------------------------
+					
+	public void buscarTodasMarcas()
+	{
+		this.marcas = cadastroMarcaDAO.buscarMarca();
+	}
+	
+										//MÉTODO QUE RETORNA UM ARRAY DE TIPO
+//------------------------------------------------------------------------------------------------------------------------
+						
+	public Tipo[] getTipos()
+	{
+		return Tipo.values();
+	}
+	
+										//MÉTODO QUE RETORNA UM ARRAY DE ESPESSURA
+//------------------------------------------------------------------------------------------------------------------------
+								
+	public Espessura[] getEspessuras()
+	{
+		return Espessura.values();
+	}
+	
+										//MÉTODO QUE RETORNA UM ARRAY DE MODELOVIDRO
+//------------------------------------------------------------------------------------------------------------------------
+									
+	public ModeloVidro[] getModeloVidros()
+	{
+		return ModeloVidro.values();
+	}
+
+										//MÉTODOS GETTERS E SETTERS
+//------------------------------------------------------------------------------------------------------------------------
+							
+	public Produto getProduto() {
+		return produto;
+	}
+
+	public void setProduto(Produto produto) {
+		this.produto = produto;
+	}
+
+	public List<Marca> getMarcas() {
+		return marcas;
+	}
+
+	public void setMarcas(List<Marca> marcas) {
+		this.marcas = marcas;
+	}
+
+	public List<Categoria> getCategorias() {
+		return categorias;
+	}
+
+	public void setCategorias(List<Categoria> categorias) {
+		this.categorias = categorias;
+	}
+
+	public List<SubCategoria> getSubCategorias() {
+		return SubCategorias;
+	}
+
+	public void setSubCategorias(List<SubCategoria> subCategorias) {
+		SubCategorias = subCategorias;
+	}
+	
+	
+	
+}

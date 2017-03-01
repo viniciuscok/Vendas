@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;SubCategorias&apos; in &apos;br.com.vendas.controller.CadastroProdutoBean&apos; to &apos;subCategorias&apos;&#x0D;&#x0A;- Original project: &apos;Vendas&apos;&#x0D;&#x0A;- Original element: &apos;br.com.vendas.controller.CadastroProdutoBean.SubCategorias&apos;&#x0D;&#x0A;- Renamed element: &apos;br.com.vendas.controller.CadastroProdutoBean.subCategorias&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;SubCategorias&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src\/main\/java&lt;br.com.vendas.controller{CadastroProdutoBean.java[CadastroProdutoBean^SubCategorias" name="subCategorias" references="true" setter="false" stamp="1487909725153" textual="false" version="1.0"/>
+</session>

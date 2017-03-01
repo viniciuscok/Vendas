@@ -1,10 +1,12 @@
 package br.com.vendas.dao;
 
 import java.io.Serializable;
+import java.util.List;
 
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 
+import br.com.vendas.model.Categoria;
 import br.com.vendas.model.SubCategoria;
 import br.com.vendas.util.jpa.Transactional;
 
@@ -27,5 +29,15 @@ public class CadastroSubcategoriaDAO implements Serializable
 		return manager.find(SubCategoria.class, codigo);
 	}
 	
+	public List<SubCategoria> buscarTodasSubCategorias()
+	{
+		return manager.createQuery("FROM SubCategoria", SubCategoria.class).getResultList();
+	}
 
+	public List<SubCategoria> buscarPorCategoria(Long codigo)
+	{
+		return manager.createQuery("FROM SubCategoria s where s.categoria.codigo = ?1", SubCategoria.class)
+					.setParameter(1, codigo)
+					.getResultList();
+	}
 }
