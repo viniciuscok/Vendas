@@ -54,15 +54,15 @@
 					
 					<p:outputLabel value="Categoria" for="categoria"/>
 					<p:selectOneMenu id="categoria" value="#{cadastroProdutoBean.produto.categoria}" autoWidth="auto"> 
-						<p:ajax listener="#{cadastroProdutoBean.teste}" process="@this" update="subCategoria"/>
-						<f:selectItem itemLabel="Selecione uma Categoria" itemValue="" noSelectionOption="true"/>
+						<p:ajax listener="#{cadastroProdutoBean.buscarSubCategoria()}" update="subCategoria"/>
+						<f:selectItem itemLabel="Selecione uma Categoria" itemValue=""/>
 						<f:selectItems value="#{cadastroProdutoBean.categorias}" var="categoria" itemValue="#{categoria}"
 								itemLabel="#{categoria.nome}"/>
 					</p:selectOneMenu>
 					
 					<p:outputLabel value="Subcategoria" for="subCategoria"/>
 					<p:selectOneMenu id="subCategoria" value="#{cadastroProdutoBean.produto.subCategoria}" autoWidth="auto"> 
-						<f:selectItem itemLabel="Selecione uma SubCategoria" itemValue="" noSelectionOption="true"/>
+						<f:selectItem itemLabel="Selecione uma SubCategoria" itemValue="" />
 						<f:selectItems value="#{cadastroProdutoBean.subCategorias}" var="subCategoria" 
 								itemValue="#{subCategoria}"
 								itemLabel="#{ subCategoria.nome}"/>

@@ -1,0 +1,8 @@
+#Wed Mar 01 10:28:12 GMT-03:00 2017
+__DEFAULT__=false
+org.eclipse.sdk.Eclipse.master=true
+org.eclipse.sdk.Google.master=true
+org.eclipse.help.ui.localSearch.master=true
+org.hibernate.eclipse.help.HibernateWiki.master=true
+expression=1teste
+org.jboss.tools.developer.search.master=true

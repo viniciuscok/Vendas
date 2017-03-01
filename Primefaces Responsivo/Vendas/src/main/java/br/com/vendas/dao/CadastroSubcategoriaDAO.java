@@ -6,7 +6,6 @@ import java.util.List;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 
-import br.com.vendas.model.Categoria;
 import br.com.vendas.model.SubCategoria;
 import br.com.vendas.util.jpa.Transactional;
 

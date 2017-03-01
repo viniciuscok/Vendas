@@ -66,7 +66,7 @@ public class CadastroProdutoBean implements Serializable
 	{
 		this.produto = new Produto();
 		this.categorias = new ArrayList<>();
-		
+		this.subCategorias = new ArrayList<>();
 		this.marcas = new ArrayList<>();
 		buscarTodasMarcas();
 		buscarTodasCategorias();
@@ -97,9 +97,23 @@ public class CadastroProdutoBean implements Serializable
 		}
 	}
 	
-	public void teste()
+	public void buscarSubCategoria()
 	{
-		if(this.produto.getCategoria() !=null && !this.produto.getCategoria().equals(""))
+		//if(this.produto.getCategoria() != null && !this.produto.getCategoria().equals(""))
+		//{
+			//this.subCategorias = cadastroSubcategoriaDAO.buscarPorCategoria(this.produto.getCategoria().getCodigo());
+			//System.out.println("----------------------------");
+			//System.out.println("----------------------------");
+			//System.out.println("----------------------------");
+			//System.out.println("----------------------------");
+			//System.out.println("----------------------------");
+			//System.out.println("----------------------------");
+			
+		if(this.produto.getCategoria() == null || this.produto.getCategoria().equals(""))
+		{
+			subCategorias = new ArrayList<>();
+			System.out.println("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
+		}else
 		{
 			this.subCategorias = cadastroSubcategoriaDAO.buscarPorCategoria(this.produto.getCategoria().getCodigo());
 			System.out.println("----------------------------");
@@ -108,28 +122,8 @@ public class CadastroProdutoBean implements Serializable
 			System.out.println("----------------------------");
 			System.out.println("----------------------------");
 			System.out.println("----------------------------");
-			
 		}
 		
-		else
-		{
-			subCategorias = new ArrayList<>();
-			System.out.println("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
-		}
-		
-	
-		
-		
-		for (SubCategoria teste : this.subCategorias) 
-		{
-			System.out.println(teste.getCodigo());
-			System.out.println(teste.getNome());
-			System.out.println(teste.getCategoria().getNome());
-			System.out.println(teste.getDescricao());
-			System.out.println("----------------------------");
-			
-			
-		}
 	}
 	
 										//MÉTODO PARA TRAZER TODAS AS CATEGORIAS QUE ESTÃO NO BANCO.
@@ -210,11 +204,6 @@ public class CadastroProdutoBean implements Serializable
 	public List<SubCategoria> getSubCategorias() {
 		return subCategorias;
 	}
-
-	public void setSubCategorias(List<SubCategoria> subCategorias) {
-		subCategorias = subCategorias;
-	}
-	
 	
 	
 }
