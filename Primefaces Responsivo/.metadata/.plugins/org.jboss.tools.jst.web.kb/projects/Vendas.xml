@@ -98,5 +98,15 @@
  </validation>
  <aliases/>
  <includes/>
- <uris/>
+ <uris>
+  <uri value="http://xmlns.jcp.org/jsf/core">
+   <prefix>f</prefix>
+  </uri>
+  <uri value="http://xmlns.jcp.org/jsf/html">
+   <prefix>h</prefix>
+  </uri>
+  <uri value="http://primefaces.org/ui">
+   <prefix>p</prefix>
+  </uri>
+ </uris>
 </kb-project>

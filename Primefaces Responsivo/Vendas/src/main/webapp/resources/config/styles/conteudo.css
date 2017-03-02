@@ -3,6 +3,11 @@
 /*########QUANDO A TELA FICAR ABAIXO DE 640PX VAI SER RETIRADA A BORDA DO PANELGRID########*/
 @media(max-width: 640px)
 {
+	.ui-panelgrid.ve-panelGridRetirarBorda .ui-grid-responsive .ui-grid-row
+	{
+		border: none;
+	}
+	/*
 	.ui-panelgrid.ve-panelGridCadastroProduto .ui-grid-responsive .ui-grid-row,	
 	.ui-panelgrid.ve-panelGridPesquisaProdutos .ui-grid-responsive .ui-grid-row,
 	.ui-panelgrid.ve-panelGridCadastroCliente .ui-grid-responsive .ui-grid-row,
@@ -18,7 +23,7 @@
 		border: none;
 	}
 	
-	
+	*/
 }
 
 /*########MODELO PARA MUDAR O STYLO DO OUTPUTTEXT##########*/
@@ -31,7 +36,15 @@
 }
 	
 /*#########CONFIGURANDO A FONTE DO BOTOES DO TOOLBAR################*/
+
+.ui-toolbar-group-left .ve-botaoSuperiorLeft, 
+.ui-toolbar-group-right .ve-botaoSuperiorRight
+{
+	font-weight:bold;		
+}
+
 	/*##########PEDIDOS############*/
+/*
 .ui-toolbar-group-left .ve-botaoNovoCadastroPedido, 
 .ui-toolbar-group-left .ve-botaoSalvarCadastroPedido,
 .ui-toolbar-group-right .ve-botaoEmitirCadastroPedido,
@@ -41,35 +54,35 @@
 .ui-toolbar-group-right .ve-botaoNovoPesquisaPedidos,  
 .ui-toolbar-group-left .ve-botaoPesquisarPesquisaPedidos,
 
-	/*##########PRODUTOS############*/
+	##########PRODUTOS############
 .ui-toolbar-group-left .ve-botaoNovoCadastroProduto, 
 .ui-toolbar-group-left .ve-botaoSalvarCadastroProduto, 
 .ui-toolbar-group-right .ve-botaoPesquisarCadastroProduto,
 .ui-toolbar-group-right .ve-botaoNovoPesquisaProdutos,  
 .ui-toolbar-group-left .ve-botaoPesquisarPesquisaProdutos,
 
-	/*##########CLIENTES############*/
+	/*##########CLIENTES############
 .ui-toolbar-group-left .ve-botaoNovoCadastroCliente, 
 .ui-toolbar-group-left .ve-botaoSalvarCadastroCliente, 
 .ui-toolbar-group-right .ve-botaoPesquisarCadastroCliente,
 .ui-toolbar-group-left .ve-botaoPesquisarPesquisaClientes,
 .ui-toolbar-group-right .ve-botaoNovoPesquisaClientes,
 
-	/*##########USUÁRIOS############*/
+	/*##########USUÁRIOS############
 .ui-toolbar-group-left .ve-botaoNovoCadastroUsuario, 
 .ui-toolbar-group-left .ve-botaoSalvarCadastroUsuario, 
 .ui-toolbar-group-right .ve-botaoPesquisarCadastroUsuario,
 .ui-toolbar-group-left .ve-botaoPesquisarPesquisaUsuarios,
 .ui-toolbar-group-right .ve-botaoNovoPesquisaUsuarios,
 
-	/*##########Categorias############*/
+	/*##########Categorias############
 .ui-toolbar-group-left .ve-botaoNovoCadastroCategoria,
 .ui-toolbar-group-left .ve-botaoSalvarCadastroCategoria,
 .ui-toolbar-group-right .ve-botaoPesquisarCadastroCategoria,
 .ui-toolbar-group-left .ve-botaoPesquisarPesquisaCategoria,
 .ui-toolbar-group-right .ve-botaoNovoPesquisaCategorias,
 	
-/*##########Marcas############*/
+/*##########Marcas############
 .ui-toolbar-group-left .ve-botaoNovoCadastroMarca,
 .ui-toolbar-group-left .ve-botaoSalvarCadastroMarca,
 .ui-toolbar-group-right .ve-botaoPesquisarCadastroMarca,
@@ -78,11 +91,17 @@
 {
 	font-weight:bold;	
 		
-} 	 
+} 	 */
 /*#########quando a tela ficar abaixo de 640px irá diminuir os components do toolbar##########*/
 @media(max-width: 640px)
 {
-	/*#####################PRODUTOS##########################*/
+	.ui-toolbar-group-left .ve-botaoSuperiorLeft, 
+	.ui-toolbar-group-right .ve-botaoSuperiorRight
+	{
+		font-weight:bold;
+		font-size: 0.8em;		
+	}
+	/*#####################PRODUTOS##########################
 	.ui-toolbar-group-left .ve-botaoNovoCadastroProduto, 
 	.ui-toolbar-group-left .ve-botaoSalvarCadastroProduto, 
 	.ui-toolbar-group-right .ve-botaoPesquisarCadastroProduto,
@@ -93,7 +112,7 @@
 		font-size: 0.8em;
 	}
 	
-	/*#####################CLIENTES##########################*/
+	/*#####################CLIENTES##########################
 	.ui-toolbar-group-left .ve-botaoNovoCadastroCliente, 
 	.ui-toolbar-group-left .ve-botaoSalvarCadastroCliente, 
 	.ui-toolbar-group-right .ve-botaoPesquisarCadastroCliente,
@@ -104,7 +123,7 @@
 		font-size: 0.8em;
 	}
 	
-	/*#####################USUARIOS##########################*/
+	/*#####################USUARIOS##########################
 	.ui-toolbar-group-left .ve-botaoNovoCadastroUsuario, 
 	.ui-toolbar-group-left .ve-botaoSalvarCadastroUsuario, 
 	.ui-toolbar-group-right .ve-botaoPesquisarCadastroUsuario,
@@ -115,7 +134,7 @@
 		font-size: 0.8em;
 	}
 	
-	/*#####################PEDIDOS##########################*/
+	/*#####################PEDIDOS##########################
 	.ui-toolbar-group-right .ve-botaoNovoPesquisaPedidos,  
 	.ui-toolbar-group-left .ve-botaoPesquisarPesquisaPedidos
 	{
@@ -134,7 +153,7 @@
 		font-size: 0.5em;
 	} 
 	
-		/*##########Categorias############*/
+		/*##########Categorias############
 	.ui-toolbar-group-left .ve-botaoPesquisarPesquisaCategoria,
 	.ui-toolbar-group-right .ve-botaoNovoPesquisaCategorias
 	{
@@ -150,13 +169,13 @@
 		font-size: 0.8em;
 	}
 	
-	/*##########Categorias############*/
+	/*##########Categorias############
 	/*.ui-toolbar-group-left .ve-botaoPesquisarPesquisaCategoria,
 	.ui-toolbar-group-right .ve-botaoNovoPesquisaCategorias
 	{
 		font-weight:bold;
 		font-size: 0.8em;
-	}	*/
+	}	
 	
 	.ui-toolbar-group-left .ve-botaoNovoCadastroMarca,
 	.ui-toolbar-group-left .ve-botaoSalvarCadastroMarca,
@@ -164,7 +183,7 @@
 	{
 		font-weight:bold;
 		font-size: 0.8em;
-	}
+	}*/
 	
 }
 

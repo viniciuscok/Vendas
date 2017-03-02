@@ -21,21 +21,21 @@
 				<p:toolbarGroup>
 					<p:button value="Novo" icon="fa fa-plus"
 						outcome="/clientes/CadastroCliente"
-						styleClass="ve-botaoNovoCadastroCliente" />
+						styleClass="ve-botaoSuperiorLeft" />
 					<p:commandButton value="Salvar" icon="fa fa-save"
 						id="botaoSalvarCadastroCliente" action="#{cadastroClienteBean.salvar()}"
-						styleClass="ve-botaoSalvarCadastroCliente" update="@form msgPrincipal" />
+						styleClass="ve-botaoSuperiorLeft" update="@form msgPrincipal" />
 				</p:toolbarGroup>
 				<p:toolbarGroup align="right">
 					<p:button value="Pesquisar" icon="fa fa-search"
 						outcome="/clientes/PesquisaClientes"
-						styleClass="ve-botaoPesquisarCadastroCliente" />
+						styleClass="ve-botaoSuperiorRight" />
 				</p:toolbarGroup>
 			</p:toolbar>
 			<div class="ui-fluid">
 				<p:panelGrid columns="2" id="panelGrridCadastroCliente"
 					layout="grid" columnClasses="ui-grid-col-2,ui-grid-col-10"
-					styleClass="ve-panelGridCadastroCliente">
+					styleClass="ve-panelGridRetirarBorda">
 
 					<p:outputLabel value="Codigo" for="codigo" rendered="false"/>
 					<p:inputText id="codigo" disabled="true" value="#{cadastroClienteBean.cliente.codigo}" 
