@@ -1,5 +1,22 @@
 @charset "utf-8";
 
+/*########CAMPOS CENTRALIZADOS DA TABELA########*/
+@media(min-width: 640px)
+{
+	.textoNoCentro
+	{
+		text-align: center;
+	}
+}
+
+
+/*########RETIRANDO A BORADA DE TODO O PANELGRID########*/
+.ui-panelgrid.ve-RetirarBordaPanelGrid .ui-grid-responsive
+{
+	border: none !important;
+	margin-top: 10px;
+}
+
 /*########QUANDO A TELA FICAR ABAIXO DE 640PX VAI SER RETIRADA A BORDA DO PANELGRID########*/
 @media(max-width: 640px)
 {

@@ -60,6 +60,11 @@ public class PesquisaMarcaBean implements Serializable
 		this.marcas = cadastroMarcaDAO.bucarPorNome(this.marcaFilter.getNome());
 	}
 	
+	public void buscarTodos()
+	{
+		this.marcas = cadastroMarcaDAO.buscarTodos();
+	}
+	
 											//MÉTODOS GETTERS E SETTERS	
 //------------------------------------------------------------------------------------------------------------------------
 					

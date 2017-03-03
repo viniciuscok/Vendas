@@ -17,39 +17,49 @@
 				<p:toolbarGroup>
 					<p:commandButton value="Pesquisar" icon="fa fa-search" outcome="/categorias/PesquisaCategorias" 
 						action="#{pesquisaCategoriaBean.buscarTodos()}" update="ve-tablePesquisaCategoria"
-						styleClass="ve-botaoPesquisarPesquisaCategoria"/>
+						styleClass="ve-botaoSuperiorLeft"/>
 				</p:toolbarGroup>
 				<p:toolbarGroup align="right">
 					<p:button value="Novo" icon="fa fa-plus" outcome="/categorias/CadastroCategoria"
-						styleClass="ve-botaoNovoPesquisaCategorias"/>
+						styleClass="ve-botaoSuperiorRight"/>
 				</p:toolbarGroup>
 			</p:toolbar>
 			<div class="ui-fluid">
 				<p:panelGrid columns="2" id="panelGridPesquisaCategoria" layout="grid" 
-					columnClasses="ui-grid-col-2,ui-grid-col-10" styleClass="ve-panelGridPesquisaCategoria">												
+					columnClasses="ui-grid-col-2,ui-grid-col-10" styleClass="ve-panelGridRetirarBorda">												
 					
 					<p:outputLabel value="Categoria" for="categoria"/>
-					<p:inputText id="categoria" value="#{pesquisaCategoriaBean.categoria.nome}"/>		
-					
-					
-					<p:commandButton value="Buscar" 
-					 	action="#{pesquisaCategoriaBean.buscarPorNome}" update="@form ve-tablePesquisaCategoria"/>
-																								
+					<p:inputText id="categoria" value="#{pesquisaCategoriaBean.categoriaFilter.nome}"/>		
+																					
 				</p:panelGrid>
 			</div>	
+			<div class="ui-fluid">
+				<p:panelGrid columns="3" columnClasses="ui-grid-col-4, ui-grid-col-4, ui-grid-col-4" layout="grid"
+					styleClass="ve-RetirarBordaPanelGrid">
+					
+					<p:commandButton value="Buscar" action="#{pesquisaCategoriaBean.buscarPorNome}" 
+						update="@form ve-tablePesquisaCategoria"/>
+						
+					<p:commandButton value="Buscar Todos" action="#{pesquisaCategoriaBean.buscarTodos()}"
+							update="@form ve-tablePesquisaCategoria"/>
+							
+					<p:commandButton value="Limpar Campos" action="#{pesquisaCategoriaBean.limpar()}"
+							update="@form ve-tablePesquisaCategoria"/>		
+				</p:panelGrid>
+			</div>
 			<p:dataTable id="ve-tablePesquisaCategoria" value="#{pesquisaCategoriaBean.categorias}" emptyMessage="Não foi encontrado nenhum registro" 
 				 var="categoria" style="margin-top:20px" rows="20" paginator="true" paginatorAlwaysVisible="false"
 				 paginatorPosition="bottom" reflow="true">
 				 
-				<p:column headerText="Código">
+				<p:column headerText="Código" styleClass="textoNoCentro">
 					<h:outputText value="#{categoria.codigo}" />
 				</p:column>		
 				 			
-				<p:column headerText="Categoria">
+				<p:column headerText="Categoria" styleClass="textoNoCentro">
 					<h:outputText value="#{categoria.nome}" />
 				</p:column>
 				
-				<p:column headerText="Descrição" >
+				<p:column headerText="Descrição" styleClass="textoNoCentro">
 					<h:outputText value="#{categoria.descricao}" />
 				</p:column>
 				 

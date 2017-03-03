@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.persistence.Transient"/>
 <fullyQualifiedTypeName name="br.com.vendas.controller.PesquisarClienteBean"/>
 <fullyQualifiedTypeName name="br.com.vendas.dao.filter.ClienteFilter"/>
 <fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
@@ -50,14 +49,15 @@
 <fullyQualifiedTypeName name="javax.faces.view.ViewScoped"/>
 <fullyQualifiedTypeName name="javax.inject.Inject"/>
 <fullyQualifiedTypeName name="br.com.vendas.dao.CadastroMarcaDAO"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="br.com.vendas.controller.PesquisaMarcaBean"/>
 <fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="br.com.vendas.dao.filter.MarcaFilter"/>
-<fullyQualifiedTypeName name="br.com.vendas.model.Marca"/>
 <fullyQualifiedTypeName name="br.com.vendas.util.jpa.Transactional"/>
 <fullyQualifiedTypeName name="br.com.vendas.service.NegocioException"/>
 <fullyQualifiedTypeName name="br.com.vendas.util.jsf.FacesUtil"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="br.com.vendas.dao.filter.CategoriaFilter"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="br.com.vendas.model.Marca"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,293 @@
+@charset "utf-8";
+
+/*########QUANDO A TELA FICAR ABAIXO DE 640PX VAI SER RETIRADA A BORDA DO PANELGRID########*/
+/*.ui-panelgrid-content.ve-panelGridRetirarBordaTamnhoNormal .ui-grid-responsive .ui-grid-row*/
+.ui-panelgrid td, .ui-panelgrid tr
+{
+    Border-style: none! Importante
+}
+
+/*########QUANDO A TELA FICAR ABAIXO DE 640PX VAI SER RETIRADA A BORDA DO PANELGRID########*/
+@media(max-width: 640px)
+{
+	.ui-panelgrid.ve-panelGridRetirarBorda .ui-grid-responsive .ui-grid-row
+	{
+		border: none;
+	}
+	/*
+	.ui-panelgrid.ve-panelGridCadastroProduto .ui-grid-responsive .ui-grid-row,	
+	.ui-panelgrid.ve-panelGridPesquisaProdutos .ui-grid-responsive .ui-grid-row,
+	.ui-panelgrid.ve-panelGridCadastroCliente .ui-grid-responsive .ui-grid-row,
+	.ui-panelgrid.ve-panelGridCadastroUsuario .ui-grid-responsive .ui-grid-row,
+	.ui-panelgrid.ve-panelGridCadastroPedido .ui-grid-responsive .ui-grid-row,
+	.ui-panelgrid.ve-panelGridPesquisaPedidos .ui-grid-responsive .ui-grid-row,
+	.ui-panelgrid.ve-panelGridDadosEntregaPedido .ui-grid-responsive .ui-grid-row,
+	.ui-panelgrid.ve-panelGridPesquisaClientes .ui-grid-responsive .ui-grid-row,
+	.ui-panelgrid.ve-panelGridPesquisaCategoria .ui-grid-responsive .ui-grid-row,
+	.ui-panelgrid.ve-panelGridCadastroCategoria .ui-grid-responsive .ui-grid-row,
+	.ui-panelgrid.ve-panelGridCadastroMarca .ui-grid-responsive .ui-grid-row
+	{
+		border: none;
+	}
+	
+	*/
+}
+
+/*########MODELO PARA MUDAR O STYLO DO OUTPUTTEXT##########*/
+.ui-panelgrid .ui-panelgrid-content .ui-grid-row .tito
+{
+	
+	font: italic small-caps bold 14px "Comic Sans MS", sans-serif;
+	
+	color:red;
+}
+	
+/*#########CONFIGURANDO A FONTE DO BOTOES DO TOOLBAR################*/
+
+.ui-toolbar-group-left .ve-botaoSuperiorLeft, 
+.ui-toolbar-group-right .ve-botaoSuperiorRight
+{
+	font-weight:bold;		
+}
+
+	/*##########PEDIDOS############*/
+/*
+.ui-toolbar-group-left .ve-botaoNovoCadastroPedido, 
+.ui-toolbar-group-left .ve-botaoSalvarCadastroPedido,
+.ui-toolbar-group-right .ve-botaoEmitirCadastroPedido,
+.ui-toolbar-group-right .ve-botaoCancelarCadastroPedido,
+.ui-toolbar-group-right .ve-botaoEmailCadastroPedido,
+.ui-toolbar-group-right .ve-botaoPesquisarCadastroPedido,
+.ui-toolbar-group-right .ve-botaoNovoPesquisaPedidos,  
+.ui-toolbar-group-left .ve-botaoPesquisarPesquisaPedidos,
+
+	##########PRODUTOS############
+.ui-toolbar-group-left .ve-botaoNovoCadastroProduto, 
+.ui-toolbar-group-left .ve-botaoSalvarCadastroProduto, 
+.ui-toolbar-group-right .ve-botaoPesquisarCadastroProduto,
+.ui-toolbar-group-right .ve-botaoNovoPesquisaProdutos,  
+.ui-toolbar-group-left .ve-botaoPesquisarPesquisaProdutos,
+
+	/*##########CLIENTES############
+.ui-toolbar-group-left .ve-botaoNovoCadastroCliente, 
+.ui-toolbar-group-left .ve-botaoSalvarCadastroCliente, 
+.ui-toolbar-group-right .ve-botaoPesquisarCadastroCliente,
+.ui-toolbar-group-left .ve-botaoPesquisarPesquisaClientes,
+.ui-toolbar-group-right .ve-botaoNovoPesquisaClientes,
+
+	/*##########USUÁRIOS############
+.ui-toolbar-group-left .ve-botaoNovoCadastroUsuario, 
+.ui-toolbar-group-left .ve-botaoSalvarCadastroUsuario, 
+.ui-toolbar-group-right .ve-botaoPesquisarCadastroUsuario,
+.ui-toolbar-group-left .ve-botaoPesquisarPesquisaUsuarios,
+.ui-toolbar-group-right .ve-botaoNovoPesquisaUsuarios,
+
+	/*##########Categorias############
+.ui-toolbar-group-left .ve-botaoNovoCadastroCategoria,
+.ui-toolbar-group-left .ve-botaoSalvarCadastroCategoria,
+.ui-toolbar-group-right .ve-botaoPesquisarCadastroCategoria,
+.ui-toolbar-group-left .ve-botaoPesquisarPesquisaCategoria,
+.ui-toolbar-group-right .ve-botaoNovoPesquisaCategorias,
+	
+/*##########Marcas############
+.ui-toolbar-group-left .ve-botaoNovoCadastroMarca,
+.ui-toolbar-group-left .ve-botaoSalvarCadastroMarca,
+.ui-toolbar-group-right .ve-botaoPesquisarCadastroMarca,
+.ui-toolbar-group-left .ve-botaoPesquisarPesquisaMarca,
+.ui-toolbar-group-right .ve-botaoNovoPesquisaMarca
+{
+	font-weight:bold;	
+		
+} 	 */
+/*#########quando a tela ficar abaixo de 640px irá diminuir os components do toolbar##########*/
+@media(max-width: 640px)
+{
+	.ui-toolbar-group-left .ve-botaoSuperiorLeft, 
+	.ui-toolbar-group-right .ve-botaoSuperiorRight
+	{
+		font-weight:bold;
+		font-size: 0.8em;		
+	}
+	/*#####################PRODUTOS##########################
+	.ui-toolbar-group-left .ve-botaoNovoCadastroProduto, 
+	.ui-toolbar-group-left .ve-botaoSalvarCadastroProduto, 
+	.ui-toolbar-group-right .ve-botaoPesquisarCadastroProduto,
+	.ui-toolbar-group-right .ve-botaoNovoPesquisaProdutos,  
+	.ui-toolbar-group-left .ve-botaoPesquisarPesquisaProdutos
+	{
+		font-weight:bold;
+		font-size: 0.8em;
+	}
+	
+	/*#####################CLIENTES##########################
+	.ui-toolbar-group-left .ve-botaoNovoCadastroCliente, 
+	.ui-toolbar-group-left .ve-botaoSalvarCadastroCliente, 
+	.ui-toolbar-group-right .ve-botaoPesquisarCadastroCliente,
+	.ui-toolbar-group-left .ve-botaoPesquisarPesquisaClientes,
+	.ui-toolbar-group-right .ve-botaoNovoPesquisaClientes
+	{
+		font-weight:bold;
+		font-size: 0.8em;
+	}
+	
+	/*#####################USUARIOS##########################
+	.ui-toolbar-group-left .ve-botaoNovoCadastroUsuario, 
+	.ui-toolbar-group-left .ve-botaoSalvarCadastroUsuario, 
+	.ui-toolbar-group-right .ve-botaoPesquisarCadastroUsuario,
+	.ui-toolbar-group-left .ve-botaoPesquisarPesquisaUsuarios,
+	.ui-toolbar-group-right .ve-botaoNovoPesquisaUsuarios
+	{
+		font-weight:bold;
+		font-size: 0.8em;
+	}
+	
+	/*#####################PEDIDOS##########################
+	.ui-toolbar-group-right .ve-botaoNovoPesquisaPedidos,  
+	.ui-toolbar-group-left .ve-botaoPesquisarPesquisaPedidos
+	{
+		font-weight:bold;
+		font-size: 0.8em;
+	}
+	
+	.ui-toolbar-group-left .ve-botaoNovoCadastroPedido, 
+	.ui-toolbar-group-left .ve-botaoSalvarCadastroPedido,
+	.ui-toolbar-group-right .ve-botaoEmitirCadastroPedido,
+	.ui-toolbar-group-right .ve-botaoCancelarCadastroPedido,
+	.ui-toolbar-group-right .ve-botaoEmailCadastroPedido,
+	.ui-toolbar-group-right .ve-botaoPesquisarCadastroPedido
+	{
+		font-weight:bold;	
+		font-size: 0.5em;
+	} 
+	
+		/*##########Categorias############
+	.ui-toolbar-group-left .ve-botaoPesquisarPesquisaCategoria,
+	.ui-toolbar-group-right .ve-botaoNovoPesquisaCategorias
+	{
+		font-weight:bold;
+		font-size: 0.8em;
+	}	
+	
+	.ui-toolbar-group-left .ve-botaoNovoCadastroCategoria,
+	.ui-toolbar-group-left .ve-botaoSalvarCadastroCategoria,
+	.ui-toolbar-group-right .ve-botaoPesquisarCadastroCategoria
+	{
+		font-weight:bold;
+		font-size: 0.8em;
+	}
+	
+	/*##########Categorias############
+	/*.ui-toolbar-group-left .ve-botaoPesquisarPesquisaCategoria,
+	.ui-toolbar-group-right .ve-botaoNovoPesquisaCategorias
+	{
+		font-weight:bold;
+		font-size: 0.8em;
+	}	
+	
+	.ui-toolbar-group-left .ve-botaoNovoCadastroMarca,
+	.ui-toolbar-group-left .ve-botaoSalvarCadastroMarca,
+	.ui-toolbar-group-right .ve-botaoPesquisarCadastroMarca
+	{
+		font-weight:bold;
+		font-size: 0.8em;
+	}*/
+	
+}
+
+	
+
+/*#########Configurando o tamanho do outputText da pagina PesquisaPedido##########*/
+.ui-panelgrid .ui-panelgrid-content .ui-grid-row .ve-numeroPesquisaPedido,
+.ui-panelgrid .ui-panelgrid-content .ui-grid-row .ve-dataPesquisaPedido .ui-inputfield
+{
+	width: auto;
+}
+
+	/*###################TELA DE PESQUISA PEDIDOS#############################*/
+/*#########CONFIGURANDO 0 ALINHAMENTO DAS COLUNAS DAS TABELAS PESQUISA PEDIDOS##########*/
+
+.ui-widget-content .ve-numeroPesquisaPedidos,
+.ui-widget-content .ve-vendedorPesquisaPedidos,
+.ui-widget-content .ve-dataCriacaoPesquisaPedidos,
+.ui-widget-content .ve-statusPesquisaPedidos,
+.ui-widget-content .ve-editarPesquisaPedidos
+{
+	text-align: center;
+}
+
+.ui-widget-content .ve-valorPesquisaPedidos
+{
+	text-align: right;
+}
+
+@media(max-width: 640px)
+{
+	.ui-widget-content .ve-numeroPesquisaPedidos,
+	.ui-widget-content .ve-vendedorPesquisaPedidos,
+	.ui-widget-content .ve-dataCriacaoPesquisaPedidos,
+	.ui-widget-content .ve-statusPesquisaPedidos,
+	.ui-widget-content .ve-editarPesquisaPedidos,
+	.ui-widget-content .ve-valorPesquisaPedidos
+	{
+		text-align: left;
+	}
+}
+
+/*#########CONFIGURANDO 0 ALINHAMENTO NO CENTRO DAS COLUNAS DAS TABELAS ##########*/
+/*########################PRODUTO##########################*/
+.ui-widget-content .ve-codigoPesquisaProdutos,
+.ui-widget-content .ve-editarPesquisaProdutos,
+.ui-widget-content .ve-espessuraPesquisaProdutos,
+.ui-widget-content .ve-tipoVidroPesquisaProdutos,
+.ui-widget-content .ve-estoquePesquisaProdutos,
+
+/*########################USUÁRIOS##########################*/
+.ui-widget-content .ve-botaoAcoesPesquisaUsuarios,
+.ui-widget-content .ve-emailPesquisarUsuarios
+	{
+		text-align: center;
+	}
+	
+.ui-widget-content .ve-valorPesquisaProdutos
+{
+	text-align: right;
+}	
+
+@media(max-width: 640px)
+{
+	.ui-widget-content .ve-codigoPesquisaProdutos,
+	.ui-widget-content .ve-editarPesquisaProdutos,
+	.ui-widget-content .ve-espessuraPesquisaProdutos,
+	.ui-widget-content .ve-tipoVidroPesquisaProdutos,
+	.ui-widget-content .ve-estoquePesquisaProdutos
+	{
+		text-align: left;
+	}
+}
+
+.ui-widget-content .codigoItensPedido
+{
+	width: 80px;
+}
+.ui-widget-content .valorUnitarioItensPedido
+{
+	width: 100px;
+	text-align: right;
+}
+.ui-widget-content .larguraItensPedido,
+.ui-widget-content .alturaItensPedido
+{
+	width: 100px;
+	
+}
+.ui-widget-content .valorTotalItensPedido
+{
+	width: 100px;
+	text-align: right;
+}
+
+.ui-widget-content .estoqueItensPedido
+{
+	width: 100px;
+	text-align: center;
+}

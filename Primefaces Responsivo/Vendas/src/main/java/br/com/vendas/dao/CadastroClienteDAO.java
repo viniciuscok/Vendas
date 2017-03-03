@@ -54,8 +54,8 @@ public class CadastroClienteDAO implements Serializable
 		List<Cliente> testes = null;
 		if(!clienteFilter.getNome().trim().equals(""))
 		{
-			testes= manager.createQuery("from Cliente c where c.nome = ?1", Cliente.class)
-					.setParameter(1, clienteFilter.getNome())
+			testes= manager.createQuery("from Cliente c where c.nome like ?1", Cliente.class)
+					.setParameter(1, "%"+clienteFilter.getNome()+"%")
 					.getResultList();
 		}
 		else if(!clienteFilter.getCpf().trim().equals(""))

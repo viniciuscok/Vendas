@@ -30,11 +30,21 @@
 					
 					<p:outputLabel value="Marca" for="marca"/>
 					<p:inputText id="marca" value="#{pesquisaMarcaBean.marcaFilter.nome}"/>		
-					
+																								
+				</p:panelGrid>
+			</div>
+			<div class="ui-fluid">
+				<p:panelGrid columns="3" columnClasses="ui-grid-col-4, ui-grid-col-4, ui-grid-col-4" layout="grid"
+					styleClass="ve-RetirarBordaPanelGrid">
 					
 					<p:commandButton value="Buscar" 
 					 	action="#{pesquisaMarcaBean.buscarPorNome()}" update="@form ve-tablePesquisaMarca"/>
-																								
+					 	
+					<p:commandButton value="Buscar Todos" action="#{pesquisaMarcaBean.buscarTodos()}" 
+						update="@form ve-tablePesquisaMarca"/> 	
+						
+					<p:commandButton value="Limpar Campos" action="#{pesquisaMarcaBean.limpar()}" 
+						update="@form ve-tablePesquisaMarca"/> 	
 				</p:panelGrid>
 			</div>	
 			<p:dataTable id="ve-tablePesquisaMarca" value="#{pesquisaMarcaBean.marcas}" emptyMessage="Não foi encontrado nenhum registro" 

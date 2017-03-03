@@ -1,0 +1,112 @@
+<ui:composition template="/WEB-INF/templates/Layout.xhtml"
+ 	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" >
+
+	<ui:define name="titulo">Pesquisar Cliente</ui:define>
+	<ui:define name="corpo">
+			
+		<h:form id="formPesquisaCliente">
+			<h1>Pesquisar Cliente</h1>
+			
+			<p:messages autoUpdate="true" closable="true"/>
+				
+			<p:toolbar>
+				<p:toolbarGroup>
+					<p:commandButton value="Pesquisar" icon="fa fa-search" outcome="/clientes/PesquisaClientes" 
+						action="#{pesquisarClienteBean.buscarTodos}" update="ve-tablePesquisaCliente"
+						styleClass="ve-botaoPesquisarPesquisaClientes"/>
+				</p:toolbarGroup>
+				<p:toolbarGroup align="right">
+					<p:button value="Novo" icon="fa fa-plus" outcome="/clientes/CadastroCliente"
+						styleClass="ve-botaoNovoPesquisaClientes"/>
+				</p:toolbarGroup>
+			</p:toolbar>
+			<div class="ui-fluid">
+				<p:panelGrid columns="2" id="panelGridPesquisaProduto" layout="grid" 
+					columnClasses="ui-grid-col-2,ui-grid-col-10" styleClass="ve-panelGridPesquisaClientes">
+						
+					<p:outputLabel value="Nome" for="nome"/>
+					<p:inputText id="nome" value="#{pesquisarClienteBean.clienteFiltro.nome}"/>
+						
+					<p:outputLabel value="CPF/CNPJ" for="cpf"/>
+					<p:inputMask id="cpf" mask="999.999.999-99" value="#{pesquisarClienteBean.clienteFiltro.cpf}">
+						
+					</p:inputMask>	
+					
+					<p:outputLabel value="CNPJ" for="cnpj"/>
+					<p:inputMask id="cnpj" mask="99.999.999/9999-99" value="#{pesquisarClienteBean.clienteFiltro.cnpj}"/>		
+																		
+				</p:panelGrid>
+					
+			</div>	
+			<div class="ui-fluid" style="margin-top: 20px">
+				<p:panelGrid id="teste" columns="3" columnClasses="ui-grid-col-4, ui-grid-col-4, ui-grid-col-4" layout="grid" style="border:0px">
+				
+					<p:commandButton value="Buscar" action="#{pesquisarClienteBean.porNomeCPF()}"
+							update="@form ve-tablePesquisaCliente"/>	
+					
+					<p:commandButton value="Buscar Todos" action="#{pesquisarClienteBean.buscarTodos}"
+							update="@form ve-tablePesquisaCliente"/>	
+				</p:panelGrid>		
+			</div>
+			<p:dataTable id="ve-tablePesquisaCliente" value="#{pesquisarClienteBean.clientes}" emptyMessage="Não foi encontrado nenhum registro" 
+				 var="cliente" style="margin-top:20px" rows="20" paginator="true" paginatorAlwaysVisible="false"
+				 paginatorPosition="bottom" reflow="true">
+				 
+				<p:column headerText="Código">
+					<h:outputText value="#{cliente.codigo}" />
+				</p:column>		
+				 			
+				<p:column headerText="Nome">
+					<h:outputText value="#{cliente.nome}" />
+				</p:column>
+				
+				<p:column headerText="Tipo" >
+					<h:outputText value="#{cliente.tipoPessoa}" />
+				</p:column>
+				
+				<p:column headerText="CPF/CNPJ" >
+					<h:outputText value="#{cliente.documento}" />
+				</p:column>			
+				
+				<p:column headerText="Whatsapp">
+					<h:outputText value="#{cliente.contato.telefone}" />
+				</p:column>
+				
+				<p:column headerText="Cidade">
+					<h:outputText value="#{cliente.endereco.cidade}"/>	
+				</p:column>
+				
+				<p:column headerText="Bairro" >
+					<h:outputText value="#{cliente.endereco.bairro}"/>	
+				</p:column>
+				
+				<p:column headerText="Estado">
+					<h:outputText value="#{cliente.endereco.uf}"/>	
+				</p:column>
+				
+				<p:column headerText="Ações" styleClass="ve-editarPesquisaProdutos">
+					<p:button icon="fa fa-edit" title="Editar" outcome="/clientes/CadastroCliente">
+						<f:param name="cliente" value="#{cliente.codigo}"/>
+					</p:button>
+					<p:commandButton icon="fa fa-trash-o" title="Excluir" oncomplete="PF('excluirCliente').show()"
+							process="@this" update=":formPesquisaCliente:ve-dialogExcluirCliente">
+						<f:setPropertyActionListener value="#{cliente}" target="#{pesquisarClienteBean.clienteSelecionado}"/>	
+					</p:commandButton>
+				</p:column>
+			
+			</p:dataTable>	
+			
+			<p:confirmDialog id="ve-dialogExcluirCliente" header="Excluir Cliente" message="Tem certeza que deseja excluir o cliente?"
+					widgetVar="excluirCliente" responsive="true">
+				<p:button value="Não" onclick="PF('excluirCliente').hide(); return false;"/>	
+				<p:commandButton value="Sim" onclick="PF('excluirCliente').hide();" 
+					action="#{pesquisarClienteBean.remover()}" process="@this" update=":formPesquisaCliente:ve-tablePesquisaCliente"/>
+			</p:confirmDialog>
+		</h:form>		
+	</ui:define>
+	
+</ui:composition>

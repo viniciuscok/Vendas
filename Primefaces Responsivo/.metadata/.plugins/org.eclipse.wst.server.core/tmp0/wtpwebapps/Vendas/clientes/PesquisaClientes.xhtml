@@ -17,16 +17,16 @@
 				<p:toolbarGroup>
 					<p:commandButton value="Pesquisar" icon="fa fa-search" outcome="/clientes/PesquisaClientes" 
 						action="#{pesquisarClienteBean.buscarTodos}" update="ve-tablePesquisaCliente"
-						styleClass="ve-botaoPesquisarPesquisaClientes"/>
+						styleClass="ve-botaoSuperiorLeft"/>
 				</p:toolbarGroup>
 				<p:toolbarGroup align="right">
 					<p:button value="Novo" icon="fa fa-plus" outcome="/clientes/CadastroCliente"
-						styleClass="ve-botaoNovoPesquisaClientes"/>
+						styleClass="ve-botaoSuperiorRight"/>
 				</p:toolbarGroup>
 			</p:toolbar>
 			<div class="ui-fluid">
 				<p:panelGrid columns="2" id="panelGridPesquisaProduto" layout="grid" 
-					columnClasses="ui-grid-col-2,ui-grid-col-10" styleClass="ve-panelGridPesquisaClientes">
+					columnClasses="ui-grid-col-2,ui-grid-col-10" styleClass="ve-panelGridRetirarBorda">
 						
 					<p:outputLabel value="Nome" for="nome"/>
 					<p:inputText id="nome" value="#{pesquisarClienteBean.clienteFiltro.nome}"/>
@@ -42,33 +42,37 @@
 				</p:panelGrid>
 					
 			</div>	
-			<div class="ui-fluid" style="margin-top: 20px">
-				<p:panelGrid id="teste" columns="3" columnClasses="ui-grid-col-4, ui-grid-col-4, ui-grid-col-4" layout="grid" style="border:0px">
+			<div class="ui-fluid" style="margin-top: 10px">
+				<p:panelGrid columns="3" columnClasses="ui-grid-col-4, ui-grid-col-4, ui-grid-col-4" layout="grid"
+						styleClass="ve-RetirarBordaPanelGrid" >
 				
 					<p:commandButton value="Buscar" action="#{pesquisarClienteBean.porNomeCPF()}"
 							update="@form ve-tablePesquisaCliente"/>	
 					
 					<p:commandButton value="Buscar Todos" action="#{pesquisarClienteBean.buscarTodos}"
-							update="@form ve-tablePesquisaCliente"/>	
+							update="@form ve-tablePesquisaCliente"/>
+					
+					<p:commandButton value="Limpar Campos" action="#{pesquisarClienteBean.limpar()}"
+							update="@form ve-tablePesquisaCliente"/>				
 				</p:panelGrid>		
 			</div>
 			<p:dataTable id="ve-tablePesquisaCliente" value="#{pesquisarClienteBean.clientes}" emptyMessage="Não foi encontrado nenhum registro" 
 				 var="cliente" style="margin-top:20px" rows="20" paginator="true" paginatorAlwaysVisible="false"
 				 paginatorPosition="bottom" reflow="true">
 				 
-				<p:column headerText="Código">
+				<p:column headerText="Código" styleClass="textoNoCentro">
 					<h:outputText value="#{cliente.codigo}" />
 				</p:column>		
 				 			
-				<p:column headerText="Nome">
+				<p:column headerText="Nome" styleClass="textoNoCentro">
 					<h:outputText value="#{cliente.nome}" />
 				</p:column>
 				
-				<p:column headerText="Tipo" >
+				<p:column headerText="Tipo" styleClass="textoNoCentro">
 					<h:outputText value="#{cliente.tipoPessoa}" />
 				</p:column>
 				
-				<p:column headerText="CPF/CNPJ" >
+				<p:column headerText="CPF/CNPJ" styleClass="textoNoCentro">
 					<h:outputText value="#{cliente.documento}" />
 				</p:column>			
 				
@@ -76,15 +80,15 @@
 					<h:outputText value="#{cliente.contato.telefone}" />
 				</p:column>
 				
-				<p:column headerText="Cidade">
+				<p:column headerText="Cidade" styleClass="textoNoCentro">
 					<h:outputText value="#{cliente.endereco.cidade}"/>	
 				</p:column>
 				
-				<p:column headerText="Bairro" >
+				<p:column headerText="Bairro" styleClass="textoNoCentro">
 					<h:outputText value="#{cliente.endereco.bairro}"/>	
 				</p:column>
 				
-				<p:column headerText="Estado">
+				<p:column headerText="Estado" styleClass="textoNoCentro">
 					<h:outputText value="#{cliente.endereco.uf}"/>	
 				</p:column>
 				

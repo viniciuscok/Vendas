@@ -1,0 +1,90 @@
+<ui:composition template="/WEB-INF/templates/Layout.xhtml"
+ 	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" >
+
+	<ui:define name="titulo">Pesquisar Categoria</ui:define>
+	<ui:define name="corpo">
+			
+		<h:form id="formPesquisaCategoria">
+			<h1>Pesquisar Categoria</h1>
+			
+			<p:messages autoUpdate="true" closable="true"/>
+				
+			<p:toolbar>
+				<p:toolbarGroup>
+					<p:commandButton value="Pesquisar" icon="fa fa-search" outcome="/categorias/PesquisaCategorias" 
+						action="#{pesquisaCategoriaBean.buscarTodos()}" update="ve-tablePesquisaCategoria"
+						styleClass="ve-botaoSuperiorLeft"/>
+				</p:toolbarGroup>
+				<p:toolbarGroup align="right">
+					<p:button value="Novo" icon="fa fa-plus" outcome="/categorias/CadastroCategoria"
+						styleClass="ve-botaoSuperiorRight"/>
+				</p:toolbarGroup>
+			</p:toolbar>
+			<div class="ui-fluid">
+				<p:panelGrid columns="2" id="panelGridPesquisaCategoria" layout="grid" 
+					columnClasses="ui-grid-col-2,ui-grid-col-10" styleClass="ve-panelGridRetirarBorda">												
+					
+					<p:outputLabel value="Categoria" for="categoria"/>
+					<p:inputText id="categoria" value="#{pesquisaCategoriaBean.categoriaFilter.nome}"/>		
+					
+					
+					
+																					
+				</p:panelGrid>
+			</div>	
+			<div class="ui-fluid">
+				<p:panelGrid columns="3" columnClasses="ui-grid-col-4, ui-grid-col-4, ui-grid-col-4" layout="grid"
+					styleClass="ve-RetirarBordaPanelGrid" style="margin-top: 10px">
+					
+					<p:commandButton value="Buscar" action="#{pesquisaCategoriaBean.buscarPorNome}" 
+						update="@form ve-tablePesquisaCategoria"/>
+						
+					<p:commandButton value="Buscar Todos" action="#{pesquisaCategoriaBean.buscarTodos()}"
+							update="@form ve-tablePesquisaCategoria"/>
+							
+					<p:commandButton value="Limpar Campos" action="#{pesquisaCategoriaBean.limpar()}"
+							update="@form ve-tablePesquisaCategoria"/>		
+				</p:panelGrid>
+			</div>
+			<p:dataTable id="ve-tablePesquisaCategoria" value="#{pesquisaCategoriaBean.categorias}" emptyMessage="Não foi encontrado nenhum registro" 
+				 var="categoria" style="margin-top:20px" rows="20" paginator="true" paginatorAlwaysVisible="false"
+				 paginatorPosition="bottom" reflow="true">
+				 
+				<p:column headerText="Código" styleClass="textoNoCentro">
+					<h:outputText value="#{categoria.codigo}" />
+				</p:column>		
+				 			
+				<p:column headerText="Categoria" styleClass="textoNoCentro">
+					<h:outputText value="#{categoria.nome}" />
+				</p:column>
+				
+				<p:column headerText="Descrição" styleClass="textoNoCentro">
+					<h:outputText value="#{categoria.descricao}" />
+				</p:column>
+				 
+				<p:column headerText="Ações" styleClass="ve-editarPesquisaCategoria">
+					<p:button icon="fa fa-edit" title="Editar" outcome="/categorias/CadastroCategoria">
+						<f:param name="categoria" value="#{categoria.codigo}"/>
+					</p:button>
+					<p:commandButton icon="fa fa-trash-o" title="Excluir" oncomplete="PF('excluirCategoria').show()"
+							process="@this" update=":formPesquisaCategoria:ve-dialogExcluirCategoria">
+						<f:setPropertyActionListener value="#{categoria}" target="#{pesquisaCategoriaBean.categoriaSelecionada}"/>	
+					</p:commandButton>
+				</p:column>
+			
+			</p:dataTable>	
+			
+			<p:confirmDialog id="ve-dialogExcluirCategoria" header="Excluir Categoria" message="Tem certeza que deseja excluir a Categoria?"
+					widgetVar="excluirCategoria" responsive="true">
+				<p:button value="Não" onclick="PF('excluirCategoria').hide(); return false;"/>	
+				<p:commandButton value="Sim" onclick="PF('excluirCategoria').hide();" 
+					action="#{pesquisaCategoriaBean.remover()}" process="@this" update=":formPesquisaCategoria:ve-tablePesquisaCategoria"/>
+			</p:confirmDialog>
+		</h:form>		
+	</ui:define>
+	
+</ui:composition>

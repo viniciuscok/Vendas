@@ -10,6 +10,7 @@ import javax.inject.Inject;
 import javax.inject.Named;
 
 import br.com.vendas.dao.CadastroCategoriaDAO;
+import br.com.vendas.dao.filter.CategoriaFilter;
 import br.com.vendas.model.Categoria;
 import br.com.vendas.service.NegocioException;
 import br.com.vendas.util.jsf.FacesUtil;
@@ -25,6 +26,7 @@ public class PesquisaCategoriaBean implements Serializable
 	private List<Categoria> categorias;
 	private Categoria categoriaSelecionada;
 	private Categoria categoria;
+	private CategoriaFilter categoriaFilter;
 	
 						//Método PARA INICIAR A LISTA DE CATEGORIAS
 						//@PostConstruct = É CARREGADO ANTES DE ABRIR A PÁGINA
@@ -33,8 +35,17 @@ public class PesquisaCategoriaBean implements Serializable
 	@PostConstruct
 	public void inicializar()
 	{
+		limpar();
+	}
+
+									//Método PARA INICIAR A LISTA DE CATEGORIAS E CATEGORIAFILTER
+//------------------------------------------------------------------------------------------------------------------------
+
+	public void limpar()
+	{
 		categorias = new ArrayList<>();
-		categoria = new Categoria();
+		//categoria = new Categoria();
+		categoriaFilter = new CategoriaFilter();
 	}
 	
 						//MÉTODO PARA REMOVER UMA CATEGORIA SELECIONADA PELO USUÁRIO NA TABELA
@@ -74,7 +85,7 @@ public class PesquisaCategoriaBean implements Serializable
 		{
 			try
 			{
-				this.categorias = cadastroCategoriaDAO.buscarCategoria(categoria.getNome());
+				this.categorias = cadastroCategoriaDAO.buscarCategoria(categoriaFilter.getNome());
 			}catch(NegocioException e)
 			{
 				FacesUtil.addErrorMessage(e.getMessage());
@@ -107,6 +118,15 @@ public class PesquisaCategoriaBean implements Serializable
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
 	}
+
+	public CategoriaFilter getCategoriaFilter() {
+		return categoriaFilter;
+	}
+
+	public void setCategoriaFilter(CategoriaFilter categoriaFilter) {
+		this.categoriaFilter = categoriaFilter;
+	}
+	
 	
 
 	

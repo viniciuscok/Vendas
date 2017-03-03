@@ -21,20 +21,20 @@
 				<p:toolbarGroup>
 					<p:button value="Novo" icon="fa fa-plus"
 						outcome="/marcas/CadastroMarca"
-						styleClass="ve-botaoNovoCadastroMarca" />
+						styleClass="ve-botaoSuperiorLeft" />
 					<p:commandButton value="Salvar" icon="fa fa-save"
 						id="botaoSalvarCadastroMarca" action="#{cadastroMarcaBean.salvar()}" update="@form msgPrincipal"
-						styleClass="ve-botaoSalvarCadastroMarca" />
+						styleClass="ve-botaoSuperiorLeft" />
 				</p:toolbarGroup>
 				<p:toolbarGroup align="right">
 					<p:button value="Pesquisar" icon="fa fa-search" 
-					outcome="/marcas/PesquisaMarcas" styleClass="ve-botaoPesquisarCadastroMarca"/>
+					outcome="/marcas/PesquisaMarcas" styleClass="ve-botaoSuperiorRight"/>
 				</p:toolbarGroup>
 			</p:toolbar>
 			<div class="ui-fluid">
 				<p:panelGrid columns="2" id="panelGrridCadastroMarca"
 					layout="grid" columnClasses="ui-grid-col-2,ui-grid-col-10"
-					styleClass="ve-panelGridCadastroMarca">
+					styleClass="ve-panelGridRetirarBorda">
 
 					<p:outputLabel value="Codigo" for="codigo" rendered="#{cadastroMarcaBean.marca.codigoNull?false:true}"/>
 					<p:inputText id="codigo" disabled="true" value="#{cadastroMarcaBean.marca.codigo}" 

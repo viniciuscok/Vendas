@@ -62,4 +62,12 @@ public class CadastroMarcaDAO implements Serializable
 		return manager.createQuery("FROM Marca where nome like ?1", Marca.class)
 				.setParameter(1, "%"+nome+"%").getResultList();
 	}
+	
+						//MÉTODO PARA BUSCAR TODAS AS MARCAS 		
+//------------------------------------------------------------------------------------------------------------------------
+	
+	public List<Marca> buscarTodos()
+	{
+		return this.manager.createQuery("FROM Marca", Marca.class).getResultList();
+	}
 }
