@@ -1,0 +1,85 @@
+<ui:composition template="/WEB-INF/templates/Layout.xhtml"
+ 	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" >
+
+	<ui:define name="titulo">Pesquisar Marca</ui:define>
+	<ui:define name="corpo">
+			
+		<h:form id="formPesquisaMarca">
+			<h1>Pesquisar Marca</h1>
+			
+			<p:messages autoUpdate="true" closable="true"/>
+				
+			<p:toolbar>
+				<p:toolbarGroup>
+					<p:commandButton value="Pesquisar" icon="fa fa-search" outcome="/marcas/PesquisaMarcas" 
+						action="#{pesquisaCategoriaBean.buscarTodos()}" update="ve-tablePesquisaMarca"
+						styleClass="ve-botaoPesquisarPesquisaMarcas"/>
+				</p:toolbarGroup>
+				<p:toolbarGroup align="right">
+					<p:button value="Novo" icon="fa fa-plus" outcome="/marcas/CadastroMarca"
+						styleClass="ve-botaoNovoPesquisaMarcas"/>
+				</p:toolbarGroup>
+			</p:toolbar>
+			<div class="ui-fluid">
+				<p:panelGrid columns="2" id="panelGridPesquisaMarca" layout="grid" 
+					columnClasses="ui-grid-col-2,ui-grid-col-10" styleClass="ve-panelGridPesquisaMarca">												
+					
+					<p:outputLabel value="Marca" for="marca"/>
+					<p:inputText id="marca" value="#{pesquisaMarcaBean.marcaFilter.nome}"/>		
+																								
+				</p:panelGrid>
+			</div>
+			<div class="ui-fluid">
+				<p:panelGrid columns="3" columnClasses="ui-grid-col-4, ui-grid-col-4, ui-grid-col-4" layout="grid"
+					styleClass="ve-RetirarBordaPanelGrid">
+					
+					<p:commandButton value="Buscar" 
+					 	action="#{pesquisaMarcaBean.buscarPorNome()}" update="@form ve-tablePesquisaMarca"/>
+					 	
+					<p:commandButton value="Buscar Todos" action="#{pesquisaMarcaBean.buscarTodos()}" 
+						update="@form ve-tablePesquisaMarca"/> 	
+						
+					<p:commandButton value="Limpar Campos" action="#{pesquisaMarcaBean.limpar()}" 
+						update="@form ve-tablePesquisaMarca"/> 	
+				</p:panelGrid>
+			</div>	
+			<p:dataTable id="ve-tablePesquisaMarca" value="#{pesquisaMarcaBean.marcas}" emptyMessage="Não foi encontrado nenhum registro" 
+				 var="marca" style="margin-top:20px" rows="20" paginator="true" paginatorAlwaysVisible="false"
+				 paginatorPosition="bottom" reflow="true">
+				 
+				<p:column headerText="Código" styleClass="textoNoCentro">
+					<h:outputText value="#{marca.codigo}" />
+				</p:column>		
+				 			
+				<p:column headerText="Marca">
+					<h:outputText value="#{marca.nome}" />
+				</p:column>
+				 
+				<p:column headerText="Ações" styleClass="ve-editarPesquisaMarca">
+					<p:button icon="fa fa-edit" title="Editar" outcome="/marcas/CadastroMarca">
+						<f:param name="marca" value="#{marca.codigo}"/>
+					</p:button>
+					<p:commandButton icon="fa fa-trash-o" title="Excluir" oncomplete="PF('excluirMarca').show()"
+							process="@this" update=":formPesquisaMarca:ve-dialogExcluirMarca">
+						<f:setPropertyActionListener value="#{marca}" target="#{pesquisaMarcaBean.marcaSelecionada}"/>	
+					</p:commandButton>
+				</p:column>
+			
+			</p:dataTable>
+			
+			<p:confirmDialog id="ve-dialogExcluirMarca" header="Excluir Marca" message="Tem certeza que deseja excluir está Marca"
+					widgetVar="excluirMarca" responsive="true">
+				<p:button value="Não" onclick="PF('excluirMarca').hide(); return false;"/>	
+				<p:commandButton value="Sim" onclick="PF('excluirMarca').hide();" 
+					action="#{pesquisaMarcaBean.remover()}" process="@this" update=":formPesquisaMarca:ve-tablePesquisaMarca"/>
+			</p:confirmDialog>	
+			
+			
+		</h:form>		
+	</ui:define>
+	
+</ui:composition>

@@ -1,6 +1,7 @@
 package br.com.vendas.dao;
 
 import java.io.Serializable;
+import java.util.List;
 
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
@@ -35,5 +36,10 @@ public class CadastroProdutoDAO implements Serializable
 	public Produto porCodigo(Long codigo)
 	{
 		return manager.find(Produto.class, codigo);
+	}
+	
+	public List<Produto> buscarTodos()
+	{
+		return manager.createQuery("FROM Produto",Produto.class).getResultList();
 	}
 }

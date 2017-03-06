@@ -3,12 +3,14 @@
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
 	xmlns:f="http://xmlns.jcp.org/jsf/core"
 	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-	xmlns:p="http://primefaces.org/ui" >
+	xmlns:p="http://primefaces.org/ui" 
+	xmlns:o="http://omnifaces.org/ui">
 
 	<ui:define name="titulo">Novo Produto</ui:define>
 	<ui:define name="corpo">
 	
 		<f:metadata>
+			<o:viewParam name="produto" value="#{cadastroProdutoBean.produto}"/>
 			<f:event listener="#{cadastroProdutoBean.inicializar}" type="preRenderView"></f:event>
 		</f:metadata>
 		<h1>Novo Produto</h1>
@@ -18,19 +20,19 @@
 			<p:toolbar>
 				<p:toolbarGroup>
 					<p:button value="Novo" icon="fa fa-plus" outcome="/produtos/CadastroProduto" 
-						styleClass="ve-botaoNovoCadastroProduto"/>
+						styleClass="ve-botaoSuperiorLeft"/>
 					<p:commandButton value="Salvar" icon="fa fa-save" id="botaoSalvarCadastroProduto"
-						styleClass="ve-botaoSalvarCadastroProduto" action="#{cadastroProdutoBean.salvar()}" 
+						styleClass="ve-botaoSuperiorLeft" action="#{cadastroProdutoBean.salvar()}" 
 						update="@form msgPrincipal"/>
 				</p:toolbarGroup>
 				<p:toolbarGroup align="right">
 					<p:button value="Pesquisar" icon="fa fa-search" outcome="/produtos/PesquisaProdutos"
-						styleClass="ve-botaoPesquisarCadastroProduto"/>
+						styleClass="ve-botaoSuperiorRight"/>
 				</p:toolbarGroup>
 			</p:toolbar>
 			<div class="ui-fluid">
 				<p:panelGrid columns="2" id="panelGrridCadastroProduto" layout="grid" 
-					columnClasses="ui-grid-col-2,ui-grid-col-10" styleClass="ve-panelGridCadastroProduto">
+					columnClasses="ui-grid-col-2,ui-grid-col-10" styleClass="ve-panelGridRetirarBorda">
 					
 					<p:outputLabel value="Codigo" for="codigo" rendered="false"/>
 					<p:inputText id="codigo" disabled="true" value="#{cadastroProdutoBean.produto.codigo}"

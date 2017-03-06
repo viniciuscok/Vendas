@@ -9677,635 +9677,498 @@ java.lang.NullPointerException: null
 2017-02-19 00:31:59,731 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2017-02-19 00:31:59,733 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-02-19 00:31:59,734 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-02-20 15:35:14,481 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.vendas:Vendas:1.0.0-SNAPSHOT @ C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\pom.xml.
-2017-02-20 15:35:19,875 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-02-20 15:35:19,885 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-02-20 15:35:19,898 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-02-20 15:35:19,898 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-02-20 15:35:19,904 [Worker-5] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Vendas
-2017-02-20 15:35:19,905 [Worker-5] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Vendas
-2017-02-20 15:35:19,914 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-02-20 15:35:43,325 [Worker-5] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
-2017-02-20 15:35:45,005 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.vendas:Vendas:1.0.0-SNAPSHOT @ C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\pom.xml.
-2017-02-20 15:35:46,436 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Vendas/src/main/java
-2017-02-20 15:35:46,437 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Vendas/src/main/resources
-2017-02-20 15:35:46,438 [Worker-5] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Vendas/src/test/java
-2017-02-20 15:35:49,834 [Worker-5] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Vendas
-2017-02-20 15:35:49,843 [Worker-5] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 6 sec
-2017-02-20 15:35:57,666 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-02-20 15:35:57,668 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-02-20 15:35:57,690 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-02-20 15:35:57,690 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-02-20 15:35:57,690 [Worker-3] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Vendas
-2017-02-20 15:35:57,691 [Worker-3] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Vendas
-2017-02-20 15:35:57,705 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-02-20 15:37:55,290 [Worker-12] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
-2017-02-20 15:37:55,930 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.vendas:Vendas:1.0.0-SNAPSHOT @ C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\pom.xml.
-2017-02-20 15:37:57,012 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Vendas/src/main/java
-2017-02-20 15:37:57,012 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Vendas/src/main/resources
-2017-02-20 15:37:57,014 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Vendas/src/test/java
-2017-02-20 15:37:58,397 [Worker-12] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Vendas
-2017-02-20 15:37:58,404 [Worker-12] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
-2017-02-20 15:38:03,625 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-02-20 15:38:03,660 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-02-20 15:38:03,743 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-02-20 15:38:03,744 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-02-20 15:38:03,746 [Worker-9] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Vendas
-2017-02-20 15:38:03,746 [Worker-9] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Vendas
-2017-02-20 15:38:03,765 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-02-20 15:40:40,175 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-02-20 15:40:40,178 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-02-20 15:40:40,180 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-02-20 15:40:40,180 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-02-20 15:40:47,980 [Worker-14] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
-2017-02-20 15:40:48,462 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.vendas:Vendas:1.0.0-SNAPSHOT @ C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\pom.xml.
-2017-02-20 15:40:49,630 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Vendas/src/main/java
-2017-02-20 15:40:49,630 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Vendas/src/main/resources
-2017-02-20 15:40:49,631 [Worker-14] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Vendas/src/test/java
-2017-02-20 15:40:50,566 [Worker-14] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Vendas
-2017-02-20 15:40:50,573 [Worker-14] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
-2017-02-20 15:40:53,920 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-02-20 15:40:53,921 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-02-20 15:40:53,946 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-02-20 15:40:53,946 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-02-20 15:40:53,947 [Worker-18] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Vendas
-2017-02-20 15:40:53,947 [Worker-18] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Vendas
-2017-02-20 15:40:53,953 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-02-20 15:42:18,432 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-02-20 15:42:18,434 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-02-20 15:42:18,436 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-02-20 15:42:18,436 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-02-21 10:20:25,875 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-02-21 10:20:25,916 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-02-21 10:20:25,962 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-02-21 10:20:25,963 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-02-22 15:24:38,865 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-02-22 15:24:38,904 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-02-22 15:24:38,979 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-02-22 15:24:38,980 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 08:46:51,404 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 08:46:51,415 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-01 08:46:51,425 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 08:46:51,426 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 08:47:26,902 [Worker-1] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
-2017-03-01 08:47:27,852 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.vendas:Vendas:1.0.0-SNAPSHOT @ C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\pom.xml.
-2017-03-01 08:47:29,345 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Vendas/src/main/java
-2017-03-01 08:47:29,346 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Vendas/src/main/resources
-2017-03-01 08:47:29,348 [Worker-1] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Vendas/src/test/java
-2017-03-01 08:47:30,849 [Worker-1] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Vendas
-2017-03-01 08:47:30,857 [Worker-1] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 3 sec
-2017-03-01 08:47:35,838 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 08:47:35,840 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-01 08:47:35,860 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 08:47:35,861 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 08:47:35,861 [Worker-17] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Vendas
-2017-03-01 08:47:35,862 [Worker-17] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Vendas
-2017-03-01 08:47:35,873 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 09:09:59,385 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 09:09:59,399 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-01 09:09:59,427 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 09:09:59,428 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 09:26:17,121 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 09:26:17,133 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-01 09:26:17,135 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 09:26:17,135 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 09:26:20,600 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 09:26:20,611 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-01 09:26:20,614 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 09:26:20,615 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 09:29:52,750 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 09:29:52,752 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-01 09:29:52,754 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 09:29:52,755 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 09:41:12,759 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 09:41:12,763 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-01 09:41:12,767 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 09:41:12,767 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 09:46:55,656 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 09:46:55,659 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-01 09:46:55,661 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 09:46:55,662 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 09:49:12,222 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 09:49:12,225 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-01 09:49:12,229 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 09:49:12,229 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 10:12:04,914 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 10:12:04,915 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-01 10:12:04,917 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 10:12:04,918 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 10:12:17,231 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 10:12:17,232 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-01 10:12:17,233 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 10:12:17,234 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 10:13:51,539 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 10:13:51,539 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-01 10:13:51,541 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 10:13:51,542 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 10:17:47,505 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 10:17:47,508 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-01 10:17:47,510 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 10:17:47,511 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 10:18:43,272 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 10:18:43,274 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-01 10:18:43,276 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 10:18:43,277 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 10:21:43,917 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 10:21:43,919 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-01 10:21:43,922 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 10:21:43,923 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 10:31:20,989 [Worker-59] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
-2017-03-01 10:31:20,989 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 10:31:20,989 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-01 10:31:21,004 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 10:31:21,004 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 11:12:32,275 [Worker-74] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
-2017-03-01 11:12:32,275 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:12:32,275 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-01 11:12:32,275 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:12:32,275 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 11:19:16,862 [Worker-81] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
-2017-03-01 11:19:16,866 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:19:16,867 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-01 11:19:16,870 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:19:16,871 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 11:32:48,068 [Worker-87] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
-2017-03-01 11:32:48,072 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:32:48,072 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-01 11:32:48,075 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:32:48,075 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 11:34:29,973 [Worker-90] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
-2017-03-01 11:34:29,976 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:34:29,978 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-01 11:34:29,981 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:34:29,981 [Worker-90] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 11:34:43,803 [Worker-92] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
-2017-03-01 11:34:43,809 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:34:43,809 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-01 11:34:43,811 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:34:43,811 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 11:35:08,683 [Worker-92] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
-2017-03-01 11:35:08,688 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:35:08,688 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-01 11:35:08,693 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:35:08,693 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 11:39:07,736 [Worker-94] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
-2017-03-01 11:39:07,739 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:39:07,740 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-01 11:39:07,741 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:39:07,742 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 11:39:50,264 [Worker-92] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
-2017-03-01 11:39:50,264 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:39:50,264 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-01 11:39:50,280 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:39:50,280 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 11:43:37,784 [Worker-97] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
-2017-03-01 11:43:37,790 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:43:37,790 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-01 11:43:37,795 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:43:37,795 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 11:43:56,403 [Worker-92] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
-2017-03-01 11:43:56,403 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:43:56,403 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-01 11:43:56,419 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:43:56,419 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 11:53:18,336 [Worker-95] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
-2017-03-01 11:53:18,339 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:53:18,340 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-01 11:53:18,342 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:53:18,342 [Worker-95] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 11:53:35,560 [Worker-101] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
-2017-03-01 11:53:35,564 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:53:35,564 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-01 11:53:35,566 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 11:53:35,566 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 16:24:07,443 [Worker-133] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
-2017-03-01 16:24:07,458 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 16:24:07,458 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-01 16:24:07,460 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 16:24:07,461 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 17:10:57,165 [Worker-133] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
-2017-03-01 17:10:57,176 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 17:10:57,178 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-01 17:10:57,181 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 17:10:57,182 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 17:13:00,712 [Worker-133] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
-2017-03-01 17:13:00,715 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 17:13:00,716 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-01 17:13:00,718 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 17:13:00,718 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 17:18:45,871 [Worker-133] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
-2017-03-01 17:18:45,876 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 17:18:45,876 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-01 17:18:45,878 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 17:18:45,878 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 17:19:20,918 [Worker-133] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
-2017-03-01 17:19:20,921 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 17:19:20,922 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-01 17:19:20,923 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 17:19:20,923 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 17:19:41,672 [Worker-133] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
-2017-03-01 17:19:41,675 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 17:19:41,676 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-01 17:19:41,680 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 17:19:41,681 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-01 17:20:33,303 [Worker-133] ERROR o.e.m.c.i.URLConnectionCaches - Unexpected URLConnection defaultUseCaches enabled
-2017-03-01 17:20:33,306 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 17:20:33,306 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-01 17:20:33,307 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-01 17:20:33,308 [Worker-133] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-02 08:10:43,241 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 08:10:43,255 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-02 08:10:43,269 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 08:10:43,270 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-02 11:37:28,252 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 11:37:28,269 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-02 11:37:28,291 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 11:37:28,291 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-02 11:40:04,446 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 11:40:04,453 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-02 11:40:04,456 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 11:40:04,457 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-02 11:49:14,211 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 11:49:14,212 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-02 11:49:14,214 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 11:49:14,214 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-02 11:51:36,286 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 11:51:36,286 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-02 11:51:36,288 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 11:51:36,289 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-02 11:53:54,452 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 11:53:54,453 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-02 11:53:54,454 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 11:53:54,455 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-02 16:08:45,807 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 16:08:45,809 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-02 16:08:45,811 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 16:08:45,811 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-02 16:10:23,201 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 16:10:23,202 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-02 16:10:23,204 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 16:10:23,204 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-02 16:10:28,941 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 16:10:28,942 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-02 16:10:28,944 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 16:10:28,945 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-02 17:12:11,191 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 17:12:11,194 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-02 17:12:11,196 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 17:12:11,197 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-02 17:13:47,149 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 17:13:47,149 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-02 17:13:47,151 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 17:13:47,152 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-02 17:14:44,355 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 17:14:44,356 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-02 17:14:44,358 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 17:14:44,359 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-02 17:15:48,619 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 17:15:48,619 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-02 17:15:48,621 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 17:15:48,621 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-02 17:21:13,959 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 17:21:13,960 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-02 17:21:13,962 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 17:21:13,962 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-02 17:22:55,738 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 17:22:55,739 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-02 17:22:55,741 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 17:22:55,741 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-02 17:29:29,185 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 17:29:29,186 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-02 17:29:29,189 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-02 17:29:29,189 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 09:20:47,240 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 09:20:47,310 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-03 09:20:47,325 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 09:20:47,326 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 10:03:13,389 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:03:13,398 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 10:03:13,403 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:03:13,403 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 10:03:45,797 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:03:45,798 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 10:03:45,800 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:03:45,801 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 10:04:24,681 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:04:24,682 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 10:04:24,684 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:04:24,684 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 10:10:46,157 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:10:46,158 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 10:10:46,160 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:10:46,161 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 10:12:48,086 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:12:48,087 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 10:12:48,088 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:12:48,089 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 10:26:04,621 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:26:04,623 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 10:26:04,626 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:26:04,626 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 10:28:00,525 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:28:00,525 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 10:28:00,528 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:28:00,528 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 10:31:47,393 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:31:47,393 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 10:31:47,399 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:31:47,399 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 10:32:07,087 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:32:07,088 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 10:32:07,091 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:32:07,092 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 10:43:11,034 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:43:11,035 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 10:43:11,048 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:43:11,048 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 10:44:42,483 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:44:42,484 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 10:44:42,489 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:44:42,489 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 10:48:55,348 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:48:55,349 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 10:48:55,351 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:48:55,352 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 10:53:22,565 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:53:22,565 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 10:53:22,568 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 10:53:22,568 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:00:45,613 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:00:45,614 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 11:00:45,615 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:00:45,616 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:00:51,482 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:00:51,482 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 11:00:51,484 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:00:51,485 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:02:42,741 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:02:42,741 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 11:02:42,746 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:02:42,746 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:03:03,739 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:03:03,740 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 11:03:03,743 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:03:03,743 [Worker-72] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:09:27,038 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:09:27,038 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 11:09:27,042 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:09:27,042 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:09:30,000 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:09:30,001 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 11:09:30,003 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:09:30,003 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:10:26,666 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:10:26,666 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 11:10:26,669 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:10:26,669 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:12:36,158 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:12:36,158 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 11:12:36,161 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:12:36,161 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:13:43,329 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:13:43,330 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 11:13:43,332 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:13:43,333 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:15:24,068 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:15:24,069 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 11:15:24,071 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:15:24,072 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:16:12,928 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:16:12,928 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 11:16:12,930 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:16:12,930 [Worker-80] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:16:36,881 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:16:36,882 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 11:16:36,885 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:16:36,885 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:18:12,129 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:18:12,129 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 11:18:12,131 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:18:12,131 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:18:47,959 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:18:47,960 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 11:18:47,962 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:18:47,962 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:19:05,932 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:19:05,932 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 11:19:05,934 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:19:05,934 [Worker-85] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:19:33,905 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:19:33,906 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 11:19:33,908 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:19:33,908 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:20:09,605 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:20:09,606 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 11:20:09,608 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:20:09,608 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:22:59,256 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:22:59,257 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 11:22:59,258 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:22:59,259 [Worker-81] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:23:14,376 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:23:14,377 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 11:23:14,378 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:23:14,379 [Worker-87] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:42:15,221 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:42:15,248 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-03 11:42:15,251 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:42:15,252 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:53:15,316 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:53:15,319 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 11:53:15,322 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:53:15,322 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:54:56,225 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:54:56,227 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 11:54:56,229 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:54:56,230 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:56:52,363 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:56:52,363 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 11:56:52,365 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:56:52,366 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 11:57:09,294 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:57:09,295 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 11:57:09,297 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 11:57:09,297 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 14:25:28,417 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:25:28,418 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 14:25:28,420 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:25:28,420 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 14:25:52,520 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:25:52,521 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 14:25:52,523 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:25:52,523 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 14:28:15,214 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:28:15,215 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 14:28:15,217 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:28:15,217 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 14:29:13,793 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:29:13,793 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 14:29:13,795 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:29:13,795 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 14:29:21,267 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:29:21,268 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 14:29:21,271 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:29:21,271 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 14:30:10,131 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:30:10,132 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 14:30:10,134 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:30:10,135 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 14:40:19,338 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:40:19,339 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 14:40:19,340 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:40:19,340 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 14:49:32,080 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:49:32,081 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 14:49:32,083 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:49:32,083 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 14:50:04,921 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:50:04,921 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 14:50:04,923 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:50:04,923 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 14:50:36,937 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:50:36,937 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 14:50:36,939 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:50:36,939 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 14:52:42,214 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:52:42,215 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 14:52:42,216 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:52:42,217 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 14:55:17,707 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:55:17,707 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 14:55:17,709 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:55:17,709 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 14:55:35,531 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:55:35,531 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 14:55:35,532 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:55:35,532 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 14:56:46,564 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:56:46,565 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 14:56:46,566 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 14:56:46,567 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 15:00:42,088 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 15:00:42,089 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 15:00:42,090 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 15:00:42,091 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 15:01:48,553 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 15:01:48,554 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 15:01:48,555 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 15:01:48,556 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 15:10:40,469 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 15:10:40,472 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-03 15:10:40,475 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 15:10:40,475 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 15:13:42,245 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 15:13:42,247 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-03 15:13:42,250 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 15:13:42,250 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 15:14:08,037 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 15:14:08,037 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 15:14:08,039 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 15:14:08,039 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 15:16:14,873 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 15:16:14,875 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-03 15:16:14,877 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 15:16:14,877 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 15:17:40,133 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 15:17:40,134 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 15:17:40,135 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 15:17:40,136 [Worker-114] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 15:28:41,572 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 15:28:41,586 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-03 15:28:41,610 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 15:28:41,610 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 16:01:42,526 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:01:42,542 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-03 16:01:42,545 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:01:42,545 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 16:01:52,953 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:01:52,955 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-03 16:01:52,958 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:01:52,958 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 16:06:35,160 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:06:35,162 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 16:06:35,165 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:06:35,165 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 16:07:12,981 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:07:12,981 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 16:07:12,983 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:07:12,983 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 16:08:44,673 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:08:44,674 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 16:08:44,676 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:08:44,676 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 16:09:08,839 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:09:08,839 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 16:09:08,841 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:09:08,841 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 16:09:13,843 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:09:13,844 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 16:09:13,846 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:09:13,846 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 16:14:26,867 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:14:26,874 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-03 16:14:26,890 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:14:26,891 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 16:14:34,714 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:14:34,716 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 16:14:34,722 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:14:34,722 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 16:17:19,705 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:17:19,706 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 16:17:19,709 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:17:19,709 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 16:18:26,534 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:18:26,535 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 16:18:26,537 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:18:26,537 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 16:20:35,937 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:20:35,945 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-03 16:20:35,956 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:20:35,957 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 16:22:44,630 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:22:44,631 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 16:22:44,633 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:22:44,634 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 16:22:50,074 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:22:50,075 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 16:22:50,076 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:22:50,077 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 16:23:13,257 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:23:13,259 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 16:23:13,267 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:23:13,267 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 16:24:25,814 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:24:25,816 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 16:24:25,835 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:24:25,836 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 16:35:06,970 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:35:06,970 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 16:35:06,973 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:35:06,973 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 16:36:21,358 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:36:21,359 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 16:36:21,364 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:36:21,364 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 16:36:45,653 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:36:45,655 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 16:36:45,660 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:36:45,661 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 16:47:37,322 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:47:37,330 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-03 16:47:37,369 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:47:37,370 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 16:53:24,318 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:53:24,325 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
-2017-03-03 16:53:24,332 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:53:24,332 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 16:54:55,592 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:54:55,593 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 16:54:55,599 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:54:55,600 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
-2017-03-03 16:57:27,493 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:57:27,496 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
-2017-03-03 16:57:27,502 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
-2017-03-03 16:57:27,502 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\vinicius\Desktop\vinicius\DESENVOLVIMENTO\VENDAS\Primefaces Responsivo\Vendas\src\test\resources
+2017-02-20 19:54:29,986 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-20 19:54:29,995 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-20 19:54:30,007 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-20 19:54:30,008 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-21 23:32:27,707 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-21 23:32:27,715 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-21 23:32:27,725 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-21 23:32:27,725 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-21 23:48:27,819 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-21 23:48:27,823 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-21 23:48:27,825 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-21 23:48:27,825 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-21 23:48:31,575 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-21 23:48:31,582 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-21 23:48:31,584 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-21 23:48:31,584 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-21 23:51:30,100 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-21 23:51:30,101 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-21 23:51:30,103 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-21 23:51:30,103 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-21 23:51:52,312 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-21 23:51:52,312 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-21 23:51:52,314 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-21 23:51:52,314 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-21 23:54:28,882 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-21 23:54:28,893 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-21 23:54:28,902 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-21 23:54:28,902 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-21 23:56:54,101 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-21 23:56:54,102 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-21 23:56:54,103 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-21 23:56:54,103 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-21 23:58:37,267 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-21 23:58:37,274 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-21 23:58:37,280 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-21 23:58:37,281 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-22 00:00:06,527 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-22 00:00:06,527 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-22 00:00:06,529 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-22 00:00:06,529 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-22 00:04:57,274 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-22 00:04:57,281 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-22 00:04:57,287 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-22 00:04:57,288 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-22 00:05:23,655 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-22 00:05:23,656 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-22 00:05:23,657 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-22 00:05:23,658 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-22 00:08:27,627 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-22 00:08:27,634 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-22 00:08:27,642 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-22 00:08:27,642 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-22 00:12:11,613 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-22 00:12:11,614 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-22 00:12:11,616 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-22 00:12:11,616 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-22 00:21:49,378 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-22 00:21:49,383 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-22 00:21:49,391 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-22 00:21:49,391 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-22 00:22:13,302 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-22 00:22:13,303 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-22 00:22:13,305 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-22 00:22:13,305 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-22 00:23:00,056 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-22 00:23:00,063 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-22 00:23:00,075 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-22 00:23:00,075 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-22 00:24:18,979 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-22 00:24:18,981 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-22 00:24:18,983 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-22 00:24:18,984 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-22 00:26:12,306 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-22 00:26:12,311 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-22 00:26:12,317 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-22 00:26:12,318 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-23 00:09:59,374 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-23 00:09:59,388 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-23 00:09:59,402 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-23 00:09:59,402 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-23 01:35:06,342 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-23 01:35:06,395 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-23 01:35:06,398 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-23 01:35:06,398 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-23 22:58:20,548 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-23 22:58:20,556 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-23 22:58:20,565 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-23 22:58:20,566 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-23 23:03:25,644 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-23 23:03:26,116 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-23 23:03:26,119 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-23 23:03:26,120 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-23 23:06:08,705 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-23 23:06:08,707 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-23 23:06:08,709 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-23 23:06:08,710 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-23 23:49:52,161 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-23 23:49:52,163 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-23 23:49:52,165 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-23 23:49:52,166 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-23 23:50:39,360 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-23 23:50:39,362 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-23 23:50:39,363 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-23 23:50:39,364 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-23 23:50:48,862 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-23 23:50:48,869 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-23 23:50:48,876 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-23 23:50:48,876 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-23 23:52:05,652 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-23 23:52:05,653 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-23 23:52:05,655 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-23 23:52:05,655 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-23 23:52:36,849 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-23 23:52:36,855 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-23 23:52:36,862 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-23 23:52:36,863 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 00:18:58,070 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:18:58,072 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 00:18:58,074 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:18:58,074 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 00:20:02,213 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:20:02,219 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 00:20:02,225 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:20:02,226 [Worker-73] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 00:31:41,048 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:31:41,050 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 00:31:41,051 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:31:41,052 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 00:32:09,006 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:32:09,010 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 00:32:09,015 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:32:09,015 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 00:33:29,725 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:33:29,726 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 00:33:29,727 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:33:29,728 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 00:35:00,832 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:35:00,836 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 00:35:00,843 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:35:00,843 [Worker-79] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 00:42:24,646 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:42:24,647 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 00:42:24,650 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:42:24,650 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 00:43:37,119 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:43:37,133 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 00:43:37,142 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:43:37,143 [Worker-83] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 00:44:05,166 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:44:05,167 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 00:44:05,169 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:44:05,169 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 00:47:57,633 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:47:57,640 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 00:47:57,648 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:47:57,648 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 00:48:11,875 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:48:11,876 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 00:48:11,879 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:48:11,879 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 00:50:36,411 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:50:36,417 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 00:50:36,423 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:50:36,423 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 00:51:52,886 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:51:52,888 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 00:51:52,890 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:51:52,890 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 00:52:17,223 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:52:17,236 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 00:52:17,242 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:52:17,243 [Worker-88] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 00:56:31,495 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:56:31,496 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 00:56:31,497 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 00:56:31,498 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 01:06:16,372 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:06:16,378 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 01:06:16,383 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:06:16,384 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 01:07:37,582 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:07:37,584 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 01:07:37,586 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:07:37,586 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 01:09:14,358 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:09:14,369 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 01:09:14,375 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:09:14,376 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 01:12:33,121 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:12:33,122 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 01:12:33,123 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:12:33,124 [Worker-102] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 01:14:08,809 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:14:08,816 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 01:14:08,821 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:14:08,821 [Worker-104] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 01:15:01,086 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:15:01,088 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 01:15:01,089 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:15:01,089 [Worker-98] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 01:15:25,346 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:15:25,352 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 01:15:25,357 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:15:25,357 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 01:21:05,103 [Worker-111] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:21:05,104 [Worker-111] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 01:21:05,106 [Worker-111] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:21:05,106 [Worker-111] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 01:39:17,983 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:39:17,985 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 01:39:17,993 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:39:17,995 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 01:41:54,018 [Worker-125] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:41:54,019 [Worker-125] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 01:41:54,020 [Worker-125] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:41:54,021 [Worker-125] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 01:44:38,879 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:44:38,884 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 01:44:38,891 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:44:38,891 [Worker-130] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 01:46:12,470 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:46:12,471 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 01:46:12,473 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:46:12,473 [Worker-119] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 01:49:39,984 [Worker-137] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:49:39,991 [Worker-137] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 01:49:39,999 [Worker-137] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:49:40,000 [Worker-137] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 01:50:31,320 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:50:31,323 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 01:50:31,325 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:50:31,325 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 01:53:13,298 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:53:13,304 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 01:53:13,308 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:53:13,308 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 01:54:04,418 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:54:04,420 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 01:54:04,422 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 01:54:04,422 [Worker-139] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 02:02:49,803 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 02:02:49,810 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 02:02:49,814 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 02:02:49,815 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 02:03:14,575 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 02:03:14,576 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 02:03:14,578 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 02:03:14,579 [Worker-144] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 02:08:17,597 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 02:08:17,604 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 02:08:17,612 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 02:08:17,613 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 02:14:11,906 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 02:14:11,907 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 02:14:11,908 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 02:14:11,908 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 02:17:36,773 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 02:17:36,777 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 02:17:36,783 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 02:17:36,783 [Worker-148] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 02:17:56,949 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 02:17:56,950 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 02:17:56,952 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 02:17:56,952 [Worker-147] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-02-24 02:22:05,544 [Worker-156] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 02:22:05,549 [Worker-156] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-02-24 02:22:05,554 [Worker-156] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-02-24 02:22:05,555 [Worker-156] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 16:41:58,501 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 16:41:58,522 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-05 16:41:58,574 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 16:41:58,575 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 16:42:22,878 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 16:42:22,880 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 16:42:22,882 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 16:42:22,882 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 16:42:53,505 [Worker-13] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2017-03-05 16:42:55,742 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.vendas:Vendas:1.0.0-SNAPSHOT @ C:\Users\Vinicius\ARQUIVOS\Primefaces Responsivo\Vendas\pom.xml.
+2017-03-05 16:42:56,945 [Worker-13] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Vendas/src/main/java
+2017-03-05 16:42:56,946 [Worker-13] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Vendas/src/main/resources
+2017-03-05 16:42:56,948 [Worker-13] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Vendas/src/test/java
+2017-03-05 16:42:56,949 [Worker-13] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Vendas/src/test/resources
+2017-03-05 16:42:58,338 [Worker-13] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Vendas
+2017-03-05 16:42:58,345 [Worker-13] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 4 sec
+2017-03-05 16:43:03,253 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 16:43:03,254 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-05 16:43:03,288 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 16:43:03,288 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 16:43:03,296 [Worker-2] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Vendas
+2017-03-05 16:43:03,302 [Worker-2] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Vendas
+2017-03-05 16:43:03,314 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 16:51:44,839 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 16:51:44,843 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 16:51:44,847 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 16:51:44,851 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 16:52:29,767 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 16:52:29,774 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 16:52:29,780 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 16:52:29,785 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 16:52:59,231 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 16:52:59,238 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 16:52:59,243 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 16:52:59,248 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 16:53:09,564 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 16:53:09,571 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 16:53:09,580 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 16:53:09,586 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 16:54:25,466 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 16:54:25,473 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 16:54:25,480 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 16:54:25,484 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 16:57:38,003 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 16:57:38,009 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 16:57:38,016 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 16:57:38,021 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:04:32,475 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:04:32,479 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:04:32,483 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:04:32,487 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:04:53,451 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:04:53,456 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:04:53,461 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:04:53,466 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:05:02,600 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:05:02,605 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:05:02,610 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:05:02,615 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:07:05,902 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:07:05,907 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:07:05,914 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:07:05,918 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:08:42,447 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:08:42,454 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:08:42,460 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:08:42,465 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:11:16,561 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:11:16,567 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:11:16,573 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:11:16,576 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:17:24,633 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:17:24,645 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:17:24,652 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:17:24,657 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:17:36,473 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:17:36,474 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:17:36,479 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:17:36,485 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:18:41,647 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:18:41,653 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:18:41,659 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:18:41,662 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:19:41,783 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:19:41,790 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:19:41,798 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:19:41,804 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:22:42,773 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:22:42,777 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:22:42,783 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:22:42,787 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:28:30,364 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:28:30,376 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-05 17:28:30,383 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:28:30,388 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:29:52,037 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:29:52,043 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-05 17:29:52,051 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:29:52,057 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:31:49,943 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:31:49,954 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-05 17:31:49,965 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:31:49,970 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:35:26,676 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:35:26,682 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:35:26,687 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:35:26,692 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:39:49,868 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:39:49,874 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:39:49,880 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:39:49,883 [Worker-62] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:44:36,910 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:44:36,915 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 17:44:36,924 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 17:44:36,928 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:13:15,868 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:13:15,869 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:13:15,876 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:13:15,882 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:13:55,944 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:13:55,948 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:13:55,953 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:13:55,957 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:14:40,349 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:14:40,352 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:14:40,356 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:14:40,359 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:15:26,644 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:15:26,651 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:15:26,657 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:15:26,660 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:24:59,939 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:24:59,946 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:24:59,954 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:24:59,958 [Worker-82] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:25:30,150 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:25:30,156 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:25:30,162 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:25:30,167 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:25:47,666 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:25:47,672 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:25:47,679 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:25:47,685 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:26:55,592 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:26:55,601 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:26:55,608 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:26:55,613 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:27:34,272 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:27:34,276 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:27:34,281 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:27:34,285 [Worker-84] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:30:40,371 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:30:40,376 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:30:40,381 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:30:40,386 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:32:35,866 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:32:35,870 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:32:35,874 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:32:35,877 [Worker-78] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:36:58,615 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:36:58,620 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 18:36:58,625 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 18:36:58,629 [Worker-93] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 20:14:58,416 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:14:58,417 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 20:14:58,422 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:14:58,427 [Worker-121] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 20:27:15,984 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:27:15,992 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 20:27:15,999 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:27:16,004 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 20:27:18,895 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:27:18,901 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 20:27:18,909 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:27:18,916 [Worker-131] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 20:27:57,343 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:27:57,348 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 20:27:57,355 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:27:57,360 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 20:28:27,235 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:28:27,240 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 20:28:27,245 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:28:27,250 [Worker-123] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 20:29:24,263 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:29:24,268 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 20:29:24,274 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:29:24,279 [Worker-132] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 20:29:29,916 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:29:29,925 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 20:29:29,939 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:29:29,946 [Worker-134] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 20:32:15,597 [Worker-137] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:32:15,614 [Worker-137] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-05 20:32:15,641 [Worker-137] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:32:15,648 [Worker-137] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 20:38:18,758 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:38:18,766 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-05 20:38:18,776 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:38:18,783 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 20:39:40,832 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:39:40,838 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-05 20:39:40,843 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:39:40,847 [Worker-138] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 20:39:47,931 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:39:47,937 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-05 20:39:47,941 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:39:47,944 [Worker-140] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 20:45:20,374 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:45:20,380 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 20:45:20,386 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:45:20,390 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 20:47:00,056 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:47:00,063 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-05 20:47:00,068 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:47:00,073 [Worker-142] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 20:48:01,297 [Worker-149] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:48:01,298 [Worker-149] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-05 20:48:01,303 [Worker-149] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:48:01,306 [Worker-149] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 20:53:16,313 [Worker-149] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:53:16,320 [Worker-149] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-05 20:53:16,326 [Worker-149] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 20:53:16,331 [Worker-149] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-03-05 21:03:14,284 [Worker-156] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 21:03:14,292 [Worker-156] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-03-05 21:03:14,299 [Worker-156] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-03-05 21:03:14,306 [Worker-156] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

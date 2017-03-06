@@ -197,12 +197,22 @@ public class CadastroProdutoBean implements Serializable
 		return categorias;
 	}
 
-	public void setCategorias(List<Categoria> categorias) {
+	public void setCategorias(List<Categoria> categorias) 
+	{
 		this.categorias = categorias;
 	}
 
 	public List<SubCategoria> getSubCategorias() {
 		return subCategorias;
+	}
+
+	public void setSubCategorias(List<SubCategoria> subCategorias) 
+	{
+		if(this.subCategorias != null)
+		{
+			this.subCategorias = 
+		}
+		this.subCategorias = subCategorias;
 	}
 	
 	

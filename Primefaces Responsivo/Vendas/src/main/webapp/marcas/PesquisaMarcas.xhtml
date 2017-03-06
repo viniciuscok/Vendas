@@ -17,16 +17,16 @@
 				<p:toolbarGroup>
 					<p:commandButton value="Pesquisar" icon="fa fa-search" outcome="/marcas/PesquisaMarcas" 
 						action="#{pesquisaCategoriaBean.buscarTodos()}" update="ve-tablePesquisaMarca"
-						styleClass="ve-botaoPesquisarPesquisaMarcas"/>
+						styleClass="ve-botaoSuperiorLeft"/>
 				</p:toolbarGroup>
 				<p:toolbarGroup align="right">
 					<p:button value="Novo" icon="fa fa-plus" outcome="/marcas/CadastroMarca"
-						styleClass="ve-botaoNovoPesquisaMarcas"/>
+						styleClass="ve-botaoSuperiorRight"/>
 				</p:toolbarGroup>
 			</p:toolbar>
 			<div class="ui-fluid">
 				<p:panelGrid columns="2" id="panelGridPesquisaMarca" layout="grid" 
-					columnClasses="ui-grid-col-2,ui-grid-col-10" styleClass="ve-panelGridPesquisaMarca">												
+					columnClasses="ui-grid-col-2,ui-grid-col-10" styleClass="ve-panelGridRetirarBorda">												
 					
 					<p:outputLabel value="Marca" for="marca"/>
 					<p:inputText id="marca" value="#{pesquisaMarcaBean.marcaFilter.nome}"/>		
@@ -51,15 +51,15 @@
 				 var="marca" style="margin-top:20px" rows="20" paginator="true" paginatorAlwaysVisible="false"
 				 paginatorPosition="bottom" reflow="true">
 				 
-				<p:column headerText="Código">
+				<p:column headerText="Código" styleClass="textoNoCentro">
 					<h:outputText value="#{marca.codigo}" />
 				</p:column>		
 				 			
-				<p:column headerText="Marca">
+				<p:column headerText="Marca" styleClass="textoNoCentro">
 					<h:outputText value="#{marca.nome}" />
 				</p:column>
 				 
-				<p:column headerText="Ações" styleClass="ve-editarPesquisaMarca">
+				<p:column headerText="Ações" styleClass="textoNoCentro">
 					<p:button icon="fa fa-edit" title="Editar" outcome="/marcas/CadastroMarca">
 						<f:param name="marca" value="#{marca.codigo}"/>
 					</p:button>

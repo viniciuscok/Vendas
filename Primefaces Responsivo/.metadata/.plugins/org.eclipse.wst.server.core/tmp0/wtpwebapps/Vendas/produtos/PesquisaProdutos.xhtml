@@ -13,11 +13,11 @@
 			<p:toolbar>
 				<p:toolbarGroup>
 					<p:button value="Pesquisar" icon="fa fa-search" outcome="/produtos/PesquisaProdutos" 
-						styleClass="ve-botaoPesquisarPesquisaProdutos"/>
+						styleClass="ve-botaoSuperiorLeft"/>
 				</p:toolbarGroup>
 				<p:toolbarGroup align="right">
 					<p:button value="Novo" icon="fa fa-plus" outcome="/produtos/CadastroProduto"
-						styleClass="ve-botaoNovoPesquisaProdutos"/>
+						styleClass="ve-botaoSuperiorRight"/>
 				</p:toolbarGroup>
 			</p:toolbar>
 			<div class="ui-fluid">
@@ -28,42 +28,55 @@
 					<p:inputText id="codigo"/>		
 					
 					<p:outputLabel value="Nome" for="nome"/>
-					<p:inputText id="nome"/>																			
+					<p:inputText id="nome"/>	
+					
+					<p:commandButton value="Buscar Todos" action="#{pesquisaProdutoBean.buscarTodos()}"
+						update="@form ve-tablePesquisaProdutos"/>																		
 				</p:panelGrid>
 			</div>	
-			<p:dataTable id="ve-tablePesquisaProdutos" value="#{pesquisaProdutoBean.produtosFiltrados}" 
+			<p:dataTable id="ve-tablePesquisaProdutos" value="#{pesquisaProdutoBean.produtos}" 
 				 var="produto" style="margin-top:20px" rows="20" paginator="true" paginatorAlwaysVisible="false"
 				 paginatorPosition="bottom" reflow="true">
 				 
 				<p:column headerText="Codigo" styleClass="ve-codigoPesquisaProdutos">
-					<h:outputText value="123" />
+					<h:outputText value="#{produto.codigo}" />
 				</p:column>
 				
 				<p:column headerText="Nome">
-					<h:outputText value="Vidro incolor" />
+					<h:outputText value="#{produto.nome}" />
 				</p:column>
 				
 				<p:column headerText="Espessura" styleClass="ve-espessuraPesquisaProdutos">
-					<h:outputText value="8mm" />
+					<h:outputText value="#{produto.espessura.descricao}" />
+				</p:column>
+				
+				<p:column headerText="Cor" styleClass="ve-espessuraPesquisaProdutos">
+					<h:outputText value="#{produto.modeloVidro.descricao}" />
 				</p:column>
 				
 				<p:column headerText="Tipo do vidro" styleClass="ve-tipoVidroPesquisaProdutos">
-					<h:outputText value="incolor" />
+					<h:outputText value="#{produto.tipo.descricao}" />
 				</p:column>
 				
 				<p:column headerText="Valor" styleClass="ve-valorPesquisaProdutos">
-					<h:outputText value="R$100,00" />
+					<h:outputText value="#{produto.valorMetro}">
+						<f:convertNumber type="currency"/>
+					</h:outputText>
 				</p:column>
 				
 				<p:column headerText="Estoque" styleClass="ve-estoquePesquisaProdutos">
-					<h:outputText value="290" />
+					<h:outputText value="#{produto.estoque}" styleClass="js-moeda"/>
 				</p:column>
 				
 				<p:column headerText="Ações" styleClass="ve-editarPesquisaProdutos">
-					<p:button icon="fa fa-edit" title="Editar" />
+					<p:button icon="fa fa-edit" title="Editar" outcome="/produtos/CadastroProduto">
+						<f:param name="produto" value="#{produto.codigo}"/>
+					</p:button>
 					<p:commandButton icon="fa fa-trash-o" title="Excluir"/>
 				</p:column>
-			</p:dataTable>	
+			</p:dataTable>
+			
+			
 		</h:form>		
 	</ui:define>
 	

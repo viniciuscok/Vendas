@@ -50,4 +50,35 @@ public class PesquisaProdutoBean implements Serializable
 		}
 		
 	}
+	
+	public void buscarTodos()
+	{
+		this.produtos = cadastroProdutoDAO.buscarTodos();
+	}
+
+	public Produto getProdutoSelecionado() {
+		return produtoSelecionado;
+	}
+
+	public Produto getProduto() {
+		return produto;
+	}
+
+	public List<Produto> getProdutos() {
+		return produtos;
+	}
+
+	public void setProdutoSelecionado(Produto produtoSelecionado) {
+		this.produtoSelecionado = produtoSelecionado;
+	}
+
+	public void setProduto(Produto produto) {
+		this.produto = produto;
+	}
+
+	public void setProdutos(List<Produto> produtos) {
+		this.produtos = produtos;
+	}
+	
+	
 }
