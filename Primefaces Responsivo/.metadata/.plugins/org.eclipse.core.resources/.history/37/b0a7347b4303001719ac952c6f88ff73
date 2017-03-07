@@ -1,0 +1,103 @@
+package br.com.vendas.controller;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.annotation.PostConstruct;
+import javax.faces.view.ViewScoped;
+import javax.inject.Inject;
+import javax.inject.Named;
+
+import br.com.vendas.dao.CadastroProdutoDAO;
+import br.com.vendas.dao.filter.ProdutoFilter;
+import br.com.vendas.model.Produto;
+import br.com.vendas.model.Tipo;
+import br.com.vendas.service.NegocioException;
+import br.com.vendas.util.jsf.FacesUtil;
+
+@Named
+@ViewScoped
+public class PesquisaProdutoBean implements Serializable 
+{
+	private static final long serialVersionUID = 1L;
+	
+	@Inject
+	private CadastroProdutoDAO cadastroProdutoDAO;
+	
+	private ProdutoFilter produtoFilter;
+	private Produto produtoSelecionado;
+	private Produto produto;
+	private List<Produto> produtos;
+
+	//@PostConstruct
+	public void inicializar()
+	{
+		limpar();
+	}
+	
+	public void limpar()
+	{
+		this.produto = new Produto();
+		this.produtos = new ArrayList<>();
+		this.produtoFilter = new ProdutoFilter();
+	}
+	
+	public void removerProdutoSelecionado()
+	{
+		try
+		{
+			cadastroProdutoDAO.remover(produtoSelecionado);
+			produtos.remove(produtoSelecionado);
+			FacesUtil.addInfoMessage("Produto "+this.produtoSelecionado.getNome()+"removido com Sucesso!");
+		}catch(NegocioException e)
+		{
+			FacesUtil.addErrorMessage(e.getMessage());
+		}
+		
+	}
+	
+	public Tipo[] getTipos()
+	{
+		return Tipo.values();
+	}
+	
+	public void buscarTodos()
+	{
+		this.produtos = cadastroProdutoDAO.buscarTodos();
+	}
+
+	public Produto getProdutoSelecionado() {
+		return produtoSelecionado;
+	}
+
+	public Produto getProduto() {
+		return produto;
+	}
+
+	public List<Produto> getProdutos() {
+		return produtos;
+	}
+
+	public void setProdutoSelecionado(Produto produtoSelecionado) {
+		this.produtoSelecionado = produtoSelecionado;
+	}
+
+	public void setProduto(Produto produto) {
+		this.produto = produto;
+	}
+
+	public void setProdutos(List<Produto> produtos) {
+		this.produtos = produtos;
+	}
+
+	public ProdutoFilter getProdutoFilter() {
+		return produtoFilter;
+	}
+
+	public void setProdutoFilter(ProdutoFilter produtoFilter) {
+		this.produtoFilter = produtoFilter;
+	}
+	
+	
+}
