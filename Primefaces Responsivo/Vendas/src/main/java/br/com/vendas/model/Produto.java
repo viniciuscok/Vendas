@@ -140,7 +140,7 @@ public class Produto implements Serializable
 
 	@NotNull
 	@Column(name="valor_metro", nullable=false, unique=false, precision=10, scale=2)
-	@DecimalMax("30.00")
+	//@DecimalMax("30.00")
 	public BigDecimal getValorMetro() {
 		return valorMetro;
 	}

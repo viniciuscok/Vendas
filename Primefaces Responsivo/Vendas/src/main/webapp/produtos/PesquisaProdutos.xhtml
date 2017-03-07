@@ -21,14 +21,26 @@
 				</p:toolbarGroup>
 			</p:toolbar>
 			<div class="ui-fluid">
-				<p:panelGrid columns="2" id="panelGrridPesquisaProduto" layout="grid" 
-					columnClasses="ui-grid-col-2,ui-grid-col-10" styleClass="ve-panelGridPesquisaProdutos">
+				<p:panelGrid columns="4" id="panelGrridPesquisaProduto" layout="grid" 
+					columnClasses="ui-grid-col-2, ui-grid-col-4, ui-grid-col-2,ui-grid-col-4" styleClass="ve-panelGridPesquisaProdutos">
 						
-					<p:outputLabel value="Codigo" for="codigo"/>
-					<p:inputText id="codigo"/>		
-					
 					<p:outputLabel value="Nome" for="nome"/>
-					<p:inputText id="nome"/>	
+					<p:inputText id="nome"/>		
+					
+					<p:outputLabel value="Categoria" for="categoria"/>
+					<p:inputText id="categoria"/>	
+					
+					<p:outputLabel value="SubCategoria" for="subCategoria"/>
+					<p:inputText id="subCategoria"/>	
+					
+					<p:outputLabel value="Espessura" for="espessura"/>
+					<p:inputText id="espessura"/>
+					
+					<p:outputLabel value="Tipo" for="tipo"/>
+					<p:selectOneRadio id="tipo" value="#{cadastroProdutoBean.produto.tipo}" layout="responsive" columns="2"> 
+						<f:selectItems value="#{cadastroProdutoBean.tipos}" var="tipo" itemValue="#{tipo}" 
+								itemLabel="#{tipo.descricao}"/>
+					</p:selectOneRadio>
 					
 					<p:commandButton value="Buscar Todos" action="#{pesquisaProdutoBean.buscarTodos()}"
 						update="@form ve-tablePesquisaProdutos"/>																		

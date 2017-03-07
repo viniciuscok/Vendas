@@ -181,8 +181,14 @@ public class CadastroProdutoBean implements Serializable
 		return produto;
 	}
 
-	public void setProduto(Produto produto) {
+	public void setProduto(Produto produto) 
+	{
 		this.produto = produto;
+		if(this.produto != null)
+		{
+			this.subCategorias = cadastroSubcategoriaDAO.buscarPorCategoria(this.produto.getCategoria().getCodigo());
+		}
+		
 	}
 
 	public List<Marca> getMarcas() {
@@ -208,10 +214,7 @@ public class CadastroProdutoBean implements Serializable
 
 	public void setSubCategorias(List<SubCategoria> subCategorias) 
 	{
-		if(this.subCategorias != null)
-		{
-			this.subCategorias = 
-		}
+		
 		this.subCategorias = subCategorias;
 	}
 	
