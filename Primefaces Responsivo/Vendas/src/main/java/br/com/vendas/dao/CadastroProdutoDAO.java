@@ -44,26 +44,26 @@ public class CadastroProdutoDAO implements Serializable
 		return manager.createQuery("FROM Produto",Produto.class).getResultList();
 	}
 	
-	@SuppressWarnings("unchecked")
 	public List<Produto> buscarProduto(ProdutoFilter produtoFilter)
 	{
+		
 		List<Produto> produtos = null;
+	
 		if(!produtoFilter.getNome().equals(""))
 		{
+			System.out.println("entrou no if do nome");
 			produtos = manager.createQuery("FROM Produto p where p.nome LIKE ?1", Produto.class)
-					.setParameter(1, produtoFilter.getNome()+"%").getResultList();
-		}
-		else if(!produtoFilter.getCategoria().equals(""))
-		{
-			produtos = manager.createQuery("FROM Produto p where p.categoria.codigo = ?1")
-					.setParameter(1, produtoFilter.getCategoria().getCodigo()).getResultList();
-		}
-		else if(!produtoFilter.getSubCategoria().equals(""))
-		{
-			produtos = manager.createQuery("FROM Produto p where p.subCategoria.codigo = ?1",Produto.class)
-					.setParameter(1, produtoFilter.getSubCategoria().getCodigo())
+					.setParameter(1, produtoFilter.getNome()+"%")
 					.getResultList();
 		}
+		if(!produtoFilter.getNome().equals("") && produtoFilter.getCategoria() != null)
+		{
+			System.out.println("entrou no if do nome e da categoria");
+			produtos = manager.createQuery("FROM Produto p where p.nome LIKE ?1 and p.categoria.codigo = ?2", Produto.class)
+					.setParameter(1, produtoFilter.getNome()+"%")
+					.setParameter(2, produtoFilter.getCategoria().getCodigo()).getResultList();
+		}
+		
 		
 		return produtos;
 	}
