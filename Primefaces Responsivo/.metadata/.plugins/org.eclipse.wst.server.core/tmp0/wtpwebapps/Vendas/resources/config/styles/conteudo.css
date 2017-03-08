@@ -14,7 +14,7 @@
 .ui-panelgrid.ve-RetirarBordaPanelGrid .ui-grid-responsive
 {
 	border: none !important;
-	margin-top: 10px;
+	margin-top: 5px;
 }
 
 /*########QUANDO A TELA FICAR ABAIXO DE 640PX VAI SER RETIRADA A BORDA DO PANELGRID########*/

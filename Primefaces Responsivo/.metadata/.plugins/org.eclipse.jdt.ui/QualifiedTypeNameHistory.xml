@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="org.primefaces.component.log.Log"/>
-<fullyQualifiedTypeName name="br.com.vendas.model.Endereco"/>
 <fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
 <fullyQualifiedTypeName name="java.lang.annotation.Target"/>
 <fullyQualifiedTypeName name="javax.validation.Payload"/>
@@ -31,10 +29,8 @@
 <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
 <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
 <fullyQualifiedTypeName name="javax.persistence.Column"/>
-<fullyQualifiedTypeName name="br.com.vendas.dao.CadastroCategoriaDAO"/>
 <fullyQualifiedTypeName name="br.com.vendas.dao.CadastroMarcaDAO"/>
 <fullyQualifiedTypeName name="br.com.vendas.controller.PesquisaMarcaBean"/>
-<fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
 <fullyQualifiedTypeName name="br.com.vendas.dao.filter.MarcaFilter"/>
 <fullyQualifiedTypeName name="br.com.vendas.model.Marca"/>
 <fullyQualifiedTypeName name="javax.persistence.Transient"/>
@@ -47,17 +43,21 @@
 <fullyQualifiedTypeName name="javax.validation.constraints.NotNull"/>
 <fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
 <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
-<fullyQualifiedTypeName name="javax.inject.Inject"/>
-<fullyQualifiedTypeName name="br.com.vendas.controller.CadastroSubcategoriaBean"/>
-<fullyQualifiedTypeName name="br.com.vendas.model.Categoria"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="br.com.vendas.model.SubCategoria"/>
-<fullyQualifiedTypeName name="br.com.vendas.dao.CadastroSubcategoriaDAO"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="javax.faces.convert.Converter"/>
 <fullyQualifiedTypeName name="javax.faces.convert.FacesConverter"/>
 <fullyQualifiedTypeName name="br.com.vendas.dao.CadastroProdutoDAO"/>
-<fullyQualifiedTypeName name="br.com.vendas.model.Produto"/>
 <fullyQualifiedTypeName name="javax.enterprise.inject.spi.CDI"/>
 <fullyQualifiedTypeName name="br.com.vendas.util.cdi.CDIServiceLocator"/>
+<fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
+<fullyQualifiedTypeName name="br.com.vendas.dao.filter.ProdutoFilter"/>
+<fullyQualifiedTypeName name="br.com.vendas.model.Tipo"/>
+<fullyQualifiedTypeName name="br.com.vendas.dao.CadastroCategoriaDAO"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="javax.inject.Inject"/>
+<fullyQualifiedTypeName name="br.com.vendas.controller.CadastroSubcategoriaBean"/>
+<fullyQualifiedTypeName name="br.com.vendas.dao.CadastroSubcategoriaDAO"/>
+<fullyQualifiedTypeName name="br.com.vendas.model.Categoria"/>
+<fullyQualifiedTypeName name="br.com.vendas.model.SubCategoria"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="br.com.vendas.model.Produto"/>
 </qualifiedTypeNameHistroy>

@@ -6,6 +6,7 @@ import java.util.List;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 
+import br.com.vendas.dao.filter.ProdutoFilter;
 import br.com.vendas.model.Produto;
 import br.com.vendas.util.jpa.Transactional;
 
@@ -41,5 +42,29 @@ public class CadastroProdutoDAO implements Serializable
 	public List<Produto> buscarTodos()
 	{
 		return manager.createQuery("FROM Produto",Produto.class).getResultList();
+	}
+	
+	@SuppressWarnings("unchecked")
+	public List<Produto> buscarProduto(ProdutoFilter produtoFilter)
+	{
+		List<Produto> produtos = null;
+		if(!produtoFilter.getNome().equals(""))
+		{
+			produtos = manager.createQuery("FROM Produto p where p.nome LIKE ?1", Produto.class)
+					.setParameter(1, produtoFilter.getNome()+"%").getResultList();
+		}
+		else if(!produtoFilter.getCategoria().equals(""))
+		{
+			produtos = manager.createQuery("FROM Produto p where p.categoria.codigo = ?1")
+					.setParameter(1, produtoFilter.getCategoria().getCodigo()).getResultList();
+		}
+		else if(!produtoFilter.getSubCategoria().equals(""))
+		{
+			produtos = manager.createQuery("FROM Produto p where p.subCategoria.codigo = ?1",Produto.class)
+					.setParameter(1, produtoFilter.getSubCategoria().getCodigo())
+					.getResultList();
+		}
+		
+		return produtos;
 	}
 }

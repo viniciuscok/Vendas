@@ -4,12 +4,19 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.annotation.PostConstruct;
 import javax.faces.view.ViewScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 
+import br.com.vendas.dao.CadastroCategoriaDAO;
 import br.com.vendas.dao.CadastroProdutoDAO;
+import br.com.vendas.dao.CadastroSubcategoriaDAO;
+import br.com.vendas.dao.filter.ProdutoFilter;
+import br.com.vendas.model.Categoria;
 import br.com.vendas.model.Produto;
+import br.com.vendas.model.SubCategoria;
+import br.com.vendas.model.Tipo;
 import br.com.vendas.service.NegocioException;
 import br.com.vendas.util.jsf.FacesUtil;
 
@@ -21,11 +28,19 @@ public class PesquisaProdutoBean implements Serializable
 	
 	@Inject
 	private CadastroProdutoDAO cadastroProdutoDAO;
+	@Inject
+	private CadastroCategoriaDAO cadastroCategoriaDAO;
+	@Inject
+	private CadastroSubcategoriaDAO cadastroSubcategoriaDAO;
 	
 	private Produto produtoSelecionado;
 	private Produto produto;
+	private ProdutoFilter produtoFilter;
 	private List<Produto> produtos;
-
+	private List<Categoria> categorias;
+	private List<SubCategoria> subCategorias;
+	
+	@PostConstruct
 	public void inicializar()
 	{
 		limpar();
@@ -35,6 +50,9 @@ public class PesquisaProdutoBean implements Serializable
 	{
 		this.produto = new Produto();
 		this.produtos = new ArrayList<>();
+		this.subCategorias = new ArrayList<>();
+		this.produtoFilter = new ProdutoFilter();
+		buscarTodasCategorias();
 	}
 	
 	public void removerProdutoSelecionado()
@@ -56,6 +74,50 @@ public class PesquisaProdutoBean implements Serializable
 		this.produtos = cadastroProdutoDAO.buscarTodos();
 	}
 
+	public void buscar()
+	{
+		this.produtos = cadastroProdutoDAO.buscarProduto(this.produtoFilter);
+	}
+	
+	public void buscarTodasCategorias()
+	{
+		this.categorias = cadastroCategoriaDAO.buscarCategoria();	
+	}
+	
+	public void buscarSubCategoria()
+	{
+		//if(this.produto.getCategoria() != null && !this.produto.getCategoria().equals(""))
+		//{
+			//this.subCategorias = cadastroSubcategoriaDAO.buscarPorCategoria(this.produto.getCategoria().getCodigo());
+			//System.out.println("----------------------------");
+			//System.out.println("----------------------------");
+			//System.out.println("----------------------------");
+			//System.out.println("----------------------------");
+			//System.out.println("----------------------------");
+			//System.out.println("----------------------------");
+			
+		if(this.produtoFilter.getCategoria() == null || this.produtoFilter.getCategoria().equals(""))
+		{
+			subCategorias = new ArrayList<>();
+			System.out.println("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
+		}else
+		{
+			this.subCategorias = cadastroSubcategoriaDAO.buscarPorCategoria(this.produtoFilter.getCategoria().getCodigo());
+			System.out.println("----------------------------");
+			System.out.println("----------------------------");
+			System.out.println("----------------------------");
+			System.out.println("----------------------------");
+			System.out.println("----------------------------");
+			System.out.println("----------------------------");
+		}
+		
+	}
+	
+	public Tipo[] getTipos()
+	{
+		return Tipo.values();
+	}
+	
 	public Produto getProdutoSelecionado() {
 		return produtoSelecionado;
 	}
@@ -78,6 +140,30 @@ public class PesquisaProdutoBean implements Serializable
 
 	public void setProdutos(List<Produto> produtos) {
 		this.produtos = produtos;
+	}
+
+	public ProdutoFilter getProdutoFilter() {
+		return produtoFilter;
+	}
+
+	public void setProdutoFilter(ProdutoFilter produtoFilter) {
+		this.produtoFilter = produtoFilter;
+	}
+
+	public List<Categoria> getCategorias() {
+		return categorias;
+	}
+
+	public void setCategorias(List<Categoria> categorias) {
+		this.categorias = categorias;
+	}
+
+	public List<SubCategoria> getSubCategorias() {
+		return subCategorias;
+	}
+
+	public void setSubCategorias(List<SubCategoria> subCategorias) {
+		this.subCategorias = subCategorias;
 	}
 	
 	

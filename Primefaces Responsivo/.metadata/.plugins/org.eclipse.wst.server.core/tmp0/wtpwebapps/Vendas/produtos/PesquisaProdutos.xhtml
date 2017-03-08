@@ -25,30 +25,52 @@
 					columnClasses="ui-grid-col-2, ui-grid-col-4, ui-grid-col-2,ui-grid-col-4" styleClass="ve-panelGridPesquisaProdutos">
 						
 					<p:outputLabel value="Nome" for="nome"/>
-					<p:inputText id="nome"/>		
+					<p:inputText id="nome" value="#{pesquisaProdutoBean.produtoFilter.nome}"/>		
 					
 					<p:outputLabel value="Categoria" for="categoria"/>
-					<p:inputText id="categoria"/>	
+					<p:selectOneMenu id="categoria" value="#{pesquisaProdutoBean.produtoFilter.categoria}" autoWidth="auto">
+						<p:ajax listener="#{pesquisaProdutoBean.buscarSubCategoria}" process="@this" update="subCategoria"/>
+						<f:selectItem itemLabel="Selecione uma Categoria" itemValue=""/>
+						<f:selectItems value="#{pesquisaProdutoBean.categorias}" var="categoria" itemValue="#{categoria}"
+							itemLabel="#{categoria.nome}" />
+					</p:selectOneMenu>	
 					
 					<p:outputLabel value="SubCategoria" for="subCategoria"/>
-					<p:inputText id="subCategoria"/>	
+					<p:selectOneMenu id="subCategoria" value="#{pesquisaProdutoBean.produtoFilter.subCategoria}" autoWidth="auto">
+						<f:selectItem itemLabel="Selecione uma SubCategoria" itemValue=""/>
+						<f:selectItems value="#{pesquisaProdutoBean.subCategorias}" var="subCategoria" itemValue="#{subCategoria}"
+							itemLabel="#{subCategoria.nome}" />
+					</p:selectOneMenu>	
 					
 					<p:outputLabel value="Espessura" for="espessura"/>
 					<p:inputText id="espessura"/>
 					
 					<p:outputLabel value="Tipo" for="tipo"/>
-					<p:selectOneRadio id="tipo" value="#{cadastroProdutoBean.produto.tipo}" layout="responsive" columns="2"> 
-						<f:selectItems value="#{cadastroProdutoBean.tipos}" var="tipo" itemValue="#{tipo}" 
+					<p:selectOneRadio id="tipo" value="#{pesquisaProdutoBean.produtoFilter.tipo}" layout="responsive" columns="2"> 
+						<f:selectItems value="#{pesquisaProdutoBean.tipos}" var="tipo" itemValue="#{tipo}" 
 								itemLabel="#{tipo.descricao}"/>
 					</p:selectOneRadio>
 					
-					<p:commandButton value="Buscar Todos" action="#{pesquisaProdutoBean.buscarTodos()}"
-						update="@form ve-tablePesquisaProdutos"/>																		
+																						
 				</p:panelGrid>
 			</div>	
+			<div class="ui-fluid">
+				<p:panelGrid columns="3" columnClasses="ui-grid-col-4, ui-grid-col-4, ui-grid-col-4" layout="grid"
+					styleClass="ve-RetirarBordaPanelGrid">
+					
+					<p:commandButton value="Buscar" action="#{pesquisaProdutoBean.buscar}"
+						update="@form ve-tablePesquisaProdutos"/>	
+					
+					<p:commandButton value="Buscar Todos" action="#{pesquisaProdutoBean.buscarTodos()}"
+						update="@form ve-tablePesquisaProdutos"/>	
+						
+					<p:commandButton value="Limpar Busca" action="#{pesquisaProdutoBean.limpar()}"
+						update="@form ve-tablePesquisaProdutos"/>		
+				</p:panelGrid>
+			</div>
 			<p:dataTable id="ve-tablePesquisaProdutos" value="#{pesquisaProdutoBean.produtos}" 
 				 var="produto" style="margin-top:20px" rows="20" paginator="true" paginatorAlwaysVisible="false"
-				 paginatorPosition="bottom" reflow="true">
+				 paginatorPosition="bottom" reflow="true" emptyMessage="Não foi encontrado nenhum registro">
 				 
 				<p:column headerText="Codigo" styleClass="ve-codigoPesquisaProdutos">
 					<h:outputText value="#{produto.codigo}" />
