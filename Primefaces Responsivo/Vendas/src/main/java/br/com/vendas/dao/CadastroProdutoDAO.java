@@ -9,6 +9,7 @@ import javax.persistence.EntityManager;
 import br.com.vendas.dao.filter.ProdutoFilter;
 import br.com.vendas.model.Produto;
 import br.com.vendas.util.jpa.Transactional;
+import br.com.vendas.util.jsf.FacesUtil;
 
 public class CadastroProdutoDAO implements Serializable
 {
@@ -48,22 +49,33 @@ public class CadastroProdutoDAO implements Serializable
 	{
 		
 		List<Produto> produtos = null;
-	
-		if(!produtoFilter.getNome().equals(""))
+	/*
+		if(!produtoFilter.getNome().trim().equals("") && produtoFilter.getNome() != null)
 		{
 			System.out.println("entrou no if do nome");
 			produtos = manager.createQuery("FROM Produto p where p.nome LIKE ?1", Produto.class)
 					.setParameter(1, produtoFilter.getNome()+"%")
 					.getResultList();
-		}
-		if(!produtoFilter.getNome().equals("") && produtoFilter.getCategoria() != null)
+		}else if(!produtoFilter.getCategoria().equals("") && produtoFilter.getCategoria() != null)
 		{
 			System.out.println("entrou no if do nome e da categoria");
 			produtos = manager.createQuery("FROM Produto p where p.nome LIKE ?1 and p.categoria.codigo = ?2", Produto.class)
 					.setParameter(1, produtoFilter.getNome()+"%")
 					.setParameter(2, produtoFilter.getCategoria().getCodigo()).getResultList();
-		}
+			
+		}else if(produtoFilter.getSubCategoria().equals("") && produtoFilter)
 		
+		*/
+		
+		if(produtoFilter.getNome().trim().equals("") && produtoFilter.getCategoria() == null)
+		{
+			FacesUtil.addErrorMessage("Favor informar um filtro para a busca");
+		}else
+		{
+			produtos =  manager.createQuery("FROM Produto p where p.nome LIKE ?1 and p.categoria.codigo = ?2", Produto.class)
+					.setParameter(1, produtoFilter.getNome()+"%")
+					.setParameter(2, produtoFilter.getCategoria().getCodigo()).getResultList();
+		}
 		
 		return produtos;
 	}

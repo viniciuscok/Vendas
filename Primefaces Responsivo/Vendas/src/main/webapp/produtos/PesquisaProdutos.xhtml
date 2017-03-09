@@ -10,6 +10,7 @@
 		<h1>Pesquisar Produto</h1>
 			
 		<h:form id="formPesquisaProduto">	
+			<p:messages id="msg" closable="true" autoUpdate="false"/>
 			<p:toolbar>
 				<p:toolbarGroup>
 					<p:button value="Pesquisar" icon="fa fa-search" outcome="/produtos/PesquisaProdutos" 
@@ -59,7 +60,7 @@
 					styleClass="ve-RetirarBordaPanelGrid">
 					
 					<p:commandButton value="Buscar" action="#{pesquisaProdutoBean.buscar}"
-						update="@form ve-tablePesquisaProdutos"/>	
+						update="@form ve-tablePesquisaProdutos msg" />	
 					
 					<p:commandButton value="Buscar Todos" action="#{pesquisaProdutoBean.buscarTodos()}"
 						update="@form ve-tablePesquisaProdutos"/>	

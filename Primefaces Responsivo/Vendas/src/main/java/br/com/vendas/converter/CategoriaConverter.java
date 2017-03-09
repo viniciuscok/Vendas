@@ -27,7 +27,6 @@ public class CategoriaConverter implements Converter{
 		{
 			Long codigo = new Long(value);
 			retorno = this.cadastroCategoriaDAO.porCodigo(codigo);
-			System.out.println(codigo+"teste");
 		}
 		return retorno;
 	}
