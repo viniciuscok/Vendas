@@ -49,6 +49,7 @@ public class PesquisaProdutoBean implements Serializable
 	public void limpar()
 	{
 		this.produto = new Produto();
+		this.categorias = new ArrayList<>();
 		this.produtos = new ArrayList<>();
 		this.subCategorias = new ArrayList<>();
 		this.produtoFilter = new ProdutoFilter();

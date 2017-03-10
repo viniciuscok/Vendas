@@ -49,34 +49,58 @@ public class CadastroProdutoDAO implements Serializable
 	{
 		
 		List<Produto> produtos = null;
-	/*
-		if(!produtoFilter.getNome().trim().equals("") && produtoFilter.getNome() != null)
+	
+		if((!produtoFilter.getNome().trim().equals("") && produtoFilter.getNome() != null) 
+				&& produtoFilter.getCategoria()==null && produtoFilter.getSubCategoria() == null)
 		{
 			System.out.println("entrou no if do nome");
 			produtos = manager.createQuery("FROM Produto p where p.nome LIKE ?1", Produto.class)
 					.setParameter(1, produtoFilter.getNome()+"%")
 					.getResultList();
-		}else if(!produtoFilter.getCategoria().equals("") && produtoFilter.getCategoria() != null)
-		{
-			System.out.println("entrou no if do nome e da categoria");
-			produtos = manager.createQuery("FROM Produto p where p.nome LIKE ?1 and p.categoria.codigo = ?2", Produto.class)
-					.setParameter(1, produtoFilter.getNome()+"%")
-					.setParameter(2, produtoFilter.getCategoria().getCodigo()).getResultList();
 			
-		}else if(produtoFilter.getSubCategoria().equals("") && produtoFilter)
+		}else if((!produtoFilter.getCategoria().equals("") && produtoFilter.getCategoria() != null)
+				&& produtoFilter.getSubCategoria() == null && produtoFilter.getNome().isEmpty())
+		{
+			System.out.println("entrou no if da categoria");
+			produtos = manager.createQuery("FROM Produto p where p.categoria.codigo = ?1", Produto.class)
+					.setParameter(1, produtoFilter.getCategoria().getCodigo()).getResultList();
+			
+		}else if(!produtoFilter.getSubCategoria().equals("") && produtoFilter.getSubCategoria() != null
+					&& produtoFilter.getNome().isEmpty() && produtoFilter.getCategoria() != null)
+		{
+			produtos = manager.createQuery("FROM Produto p where 1=1 "
+					+ "and p.categoria.codigo = ?1 "
+					+ "and p.subCategoria.codigo = ?2", Produto.class)
+					.setParameter(1, produtoFilter.getCategoria().getCodigo())
+					.setParameter(2, produtoFilter.getSubCategoria().getCodigo()).getResultList();
+		}else
+		{
+			System.out.println("Entrou no if da subcategoria");
+			produtos =  manager.createQuery("FROM Produto p where 1=1 "
+					+ "and p.nome LIKE ?1 "
+					+ "and p.categoria.codigo = ?2 "
+					+ "and p.subCategoria.codigo = ?3", Produto.class)
+					.setParameter(1, produtoFilter.getNome()+"%")
+					.setParameter(2, produtoFilter.getCategoria().getCodigo())
+					.setParameter(3, produtoFilter.getSubCategoria().getCodigo()).getResultList();
+		}
 		
-		*/
 		
+		/*
 		if(produtoFilter.getNome().trim().equals("") && produtoFilter.getCategoria() == null)
 		{
 			FacesUtil.addErrorMessage("Favor informar um filtro para a busca");
 		}else
 		{
-			produtos =  manager.createQuery("FROM Produto p where p.nome LIKE ?1 and p.categoria.codigo = ?2", Produto.class)
+			produtos =  manager.createQuery("FROM Produto p where 1=1 "
+					+ "and p.nome LIKE ?1 "
+					+ "and p.categoria.codigo = ?2 "
+					+ "and p.subCategoria.codigo = ?3", Produto.class)
 					.setParameter(1, produtoFilter.getNome()+"%")
-					.setParameter(2, produtoFilter.getCategoria().getCodigo()).getResultList();
+					.setParameter(2, produtoFilter.getCategoria().getCodigo())
+					.setParameter(3, produtoFilter.getSubCategoria().getCodigo()).getResultList();
 		}
-		
+		*/
 		return produtos;
 	}
 }

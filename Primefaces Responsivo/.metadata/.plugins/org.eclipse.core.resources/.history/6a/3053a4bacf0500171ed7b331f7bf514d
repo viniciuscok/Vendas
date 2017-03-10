@@ -1,0 +1,118 @@
+<ui:composition template="/WEB-INF/templates/Layout.xhtml"
+ 	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" >
+
+	<ui:define name="titulo">Pesquisar Produto</ui:define>
+	<ui:define name="corpo">
+		<h1>Pesquisar Produto</h1>
+			
+		<h:form id="formPesquisaProduto">	
+			<p:messages id="msg" closable="true" autoUpdate="false"/>
+			<p:toolbar>
+				<p:toolbarGroup>
+					<p:button value="Pesquisar" icon="fa fa-search" outcome="/produtos/PesquisaProdutos" 
+						styleClass="ve-botaoSuperiorLeft"/>
+				</p:toolbarGroup>
+				<p:toolbarGroup align="right">
+					<p:button value="Novo" icon="fa fa-plus" outcome="/produtos/CadastroProduto"
+						styleClass="ve-botaoSuperiorRight"/>
+				</p:toolbarGroup>
+			</p:toolbar>
+			<div class="ui-fluid">
+				<p:panelGrid columns="4" id="panelGrridPesquisaProduto" layout="grid" 
+					columnClasses="ui-grid-col-2, ui-grid-col-4, ui-grid-col-2,ui-grid-col-4" styleClass="ve-panelGridPesquisaProdutos">
+						
+					<p:outputLabel value="Nome" for="nome"/>
+					<p:inputText id="nome" value="#{pesquisaProdutoBean.produtoFilter.nome}"/>		
+					
+					<p:outputLabel value="Categoria" for="categoria"/>
+					<p:selectOneMenu id="categoria" value="#{pesquisaProdutoBean.produtoFilter.categoria}" autoWidth="auto">
+						<p:ajax listener="#{pesquisaProdutoBean.buscarSubCategoria}" update="subCategoria"/>
+						<f:selectItem itemLabel="Selecione uma Categoria" itemValue=""/>
+						<f:selectItems value="#{pesquisaProdutoBean.categorias}" var="categoria" itemValue="#{categoria}"
+							itemLabel="#{categoria.nome}" />
+					</p:selectOneMenu>	
+					
+					<p:outputLabel value="SubCategoria" for="subCategoria"/>
+					<p:selectOneMenu id="subCategoria" value="#{pesquisaProdutoBean.produtoFilter.subCategoria}" autoWidth="auto">
+						<f:selectItem itemLabel="Selecione uma SubCategoria" />
+						<f:selectItems value="#{pesquisaProdutoBean.subCategorias}" var="subCategoria" itemValue="#{subCategoria}"
+							itemLabel="#{subCategoria.nome}" />
+					</p:selectOneMenu>	
+					
+					<p:outputLabel value="Espessura" for="espessura"/>
+					<p:inputText id="espessura"/>
+					
+					<p:outputLabel value="Tipo" for="tipo"/>
+					<p:selectOneRadio id="tipo" value="#{pesquisaProdutoBean.produtoFilter.tipo}" layout="responsive" columns="2"> 
+						<f:selectItems value="#{pesquisaProdutoBean.tipos}" var="tipo" itemValue="#{tipo}" 
+								itemLabel="#{tipo.descricao}"/>
+					</p:selectOneRadio>
+					
+																						
+				</p:panelGrid>
+			</div>	
+			<div class="ui-fluid">
+				<p:panelGrid columns="3" columnClasses="ui-grid-col-4, ui-grid-col-4, ui-grid-col-4" layout="grid"
+					styleClass="ve-RetirarBordaPanelGrid">
+					
+					<p:commandButton value="Buscar" action="#{pesquisaProdutoBean.buscar}"
+						update="@form ve-tablePesquisaProdutos msg" />	
+					
+					<p:commandButton value="Buscar Todos" action="#{pesquisaProdutoBean.buscarTodos()}"
+						update="@form ve-tablePesquisaProdutos"/>	
+						
+					<p:commandButton value="Limpar Busca" action="#{pesquisaProdutoBean.limpar()}"
+						update="@form ve-tablePesquisaProdutos"/>		
+				</p:panelGrid>
+			</div>
+			<p:dataTable id="ve-tablePesquisaProdutos" value="#{pesquisaProdutoBean.produtos}" 
+				 var="produto" style="margin-top:20px" rows="20" paginator="true" paginatorAlwaysVisible="false"
+				 paginatorPosition="bottom" reflow="true" emptyMessage="Não foi encontrado nenhum registro">
+				 
+				<p:column headerText="Codigo" styleClass="ve-codigoPesquisaProdutos">
+					<h:outputText value="#{produto.codigo}" />
+				</p:column>
+				
+				<p:column headerText="Nome">
+					<h:outputText value="#{produto.nome}" />
+				</p:column>
+				
+				<p:column headerText="Espessura" styleClass="ve-espessuraPesquisaProdutos">
+					<h:outputText value="#{produto.espessura.descricao}" />
+				</p:column>
+				
+				<p:column headerText="Cor" styleClass="ve-espessuraPesquisaProdutos">
+					<h:outputText value="#{produto.modeloVidro.descricao}" />
+				</p:column>
+				
+				<p:column headerText="Tipo do vidro" styleClass="ve-tipoVidroPesquisaProdutos">
+					<h:outputText value="#{produto.tipo.descricao}" />
+				</p:column>
+				
+				<p:column headerText="Valor" styleClass="ve-valorPesquisaProdutos">
+					<h:outputText value="#{produto.valorMetro}">
+						<f:convertNumber type="currency"/>
+					</h:outputText>
+				</p:column>
+				
+				<p:column headerText="Estoque" styleClass="ve-estoquePesquisaProdutos">
+					<h:outputText value="#{produto.estoque}" styleClass="js-moeda"/>
+				</p:column>
+				
+				<p:column headerText="Ações" styleClass="ve-editarPesquisaProdutos">
+					<p:button icon="fa fa-edit" title="Editar" outcome="/produtos/CadastroProduto">
+						<f:param name="produto" value="#{produto.codigo}"/>
+					</p:button>
+					<p:commandButton icon="fa fa-trash-o" title="Excluir"/>
+				</p:column>
+			</p:dataTable>
+			
+			
+		</h:form>		
+	</ui:define>
+	
+</ui:composition>
