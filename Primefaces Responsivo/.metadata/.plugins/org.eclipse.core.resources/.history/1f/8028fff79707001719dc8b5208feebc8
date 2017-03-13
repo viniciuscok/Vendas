@@ -1,0 +1,144 @@
+package br.com.vendas.dao;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.inject.Inject;
+import javax.persistence.EntityManager;
+import javax.persistence.Query;
+import javax.persistence.TypedQuery;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.ParameterExpression;
+import javax.persistence.criteria.Path;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
+
+import org.hibernate.jpa.criteria.expression.ParameterExpressionImpl;
+
+import br.com.vendas.dao.filter.ProdutoFilter;
+import br.com.vendas.model.Produto;
+import br.com.vendas.util.jpa.Transactional;
+import br.com.vendas.util.jsf.FacesUtil;
+
+public class CadastroProdutoDAO implements Serializable
+{
+	private static final long serialVersionUID = 1L;
+	
+	@Inject
+	private EntityManager manager;
+	
+										//MÉTODO PARA SALVA E ATUALIZAR UM PRODUTO.  		
+//------------------------------------------------------------------------------------------------------------------------
+				
+	@Transactional
+	public void salvar(Produto produto)
+	{
+		this.manager.merge(produto);
+	}
+
+	@Transactional
+	public void remover(Produto produto) 
+	{
+		produto = porCodigo(produto.getCodigo());
+		manager.remove(produto);
+		manager.flush();
+	}
+
+	public Produto porCodigo(Long codigo)
+	{
+		return manager.find(Produto.class, codigo);
+	}
+	
+	public List<Produto> buscarTodos()
+	{
+		return manager.createQuery("FROM Produto",Produto.class).getResultList();
+	}
+	
+	public List<Produto> buscarProduto(ProdutoFilter produtoFilter)
+	{
+		CriteriaBuilder builder = manager.getCriteriaBuilder();
+		CriteriaQuery<Produto> query = builder.createQuery(Produto.class);
+		Root<Produto> from = query.from(Produto.class);
+		 
+		TypedQuery<Produto> typedQuery = manager.createQuery(query.select(
+		        from).where(builder.gt(from.<String>get("nome"), produtoFilter.getNome())));
+		//List results = typedQuery.getResultList();
+		
+		//CriteriaBuilder builder = manager.getCriteriaBuilder();
+		//CriteriaQuery<Produto> criteriaQuery = builder.createQuery(Produto.class);
+		//Root<Produto> a = criteriaQuery.from(Produto.class);
+		//criteriaQuery.from(Produto.class);
+		
+		//List<Predicate> predicates = new ArrayList<>();
+		
+		//if(produtoFilter.getNome() !=null)
+		//{
+		//	ParameterExpression<ProdutoFilter> nomeExpression = builder.parameter(ProdutoFilter.class, "nome");
+		//	predicates.add(builder.like(a.<String>get("nome%"), nomeExpression));
+		//}
+		
+		//criteriaQuery.where(predicates.toArray(new Predicate[0]));
+		
+		///TypedQuery<Produto> query = manager.createQuery(criteriaQuery);
+		///
+		//if (produtoFilter.getNome() != null) {
+		//	query.setParameter("nome", produtoFilter );
+		//}
+		/*List<Produto> produtos = null;
+	
+		if((!produtoFilter.getNome().trim().equals("") && produtoFilter.getNome() != null) 
+				&& produtoFilter.getCategoria()==null && produtoFilter.getSubCategoria() == null)
+		{
+			System.out.println("entrou no if do nome");
+			produtos = manager.createQuery("FROM Produto p where p.nome LIKE ?1", Produto.class)
+					.setParameter(1, produtoFilter.getNome()+"%")
+					.getResultList();
+			
+		}else if((!produtoFilter.getCategoria().equals("") && produtoFilter.getCategoria() != null)
+				&& produtoFilter.getSubCategoria() == null && produtoFilter.getNome().isEmpty())
+		{
+			System.out.println("entrou no if da categoria");
+			produtos = manager.createQuery("FROM Produto p where p.categoria.codigo = ?1", Produto.class)
+					.setParameter(1, produtoFilter.getCategoria().getCodigo()).getResultList();
+			
+		}else if(!produtoFilter.getSubCategoria().equals("") && produtoFilter.getSubCategoria() != null
+					&& produtoFilter.getNome().isEmpty() && produtoFilter.getCategoria() != null)
+		{
+			produtos = manager.createQuery("FROM Produto p where 1=1 "
+					+ "and p.categoria.codigo = ?1 "
+					+ "and p.subCategoria.codigo = ?2", Produto.class)
+					.setParameter(1, produtoFilter.getCategoria().getCodigo())
+					.setParameter(2, produtoFilter.getSubCategoria().getCodigo()).getResultList();
+		}else
+		{
+			System.out.println("Entrou no if da subcategoria");
+			produtos =  manager.createQuery("FROM Produto p where 1=1 "
+					+ "and p.nome LIKE ?1 "
+					+ "and p.categoria.codigo = ?2 "
+					+ "and p.subCategoria.codigo = ?3", Produto.class)
+					.setParameter(1, produtoFilter.getNome()+"%")
+					.setParameter(2, produtoFilter.getCategoria().getCodigo())
+					.setParameter(3, produtoFilter.getSubCategoria().getCodigo()).getResultList();
+		}
+		
+		*/
+		/*
+		if(produtoFilter.getNome().trim().equals("") && produtoFilter.getCategoria() == null)
+		{
+			FacesUtil.addErrorMessage("Favor informar um filtro para a busca");
+		}else
+		{
+			produtos =  manager.createQuery("FROM Produto p where 1=1 "
+					+ "and p.nome LIKE ?1 "
+					+ "and p.categoria.codigo = ?2 "
+					+ "and p.subCategoria.codigo = ?3", Produto.class)
+					.setParameter(1, produtoFilter.getNome()+"%")
+					.setParameter(2, produtoFilter.getCategoria().getCodigo())
+					.setParameter(3, produtoFilter.getSubCategoria().getCodigo()).getResultList();
+		}
+		*/
+		return typedQuery.getResultList();
+	}
+}

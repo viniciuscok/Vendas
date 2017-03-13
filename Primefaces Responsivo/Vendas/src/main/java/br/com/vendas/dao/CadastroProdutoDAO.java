@@ -1,10 +1,21 @@
 package br.com.vendas.dao;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
+import javax.persistence.TypedQuery;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.ParameterExpression;
+import javax.persistence.criteria.Path;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
+
+import org.hibernate.jpa.criteria.expression.ParameterExpressionImpl;
 
 import br.com.vendas.dao.filter.ProdutoFilter;
 import br.com.vendas.model.Produto;
@@ -47,8 +58,61 @@ public class CadastroProdutoDAO implements Serializable
 	
 	public List<Produto> buscarProduto(ProdutoFilter produtoFilter)
 	{
+		CriteriaBuilder builder = manager.getCriteriaBuilder();
+		CriteriaQuery<Produto> query = builder.createQuery(Produto.class);
+		Root<Produto> from = query.from(Produto.class);
+		 
+		Predicate predicate = builder.and();
 		
-		List<Produto> produtos = null;
+		if(produtoFilter.getNome() != null)
+		{
+			predicate = builder.and(
+		            predicate,
+		            builder.like(from. get("nome"), "%" + produtoFilter.getNome()
+		                    + "%"));
+		}
+		if(produtoFilter.getCategoria() != null)
+		{
+			predicate = builder.and(
+		            predicate,
+		            builder.equal(from. get("categoria").get("codigo"), produtoFilter.getCategoria().getCodigo()
+		                    ));
+		}
+		
+		if(produtoFilter.getSubCategoria() != null)
+		{
+			predicate = builder.and(
+		            predicate,
+		            builder.equal(from. get("subCategoria").get("codigo"), produtoFilter.getSubCategoria().getCodigo()
+		                    ));
+		}
+		
+		
+		TypedQuery<Produto> typedQuery = manager.createQuery(query.select(
+		        from).where(predicate));
+		//List results = typedQuery.getResultList();
+		
+		//CriteriaBuilder builder = manager.getCriteriaBuilder();
+		//CriteriaQuery<Produto> criteriaQuery = builder.createQuery(Produto.class);
+		//Root<Produto> a = criteriaQuery.from(Produto.class);
+		//criteriaQuery.from(Produto.class);
+		
+		//List<Predicate> predicates = new ArrayList<>();
+		
+		//if(produtoFilter.getNome() !=null)
+		//{
+		//	ParameterExpression<ProdutoFilter> nomeExpression = builder.parameter(ProdutoFilter.class, "nome");
+		//	predicates.add(builder.like(a.<String>get("nome%"), nomeExpression));
+		//}
+		
+		//criteriaQuery.where(predicates.toArray(new Predicate[0]));
+		
+		///TypedQuery<Produto> query = manager.createQuery(criteriaQuery);
+		///
+		//if (produtoFilter.getNome() != null) {
+		//	query.setParameter("nome", produtoFilter );
+		//}
+		/*List<Produto> produtos = null;
 	
 		if((!produtoFilter.getNome().trim().equals("") && produtoFilter.getNome() != null) 
 				&& produtoFilter.getCategoria()==null && produtoFilter.getSubCategoria() == null)
@@ -85,7 +149,7 @@ public class CadastroProdutoDAO implements Serializable
 					.setParameter(3, produtoFilter.getSubCategoria().getCodigo()).getResultList();
 		}
 		
-		
+		*/
 		/*
 		if(produtoFilter.getNome().trim().equals("") && produtoFilter.getCategoria() == null)
 		{
@@ -101,6 +165,6 @@ public class CadastroProdutoDAO implements Serializable
 					.setParameter(3, produtoFilter.getSubCategoria().getCodigo()).getResultList();
 		}
 		*/
-		return produtos;
+		return typedQuery.getResultList();
 	}
 }
