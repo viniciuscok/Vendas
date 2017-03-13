@@ -10,10 +10,13 @@ import javax.inject.Inject;
 import javax.inject.Named;
 
 import br.com.vendas.dao.CadastroCategoriaDAO;
+import br.com.vendas.dao.CadastroMarcaDAO;
 import br.com.vendas.dao.CadastroProdutoDAO;
 import br.com.vendas.dao.CadastroSubcategoriaDAO;
 import br.com.vendas.dao.filter.ProdutoFilter;
 import br.com.vendas.model.Categoria;
+import br.com.vendas.model.Marca;
+import br.com.vendas.model.ModeloVidro;
 import br.com.vendas.model.Produto;
 import br.com.vendas.model.SubCategoria;
 import br.com.vendas.model.Tipo;
@@ -32,6 +35,8 @@ public class PesquisaProdutoBean implements Serializable
 	private CadastroCategoriaDAO cadastroCategoriaDAO;
 	@Inject
 	private CadastroSubcategoriaDAO cadastroSubcategoriaDAO;
+	@Inject
+	private CadastroMarcaDAO cadastroMarcaDAO;
 	
 	private Produto produtoSelecionado;
 	private Produto produto;
@@ -39,6 +44,7 @@ public class PesquisaProdutoBean implements Serializable
 	private List<Produto> produtos;
 	private List<Categoria> categorias;
 	private List<SubCategoria> subCategorias;
+	private List<Marca> marcas;
 	
 	@PostConstruct
 	public void inicializar()
@@ -53,7 +59,9 @@ public class PesquisaProdutoBean implements Serializable
 		this.produtos = new ArrayList<>();
 		this.subCategorias = new ArrayList<>();
 		this.produtoFilter = new ProdutoFilter();
+		this.marcas = new ArrayList<>();
 		buscarTodasCategorias();
+		buscarTodasMarcas();
 	}
 	
 	public void removerProdutoSelecionado()
@@ -78,6 +86,11 @@ public class PesquisaProdutoBean implements Serializable
 	public void buscar()
 	{
 		this.produtos = cadastroProdutoDAO.buscarProduto(this.produtoFilter);
+	}
+	
+	public void buscarTodasMarcas()
+	{
+		this.marcas = cadastroMarcaDAO.buscarTodos();
 	}
 	
 	public void buscarTodasCategorias()
@@ -117,6 +130,11 @@ public class PesquisaProdutoBean implements Serializable
 	public Tipo[] getTipos()
 	{
 		return Tipo.values();
+	}
+	
+	public ModeloVidro[] getModeloVidros()
+	{
+		return ModeloVidro.values();
 	}
 	
 	public Produto getProdutoSelecionado() {
@@ -165,6 +183,14 @@ public class PesquisaProdutoBean implements Serializable
 
 	public void setSubCategorias(List<SubCategoria> subCategorias) {
 		this.subCategorias = subCategorias;
+	}
+
+	public List<Marca> getMarcas() {
+		return marcas;
+	}
+
+	public void setMarcas(List<Marca> marcas) {
+		this.marcas = marcas;
 	}
 	
 	

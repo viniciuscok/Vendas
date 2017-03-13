@@ -3,6 +3,7 @@ package br.com.vendas.dao.filter;
 import java.io.Serializable;
 
 import br.com.vendas.model.Categoria;
+import br.com.vendas.model.Marca;
 import br.com.vendas.model.ModeloVidro;
 import br.com.vendas.model.SubCategoria;
 import br.com.vendas.model.Tipo;
@@ -16,7 +17,9 @@ public class ProdutoFilter implements Serializable
 	private Categoria categoria;
 	private SubCategoria subCategoria;
 	private Tipo tipo;
-	private ModeloVidro modeloVidro;
+	private ModeloVidro[] modeloVidros;
+	private Marca marca;
+	
 	public String getNome() {
 		return nome;
 	}
@@ -29,9 +32,7 @@ public class ProdutoFilter implements Serializable
 	public Tipo getTipo() {
 		return tipo;
 	}
-	public ModeloVidro getModeloVidro() {
-		return modeloVidro;
-	}
+	
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
@@ -44,8 +45,18 @@ public class ProdutoFilter implements Serializable
 	public void setTipo(Tipo tipo) {
 		this.tipo = tipo;
 	}
-	public void setModeloVidro(ModeloVidro modeloVidro) {
-		this.modeloVidro = modeloVidro;
+	
+	public Marca getMarca() {
+		return marca;
+	}
+	public void setMarca(Marca marca) {
+		this.marca = marca;
+	}
+	public ModeloVidro[] getModeloVidros() {
+		return modeloVidros;
+	}
+	public void setModeloVidros(ModeloVidro[] modeloVidros) {
+		this.modeloVidros = modeloVidros;
 	}
 	
 	

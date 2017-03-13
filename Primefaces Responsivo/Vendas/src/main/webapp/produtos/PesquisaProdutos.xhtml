@@ -22,11 +22,18 @@
 				</p:toolbarGroup>
 			</p:toolbar>
 			<div class="ui-fluid">
-				<p:panelGrid columns="4" id="panelGrridPesquisaProduto" layout="grid" 
-					columnClasses="ui-grid-col-2, ui-grid-col-4, ui-grid-col-2,ui-grid-col-4" styleClass="ve-panelGridPesquisaProdutos">
+				<p:panelGrid columns="6" id="panelGrridPesquisaProduto" layout="grid" 
+					columnClasses="ui-grid-col-1, ui-grid-col-3, ui-grid-col-1,ui-grid-col-3, ui-grid-col-1,ui-grid-col-3" styleClass="ve-panelGridPesquisaProdutos">
 						
 					<p:outputLabel value="Nome" for="nome"/>
 					<p:inputText id="nome" value="#{pesquisaProdutoBean.produtoFilter.nome}"/>		
+					
+					<p:outputLabel value="Marca" for="marca"/>
+					<p:selectOneMenu id="marca" value="#{pesquisaProdutoBean.produtoFilter.marca}" autoWidth="auto" >
+						<f:selectItem itemLabel="Selecione uma Marca" itemValue=""/>
+						<f:selectItems value="#{pesquisaProdutoBean.marcas}" var="marca" itemValue="#{marca}"
+							itemLabel="#{marca.nome}"/>
+					</p:selectOneMenu>
 					
 					<p:outputLabel value="Categoria" for="categoria"/>
 					<p:selectOneMenu id="categoria" value="#{pesquisaProdutoBean.produtoFilter.categoria}" autoWidth="auto">
@@ -43,8 +50,11 @@
 							itemLabel="#{subCategoria.nome}" />
 					</p:selectOneMenu>	
 					
-					<p:outputLabel value="Espessura" for="espessura"/>
-					<p:inputText id="espessura"/>
+					<p:outputLabel value="Cor" for="cor"/>
+					<p:selectCheckboxMenu label="teste"  id="cor" value="#{pesquisaProdutoBean.produtoFilter.modeloVidros}">
+	    				<f:selectItems value="#{pesquisaProdutoBean.modeloVidros}" var="modeloVidro"
+	    					itemValue="#{modeloVidro}" itemLabel="#{modeloVidro.descricao}" />
+	    			</p:selectCheckboxMenu>
 					
 					<p:outputLabel value="Tipo" for="tipo"/>
 					<p:selectOneRadio id="tipo" value="#{pesquisaProdutoBean.produtoFilter.tipo}" layout="responsive" columns="2"> 

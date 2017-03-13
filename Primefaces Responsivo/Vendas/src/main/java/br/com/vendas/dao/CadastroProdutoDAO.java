@@ -64,12 +64,17 @@ public class CadastroProdutoDAO implements Serializable
 		 
 		Predicate predicate = builder.and();
 		
-		if(produtoFilter.getNome() != null)
+		if(produtoFilter.getNome() != null && !produtoFilter.getNome().equals(""))
 		{
+			System.out.println("entrou no nome");
 			predicate = builder.and(
 		            predicate,
-		            builder.like(from. get("nome"), "%" + produtoFilter.getNome()
+		            builder.like(from.get("nome"), "%" + produtoFilter.getNome()
 		                    + "%"));
+		}
+		if(produtoFilter.getMarca() != null)
+		{
+			predicate = builder.and(predicate, builder.equal(from.get("marca").get("codigo"), produtoFilter.getMarca().getCodigo()));
 		}
 		if(produtoFilter.getCategoria() != null)
 		{
@@ -86,7 +91,17 @@ public class CadastroProdutoDAO implements Serializable
 		            builder.equal(from. get("subCategoria").get("codigo"), produtoFilter.getSubCategoria().getCodigo()
 		                    ));
 		}
+		if(produtoFilter.getTipo() != null)
+		{
+			predicate = builder.and(predicate, builder.equal(from.get("tipo"), produtoFilter.getTipo()));
+		}
 		
+		if(produtoFilter.getModeloVidros() != null )
+		{
+			System.out.println("entrou no if do in");
+			predicate = builder.and(predicate, builder.and(from.get("modeloVidro").in(produtoFilter.getModeloVidros())) );
+			
+		}
 		
 		TypedQuery<Produto> typedQuery = manager.createQuery(query.select(
 		        from).where(predicate));
