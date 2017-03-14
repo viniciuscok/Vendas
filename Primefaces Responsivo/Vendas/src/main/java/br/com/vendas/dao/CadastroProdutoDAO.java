@@ -1,26 +1,19 @@
 package br.com.vendas.dao;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
-import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.ParameterExpression;
-import javax.persistence.criteria.Path;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
-
-import org.hibernate.jpa.criteria.expression.ParameterExpressionImpl;
 
 import br.com.vendas.dao.filter.ProdutoFilter;
 import br.com.vendas.model.Produto;
 import br.com.vendas.util.jpa.Transactional;
-import br.com.vendas.util.jsf.FacesUtil;
 
 public class CadastroProdutoDAO implements Serializable
 {
@@ -96,7 +89,7 @@ public class CadastroProdutoDAO implements Serializable
 			predicate = builder.and(predicate, builder.equal(from.get("tipo"), produtoFilter.getTipo()));
 		}
 		
-		if(produtoFilter.getModeloVidros() != null )
+		if(produtoFilter.getModeloVidros() != null && produtoFilter.getModeloVidros().length > 0 )
 		{
 			System.out.println("entrou no if do in");
 			predicate = builder.and(predicate, builder.and(from.get("modeloVidro").in(produtoFilter.getModeloVidros())) );

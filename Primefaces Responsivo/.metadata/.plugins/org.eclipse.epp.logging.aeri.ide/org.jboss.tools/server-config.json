@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "title": "JBoss Tools",
-  "timestamp": 1489410063933,
+  "timestamp": 1489452775304,
   "ttl": 0,
   "helpUrl": "https://aer.ctrlflow.com/redhat/help",
   "feedbackUrl": "http://ctrlflow.com/automated-error-reporting",
@@ -10,7 +10,6 @@
   "maxReportSize": 262144,
   "problemsUrl": "https://aer.ctrlflow.com/downloads/redhat/problems.zip",
   "problemsTtl": 20160,
-  "interestUrl": "https://aer.ctrlflow.com/redhat/community/interest",
   "connectTimeout": 5,
   "socketTimeout": 10,
   "acceptedProducts": [
