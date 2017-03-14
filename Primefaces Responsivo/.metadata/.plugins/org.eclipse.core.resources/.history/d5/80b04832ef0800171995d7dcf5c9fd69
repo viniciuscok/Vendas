@@ -1,0 +1,23 @@
+package br.com.vendas.model;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Date;
+
+public class Pedido implements Serializable
+{
+
+	private static final long serialVersionUID = 1L;
+	
+	private Long codigo;
+	private Date dataCriacao;
+	private Date dataEntrega;
+	private String observacao;
+	private BigDecimal valorFrete;
+	private BigDecimal valorDesconto;
+	private BigDecimal valorTotal;
+	private StatusPedido statusPedido;
+	private FormaPagamento formaPagamento;
+	private 
+
+}
