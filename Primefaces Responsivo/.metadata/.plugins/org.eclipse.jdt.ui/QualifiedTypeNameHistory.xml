@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.Boolean"/>
-<fullyQualifiedTypeName name="javax.faces.view.facelets.Facelet"/>
 <fullyQualifiedTypeName name="javax.persistence.NoResultException"/>
 <fullyQualifiedTypeName name="org.primefaces.component.log.Log"/>
 <fullyQualifiedTypeName name="br.com.vendas.model.Endereco"/>
@@ -17,7 +15,6 @@
 <fullyQualifiedTypeName name="br.com.vendas.dao.CadastroClienteDAO"/>
 <fullyQualifiedTypeName name="br.com.vendas.model.TipoVidro"/>
 <fullyQualifiedTypeName name="javax.annotation.Generated"/>
-<fullyQualifiedTypeName name="javax.validation.constraints.Size"/>
 <fullyQualifiedTypeName name="br.com.vendas.service.CadastroCategoriaService"/>
 <fullyQualifiedTypeName name="org.omnifaces.util.Faces"/>
 <fullyQualifiedTypeName name="javax.faces.convert.Converter"/>
@@ -28,7 +25,6 @@
 <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
 <fullyQualifiedTypeName name="br.com.vendas.service.CadastroMarcaService"/>
 <fullyQualifiedTypeName name="br.com.vendas.model.Contato"/>
-<fullyQualifiedTypeName name="javax.validation.constraints.NotNull"/>
 <fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
 <fullyQualifiedTypeName name="javax.persistence.CascadeType"/>
 <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
@@ -37,7 +33,6 @@
 <fullyQualifiedTypeName name="javax.persistence.Id"/>
 <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
 <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
-<fullyQualifiedTypeName name="javax.persistence.Column"/>
 <fullyQualifiedTypeName name="br.com.vendas.dao.CadastroCategoriaDAO"/>
 <fullyQualifiedTypeName name="javax.inject.Named"/>
 <fullyQualifiedTypeName name="javax.faces.view.ViewScoped"/>
@@ -60,4 +55,9 @@
 <fullyQualifiedTypeName name="br.com.vendas.dao.CadastroMarcaDAO"/>
 <fullyQualifiedTypeName name="br.com.vendas.model.Marca"/>
 <fullyQualifiedTypeName name="br.com.vendas.model.ModeloVidro"/>
+<fullyQualifiedTypeName name="javax.persistence.Embedded"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="javax.validation.constraints.NotNull"/>
+<fullyQualifiedTypeName name="javax.persistence.Column"/>
+<fullyQualifiedTypeName name="javax.validation.constraints.Size"/>
 </qualifiedTypeNameHistroy>

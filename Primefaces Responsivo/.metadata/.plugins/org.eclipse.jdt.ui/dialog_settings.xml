@@ -102,7 +102,7 @@
 		<item value="571" key="size.x"/>
 	</section>
 	<section name="AddGetterSetterDialog">
-		<item value="true" key="SortOrdering"/>
+		<item value="false" key="SortOrdering"/>
 		<item value="false" key="RemoveFinal"/>
 	</section>
 	<section name="JavaElementSearchActions">
